@@ -2,7 +2,6 @@ package com.tinkoff_lab.services;
 
 import com.tinkoff_lab.config.AppConfig;
 import com.tinkoff_lab.dto.Translation;
-import com.tinkoff_lab.exceptions.ExecutorServiceException;
 import com.tinkoff_lab.exceptions.TranslationException;
 import com.tinkoff_lab.dto.requests.UserRequest;
 import com.tinkoff_lab.dao.TranslationDAO;
@@ -16,16 +15,8 @@ import org.springframework.http.*;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
-import java.util.concurrent.ExecutionException;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-import java.util.concurrent.TimeUnit;
-
 @Service
 public class TranslationServiceImpl implements TranslationService {
-    private static final int THREADS_CONST = 10;
-    private String[] translatedWords;  // for storing translated words here
-
     private final Logger logger = LoggerFactory.getLogger(TranslationServiceImpl.class);
 
     private final AppConfig appConfig;   //for getting important data
@@ -41,61 +32,18 @@ public class TranslationServiceImpl implements TranslationService {
 
     @Override
     public UserResponse translate(UserRequest request) {
-        checkForNullParams(request); // checking request for null fields and throwing exception in case of troubles
+        logger.info("Sending translation request: text = {} ", request.text());
+        checkForNullParams(request);
 
-        String[] words = request.text().split(" +");
-        translatedWords = new String[words.length];
+        ResponseEntity<TranslateResponse> response = getResponse(request);
+        logger.info("Request has received: text = {} ", request.text());
 
-        ExecutorService executorService = Executors.newFixedThreadPool(THREADS_CONST);
-
-        for (int i = 0; i < words.length; i++) {   // translating each word separately
-            int finalI = i;
-            var response = executorService.submit(() -> translateWord(
-                    words[finalI],  // sending each word in a thread
-                    request.originalLanguage(),
-                    request.finalLanguage(),
-                    finalI));
-            try {
-                var resultBody = response.get().getBody();
-                if (!HttpStatus.valueOf(resultBody.getResponseStatus()).is2xxSuccessful()) {   // checking status - throwing exception if something wrong
-                    Translation translation = new Translation(  // needs for writing in db in ExceptionHandler class
-                            utils.getIP(),
-                            request.text(),
-                            request.originalLanguage(),
-                            "",
-                            request.finalLanguage(),
-                            utils.getMoscowTime(),
-                            resultBody.getResponseStatus(),
-                            resultBody.getResponseDetails());
-
-                    logger.error("Something goes wrong with translation for word <{}>, status is {}",
-                            words[finalI],
-                            resultBody.getResponseStatus());
-
-                    throw new TranslationException(resultBody.getResponseDetails(), translation);
-                }
-            } catch (InterruptedException | ExecutionException e) {
-                logger.error("Something goes wrong with thread: interruption or failing of execution occurred!");
-                throw new ExecutorServiceException("Something goes wrong with thread: interruption or failing of execution occurred!");
-            }
-        }
-
-        executorService.shutdown();
-        try {    // if something goes wrong with threads
-            if (!executorService.awaitTermination(30, TimeUnit.SECONDS)) {
-                executorService.shutdownNow();
-                logger.error("Thread wait limit exceeded!");
-                throw new ExecutorServiceException("Thread wait limit exceeded!");
-            }
-        } catch (InterruptedException e) {
-            executorService.shutdownNow();
-            Thread.currentThread().interrupt();
-            logger.error("A thread was interrupted!");
-            throw new ExecutorServiceException("A thread was interrupted!");
+        if (!HttpStatus.valueOf(response.getBody().getResponseStatus()).is2xxSuccessful()) {   // checking status - throwing exception if something wrong
+            throwException(response, request);
         }
 
         logger.info("Translation successfully completed");
-        String translatedText = String.join(" ", translatedWords);
+        String translatedText = response.getBody().getTranslatedText();
         dao.insert(new Translation(  // saving in database successful translation
                 utils.getIP(),
                 request.text(),
@@ -108,8 +56,7 @@ public class TranslationServiceImpl implements TranslationService {
         return new UserResponse(translatedText);
     }
 
-    private ResponseEntity<TranslateResponse> translateWord(String word, String fromLang, String toLang, int index) {
-        logger.info("Sending translation request: word = {} ", word);
+    private ResponseEntity<TranslateResponse> getResponse(UserRequest request) {
         RestTemplate restTemplate = new RestTemplate();
 
         HttpHeaders httpHeaders = new HttpHeaders();
@@ -119,23 +66,15 @@ public class TranslationServiceImpl implements TranslationService {
 
         String url = String.format(
                 appConfig.getTranslationURL(),
-                word,
-                fromLang,
-                toLang);
+                request.text(),
+                request.originalLanguage(),
+                request.finalLanguage());
 
-        ResponseEntity<TranslateResponse> response = restTemplate.exchange( // getting a response from translation api
+        return restTemplate.exchange( // getting a response from translation api
                 url,
                 HttpMethod.POST,
                 httpEntity,
                 TranslateResponse.class);
-
-        logger.info("Request has received: word = {} ", word);
-
-        translatedWords[index] = response  // writing translated words to build a full translated text later
-                .getBody()
-                .getTranslatedText();
-
-        return response;
     }
 
     private void checkForNullParams(UserRequest request) {
@@ -143,6 +82,7 @@ public class TranslationServiceImpl implements TranslationService {
                 request.originalLanguage() == null ||
                 request.finalLanguage() == null) {
             String message = "Translation went wrong because something from parameters is null!";
+            logger.error(message);
             Translation translation = new Translation(  // needs for writing in db in ExceptionHandler class
                     utils.getIP(),
                     request.text(),
@@ -154,5 +94,24 @@ public class TranslationServiceImpl implements TranslationService {
                     message);
             throw new TranslationException(message, translation);
         }
+    }
+
+    private void throwException(ResponseEntity<TranslateResponse> response, UserRequest request) {
+        var resultBody = response.getBody();
+        Translation translation = new Translation(  // needs for writing in db in ExceptionHandler class
+                utils.getIP(),
+                request.text(),
+                request.originalLanguage(),
+                "",
+                request.finalLanguage(),
+                utils.getMoscowTime(),
+                resultBody.getResponseStatus(),
+                resultBody.getResponseDetails());
+
+        logger.error("Something goes wrong with translation for text <{}>, status is {}",
+                request.text(),
+                resultBody.getResponseStatus());
+
+        throw new TranslationException(resultBody.getResponseDetails(), translation);
     }
 }

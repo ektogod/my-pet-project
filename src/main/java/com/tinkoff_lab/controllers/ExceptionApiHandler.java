@@ -4,7 +4,6 @@ import com.tinkoff_lab.dao.TranslationDAO;
 import com.tinkoff_lab.dto.responses.ErrorResponse;
 import com.tinkoff_lab.exceptions.DatabaseConnectionException;
 import com.tinkoff_lab.exceptions.DatabaseException;
-import com.tinkoff_lab.exceptions.ExecutorServiceException;
 import com.tinkoff_lab.exceptions.TranslationException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -21,8 +20,8 @@ public class ExceptionApiHandler {     // global exception handler
         this.dao = dao;
     }
 
-    @ExceptionHandler({ DatabaseException.class, DatabaseConnectionException.class, ExecutorServiceException.class })
-    public ResponseEntity<ErrorResponse> handleException(RuntimeException ex) {
+    @ExceptionHandler({ DatabaseException.class, DatabaseConnectionException.class})
+    public ResponseEntity<ErrorResponse> handleException(Exception ex) {
         ErrorResponse errorResponse = new ErrorResponse(ex.getMessage(), HttpStatus.INTERNAL_SERVER_ERROR.value());
         return new ResponseEntity<>(errorResponse, HttpStatus.INTERNAL_SERVER_ERROR);
     }

@@ -271,3 +271,33 @@
 2024-08-07 02:22:13 INFO  c.tinkoff_lab.TinkoffLabApplication - Started TinkoffLabApplication in 2.34 seconds (process running for 3.141)
 2024-08-07 02:22:34 INFO  c.tinkoff_lab.TinkoffLabApplication - Application has terminated working
 
+2024-08-25 04:36:03 INFO  c.tinkoff_lab.TinkoffLabApplication - Application has started working
+2024-08-25 04:36:04 INFO  c.tinkoff_lab.TinkoffLabApplication - Starting TinkoffLabApplication using Java 21.0.1 with PID 31012 (C:\Users\Nikita\IdeaProjects\pet-project\target\classes started by Nikita in C:\Users\Nikita\IdeaProjects\pet-project)
+2024-08-25 04:36:04 INFO  c.tinkoff_lab.TinkoffLabApplication - No active profile set, falling back to 1 default profile: "default"
+2024-08-25 04:36:06 INFO  c.tinkoff_lab.TinkoffLabApplication - Started TinkoffLabApplication in 2.969 seconds (process running for 4.011)
+2024-08-25 04:36:45 INFO  c.t.c.TranslationController - Request from user has received: UserRequest[text=Я люблю тебя, originalLanguage=ru, finalLanguage=be]
+2024-08-25 04:36:45 INFO  c.t.services.TranslationServiceImpl - Sending translation request: text = Я люблю тебя 
+2024-08-25 04:36:47 INFO  c.t.services.TranslationServiceImpl - Request has received: text = Я люблю тебя 
+2024-08-25 04:36:47 INFO  c.t.services.TranslationServiceImpl - Translation successfully completed
+2024-08-25 04:36:47 INFO  com.tinkoff_lab.dao.TranslationDAO - Start writing to database of query: Translation[ip=178.125.115.77, originalText=Я люблю тебя, originalLang=ru, translatedText=Я люблю цябе, targetLang=be, time=2024/08/25 04:36:47, status=200, message=Ok]
+2024-08-25 04:36:47 INFO  com.tinkoff_lab.dao.TranslationDAO - Connection with database established
+2024-08-25 04:36:48 INFO  com.tinkoff_lab.dao.TranslationDAO - Query has been successfully recorded
+2024-08-25 04:36:48 INFO  c.t.c.TranslationController - Response is sending to user
+2024-08-25 04:37:09 INFO  c.t.c.TranslationController - Request from user has received: UserRequest[text=Я слышу стоны протяжных ветров, originalLanguage=ru, finalLanguage=be]
+2024-08-25 04:37:09 INFO  c.t.services.TranslationServiceImpl - Sending translation request: text = Я слышу стоны протяжных ветров 
+2024-08-25 04:37:09 INFO  c.t.services.TranslationServiceImpl - Request has received: text = Я слышу стоны протяжных ветров 
+2024-08-25 04:37:09 INFO  c.t.services.TranslationServiceImpl - Translation successfully completed
+2024-08-25 04:37:10 INFO  com.tinkoff_lab.dao.TranslationDAO - Start writing to database of query: Translation[ip=178.125.115.77, originalText=Я слышу стоны протяжных ветров, originalLang=ru, translatedText=Чую стогны доўгіх вятроў, targetLang=be, time=2024/08/25 04:37:10, status=200, message=Ok]
+2024-08-25 04:37:10 INFO  com.tinkoff_lab.dao.TranslationDAO - Connection with database established
+2024-08-25 04:37:10 INFO  com.tinkoff_lab.dao.TranslationDAO - Query has been successfully recorded
+2024-08-25 04:37:10 INFO  c.t.c.TranslationController - Response is sending to user
+2024-08-25 04:40:04 INFO  c.t.c.TranslationController - Request from user has received: UserRequest[text=Соседи приходят, им слышится стук копыт, мешают уснуть, тревожат их сон., originalLanguage=ru, finalLanguage=be]
+2024-08-25 04:40:04 INFO  c.t.services.TranslationServiceImpl - Sending translation request: text = Соседи приходят, им слышится стук копыт, мешают уснуть, тревожат их сон. 
+2024-08-25 04:40:05 INFO  c.t.services.TranslationServiceImpl - Request has received: text = Соседи приходят, им слышится стук копыт, мешают уснуть, тревожат их сон. 
+2024-08-25 04:40:05 INFO  c.t.services.TranslationServiceImpl - Translation successfully completed
+2024-08-25 04:40:05 INFO  com.tinkoff_lab.dao.TranslationDAO - Start writing to database of query: Translation[ip=178.125.115.77, originalText=Соседи приходят, им слышится стук копыт, мешают уснуть, тревожат их сон., originalLang=ru, translatedText=Прыходзяць суседзі, чуюць шум капытоў, перашкаджаюць ім заснуць, парушаюць сон., targetLang=be, time=2024/08/25 04:40:05, status=200, message=Ok]
+2024-08-25 04:40:05 INFO  com.tinkoff_lab.dao.TranslationDAO - Connection with database established
+2024-08-25 04:40:05 INFO  com.tinkoff_lab.dao.TranslationDAO - Query has been successfully recorded
+2024-08-25 04:40:05 INFO  c.t.c.TranslationController - Response is sending to user
+2024-08-25 05:06:28 INFO  c.tinkoff_lab.TinkoffLabApplication - Application has terminated working
+
