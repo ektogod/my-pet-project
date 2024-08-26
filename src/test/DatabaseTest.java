@@ -1,10 +1,10 @@
 package test;
 
 import com.tinkoff_lab.TinkoffLabApplication;
-import com.tinkoff_lab.dao.TranslationDAO;
 import com.tinkoff_lab.dto.Translation;
 import com.tinkoff_lab.exceptions.DatabaseException;
 import com.tinkoff_lab.services.ConnectionService;
+import com.tinkoff_lab.services.database.TranslationDatabaseService;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -22,6 +22,8 @@ import org.testcontainers.junit.jupiter.Testcontainers;
 import java.sql.Connection;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.List;
 
 @Testcontainers
 @SpringBootTest(classes = TinkoffLabApplication.class)
@@ -30,13 +32,13 @@ import java.sql.Statement;
 
 public class DatabaseTest {
     private final ConnectionService connectionService;
-    private final TranslationDAO dao;
+    private final TranslationDatabaseService databaseService;
     private final MockMvc mockMvc;
 
     @Autowired
-    public DatabaseTest(ConnectionService connectionService, TranslationDAO dao, MockMvc mockMvc) {
+    public DatabaseTest(ConnectionService connectionService, TranslationDatabaseService databaseService, MockMvc mockMvc) {
         this.connectionService = connectionService;
-        this.dao = dao;
+        this.databaseService = databaseService;
         this.mockMvc = mockMvc;
     }
 
@@ -83,8 +85,8 @@ public class DatabaseTest {
                 200,
                 "Ok");
 
-        int id = dao.insert(translation);
-        Assertions.assertEquals(translation, dao.findByID(id));
+        int id = databaseService.insert(translation);
+        Assertions.assertEquals(translation, databaseService.findByID(id));
     }
 
     @Test
@@ -101,11 +103,11 @@ public class DatabaseTest {
 
         final int[] id = new int[1]; // this variant was advised by IDE
         Exception ex = Assertions.assertThrows(DatabaseException.class, () -> {
-            id[0] = dao.insert(translation);
+            id[0] = databaseService.insert(translation);
         });
 
         Assertions.assertEquals(ex.getMessage(), "Insertion of query in database goes wrong!");
-        Assertions.assertNull(dao.findByID(id[0]));
+        Assertions.assertNull(databaseService.findByID(id[0]));
     }
 
     @Test
@@ -121,8 +123,8 @@ public class DatabaseTest {
                 "Ok");
 
         for (int i = 0; i < 5; i++) {
-            int id = dao.insert(translation);
-            Assertions.assertEquals(translation, dao.findByID(id));
+            int id = databaseService.insert(translation);
+            Assertions.assertEquals(translation, databaseService.findByID(id));
         }
     }
 
@@ -140,10 +142,97 @@ public class DatabaseTest {
 
         final int[] id = new int[1];
         Exception ex = Assertions.assertThrows(DatabaseException.class, () ->{
-            id[0] = dao.insert(translation);
+            id[0] = databaseService.insert(translation);
         });
 
         Assertions.assertEquals(ex.getMessage(), "Insertion of query in database goes wrong!");
-        Assertions.assertNull(dao.findByID(id[0]));
+        Assertions.assertNull(databaseService.findByID(id[0]));
     }
+
+    @Test
+    public void testWithDeleteChecking(){
+        Translation translation = new Translation(
+                "ip",
+                "original_text",
+                "ru",
+                "translated_text",
+                "be",
+                "2024-08-04 01:53:15",
+                200,
+                "Ok");
+
+        int id = databaseService.insert(translation);
+        databaseService.delete(id);
+
+        Assertions.assertNull(databaseService.findByID(id));
+        Assertions.assertNull(databaseService.findByID(id + 1)); //checking case when there is nothing to delete
+    }
+
+    @Test
+    public void testWithFindAllChecking(){
+        Translation translation = new Translation(
+                "ip",
+                "original_text",
+                "ru",
+                "translated_text",
+                "be",
+                "2024-08-04 01:53:15",
+                200,
+                "Ok");
+
+        List<Integer> ids = new ArrayList<>();
+        for (int i = 0; i < 5; i++) {
+            ids.add(databaseService.insert(translation));
+        }
+
+        List<Translation> entities = databaseService.findAll();
+        Assertions.assertEquals(entities.size(), 5);
+        for (int i = 0; i < 5; i++) {
+            Assertions.assertEquals(translation, databaseService.findByID(ids.get(i)));
+        }
+    }
+
+    @Test
+    public void testWhenUpdateChecking(){
+        Translation translation = new Translation(
+                "ip",
+                "original_text",
+                "ru",
+                "translated_text",
+                "be",
+                "2024-08-04 01:53:15",
+                200,
+                "Ok");
+
+        int id = databaseService.insert(translation);
+        Translation newTranslation = new Translation(
+                "ip",
+                "new_text",
+                "ru",
+                "translated_text",
+                "be",
+                "2024-08-04 01:54:18",
+                200,
+                "Ok");
+
+        databaseService.update(id, newTranslation);
+        Assertions.assertEquals(newTranslation, databaseService.findByID(id));
+    }
+
+    @Test
+    public void testWhenFindByIdChecking(){
+        Translation translation = new Translation(
+                "ip",
+                "original_text",
+                "ru",
+                "translated_text",
+                "be",
+                "2024-08-04 01:53:15",
+                200,
+                "Ok");
+
+        int id = databaseService.insert(translation);
+        Assertions.assertEquals(translation, databaseService.findByID(id));
+    }
+
 }

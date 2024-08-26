@@ -2,12 +2,12 @@ package test;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.tinkoff_lab.TinkoffLabApplication;
-import com.tinkoff_lab.dao.TranslationDAO;
 import com.tinkoff_lab.dto.Translation;
 import com.tinkoff_lab.dto.requests.UserRequest;
 import com.tinkoff_lab.dto.responses.ErrorResponse;
 import com.tinkoff_lab.dto.responses.UserResponse;
 import com.tinkoff_lab.services.ConnectionService;
+import com.tinkoff_lab.services.database.TranslationDatabaseService;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -36,13 +36,13 @@ import java.sql.Statement;
 public class ControllerTest {
     private final MockMvc mockMvc;
     private final ConnectionService connectionService;
-    private final TranslationDAO dao;
+    private final TranslationDatabaseService databaseService;
 
     @Autowired
-    public ControllerTest(MockMvc mockMvc, ConnectionService connectionService, TranslationDAO dao) {
+    public ControllerTest(MockMvc mockMvc, ConnectionService connectionService, TranslationDatabaseService databaseService) {
         this.mockMvc = mockMvc;
         this.connectionService = connectionService;
-        this.dao = dao;
+        this.databaseService = databaseService;
     }
 
     private final ObjectMapper mapper = new ObjectMapper();
@@ -85,7 +85,7 @@ public class ControllerTest {
         UserResponse response = new UserResponse("Love");
         compareResponses(request, mapper.writeValueAsString(response), 200);
 
-        Translation dbTranslation = dao.findByID(1);
+        Translation dbTranslation = databaseService.findByID(1);
         Translation correctTranslation = new Translation(
                 dbTranslation.ip(),
                 "Любовь",
@@ -105,7 +105,7 @@ public class ControllerTest {
         ErrorResponse errorResponse = new ErrorResponse("NO QUERY SPECIFIED. EXAMPLE REQUEST: GET?Q=HELLO&LANGPAIR=EN|IT", 403);
         compareResponses(request, mapper.writeValueAsString(errorResponse), 403);
 
-        Translation dbTranslation = dao.findByID(1);
+        Translation dbTranslation = databaseService.findByID(1);
         Translation correctTranslation = new Translation(
                 dbTranslation.ip(),
                 "",
@@ -125,7 +125,7 @@ public class ControllerTest {
         ErrorResponse errorResponse = new ErrorResponse("INVALID LANGUAGE PAIR SPECIFIED. EXAMPLE: LANGPAIR=EN|IT USING 2 LETTER ISO OR RFC3066 LIKE ZH-CN. ALMOST ALL LANGUAGES SUPPORTED BUT SOME MAY HAVE NO CONTENT", 403);
         compareResponses(request, mapper.writeValueAsString(errorResponse), 403);
 
-        Translation dbTranslation = dao.findByID(1);
+        Translation dbTranslation = databaseService.findByID(1);
         Translation correctTranslation = new Translation(
                 dbTranslation.ip(),
                 "a",
@@ -145,7 +145,7 @@ public class ControllerTest {
         ErrorResponse errorResponse = new ErrorResponse("INVALID LANGUAGE PAIR SPECIFIED. EXAMPLE: LANGPAIR=EN|IT USING 2 LETTER ISO OR RFC3066 LIKE ZH-CN. ALMOST ALL LANGUAGES SUPPORTED BUT SOME MAY HAVE NO CONTENT", 403);
         compareResponses(request, mapper.writeValueAsString(errorResponse), 403);
 
-        Translation dbTranslation = dao.findByID(1);
+        Translation dbTranslation = databaseService.findByID(1);
         Translation correctTranslation = new Translation(
                 dbTranslation.ip(),
                 "a",
@@ -165,7 +165,7 @@ public class ControllerTest {
         ErrorResponse errorResponse = new ErrorResponse("Translation went wrong because something from parameters is null!", 500);
         compareResponses(request, mapper.writeValueAsString(errorResponse), 500);
 
-        Translation dbTranslation = dao.findByID(1);
+        Translation dbTranslation = databaseService.findByID(1);
         Translation correctTranslation = new Translation(
                 dbTranslation.ip(),
                 null,
@@ -186,7 +186,7 @@ public class ControllerTest {
         ErrorResponse errorResponse = new ErrorResponse("Translation went wrong because something from parameters is null!", 500);
         compareResponses(request, mapper.writeValueAsString(errorResponse), 500);
 
-        Translation dbTranslation = dao.findByID(1);
+        Translation dbTranslation = databaseService.findByID(1);
         Translation correctTranslation = new Translation(
                 dbTranslation.ip(),
                 "a",
@@ -206,7 +206,7 @@ public class ControllerTest {
         ErrorResponse errorResponse = new ErrorResponse("Translation went wrong because something from parameters is null!", 500);
         compareResponses(request, mapper.writeValueAsString(errorResponse), 500);
 
-        Translation dbTranslation = dao.findByID(1);
+        Translation dbTranslation = databaseService.findByID(1);
         Translation correctTranslation = new Translation(
                 dbTranslation.ip(),
                 "a",
@@ -226,7 +226,7 @@ public class ControllerTest {
         ErrorResponse errorResponse = new ErrorResponse("'BY' IS AN INVALID TARGET LANGUAGE . EXAMPLE: LANGPAIR=EN|IT USING 2 LETTER ISO OR RFC3066 LIKE ZH-CN. ALMOST ALL LANGUAGES SUPPORTED BUT SOME MAY HAVE NO CONTENT", 403);
         compareResponses(request, mapper.writeValueAsString(errorResponse), 403);
 
-        Translation dbTranslation = dao.findByID(1);
+        Translation dbTranslation = databaseService.findByID(1);
         Translation correctTranslation = new Translation(
                 dbTranslation.ip(),
                 "любовь",

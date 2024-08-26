@@ -9,9 +9,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import java.sql.*;
+import java.util.ArrayList;
+import java.util.List;
 
 @Component
-public class TranslationDAO implements DAO<Translation> {            // class for saving records in database
+public class TranslationDAO implements DAO<Translation, Integer> {            // class for saving records in database
     private final ConnectionService connectionService;
     private final Logger logger = LoggerFactory.getLogger(TranslationDAO.class);
 
@@ -21,7 +23,7 @@ public class TranslationDAO implements DAO<Translation> {            // class fo
     }
 
     @Override
-    public int insert(Translation entity) {
+    public Integer insert(Translation entity) {
         logger.info("Start writing to database of query: {}", entity);
 
         String sql = "INSERT INTO query (IP, Original_Text, Original_Language, Translated_Text, Target_Language, Time, Status, Message) VALUES(?, ?, ?, ?, ?, ?, ?, ?)";
@@ -42,15 +44,93 @@ public class TranslationDAO implements DAO<Translation> {            // class fo
         }
     }
 
+    @Override
+    public List<Translation> findAll() {
+        logger.info("Start getting all entities from database");
+        String sql = "SELECT * FROM query";
+
+        List<Translation> translations = new ArrayList<>();
+        try (Connection connection = connectionService.getConnection()) {
+            logger.info("Connection with database established");
+
+            PreparedStatement statement = connection.prepareStatement(sql);
+            ResultSet resultSet = statement.executeQuery();
+
+            while (resultSet.next()) {
+                translations.add(new Translation(
+                        resultSet.getString(2),
+                        resultSet.getString(3),
+                        resultSet.getString(4),
+                        resultSet.getString(5),
+                        resultSet.getString(6),
+                        resultSet.getString(7),
+                        resultSet.getInt(8),
+                        resultSet.getString(9)));
+            }
+
+            logger.info("Stop getting all entities from database");
+        } catch (SQLException e) {
+            logger.error("Finding all entities in database goes wrong!");
+            throw new DatabaseException("Finding all entities in database goes wrong!");
+        }
+
+        return translations;
+    }
+
+    @Override
+    public void update(Integer id, Translation entity) {
+        logger.info("Starting updating entity: {}", entity);
+        String sql = "UPDATE query " +
+                "SET IP = ?, " +
+                "Original_Text = ?, " +
+                "Original_Language = ?, " +
+                "Translated_Text = ?, " +
+                "Target_Language = ?, " +
+                "Time = ?, " +
+                "Status = ?, " +
+                "Message = ? " +
+                "WHERE ID = ?";
+
+        try (Connection connection = connectionService.getConnection()) {
+            PreparedStatement statement = connection.prepareStatement(sql);
+
+            prepareStatement(statement, entity);
+            statement.setInt(9, id);
+
+            statement.executeUpdate();
+            logger.info("Updating ended successfully for entity: {}", entity);
+        } catch (SQLException e) {
+            logger.error("Updating of entity goes wrong! Entity: " + entity);
+            throw new DatabaseException("Updating of entity goes wrong!");
+        }
+    }
+
+    @Override
+    public void delete(Integer id) {
+        logger.info("Starting deleting entity with ID: {}", id);
+        String sql = "DELETE FROM query WHERE ID = ?";
+
+        try (Connection connection = connectionService.getConnection()) {
+            PreparedStatement statement = connection.prepareStatement(sql);
+            statement.setInt(1, id);
+            statement.executeUpdate();
+            logger.info("Deleting entity with ID {} ended successfully.", id);
+        } catch (SQLException e) {
+            logger.error("Deleting entity with id " + id + "goes wrong!");
+            throw new DatabaseException("Deleting entity goes wrong!");
+        }
+    }
+
     @Override       // this method I used in test classes
-    public Translation findByID(int id) {
+    public Translation findByID(Integer id) {
         String sql = "SELECT * FROM query WHERE ID = ?";
+        logger.info("Starting finding entity with ID: {}", id);
         try (Connection connection = connectionService.getConnection()) {    // getting connection with db
             PreparedStatement statement = connection.prepareStatement(sql);
             statement.setInt(1, id);
             ResultSet resultSet = statement.executeQuery();
 
-            if (resultSet != null && resultSet.next()) {
+            if (resultSet.next()) {
                 return new Translation(
                         resultSet.getString(2),
                         resultSet.getString(3),
@@ -62,8 +142,10 @@ public class TranslationDAO implements DAO<Translation> {            // class fo
                         resultSet.getString(9));
             }
 
+            logger.info("Finding entity with ID {} ended successfully.", id);
         } catch (SQLException ex) {
-            throw new DatabaseException("Getting query by id <" + id + "> goes wrong!");
+            logger.info("Getting query by id " + id + " goes wrong!");
+            throw new DatabaseException("Getting query by id goes wrong!");
         }
 
         return null;

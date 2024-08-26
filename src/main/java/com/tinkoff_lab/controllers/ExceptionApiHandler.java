@@ -1,10 +1,10 @@
 package com.tinkoff_lab.controllers;
 
-import com.tinkoff_lab.dao.TranslationDAO;
 import com.tinkoff_lab.dto.responses.ErrorResponse;
 import com.tinkoff_lab.exceptions.DatabaseConnectionException;
 import com.tinkoff_lab.exceptions.DatabaseException;
 import com.tinkoff_lab.exceptions.TranslationException;
+import com.tinkoff_lab.services.database.TranslationDatabaseService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -13,11 +13,11 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 
 @RestControllerAdvice
 public class ExceptionApiHandler {     // global exception handler
-    private final TranslationDAO dao;
+    private final TranslationDatabaseService databaseService;
 
     @Autowired
-    public ExceptionApiHandler(TranslationDAO dao) {
-        this.dao = dao;
+    public ExceptionApiHandler(TranslationDatabaseService databaseService) {
+        this.databaseService = databaseService;
     }
 
     @ExceptionHandler({ DatabaseException.class, DatabaseConnectionException.class})
@@ -28,7 +28,7 @@ public class ExceptionApiHandler {     // global exception handler
 
     @ExceptionHandler(TranslationException.class)
     public ResponseEntity<ErrorResponse> handleException(TranslationException ex) {
-        dao.insert(ex.getTranslation());
+        databaseService.insert(ex.getTranslation());
         ErrorResponse errorResponse = new ErrorResponse(ex.getMessage(), ex.getTranslation().status());
         return new ResponseEntity<>(errorResponse, HttpStatus.valueOf(ex.getTranslation().status()));
     }

@@ -4,9 +4,9 @@ import com.tinkoff_lab.config.AppConfig;
 import com.tinkoff_lab.dto.Translation;
 import com.tinkoff_lab.exceptions.TranslationException;
 import com.tinkoff_lab.dto.requests.UserRequest;
-import com.tinkoff_lab.dao.TranslationDAO;
 import com.tinkoff_lab.dto.responses.TranslateResponse;
 import com.tinkoff_lab.dto.responses.UserResponse;
+import com.tinkoff_lab.services.database.TranslationDatabaseService;
 import com.tinkoff_lab.utils.TranslationUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -20,11 +20,11 @@ public class TranslationServiceImpl implements TranslationService {
     private final Logger logger = LoggerFactory.getLogger(TranslationServiceImpl.class);
 
     private final AppConfig appConfig;   //for getting important data
-    private final TranslationDAO dao;     // for writing in database
+    private final TranslationDatabaseService dao;     // for writing in database
     private final TranslationUtils utils;
 
     @Autowired
-    public TranslationServiceImpl(AppConfig appConfig, TranslationDAO dao, TranslationUtils utils) {
+    public TranslationServiceImpl(AppConfig appConfig, TranslationDatabaseService dao, TranslationUtils utils) {
         this.appConfig = appConfig;
         this.dao = dao;
         this.utils = utils;
