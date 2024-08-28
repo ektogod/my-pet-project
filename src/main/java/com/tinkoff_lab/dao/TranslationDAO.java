@@ -78,7 +78,7 @@ public class TranslationDAO implements DAO<Translation, Integer> {            //
     }
 
     @Override
-    public void update(Integer id, Translation entity) {
+    public void update(Translation entity) {
         logger.info("Starting updating entity: {}", entity);
         String sql = "UPDATE query " +
                 "SET IP = ?, " +
@@ -95,7 +95,7 @@ public class TranslationDAO implements DAO<Translation, Integer> {            //
             PreparedStatement statement = connection.prepareStatement(sql);
 
             prepareStatement(statement, entity);
-            statement.setInt(9, id);
+            statement.setInt(9, entity.id());
 
             statement.executeUpdate();
             logger.info("Updating ended successfully for entity: {}", entity);
@@ -131,7 +131,7 @@ public class TranslationDAO implements DAO<Translation, Integer> {            //
             ResultSet resultSet = statement.executeQuery();
 
             if (resultSet.next()) {
-                return new Translation(
+                return new Translation(id,
                         resultSet.getString(2),
                         resultSet.getString(3),
                         resultSet.getString(4),

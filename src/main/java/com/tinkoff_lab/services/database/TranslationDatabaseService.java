@@ -9,7 +9,7 @@ import java.util.List;
 
 @Service
 public class TranslationDatabaseService {
-    private TranslationDAO dao;
+    private final TranslationDAO dao;
 
     @Autowired
     public TranslationDatabaseService(TranslationDAO dao) {
@@ -28,8 +28,8 @@ public class TranslationDatabaseService {
         return dao.findAll();
     }
 
-    public void update(int id, Translation entity){
-        dao.update(id, entity);
+    public void update(Translation entity){
+        dao.update(entity);
     }
 
     public void delete(int id){

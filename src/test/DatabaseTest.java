@@ -205,7 +205,7 @@ public class DatabaseTest {
                 "Ok");
 
         int id = databaseService.insert(translation);
-        Translation newTranslation = new Translation(
+        Translation newTranslation = new Translation(id,
                 "ip",
                 "new_text",
                 "ru",
@@ -215,7 +215,7 @@ public class DatabaseTest {
                 200,
                 "Ok");
 
-        databaseService.update(id, newTranslation);
+        databaseService.update(newTranslation);
         Assertions.assertEquals(newTranslation, databaseService.findByID(id));
     }
 
