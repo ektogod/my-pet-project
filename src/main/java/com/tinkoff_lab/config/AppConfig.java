@@ -1,7 +1,10 @@
 package com.tinkoff_lab.config;
 
 import lombok.Getter;
+import org.hibernate.SessionFactory;
+import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
 
@@ -25,4 +28,7 @@ public class AppConfig {                  // I use this class to have access to 
 
     @Value("${IP.url}")
     private String ipUrl;
+
+    @Value("${countryCoordinates.url}")
+    private String countryCoordinatesUrl;
 }

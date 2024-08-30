@@ -8,10 +8,12 @@ import org.hibernate.Transaction;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import java.util.List;
 
-public class UserDAO implements DAO<User, Integer>{
+@Component
+public class UserDAO implements DAO<User, String>{
     private final SessionFactory sessionFactory;
     private final Logger logger = LoggerFactory.getLogger(UserDAO.class);
 
@@ -21,7 +23,7 @@ public class UserDAO implements DAO<User, Integer>{
     }
 
     @Override
-    public Integer insert(User entity) {
+    public String insert(User entity) {
         logger.info("Start inserting entity: {}", entity);
         Transaction transaction = null;
         try(Session session = sessionFactory.openSession()){
@@ -38,11 +40,11 @@ public class UserDAO implements DAO<User, Integer>{
         }
 
         logger.info("Inserting of entity {} ended successfully", entity);
-        return entity.getId();
+        return entity.getEmail();
     }
 
     @Override
-    public User findByID(Integer id) {
+    public User findByID(String id) {
         logger.info("Start finding entity with id {}", id);
         User user;
         try(Session session = sessionFactory.openSession()){
@@ -93,7 +95,7 @@ public class UserDAO implements DAO<User, Integer>{
     }
 
     @Override
-    public void delete(Integer id) {
+    public void delete(String id) {
         logger.info("Start removing entity with id {}", id);
         Transaction transaction = null;
         try(Session session = sessionFactory.openSession()){

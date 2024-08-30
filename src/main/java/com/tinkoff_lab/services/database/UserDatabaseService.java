@@ -3,9 +3,11 @@ package com.tinkoff_lab.services.database;
 import com.tinkoff_lab.dao.UserDAO;
 import com.tinkoff_lab.entity.User;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public class UserDatabaseService {
     private final UserDAO dao;
 
@@ -14,11 +16,11 @@ public class UserDatabaseService {
         this.dao = dao;
     }
 
-    public int insert(User entity) {
+    public String insert(User entity) {
         return dao.insert(entity);
     }
 
-    public User findByID(int id) {
+    public User findByID(String id) {
         return dao.findByID(id);
     }
 
@@ -30,7 +32,7 @@ public class UserDatabaseService {
         dao.update(entity);
     }
 
-    public void delete(int id) {
+    public void delete(String id) {
         dao.delete(id);
     }
 }

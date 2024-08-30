@@ -1,4 +1,4 @@
-package com.tinkoff_lab.services;
+package com.tinkoff_lab.services.translation;
 
 import com.tinkoff_lab.config.AppConfig;
 import com.tinkoff_lab.dto.Translation;
@@ -7,6 +7,7 @@ import com.tinkoff_lab.dto.requests.UserRequest;
 import com.tinkoff_lab.dto.responses.TranslateResponse;
 import com.tinkoff_lab.dto.responses.UserResponse;
 import com.tinkoff_lab.services.database.TranslationDatabaseService;
+import com.tinkoff_lab.services.weather.CoordinateService;
 import com.tinkoff_lab.utils.TranslationUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

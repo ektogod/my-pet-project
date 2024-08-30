@@ -1,12 +1,14 @@
 package com.tinkoff_lab.services.database;
 
 import com.tinkoff_lab.dao.UserCityDAO;
-import com.tinkoff_lab.entity.UserCity;
-import com.tinkoff_lab.entity.UserCityKey;
+import com.tinkoff_lab.entity.City;
+import com.tinkoff_lab.entity.User;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public class UserCityDatabaseService {
     private final UserCityDAO dao;
 
@@ -15,23 +17,19 @@ public class UserCityDatabaseService {
         this.dao = dao;
     }
 
-    public UserCityKey insert(UserCity entity) {
-        return dao.insert(entity);
+    public void addUserCity(User user, City city) {
+        dao.addUserCity(user, city);
     }
 
-    public UserCity findByID(UserCityKey id) {
-        return dao.findByID(id);
+    public void removeUserCity(User user, City city) {
+        dao.removeUserCity(user, city);
     }
 
-    public List<UserCity> findAll() {
-        return dao.findAll();
+    public List<User> getUsers(City city) {
+        return dao.getUsers(city);
     }
 
-    public void update(UserCity entity) {
-        dao.update(entity);
-    }
-
-    public void delete(UserCityKey id) {
-        dao.delete(id);
+    public List<City> getCities(User user) {
+        return dao.getCities(user);
     }
 }

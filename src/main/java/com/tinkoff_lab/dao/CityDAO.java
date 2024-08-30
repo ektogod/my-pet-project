@@ -1,6 +1,7 @@
 package com.tinkoff_lab.dao;
 
 import com.tinkoff_lab.entity.City;
+import com.tinkoff_lab.entity.CityPK;
 import com.tinkoff_lab.exceptions.DatabaseException;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -8,10 +9,12 @@ import org.hibernate.Transaction;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import java.util.List;
 
-public class CityDAO implements DAO<City, Integer>{
+@Component
+public class CityDAO implements DAO<City, CityPK>{
     private final SessionFactory sessionFactory;
     private final Logger logger = LoggerFactory.getLogger(CityDAO.class);
 
@@ -21,7 +24,7 @@ public class CityDAO implements DAO<City, Integer>{
     }
 
     @Override
-    public Integer insert(City entity) {
+    public CityPK insert(City entity) {
         logger.info("Start inserting entity: {}", entity);
         Transaction transaction = null;
         try(Session session = sessionFactory.openSession()){
@@ -38,11 +41,11 @@ public class CityDAO implements DAO<City, Integer>{
         }
 
         logger.info("Inserting of entity {} ended successfully", entity);
-        return entity.getId();
+        return entity.getPk();
     }
 
     @Override
-    public City findByID(Integer id) {
+    public City findByID(CityPK id) {
         logger.info("Start finding entity with id {}", id);
         City city;
         try(Session session = sessionFactory.openSession()){
@@ -93,7 +96,7 @@ public class CityDAO implements DAO<City, Integer>{
     }
 
     @Override
-    public void delete(Integer id) {
+    public void delete(CityPK id) {
         logger.info("Start removing entity with id {}", id);
         Transaction transaction = null;
         try(Session session = sessionFactory.openSession()){

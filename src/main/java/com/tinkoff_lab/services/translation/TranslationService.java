@@ -1,4 +1,4 @@
-package com.tinkoff_lab.services;
+package com.tinkoff_lab.services.translation;
 
 import com.tinkoff_lab.dto.requests.UserRequest;
 import com.tinkoff_lab.dto.responses.UserResponse;

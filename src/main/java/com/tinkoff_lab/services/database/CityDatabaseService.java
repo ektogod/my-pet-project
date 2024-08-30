@@ -2,10 +2,13 @@ package com.tinkoff_lab.services.database;
 
 import com.tinkoff_lab.dao.CityDAO;
 import com.tinkoff_lab.entity.City;
+import com.tinkoff_lab.entity.CityPK;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public class CityDatabaseService {
     private final CityDAO dao;
 
@@ -14,11 +17,11 @@ public class CityDatabaseService {
         this.dao = dao;
     }
 
-    public int insert(City entity){
+    public CityPK insert(City entity){
         return dao.insert(entity);
     }
 
-    public City findByID(int id){
+    public City findByID(CityPK id){
         return dao.findByID(id);
     }
 
@@ -30,7 +33,7 @@ public class CityDatabaseService {
         dao.update(entity);
     }
 
-    public void delete(int id){
+    public void delete(CityPK id){
         dao.delete(id);
     }
 }

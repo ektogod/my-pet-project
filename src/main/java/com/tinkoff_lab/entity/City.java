@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.util.List;
 import java.util.Set;
 
 @Entity
@@ -11,17 +12,13 @@ import java.util.Set;
 @Getter
 @Setter
 public class City {
-    @Id
-    @Column(name = "id")
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    @EmbeddedId
+    private CityPK pk;
 
-    @Column(name = "temperature")
-    private String temperature;
+    @ManyToMany(mappedBy = "cities")
+    private List<User> users;
 
-    @Column(name = "weather")
-    private String weather;
-
-    @OneToMany(mappedBy = "cityID", orphanRemoval = true, cascade = CascadeType.ALL)
-    private Set<UserCity> subs;
+    public City(CityPK pk) {
+        this.pk = pk;
+    }
 }

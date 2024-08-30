@@ -3,7 +3,7 @@ package com.tinkoff_lab.controllers;
 
 import com.tinkoff_lab.dto.requests.UserRequest;
 import com.tinkoff_lab.dto.responses.UserResponse;
-import com.tinkoff_lab.services.TranslationServiceImpl;
+import com.tinkoff_lab.services.translation.TranslationServiceImpl;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
