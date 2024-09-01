@@ -1,7 +1,8 @@
+package database;
 
 import com.tinkoff_lab.TinkoffLabApplication;
 import com.tinkoff_lab.dto.Translation;
-import com.tinkoff_lab.exceptions.DatabaseException;
+import com.tinkoff_lab.exception.DatabaseException;
 import com.tinkoff_lab.services.ConnectionService;
 import com.tinkoff_lab.services.database.TranslationDatabaseService;
 import org.junit.jupiter.api.Assertions;

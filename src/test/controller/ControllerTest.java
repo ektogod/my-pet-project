@@ -1,3 +1,5 @@
+package controller;
+
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.tinkoff_lab.TinkoffLabApplication;
 import com.tinkoff_lab.dto.Translation;

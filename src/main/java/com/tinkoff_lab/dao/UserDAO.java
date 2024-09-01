@@ -1,7 +1,7 @@
 package com.tinkoff_lab.dao;
 
 import com.tinkoff_lab.entity.User;
-import com.tinkoff_lab.exceptions.DatabaseException;
+import com.tinkoff_lab.exception.DatabaseException;
 import org.hibernate.Hibernate;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;

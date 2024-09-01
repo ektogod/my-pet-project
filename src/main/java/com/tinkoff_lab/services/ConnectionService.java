@@ -2,7 +2,7 @@ package com.tinkoff_lab.services;
 
 
 import com.tinkoff_lab.config.AppConfig;
-import com.tinkoff_lab.exceptions.DatabaseConnectionException;
+import com.tinkoff_lab.exception.DatabaseConnectionException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

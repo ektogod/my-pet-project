@@ -2,12 +2,17 @@ package com.tinkoff_lab.services.translation;
 
 import com.tinkoff_lab.config.AppConfig;
 import com.tinkoff_lab.dto.Translation;
-import com.tinkoff_lab.exceptions.TranslationException;
+import com.tinkoff_lab.entity.City;
+import com.tinkoff_lab.entity.CityPK;
+import com.tinkoff_lab.entity.User;
+import com.tinkoff_lab.exception.TranslationException;
 import com.tinkoff_lab.dto.requests.UserRequest;
 import com.tinkoff_lab.dto.responses.TranslateResponse;
 import com.tinkoff_lab.dto.responses.UserResponse;
+import com.tinkoff_lab.services.database.CityDatabaseService;
 import com.tinkoff_lab.services.database.TranslationDatabaseService;
-import com.tinkoff_lab.services.weather.CoordinateService;
+import com.tinkoff_lab.services.database.UserCityDatabaseService;
+import com.tinkoff_lab.services.database.UserDatabaseService;
 import com.tinkoff_lab.utils.TranslationUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -25,6 +30,13 @@ public class TranslationServiceImpl implements TranslationService {
     private final TranslationUtils utils;
 
     @Autowired
+    private UserDatabaseService databaseService;
+    @Autowired
+    private UserCityDatabaseService d;
+    @Autowired
+    private CityDatabaseService c;
+
+    @Autowired
     public TranslationServiceImpl(AppConfig appConfig, TranslationDatabaseService dao, TranslationUtils utils) {
         this.appConfig = appConfig;
         this.dao = dao;
@@ -35,6 +47,12 @@ public class TranslationServiceImpl implements TranslationService {
     public UserResponse translate(UserRequest request) {
         logger.info("Sending translation request: text = {} ", request.text());
         checkForNullParams(request);
+
+        var user = new User("etokto@mail.ru", "kilogod");
+        databaseService.insert(user);
+        City city = new City(new CityPK("a", "a"), "a", "a");
+        c.insert(city);
+        d.addUserCity(user, city);
 
         ResponseEntity<TranslateResponse> response = getResponse(request);
         logger.info("Request has received: text = {} ", request.text());

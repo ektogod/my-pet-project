@@ -5,6 +5,7 @@ import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 
@@ -27,7 +28,7 @@ public class City {
     private String longitude;
 
     @ManyToMany(mappedBy = "cities")
-    private List<User> users;
+    private List<User> users = new ArrayList<>();
 
     public City(CityPK pk, String latitude, String longitude) {
         this.pk = pk;

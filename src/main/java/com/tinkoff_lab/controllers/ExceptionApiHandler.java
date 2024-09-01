@@ -1,9 +1,9 @@
 package com.tinkoff_lab.controllers;
 
 import com.tinkoff_lab.dto.responses.ErrorResponse;
-import com.tinkoff_lab.exceptions.DatabaseConnectionException;
-import com.tinkoff_lab.exceptions.DatabaseException;
-import com.tinkoff_lab.exceptions.TranslationException;
+import com.tinkoff_lab.exception.DatabaseConnectionException;
+import com.tinkoff_lab.exception.DatabaseException;
+import com.tinkoff_lab.exception.TranslationException;
 import com.tinkoff_lab.services.database.TranslationDatabaseService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

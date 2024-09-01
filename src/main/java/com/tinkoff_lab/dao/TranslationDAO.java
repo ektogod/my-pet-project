@@ -1,7 +1,7 @@
 package com.tinkoff_lab.dao;
 
 import com.tinkoff_lab.dto.Translation;
-import com.tinkoff_lab.exceptions.DatabaseException;
+import com.tinkoff_lab.exception.DatabaseException;
 import com.tinkoff_lab.services.ConnectionService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

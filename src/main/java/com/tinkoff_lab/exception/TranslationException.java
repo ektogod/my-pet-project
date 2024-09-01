@@ -1,4 +1,4 @@
-package com.tinkoff_lab.exceptions;
+package com.tinkoff_lab.exception;
 
 import com.tinkoff_lab.dto.Translation;
 import lombok.Getter;

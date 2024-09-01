@@ -1,7 +1,9 @@
+package database;
+
 import com.tinkoff_lab.TinkoffLabApplication;
 import com.tinkoff_lab.entity.City;
 import com.tinkoff_lab.entity.CityPK;
-import com.tinkoff_lab.exceptions.DatabaseException;
+import com.tinkoff_lab.exception.DatabaseException;
 import com.tinkoff_lab.services.database.CityDatabaseService;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -113,19 +115,19 @@ public class CityDaoTest {
 
     @Test
     public void testWithFindAllChecking() {
-        List<City> users = List.of(
+        List<City> cities = List.of(
                 new City(new CityPK("Brest", "Belarus"), "latitude", "longitude"),
                 new City(new CityPK("Gomel", "Belarus"), "latitude", "longitude"),
                 new City(new CityPK("Minsk", "Belarus"), "latitude", "longitude"),
                 new City(new CityPK("Vitebsk", "Belarus"), "latitude", "longitude"));
-        users.forEach(databaseService::insert);
+        cities.forEach(databaseService::insert);
 
         List<City> dbCities = databaseService.findAll(); // order in returned list was different with "cities" order, so I decided to add cities by alphabet order and then sort them
-        Assertions.assertEquals(users.size(), dbCities.size());
+        Assertions.assertEquals(cities.size(), dbCities.size());
         dbCities.sort(Comparator.comparing(c -> c.getPk().getCity()));
 
-        for (int i = 0; i < users.size(); i++) {
-            Assertions.assertEquals(users.get(i), dbCities.get(i));
+        for (int i = 0; i < cities.size(); i++) {
+            Assertions.assertEquals(cities.get(i), dbCities.get(i));
         }
     }
 
