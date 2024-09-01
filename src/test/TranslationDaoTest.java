@@ -1,4 +1,3 @@
-package test;
 
 import com.tinkoff_lab.TinkoffLabApplication;
 import com.tinkoff_lab.dto.Translation;
@@ -30,13 +29,13 @@ import java.util.List;
 @TestPropertySource(locations = "classpath:application.properties")
 @AutoConfigureMockMvc
 
-public class DatabaseTest {
+public class TranslationDaoTest {
     private final ConnectionService connectionService;
     private final TranslationDatabaseService databaseService;
     private final MockMvc mockMvc;
 
     @Autowired
-    public DatabaseTest(ConnectionService connectionService, TranslationDatabaseService databaseService, MockMvc mockMvc) {
+    public TranslationDaoTest(ConnectionService connectionService, TranslationDatabaseService databaseService, MockMvc mockMvc) {
         this.connectionService = connectionService;
         this.databaseService = databaseService;
         this.mockMvc = mockMvc;
@@ -69,13 +68,15 @@ public class DatabaseTest {
                     "  PRIMARY KEY (ID)" +
                     ")");
 
-            statement.execute("DELETE FROM query");
+            statement.execute("TRUNCATE TABLE query");
+            //statement.execute("ALTER TABLE query ID = 1");
         }
     }
 
     @Test
     public void testWhenQueryIsCorrect() {
         Translation translation = new Translation(
+                1,
                 "ip",
                 "original_text",
                 "ru",
@@ -85,13 +86,14 @@ public class DatabaseTest {
                 200,
                 "Ok");
 
-        int id = databaseService.insert(translation);
-        Assertions.assertEquals(translation, databaseService.findByID(id));
+        databaseService.insert(translation);
+        Assertions.assertEquals(translation, databaseService.findByID(1));
     }
 
     @Test
     public void testWhenQueryHasNullColumns() {
         Translation translation = new Translation(
+                1,
                 null,
                 null,
                 null,
@@ -101,36 +103,18 @@ public class DatabaseTest {
                 200,
                 "Ok");
 
-        final int[] id = new int[1]; // this variant was advised by IDE
         Exception ex = Assertions.assertThrows(DatabaseException.class, () -> {
-            id[0] = databaseService.insert(translation);
+            databaseService.insert(translation);
         });
 
         Assertions.assertEquals(ex.getMessage(), "Insertion of query in database goes wrong!");
-        Assertions.assertNull(databaseService.findByID(id[0]));
+        Assertions.assertNull(databaseService.findByID(1));
     }
 
     @Test
-    public void testWithSomeQueries() {
+    public void testWhenTextIsLargerThan1000() {
         Translation translation = new Translation(
-                "ip",
-                "original_text",
-                "ru",
-                "translated_text",
-                "be",
-                "2024-08-04 01:53:15",
-                200,
-                "Ok");
-
-        for (int i = 0; i < 5; i++) {
-            int id = databaseService.insert(translation);
-            Assertions.assertEquals(translation, databaseService.findByID(id));
-        }
-    }
-
-    @Test
-    public void testWhenTextIsLargerThan1000(){
-        Translation translation = new Translation(
+                1,
                 "ip",
                 "a".repeat(1001),
                 "ru",
@@ -140,18 +124,18 @@ public class DatabaseTest {
                 200,
                 "Ok");
 
-        final int[] id = new int[1];
-        Exception ex = Assertions.assertThrows(DatabaseException.class, () ->{
-            id[0] = databaseService.insert(translation);
+        Exception ex = Assertions.assertThrows(DatabaseException.class, () -> {
+            databaseService.insert(translation);
         });
 
         Assertions.assertEquals(ex.getMessage(), "Insertion of query in database goes wrong!");
-        Assertions.assertNull(databaseService.findByID(id[0]));
+        Assertions.assertNull(databaseService.findByID(1));
     }
 
     @Test
-    public void testWithDeleteChecking(){
+    public void testWithDeleteChecking() {
         Translation translation = new Translation(
+                1,
                 "ip",
                 "original_text",
                 "ru",
@@ -161,15 +145,15 @@ public class DatabaseTest {
                 200,
                 "Ok");
 
-        int id = databaseService.insert(translation);
-        databaseService.delete(id);
+        databaseService.insert(translation);
+        databaseService.delete(1);
 
-        Assertions.assertNull(databaseService.findByID(id));
-        Assertions.assertNull(databaseService.findByID(id + 1)); //checking case when there is nothing to delete
+        Assertions.assertNull(databaseService.findByID(1));
+        Assertions.assertNull(databaseService.findByID(2)); //checking case when there is nothing to delete
     }
 
     @Test
-    public void testWithFindAllChecking(){
+    public void testWithFindAllChecking() {
         Translation translation = new Translation(
                 "ip",
                 "original_text",
@@ -188,13 +172,24 @@ public class DatabaseTest {
         List<Translation> entities = databaseService.findAll();
         Assertions.assertEquals(entities.size(), 5);
         for (int i = 0; i < 5; i++) {
-            Assertions.assertEquals(translation, databaseService.findByID(ids.get(i)));
+            Translation tr = new Translation(
+                    i + 1,
+                    "ip",
+                    "original_text",
+                    "ru",
+                    "translated_text",
+                    "be",
+                    "2024-08-04 01:53:15",
+                    200,
+                    "Ok");
+            Assertions.assertEquals(tr, databaseService.findByID(ids.get(i)));
         }
     }
 
     @Test
-    public void testWhenUpdateChecking(){
+    public void testWithUpdateChecking() {
         Translation translation = new Translation(
+                1,
                 "ip",
                 "original_text",
                 "ru",
@@ -204,8 +199,9 @@ public class DatabaseTest {
                 200,
                 "Ok");
 
-        int id = databaseService.insert(translation);
-        Translation newTranslation = new Translation(id,
+        databaseService.insert(translation);
+        Translation newTranslation = new Translation(
+                1,
                 "ip",
                 "new_text",
                 "ru",
@@ -216,12 +212,13 @@ public class DatabaseTest {
                 "Ok");
 
         databaseService.update(newTranslation);
-        Assertions.assertEquals(newTranslation, databaseService.findByID(id));
+        Assertions.assertEquals(newTranslation, databaseService.findByID(1));
     }
 
     @Test
-    public void testWhenFindByIdChecking(){
+    public void testWhenFindByIdChecking() {
         Translation translation = new Translation(
+                1,
                 "ip",
                 "original_text",
                 "ru",
@@ -234,5 +231,4 @@ public class DatabaseTest {
         int id = databaseService.insert(translation);
         Assertions.assertEquals(translation, databaseService.findByID(id));
     }
-
 }

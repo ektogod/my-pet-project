@@ -39,7 +39,7 @@ public class WeatherServiceImpl implements WeatherService {
             cityValidator.validate(cityDTO); // throws exception if something incorrect
 
             CityPK pk = new CityPK(cityDTO.city(), cityDTO.country());
-            City city = new City(pk);
+            City city = new City(pk, "", "");
             cityDatabaseService.insert(city);
             userCityDatabaseService.addUserCity(user, city);
         }

@@ -1,5 +1,3 @@
-package test;
-
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.tinkoff_lab.TinkoffLabApplication;
 import com.tinkoff_lab.dto.Translation;
@@ -87,6 +85,7 @@ public class ControllerTest {
 
         Translation dbTranslation = databaseService.findByID(1);
         Translation correctTranslation = new Translation(
+                1,
                 dbTranslation.ip(),
                 "Любовь",
                 "ru",
@@ -107,6 +106,7 @@ public class ControllerTest {
 
         Translation dbTranslation = databaseService.findByID(1);
         Translation correctTranslation = new Translation(
+                1,
                 dbTranslation.ip(),
                 "",
                 "ru",
@@ -127,6 +127,7 @@ public class ControllerTest {
 
         Translation dbTranslation = databaseService.findByID(1);
         Translation correctTranslation = new Translation(
+                1,
                 dbTranslation.ip(),
                 "a",
                 "",
@@ -147,6 +148,7 @@ public class ControllerTest {
 
         Translation dbTranslation = databaseService.findByID(1);
         Translation correctTranslation = new Translation(
+                1,
                 dbTranslation.ip(),
                 "a",
                 "ru",
@@ -167,6 +169,7 @@ public class ControllerTest {
 
         Translation dbTranslation = databaseService.findByID(1);
         Translation correctTranslation = new Translation(
+                1,
                 dbTranslation.ip(),
                 null,
                 "ru",
@@ -188,6 +191,7 @@ public class ControllerTest {
 
         Translation dbTranslation = databaseService.findByID(1);
         Translation correctTranslation = new Translation(
+                1,
                 dbTranslation.ip(),
                 "a",
                 null,
@@ -208,6 +212,7 @@ public class ControllerTest {
 
         Translation dbTranslation = databaseService.findByID(1);
         Translation correctTranslation = new Translation(
+                1,
                 dbTranslation.ip(),
                 "a",
                 "ru",
@@ -228,6 +233,7 @@ public class ControllerTest {
 
         Translation dbTranslation = databaseService.findByID(1);
         Translation correctTranslation = new Translation(
+                1,
                 dbTranslation.ip(),
                 "любовь",
                 "ru",

@@ -4,8 +4,10 @@ import com.tinkoff_lab.config.AppConfig;
 import com.tinkoff_lab.dto.CityDTO;
 import com.tinkoff_lab.services.weather.CountryCodeService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
 
+@Component
 public class CityValidator {
     private final AppConfig config;
     private final CountryCodeService codeService;

@@ -2,9 +2,11 @@ package com.tinkoff_lab.dao;
 
 import com.tinkoff_lab.entity.User;
 import com.tinkoff_lab.exceptions.DatabaseException;
+import org.hibernate.Hibernate;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
+import org.hibernate.resource.transaction.spi.TransactionStatus;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,18 +27,22 @@ public class UserDAO implements DAO<User, String>{
     @Override
     public String insert(User entity) {
         logger.info("Start inserting entity: {}", entity);
-        Transaction transaction = null;
-        try(Session session = sessionFactory.openSession()){
-            transaction = session.beginTransaction();
+        Session session = sessionFactory.openSession();
+        Transaction transaction = session.getTransaction();
+        try{
+            transaction.begin();
             session.persist(entity);
             transaction.commit();
         }
         catch (Exception ex){
-            if(transaction != null){
+            if(transaction.getStatus() == TransactionStatus.ACTIVE || transaction.getStatus() == TransactionStatus.MARKED_ROLLBACK){
                 transaction.rollback();
             }
             logger.error("Inserting of entity {} went wrong", entity);
             throw new DatabaseException(ex.getMessage());
+        }
+        finally {
+            session.close();
         }
 
         logger.info("Inserting of entity {} ended successfully", entity);
@@ -49,6 +55,9 @@ public class UserDAO implements DAO<User, String>{
         User user;
         try(Session session = sessionFactory.openSession()){
             user = session.get(User.class, id);
+            if(user != null){
+                Hibernate.initialize(user.getCities());
+            }
         }
         catch (Exception ex){
             logger.error("Finding of entity with id {} went wrong", id);
@@ -64,7 +73,8 @@ public class UserDAO implements DAO<User, String>{
         logger.info("Start finding all entities");
         List<User> users;
         try(Session session = sessionFactory.openSession()){
-            users = session.createQuery("SELECT * FROM user", User.class).list();
+            users = session.createNativeQuery("SELECT * FROM user", User.class).list();
+            users.forEach(user -> {Hibernate.initialize(user.getCities());});
         }
         catch (Exception ex){
             logger.error("Something went wrong with finding all entities");
@@ -78,18 +88,22 @@ public class UserDAO implements DAO<User, String>{
     @Override
     public void update(User entity) {
         logger.info("Start updating entity: {}", entity);
-        Transaction transaction = null;
-        try(Session session = sessionFactory.openSession()){
-            transaction = session.beginTransaction();
+        Session session = sessionFactory.openSession();
+        Transaction transaction = session.getTransaction();
+        try{
+            transaction.begin();
             session.merge(entity);
             transaction.commit();
         }
         catch (Exception ex){
-            if(transaction != null){
+            if(transaction.getStatus() == TransactionStatus.ACTIVE || transaction.getStatus() == TransactionStatus.MARKED_ROLLBACK){
                 transaction.rollback();
             }
             logger.error("Updating of entity {} went wrong", entity);
             throw new DatabaseException(ex.getMessage());
+        }
+        finally {
+            session.close();
         }
         logger.info("Updating entity {} ended successfully", entity);
     }
@@ -97,19 +111,23 @@ public class UserDAO implements DAO<User, String>{
     @Override
     public void delete(String id) {
         logger.info("Start removing entity with id {}", id);
-        Transaction transaction = null;
-        try(Session session = sessionFactory.openSession()){
-            transaction = session.beginTransaction();
+        Session session = sessionFactory.openSession();
+        Transaction transaction = session.getTransaction();
+        try{
+            transaction.begin();
             User user = session.get(User.class, id);
             session.remove(user);
             transaction.commit();
         }
         catch (Exception ex){
-            if(transaction != null){
+            if(transaction.getStatus() == TransactionStatus.ACTIVE || transaction.getStatus() == TransactionStatus.MARKED_ROLLBACK){
                 transaction.rollback();
             }
             logger.error("Removing entity with id {} went wrong", id);
             throw new DatabaseException(ex.getMessage());
+        }
+        finally {
+            session.close();
         }
         logger.info("Removing entity with id {} ended successfully", id);
     }

@@ -12,7 +12,6 @@ import org.springframework.context.annotation.PropertySource;
 @PropertySource("classpath:application.properties")
 @Configuration
 @Getter
-
 public class AppConfig {                  // I use this class to have access to application.properties data
     @Value("${translation.url}")
     private String translationURL;
