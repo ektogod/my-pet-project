@@ -1,4 +1,4 @@
-package com.tinkoff_lab.services.database;
+package com.tinkoff_lab.service.database;
 
 import com.tinkoff_lab.dao.UserCityDAO;
 import com.tinkoff_lab.entity.City;
@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Set;
 
 @Service
 public class UserCityDatabaseService {
@@ -25,11 +26,11 @@ public class UserCityDatabaseService {
         dao.removeUserCity(user, city);
     }
 
-    public List<User> getUsers(City city) {
+    public Set<User> getUsers(City city) {
         return dao.getUsers(city);
     }
 
-    public List<City> getCities(User user) {
+    public Set<City> getCities(User user) {
         return dao.getCities(user);
     }
 }

@@ -8,6 +8,7 @@ import lombok.Setter;
 import org.testcontainers.shaded.org.checkerframework.checker.units.qual.C;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
@@ -26,8 +27,8 @@ public class User {
     @EqualsAndHashCode.Include
     private String name;
 
-    @ManyToMany(cascade = CascadeType.ALL)
-    private List<City> cities = new ArrayList<>();
+    @ManyToMany(fetch = FetchType.EAGER)
+    private Set<City> cities = new HashSet<>();
 
     public User(String email, String name) {
         this.email = email;

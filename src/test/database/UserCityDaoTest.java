@@ -5,9 +5,9 @@ import com.tinkoff_lab.entity.City;
 import com.tinkoff_lab.entity.CityPK;
 import com.tinkoff_lab.entity.User;
 import com.tinkoff_lab.exception.EntityNotFoundException;
-import com.tinkoff_lab.services.database.CityDatabaseService;
-import com.tinkoff_lab.services.database.UserCityDatabaseService;
-import com.tinkoff_lab.services.database.UserDatabaseService;
+import com.tinkoff_lab.service.database.CityDatabaseService;
+import com.tinkoff_lab.service.database.UserCityDatabaseService;
+import com.tinkoff_lab.service.database.UserDatabaseService;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
@@ -24,8 +24,10 @@ import org.testcontainers.containers.MySQLContainer;
 import org.testcontainers.junit.jupiter.Container;
 import org.testcontainers.junit.jupiter.Testcontainers;
 
+import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
+import java.util.Set;
 
 @Testcontainers
 @SpringBootTest(classes = TinkoffLabApplication.class)
@@ -108,7 +110,7 @@ public class UserCityDaoTest {
         User user = new User("ektogod@mail.ru", "ektogod");
         userDatabaseService.insert(user);
 
-        City city = new City(new CityPK("Minsk", "Belarus"), "latitude", "longitude");
+        City city = new City(new CityPK("Minsk", "Belarus"), 1.0, 1.0);
         cityDatabaseService.insert(city);
 
         userCityDatabaseService.addUserCity(user, city);
@@ -121,12 +123,12 @@ public class UserCityDaoTest {
     void testWithAddingNonExistentUserAndCity() {
         testWithInsertChecking();
         User user = new User("ektogod@mail.ru", "ektogod");
-        City city = new City(new CityPK("Minsk", "Belarus"), "latitude", "longitude");
+        City city = new City(new CityPK("Minsk", "Belarus"), 1.0, 1.0);
 
         User nonExistentUser = new User("kilogod@mail.ru", "kilogod");
         Assertions.assertThrows(EntityNotFoundException.class, () -> {userCityDatabaseService.addUserCity(nonExistentUser, city);});
 
-        City nonExistentCity = new City(new CityPK("Vitebsk", "Belarus"), "latitude", "longitude");
+        City nonExistentCity = new City(new CityPK("Vitebsk", "Belarus"), 1.0, 1.0);
         Assertions.assertThrows(EntityNotFoundException.class, () -> {userCityDatabaseService.addUserCity(user, nonExistentCity);});
     }
 
@@ -134,7 +136,7 @@ public class UserCityDaoTest {
     public void testWithDeleteChecking() {
         testWithInsertChecking();
         User user = new User("ektogod@mail.ru", "ektogod");
-        City city = new City(new CityPK("Minsk", "Belarus"), "latitude", "longitude");
+        City city = new City(new CityPK("Minsk", "Belarus"), 1.0, 1.0);
 
         userCityDatabaseService.removeUserCity(user, city);
         Assertions.assertFalse(city.getUsers().contains(user));
@@ -145,12 +147,12 @@ public class UserCityDaoTest {
     void testWithRemovingNonExistentUserAndCity() {
         testWithInsertChecking();
         User user = new User("ektogod@mail.ru", "ektogod");
-        City city = new City(new CityPK("Minsk", "Belarus"), "latitude", "longitude");
+        City city = new City(new CityPK("Minsk", "Belarus"), 1.0, 1.0);
 
         User nonExistentUser = new User("kilogod@mail.ru", "kilogod");
         Assertions.assertThrows(EntityNotFoundException.class, () -> {userCityDatabaseService.removeUserCity(nonExistentUser, city);});
 
-        City nonExistentCity = new City(new CityPK("Vitebsk", "Belarus"), "latitude", "longitude");
+        City nonExistentCity = new City(new CityPK("Vitebsk", "Belarus"), 1.0, 1.0);
         Assertions.assertThrows(EntityNotFoundException.class, () -> {userCityDatabaseService.removeUserCity(user, nonExistentCity);});
     }
 
@@ -159,22 +161,24 @@ public class UserCityDaoTest {
         User user = new User("ektogod@mail.ru", "ektogod");
         userDatabaseService.insert(user);
         List<City> cities = List.of(
-                new City(new CityPK("Brest", "Belarus"), "latitude", "longitude"),
-                new City(new CityPK("Gomel", "Belarus"), "latitude", "longitude"),
-                new City(new CityPK("Minsk", "Belarus"), "latitude", "longitude"),
-                new City(new CityPK("Vitebsk", "Belarus"), "latitude", "longitude"));
+                new City(new CityPK("Brest", "Belarus"), 1.0, 1.0),
+                new City(new CityPK("Gomel", "Belarus"), 1.0, 1.0),
+                new City(new CityPK("Minsk", "Belarus"), 1.0, 1.0),
+                new City(new CityPK("Vitebsk", "Belarus"), 1.0, 1.0));
         cities.forEach(cityDatabaseService::insert);
 
         for (int i = 0; i < cities.size(); i++) {
             userCityDatabaseService.addUserCity(user, cities.get(i));
         }
 
-        List<City> userCities = userCityDatabaseService.getCities(user);
-        Assertions.assertEquals(userCities.size(), cities.size());
-        userCities.sort(Comparator.comparing((city -> city.getPk().getCity())));
+        Set<City> citySet = userCityDatabaseService.getCities(user);
+        Assertions.assertEquals(citySet.size(), cities.size());
 
-        for (int i = 0; i < userCities.size(); i++) {
-            Assertions.assertEquals(cities.get(i), userCities.get(i));
+        List<City> cityList = new ArrayList<>(citySet);
+        cityList.sort(Comparator.comparing((city -> city.getPk().getCity())));
+
+        for (int i = 0; i < citySet.size(); i++) {
+            Assertions.assertEquals(cities.get(i), cityList.get(i));
         }
     }
 
@@ -187,18 +191,20 @@ public class UserCityDaoTest {
                 new User("etokto@mail.ru", "ektogod"));
         users.forEach(userDatabaseService::insert);
 
-        City city = new City(new CityPK("Minsk", "Belarus"), "latitude", "longitude");
+        City city = new City(new CityPK("Minsk", "Belarus"), 1.0, 1.0);
         cityDatabaseService.insert(city);
         for (User user : users) {
             userCityDatabaseService.addUserCity(user, city);
         }
 
-        List<User> cityUsers = userCityDatabaseService.getUsers(city);
-        Assertions.assertEquals(cityUsers.size(), users.size());
-        cityUsers.sort(Comparator.comparing((User::getEmail)));
+        Set<User> userSet = userCityDatabaseService.getUsers(city);
+        Assertions.assertEquals(userSet.size(), users.size());
 
-        for (int i = 0; i < cityUsers.size(); i++) {
-            Assertions.assertEquals(users.get(i), cityUsers.get(i));
+        List<User> userList = new ArrayList<>(userSet);
+        userList.sort(Comparator.comparing((User::getEmail)));
+
+        for (int i = 0; i < userSet.size(); i++) {
+            Assertions.assertEquals(users.get(i), userList.get(i));
         }
     }
 }

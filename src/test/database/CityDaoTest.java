@@ -4,7 +4,7 @@ import com.tinkoff_lab.TinkoffLabApplication;
 import com.tinkoff_lab.entity.City;
 import com.tinkoff_lab.entity.CityPK;
 import com.tinkoff_lab.exception.DatabaseException;
-import com.tinkoff_lab.services.database.CityDatabaseService;
+import com.tinkoff_lab.service.database.CityDatabaseService;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
@@ -77,7 +77,7 @@ public class CityDaoTest {
 
     @Test
     public void testWithInsertChecking() {
-        City city = new City(new CityPK("Minsk", "Belarus"), "latitude", "longitude");
+        City city = new City(new CityPK("Minsk", "Belarus"), 1.0, 1.0);
         databaseService.insert(city);
 
         String createSql = "SELECT * FROM city";
@@ -101,12 +101,12 @@ public class CityDaoTest {
         Assertions.assertEquals(cities.get(0), city);
 
         Assertions.assertThrows(DatabaseException.class, // trying to add duplicate
-                () -> databaseService.insert(new City(new CityPK("Minsk", "Belarus"), "latitude", "longitude")));
+                () -> databaseService.insert(new City(new CityPK("Minsk", "Belarus"), 1.0, 1.0)));
     }
 
     @Test
     public void testWithFindByIdChecking() {
-        City city = new City(new CityPK("Minsk", "Belarus"), "latitude", "longitude");
+        City city = new City(new CityPK("Minsk", "Belarus"), 1.0, 1.0);
         databaseService.insert(city);
         Assertions.assertEquals(city, databaseService.findByID(city.getPk()));
 
@@ -116,10 +116,10 @@ public class CityDaoTest {
     @Test
     public void testWithFindAllChecking() {
         List<City> cities = List.of(
-                new City(new CityPK("Brest", "Belarus"), "latitude", "longitude"),
-                new City(new CityPK("Gomel", "Belarus"), "latitude", "longitude"),
-                new City(new CityPK("Minsk", "Belarus"), "latitude", "longitude"),
-                new City(new CityPK("Vitebsk", "Belarus"), "latitude", "longitude"));
+                new City(new CityPK("Brest", "Belarus"), 1.0, 1.0),
+                new City(new CityPK("Gomel", "Belarus"), 1.0, 1.0),
+                new City(new CityPK("Minsk", "Belarus"), 1.0, 1.0),
+                new City(new CityPK("Vitebsk", "Belarus"), 1.0, 1.0));
         cities.forEach(databaseService::insert);
 
         List<City> dbCities = databaseService.findAll(); // order in returned list was different with "cities" order, so I decided to add cities by alphabet order and then sort them
@@ -133,17 +133,17 @@ public class CityDaoTest {
 
     @Test
     public void testWithUpdateChecking() {
-        City city = new City(new CityPK("Minsk", "Belarus"), "latitude", "longitude");
+        City city = new City(new CityPK("Minsk", "Belarus"), 1.0, 1.0);
         databaseService.update(city); // use update instead of insert to check what happens if we try to update non-existent note
 
-        City updatedCity = new City(new CityPK("Minsk", "Belarus"), "newLatitude", "newLongitude");
+        City updatedCity = new City(new CityPK("Minsk", "Belarus"), 2.0, 2.0);
         databaseService.update(updatedCity);
         Assertions.assertEquals(updatedCity, databaseService.findByID(city.getPk()));
     }
 
     @Test
     public void testWithDeleteChecking() {
-        City city = new City(new CityPK("Minsk", "Belarus"), "latitude", "longitude");
+        City city = new City(new CityPK("Minsk", "Belarus"), 1.0, 1.0);
         databaseService.insert(city);
 
         List<City> dbCities = databaseService.findAll();
@@ -154,6 +154,6 @@ public class CityDaoTest {
         Assertions.assertEquals(dbCities.size(), 0);
 
         Assertions.assertThrows(DatabaseException.class,
-                () -> databaseService.delete(new CityPK("wew", "ds")));// trying to delete non-existent note
+                () -> databaseService.delete(new CityPK("wew", "ds"))); // trying to delete non-existent note
     }
 }

@@ -1,6 +1,5 @@
 package com.tinkoff_lab;
 
-import com.tinkoff_lab.services.weather.CountryCodeService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;

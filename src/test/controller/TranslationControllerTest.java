@@ -6,8 +6,8 @@ import com.tinkoff_lab.dto.Translation;
 import com.tinkoff_lab.dto.requests.UserRequest;
 import com.tinkoff_lab.dto.responses.ErrorResponse;
 import com.tinkoff_lab.dto.responses.UserResponse;
-import com.tinkoff_lab.services.ConnectionService;
-import com.tinkoff_lab.services.database.TranslationDatabaseService;
+import com.tinkoff_lab.service.ConnectionService;
+import com.tinkoff_lab.service.database.TranslationDatabaseService;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -33,13 +33,13 @@ import java.sql.Statement;
 @AutoConfigureMockMvc
 @Testcontainers
 
-public class ControllerTest {
+public class TranslationControllerTest {
     private final MockMvc mockMvc;
     private final ConnectionService connectionService;
     private final TranslationDatabaseService databaseService;
 
     @Autowired
-    public ControllerTest(MockMvc mockMvc, ConnectionService connectionService, TranslationDatabaseService databaseService) {
+    public TranslationControllerTest(MockMvc mockMvc, ConnectionService connectionService, TranslationDatabaseService databaseService) {
         this.mockMvc = mockMvc;
         this.connectionService = connectionService;
         this.databaseService = databaseService;

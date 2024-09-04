@@ -3,7 +3,7 @@ package database;
 import com.tinkoff_lab.TinkoffLabApplication;
 import com.tinkoff_lab.entity.User;
 import com.tinkoff_lab.exception.DatabaseException;
-import com.tinkoff_lab.services.database.UserDatabaseService;
+import com.tinkoff_lab.service.database.UserDatabaseService;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;

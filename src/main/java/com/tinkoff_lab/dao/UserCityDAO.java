@@ -3,6 +3,7 @@ package com.tinkoff_lab.dao;
 import com.tinkoff_lab.entity.*;
 import com.tinkoff_lab.exception.DatabaseException;
 import com.tinkoff_lab.exception.EntityNotFoundException;
+import org.hibernate.Hibernate;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
@@ -13,6 +14,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
+import java.util.Set;
 
 @Component
 public class UserCityDAO {
@@ -41,10 +43,13 @@ public class UserCityDAO {
                 throw new EntityNotFoundException("City not found");
             }
 
+            Hibernate.initialize(user.getCities());
+            Hibernate.initialize(city.getUsers());
+
             transaction.begin();
-            user.getCities().add(city);
-            city.getUsers().add(user);
-            session.merge(user);
+            existingUser.getCities().add(city);
+            existingCity.getUsers().add(user);
+            session.merge(existingUser);
             transaction.commit();
         }
         catch (EntityNotFoundException ex){
@@ -81,6 +86,9 @@ public class UserCityDAO {
                 throw new EntityNotFoundException("City not found");
             }
 
+            Hibernate.initialize(user.getCities());
+            Hibernate.initialize(city.getUsers());
+
             transaction.begin();
             user.getCities().remove(city);
             city.getUsers().remove(user);
@@ -101,11 +109,11 @@ public class UserCityDAO {
         logger.info("Removing UserCity where User: {}, City: {} ended successfully", user, city);
     }
 
-    public List<User> getUsers(City city){
+    public Set<User> getUsers(City city){
         return city.getUsers();
     }
 
-    public List<City> getCities(User user){
+    public Set<City> getCities(User user){
         return user.getCities();
     }
 

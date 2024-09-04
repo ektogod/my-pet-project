@@ -30,4 +30,7 @@ public class AppConfig {                  // I use this class to have access to 
 
     @Value("${countryCoordinates.url}")
     private String countryCoordinatesUrl;
+
+    @Value("${currentWeather.url}")
+    private String currentWeatherUrl;
 }

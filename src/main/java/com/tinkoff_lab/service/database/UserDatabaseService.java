@@ -1,4 +1,4 @@
-package com.tinkoff_lab.services.database;
+package com.tinkoff_lab.service.database;
 
 import com.tinkoff_lab.dao.UserDAO;
 import com.tinkoff_lab.entity.User;

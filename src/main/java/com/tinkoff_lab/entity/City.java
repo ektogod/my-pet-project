@@ -6,6 +6,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
@@ -21,16 +22,16 @@ public class City {
 
     @Column(name = "latitude")
     @EqualsAndHashCode.Include
-    private String latitude;
+    private double latitude;
 
     @Column(name = "longitude")
     @EqualsAndHashCode.Include
-    private String longitude;
+    private double longitude;
 
-    @ManyToMany(mappedBy = "cities")
-    private List<User> users = new ArrayList<>();
+    @ManyToMany(mappedBy = "cities", fetch = FetchType.EAGER)
+    private Set<User> users = new HashSet<>();
 
-    public City(CityPK pk, String latitude, String longitude) {
+    public City(CityPK pk, double latitude, double longitude) {
         this.pk = pk;
         this.latitude = latitude;
         this.longitude = longitude;

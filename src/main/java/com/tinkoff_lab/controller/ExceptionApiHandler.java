@@ -1,10 +1,10 @@
-package com.tinkoff_lab.controllers;
+package com.tinkoff_lab.controller;
 
 import com.tinkoff_lab.dto.responses.ErrorResponse;
 import com.tinkoff_lab.exception.DatabaseConnectionException;
 import com.tinkoff_lab.exception.DatabaseException;
 import com.tinkoff_lab.exception.TranslationException;
-import com.tinkoff_lab.services.database.TranslationDatabaseService;
+import com.tinkoff_lab.service.database.TranslationDatabaseService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
