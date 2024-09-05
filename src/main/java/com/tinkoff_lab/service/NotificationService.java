@@ -27,7 +27,7 @@ public class NotificationService {
         this.emailSenderService = emailSenderService;
     }
 
-    @Scheduled(fixedRate = 18000000)
+    //@Scheduled(fixedRate = 18000000)
     public void notifySubscribers(){
         logger.info("Start notifying all subscribers");
         List<City> cities = cityDatabaseService.findAll();

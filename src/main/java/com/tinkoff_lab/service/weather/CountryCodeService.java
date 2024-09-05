@@ -29,7 +29,7 @@ public class CountryCodeService {
 
         if(code == null){
             logger.warn("Something wrong with country {}: code not defined.", country);
-            throw new WrongWeatherRequestException("Something wrong with country: code not defined.");
+            throw new WrongWeatherRequestException("Something wrong with country: code not defined");
         }
         logger.info("Country code definition for country {} ended successfully", country);
         return code;

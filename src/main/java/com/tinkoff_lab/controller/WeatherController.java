@@ -1,15 +1,17 @@
 package com.tinkoff_lab.controller;
 
 import com.tinkoff_lab.dto.weather.request.AddCityRequest;
-import com.tinkoff_lab.dto.weather.request.DeleteUserRequest;
+import com.tinkoff_lab.dto.weather.request.EmailRequest;
 import com.tinkoff_lab.dto.weather.request.WeatherRequest;
+import com.tinkoff_lab.entity.CityPK;
 import com.tinkoff_lab.service.weather.WeatherServiceImpl;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatusCode;
 import org.springframework.http.ResponseEntity;
-import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @RestController
 @RequestMapping("/ektogod/weather")
@@ -28,7 +30,7 @@ public class WeatherController {
     }
 
     @DeleteMapping("/unsubscribe")
-    public ResponseEntity<Void> unsubscribe(@RequestBody DeleteUserRequest request){
+    public ResponseEntity<Void> unsubscribe(@RequestBody EmailRequest request){
         weatherService.deleteUser(request);
         return new ResponseEntity<>(HttpStatusCode.valueOf(200));
     }
@@ -37,5 +39,11 @@ public class WeatherController {
     public ResponseEntity<Void> addCity(@RequestBody AddCityRequest request){
         weatherService.addCity(request);
         return new ResponseEntity<>(HttpStatusCode.valueOf(200));
+    }
+
+    @GetMapping("/get")
+    public ResponseEntity<List<CityPK>> getCities(@RequestBody EmailRequest request){
+        List<CityPK> cityPKS = weatherService.getCities(request);
+        return new ResponseEntity<>(cityPKS, HttpStatusCode.valueOf(200));
     }
 }

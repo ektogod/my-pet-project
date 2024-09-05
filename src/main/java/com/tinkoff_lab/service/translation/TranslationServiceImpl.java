@@ -29,11 +29,6 @@ public class TranslationServiceImpl implements TranslationService {
     private final TranslationUtils utils;
 
     @Autowired
-    private CityDatabaseService c;
-    @Autowired
-    private UserDatabaseService u;
-
-    @Autowired
     public TranslationServiceImpl(AppConfig appConfig, TranslationDatabaseService dao, TranslationUtils utils) {
         this.appConfig = appConfig;
         this.dao = dao;
@@ -44,10 +39,6 @@ public class TranslationServiceImpl implements TranslationService {
     public UserResponse translate(UserRequest request) {
         logger.info("Sending translation request: text = {} ", request.text());
         checkForNullParams(request);
-
-        User us = u.findByID("etokto@mail.ru");
-        City city = c.findByID(new CityPK("a", "a"));
-        city.getUsers().add(us);
 
         ResponseEntity<TranslateResponse> response = getResponse(request);
         logger.info("Request has received: text = {} ", request.text());

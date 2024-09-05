@@ -3,11 +3,11 @@ package com.tinkoff_lab.service.weather;
 import com.tinkoff_lab.dto.CityDTO;
 import com.tinkoff_lab.dto.Coordinates;
 import com.tinkoff_lab.dto.weather.request.AddCityRequest;
-import com.tinkoff_lab.dto.weather.request.DeleteUserRequest;
+import com.tinkoff_lab.dto.weather.request.EmailRequest;
 import com.tinkoff_lab.dto.weather.request.WeatherRequest;
 import com.tinkoff_lab.entity.*;
+import com.tinkoff_lab.exception.EntityNotFoundException;
 import com.tinkoff_lab.exception.WrongWeatherRequestException;
-import com.tinkoff_lab.service.CurrentWeatherService;
 import com.tinkoff_lab.service.database.CityDatabaseService;
 import com.tinkoff_lab.service.database.UserCityDatabaseService;
 import com.tinkoff_lab.service.database.UserDatabaseService;
@@ -58,12 +58,12 @@ public class WeatherServiceImpl implements WeatherService {
     }
 
     @Override
-    public void deleteUser(DeleteUserRequest request) {
-        logger.info("Start deleting user with email {}", request.email());
+    public void deleteUser(EmailRequest request) {
+        logger.info("Start deleting user with email {}", request);
         User user = userDatabaseService.findByID(request.email());
         if(user == null){
             logger.warn("Deleting user with email {} went wrong: user not found", request.email());
-            throw new WrongWeatherRequestException("User not found");
+            throw new EntityNotFoundException("User not found");
         }
         Set<City> cities = user.getCities();
         for(City city: cities){
@@ -79,7 +79,7 @@ public class WeatherServiceImpl implements WeatherService {
         User user = userDatabaseService.findByID(request.email());
         if(user == null){
             logger.warn("Deleting user with email {} went wrong: user not found", request.email());
-            throw new WrongWeatherRequestException("User not found");
+            throw new EntityNotFoundException("User not found");
         }
         for(CityDTO cityDTO: request.cities()){
             Coordinates crd = coordinateService.getCoordinates(cityDTO.city(), cityDTO.country()); // throws exception if something incorrect
@@ -90,5 +90,19 @@ public class WeatherServiceImpl implements WeatherService {
             userCityDatabaseService.addUserCity(user, city);
         }
         logger.info("Adding cities {} to user with email {} ended successfully", request.cities(), request.email());
+    }
+
+    @Override
+    public List<CityPK> getCities(EmailRequest request) {
+        logger.info("Start getting all cities for user with email {}", request.email());
+        User user = userDatabaseService.findByID(request.email());
+        if(user == null){
+            logger.warn("Getting all cities for user with email {} went wrong: user not found", request.email());
+            throw new EntityNotFoundException("User not found");
+        }
+
+        Set<City> cities = user.getCities();
+        logger.warn("Getting all cities for user with email {} ended successfully", request.email());
+        return cities.stream().map(City::getPk).toList();
     }
 }

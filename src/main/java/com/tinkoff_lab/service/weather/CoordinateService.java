@@ -34,7 +34,7 @@ public class CoordinateService {
         String url = String.format(config.getCountryCoordinatesUrl(), city, countryCode);
 
         String response = restTemplate.getForObject(url, String.class);
-        if (response != null && response.isEmpty()){
+        if (response != null && response.equals("[]")){
             logger.warn("Something wrong with location. Coordinates not defined for city {}, country {}", city, country);
             throw new WrongWeatherRequestException("Something wrong with location. Coordinates not defined");
         }
