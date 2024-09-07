@@ -1,6 +1,6 @@
 package com.tinkoff_lab.controller;
 
-import com.tinkoff_lab.dto.weather.request.AddCityRequest;
+import com.tinkoff_lab.dto.weather.request.EmailCitiesRequest;
 import com.tinkoff_lab.dto.weather.request.EmailRequest;
 import com.tinkoff_lab.dto.weather.request.WeatherRequest;
 import com.tinkoff_lab.entity.CityPK;
@@ -36,7 +36,7 @@ public class WeatherController {
     }
 
     @PutMapping("/add")
-    public ResponseEntity<Void> addCity(@RequestBody AddCityRequest request){
+    public ResponseEntity<Void> addCity(@RequestBody EmailCitiesRequest request){
         weatherService.addCity(request);
         return new ResponseEntity<>(HttpStatusCode.valueOf(200));
     }
@@ -45,5 +45,11 @@ public class WeatherController {
     public ResponseEntity<List<CityPK>> getCities(@RequestBody EmailRequest request){
         List<CityPK> cityPKS = weatherService.getCities(request);
         return new ResponseEntity<>(cityPKS, HttpStatusCode.valueOf(200));
+    }
+
+    @DeleteMapping("/delete")
+    public ResponseEntity<Void> deleteCities(@RequestBody EmailCitiesRequest request){
+        weatherService.deleteCities(request);
+        return new ResponseEntity<>(HttpStatusCode.valueOf(200));
     }
 }

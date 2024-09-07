@@ -3,45 +3,35 @@ package com.tinkoff_lab.dao;
 import com.tinkoff_lab.entity.City;
 import com.tinkoff_lab.entity.CityPK;
 import com.tinkoff_lab.exception.DatabaseException;
+import lombok.AccessLevel;
+import lombok.RequiredArgsConstructor;
+import lombok.experimental.FieldDefaults;
 import org.hibernate.Hibernate;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
-import org.hibernate.Transaction;
-import org.hibernate.resource.transaction.spi.TransactionStatus;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
 
 @Component
-public class CityDAO implements DAO<City, CityPK> {
-    private final SessionFactory sessionFactory;
-    private final Logger logger = LoggerFactory.getLogger(CityDAO.class);
+@RequiredArgsConstructor
+@FieldDefaults(level = AccessLevel.PRIVATE, makeFinal = true)
 
-    @Autowired
-    public CityDAO(SessionFactory sessionFactory) {
-        this.sessionFactory = sessionFactory;
-    }
+public class CityDAO implements DAO<City, CityPK> {
+    SessionFactory sessionFactory;
+    Logger logger = LoggerFactory.getLogger(CityDAO.class);
 
     @Override
     public CityPK insert(City entity) {
         logger.info("Start inserting entity: {}", entity);
-        Session session = sessionFactory.openSession();
-        Transaction transaction = session.getTransaction();
         try {
-            transaction.begin();
+            Session session = sessionFactory.getCurrentSession();
             session.persist(entity);
-            transaction.commit();
         } catch (Exception ex) {
-            if (transaction.getStatus() == TransactionStatus.ACTIVE || transaction.getStatus() == TransactionStatus.MARKED_ROLLBACK) {
-                transaction.rollback();
-            }
             logger.error("Inserting of entity {} went wrong", entity);
             throw new DatabaseException(ex.getMessage());
-        } finally {
-            session.close();
         }
 
         logger.info("Inserting of entity {} ended successfully", entity);
@@ -52,9 +42,10 @@ public class CityDAO implements DAO<City, CityPK> {
     public City findByID(CityPK id) {
         logger.info("Start finding entity with id {}", id);
         City city;
-        try (Session session = sessionFactory.openSession()) {
+        try {
+            Session session = sessionFactory.getCurrentSession();
             city = session.get(City.class, id);
-            if(city != null){
+            if (city != null) {
                 Hibernate.initialize(city.getUsers());
             }
         } catch (Exception ex) {
@@ -70,9 +61,12 @@ public class CityDAO implements DAO<City, CityPK> {
     public List<City> findAll() {
         logger.info("Start finding all entities");
         List<City> cities;
-        try (Session session = sessionFactory.openSession()) {
+        try {
+            Session session = sessionFactory.getCurrentSession();
             cities = session.createNativeQuery("SELECT * FROM city", City.class).list();
-            cities.forEach(city -> {Hibernate.initialize(city.getUsers());});
+            cities.forEach(city -> {
+                Hibernate.initialize(city.getUsers());
+            });
         } catch (Exception ex) {
             logger.error("Something went wrong with finding all entities");
             throw new DatabaseException(ex.getMessage());
@@ -85,43 +79,29 @@ public class CityDAO implements DAO<City, CityPK> {
     @Override
     public void update(City entity) {
         logger.info("Start updating entity: {}", entity);
-        Session session = sessionFactory.openSession();
-        Transaction transaction = session.getTransaction();
         try {
-            transaction.begin();
+            Session session = sessionFactory.getCurrentSession();
             session.merge(entity);
-            transaction.commit();
         } catch (Exception ex) {
-            if (transaction.getStatus() == TransactionStatus.ACTIVE || transaction.getStatus() == TransactionStatus.MARKED_ROLLBACK) {
-                transaction.rollback();
-            }
             logger.error("Updating of entity {} went wrong", entity);
             throw new DatabaseException(ex.getMessage());
-        } finally {
-            session.close();
         }
+
         logger.info("Updating entity {} ended successfully", entity);
     }
 
     @Override
     public void delete(CityPK id) {
         logger.info("Start removing entity with id {}", id);
-        Session session = sessionFactory.openSession();
-        Transaction transaction = session.getTransaction();
         try {
-            transaction.begin();
+            Session session = sessionFactory.getCurrentSession();
             City city = session.get(City.class, id);
             session.remove(city);
-            transaction.commit();
         } catch (Exception ex) {
-            if (transaction.getStatus() == TransactionStatus.ACTIVE || transaction.getStatus() == TransactionStatus.MARKED_ROLLBACK) {
-                transaction.rollback();
-            }
             logger.error("Removing entity with id {} went wrong", id);
             throw new DatabaseException(ex.getMessage());
-        } finally {
-            session.close();
         }
+
         logger.info("Removing entity with id {} ended successfully", id);
     }
 }

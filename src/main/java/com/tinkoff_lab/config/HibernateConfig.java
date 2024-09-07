@@ -7,6 +7,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
 import org.springframework.orm.hibernate5.LocalSessionFactoryBean;
+import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 import javax.sql.DataSource;
 import java.util.Properties;
@@ -14,6 +15,7 @@ import java.util.Properties;
 @Configuration
 @PropertySource("classpath:hibernate.properties")
 @ComponentScan
+@EnableTransactionManagement
 public class HibernateConfig {
     @Value("${hibernate.connection.driver_class}")
     private String driverClass;

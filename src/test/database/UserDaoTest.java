@@ -16,6 +16,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.DynamicPropertyRegistry;
 import org.springframework.test.context.DynamicPropertySource;
 import org.springframework.test.context.TestPropertySource;
+import org.springframework.transaction.annotation.Transactional;
 import org.testcontainers.containers.MySQLContainer;
 import org.testcontainers.junit.jupiter.Container;
 import org.testcontainers.junit.jupiter.Testcontainers;
@@ -26,6 +27,8 @@ import java.util.List;
 @Testcontainers
 @SpringBootTest(classes = TinkoffLabApplication.class)
 @TestPropertySource(locations = "classpath:hibernate.properties")
+@Transactional
+
 public class UserDaoTest {
     private final UserDatabaseService databaseService;
     private final SessionFactory sessionFactory;
@@ -76,21 +79,13 @@ public class UserDaoTest {
         User user = new User("ektogod@mail.ru", "ektogod");
         databaseService.insert(user);
 
+        Session session = sessionFactory.getCurrentSession();
+        session.flush(); // save changes
+
         String createSql = "SELECT * FROM user";
         List<User> users = null;
-        Session session = sessionFactory.openSession();
-        Transaction transaction = session.getTransaction();
-        try {
-            transaction.begin();
-            users = session.createNativeQuery(createSql, User.class).list(); // I use this query because I dont want to use another function from service in this method. I decided firstly ensure that at least one method works correct
-            transaction.commit();
-        } catch (Exception ex) {
-            if (transaction.getStatus() == TransactionStatus.ACTIVE || transaction.getStatus() == TransactionStatus.MARKED_ROLLBACK) {
-                transaction.rollback();
-            }
-        } finally {
-            session.close();
-        }
+
+        users = session.createNativeQuery(createSql, User.class).list(); // I use this query because I dont want to use another function from service in this method. I decided firstly ensure that at least one method works correct
 
         Assertions.assertNotNull(users);
         Assertions.assertEquals(users.size(), 1);
@@ -117,6 +112,7 @@ public class UserDaoTest {
                 new User("ektogod@mail.ru", "ektogod"),
                 new User("etokto@mail.ru", "ektogod"));
         users.forEach(databaseService::insert);
+        sessionFactory.getCurrentSession().flush();
 
         List<User> dbUsers = databaseService.findAll(); // order in returned list was differnet with "users" order, so I decided to add users by alphabet order and then sort them
         Assertions.assertEquals(users.size(), dbUsers.size());
@@ -141,11 +137,14 @@ public class UserDaoTest {
     public void testWithDeleteChecking() {
         User user = new User("ektogod@mail.ru", "ektogod");
         databaseService.insert(user);
+        sessionFactory.getCurrentSession().flush();
 
         List<User> dbUsers = databaseService.findAll();
         Assertions.assertEquals(dbUsers.size(), 1);
 
         databaseService.delete(user.getEmail());
+        sessionFactory.getCurrentSession().flush();
+
         dbUsers = databaseService.findAll();
         Assertions.assertEquals(dbUsers.size(), 0);
 

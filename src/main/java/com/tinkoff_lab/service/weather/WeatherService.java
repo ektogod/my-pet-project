@@ -1,6 +1,6 @@
 package com.tinkoff_lab.service.weather;
 
-import com.tinkoff_lab.dto.weather.request.AddCityRequest;
+import com.tinkoff_lab.dto.weather.request.EmailCitiesRequest;
 import com.tinkoff_lab.dto.weather.request.EmailRequest;
 import com.tinkoff_lab.dto.weather.request.WeatherRequest;
 import com.tinkoff_lab.entity.CityPK;
@@ -12,7 +12,9 @@ public interface WeatherService {
 
     void deleteUser(EmailRequest email);
 
-    void addCity(AddCityRequest request);
+    void addCity(EmailCitiesRequest request);
 
     List<CityPK> getCities(EmailRequest email);
+
+    void deleteCities(EmailCitiesRequest request);
 }

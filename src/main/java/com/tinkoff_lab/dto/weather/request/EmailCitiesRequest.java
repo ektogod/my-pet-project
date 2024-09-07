@@ -4,5 +4,5 @@ import com.tinkoff_lab.dto.CityDTO;
 
 import java.util.List;
 
-public record AddCityRequest(String email, List<CityDTO> cities) {
+public record EmailCitiesRequest(String email, List<CityDTO> cities) {
 }

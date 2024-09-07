@@ -17,6 +17,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.DynamicPropertyRegistry;
 import org.springframework.test.context.DynamicPropertySource;
 import org.springframework.test.context.TestPropertySource;
+import org.springframework.transaction.annotation.Transactional;
 import org.testcontainers.containers.MySQLContainer;
 import org.testcontainers.junit.jupiter.Container;
 import org.testcontainers.junit.jupiter.Testcontainers;
@@ -27,6 +28,8 @@ import java.util.List;
 @Testcontainers
 @SpringBootTest(classes = TinkoffLabApplication.class)
 @TestPropertySource(locations = "classpath:hibernate.properties")
+@Transactional
+
 public class CityDaoTest {
     private final CityDatabaseService databaseService;
     private final SessionFactory sessionFactory;
@@ -79,22 +82,13 @@ public class CityDaoTest {
     public void testWithInsertChecking() {
         City city = new City(new CityPK("Minsk", "Belarus"), 1.0, 1.0);
         databaseService.insert(city);
+        sessionFactory.getCurrentSession().flush();
 
         String createSql = "SELECT * FROM city";
         List<City> cities = null;
-        Session session = sessionFactory.openSession();
-        Transaction transaction = session.getTransaction();
-        try {
-            transaction.begin();
-            cities = session.createNativeQuery(createSql, City.class).list(); // I use this query because I dont want to use another function from service in this method. I decided firstly ensure that at least one method works correct
-            transaction.commit();
-        } catch (Exception ex) {
-            if (transaction.getStatus() == TransactionStatus.ACTIVE || transaction.getStatus() == TransactionStatus.MARKED_ROLLBACK) {
-                transaction.rollback();
-            }
-        } finally {
-            session.close();
-        }
+
+        Session session = sessionFactory.getCurrentSession();
+        cities = session.createNativeQuery(createSql, City.class).list(); // I use this query because I dont want to use another function from service in this method. I decided firstly ensure that at least one method works correct
 
         Assertions.assertNotNull(cities);
         Assertions.assertEquals(cities.size(), 1);
@@ -122,6 +116,8 @@ public class CityDaoTest {
                 new City(new CityPK("Vitebsk", "Belarus"), 1.0, 1.0));
         cities.forEach(databaseService::insert);
 
+        sessionFactory.getCurrentSession().flush();
+
         List<City> dbCities = databaseService.findAll(); // order in returned list was different with "cities" order, so I decided to add cities by alphabet order and then sort them
         Assertions.assertEquals(cities.size(), dbCities.size());
         dbCities.sort(Comparator.comparing(c -> c.getPk().getCity()));
@@ -146,10 +142,14 @@ public class CityDaoTest {
         City city = new City(new CityPK("Minsk", "Belarus"), 1.0, 1.0);
         databaseService.insert(city);
 
+        sessionFactory.getCurrentSession().flush();
+
         List<City> dbCities = databaseService.findAll();
         Assertions.assertEquals(dbCities.size(), 1);
 
         databaseService.delete(city.getPk());
+        sessionFactory.getCurrentSession().flush();
+
         dbCities = databaseService.findAll();
         Assertions.assertEquals(dbCities.size(), 0);
 

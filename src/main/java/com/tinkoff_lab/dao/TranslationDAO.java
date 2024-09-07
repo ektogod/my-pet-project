@@ -3,6 +3,9 @@ package com.tinkoff_lab.dao;
 import com.tinkoff_lab.dto.Translation;
 import com.tinkoff_lab.exception.DatabaseException;
 import com.tinkoff_lab.service.ConnectionService;
+import lombok.AccessLevel;
+import lombok.RequiredArgsConstructor;
+import lombok.experimental.FieldDefaults;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,14 +16,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Component
-public class TranslationDAO implements DAO<Translation, Integer> {            // class for saving records in database
-    private final ConnectionService connectionService;
-    private final Logger logger = LoggerFactory.getLogger(TranslationDAO.class);
+@RequiredArgsConstructor
+@FieldDefaults(level = AccessLevel.PRIVATE, makeFinal = true)
 
-    @Autowired
-    public TranslationDAO(ConnectionService connectionService) {
-        this.connectionService = connectionService;
-    }
+public class TranslationDAO implements DAO<Translation, Integer> {            // class for saving records in database
+    ConnectionService connectionService;
+    Logger logger = LoggerFactory.getLogger(TranslationDAO.class);
 
     @Override
     public Integer insert(Translation entity) {

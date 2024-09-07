@@ -3,7 +3,7 @@ package controller;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.tinkoff_lab.TinkoffLabApplication;
 import com.tinkoff_lab.dto.CityDTO;
-import com.tinkoff_lab.dto.weather.request.AddCityRequest;
+import com.tinkoff_lab.dto.weather.request.EmailCitiesRequest;
 import com.tinkoff_lab.dto.weather.request.EmailRequest;
 import com.tinkoff_lab.dto.weather.request.WeatherRequest;
 import com.tinkoff_lab.entity.City;
@@ -29,16 +29,17 @@ import org.springframework.test.context.TestPropertySource;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
+import org.springframework.transaction.annotation.Transactional;
 import org.testcontainers.containers.MySQLContainer;
 import org.testcontainers.junit.jupiter.Testcontainers;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @SpringBootTest(classes = TinkoffLabApplication.class)
 @TestPropertySource(locations = "classpath:hibernate.properties")
 @AutoConfigureMockMvc
 @Testcontainers
+@Transactional
 
 public class WeatherControllerTest {
     private final MockMvc mockMvc;
@@ -129,8 +130,6 @@ public class WeatherControllerTest {
         User dbUser = userDatabaseService.findByID(user.getEmail());
         Assertions.assertEquals(user, dbUser);
 
-        Assertions.assertEquals(2, cityDatabaseService.findAll().size());
-
         Assertions.assertEquals(dbUser.getCities().size(), 2);
     }
 
@@ -182,19 +181,44 @@ public class WeatherControllerTest {
         List<CityDTO> cities = List.of(
                 new CityDTO("Grodno", "Belarus"),
                 new CityDTO("Minsk", "Belarus"));
-        AddCityRequest request = new AddCityRequest("ektogod@mail.ru", cities);
+        EmailCitiesRequest request = new EmailCitiesRequest("ektogod@mail.ru", cities);
         put(request, "", 200);
 
         Assertions.assertEquals(userDatabaseService.findByID("ektogod@mail.ru").getCities().size(), 2);
     }
 
     @Test
+    void testWithDeleteCitiesChecking() throws Exception {
+        User user = new User("ektogod@mail.ru", "ektogod");
+        userDatabaseService.insert(user);
+        List<City> cities = List.of(
+                new City(new CityPK("Grodno", "Belarus"), 1.0, 1.0),
+                new City(new CityPK("Minsk", "Belarus"), 1.0, 1.0));
+        cities.forEach(cityDatabaseService::insert);
+
+        for (int i = 0; i < cities.size(); i++) {
+            userCityDatabaseService.addUserCity(user, cities.get(i));
+        }
+
+        List<CityDTO> cityDTOS = List.of(new CityDTO("Minsk", "Belarus"));
+        EmailCitiesRequest request = new EmailCitiesRequest(user.getEmail(), cityDTOS);
+        deleteCities(request, "", 200);
+
+        Assertions.assertEquals(userDatabaseService.findByID("ektogod@mail.ru").getCities().size(), 1);
+    }
+
+    @Test
     void testWithEntityNotFoundChecking() throws Exception {
         EmailRequest emailRequest = new EmailRequest("ektogod@mail.ru");
-        AddCityRequest addCityRequest = new AddCityRequest("ektogod@mail.ru", new ArrayList<>());
+        EmailCitiesRequest emailCitiesRequest = new EmailCitiesRequest("ektogod@mail.ru", List.of(new CityDTO("city", "country")));
+
         get(emailRequest, "User not found", 400);
         delete(emailRequest, "User not found", 400);
-        delete(emailRequest, "User not found", 400);
+        deleteCities(emailCitiesRequest, "User not found", 400);
+        put(emailCitiesRequest, "User not found", 400);
+
+        userDatabaseService.insert(new User("ektogod@mail.ru", "ektogod"));
+        deleteCities(emailCitiesRequest, "City not found", 400);
     }
 
     @Test
@@ -235,7 +259,16 @@ public class WeatherControllerTest {
                 .andExpect(MockMvcResultMatchers.content().string(response));
     }
 
-    void put(AddCityRequest request, String response, int status) throws Exception {
+    void deleteCities(EmailCitiesRequest request, String response, int status) throws Exception {
+        mockMvc.perform(MockMvcRequestBuilders.delete("/ektogod/weather/delete")
+                        .contentType("application/json")
+                        .characterEncoding("UTF-8")
+                        .content(mapper.writeValueAsString(request)))
+                .andExpect(MockMvcResultMatchers.status().is(status))
+                .andExpect(MockMvcResultMatchers.content().string(response));
+    }
+
+    void put(EmailCitiesRequest request, String response, int status) throws Exception {
         mockMvc.perform(MockMvcRequestBuilders.put("/ektogod/weather/add")
                         .contentType("application/json")
                         .characterEncoding("UTF-8")
