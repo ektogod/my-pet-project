@@ -1,7 +1,7 @@
 package database;
 
 import com.tinkoff_lab.TinkoffLabApplication;
-import com.tinkoff_lab.dto.Translation;
+import com.tinkoff_lab.dto.translation.Translation;
 import com.tinkoff_lab.exception.DatabaseException;
 import com.tinkoff_lab.service.ConnectionService;
 import com.tinkoff_lab.service.database.TranslationDatabaseService;

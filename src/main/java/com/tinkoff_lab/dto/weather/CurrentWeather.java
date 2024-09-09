@@ -1,4 +1,4 @@
-package com.tinkoff_lab;
+package com.tinkoff_lab.dto.weather;
 
 public record CurrentWeather(String city,
                              String country,

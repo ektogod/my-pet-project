@@ -28,9 +28,9 @@ public class AppConfig {                  // I use this class to have access to 
     @Value("${IP.url}")
     private String ipUrl;
 
-    @Value("${countryCoordinates.url}")
-    private String countryCoordinatesUrl;
+    @Value("${openWeather.url}")
+    private String openWeatherUrl;
 
-    @Value("${currentWeather.url}")
-    private String currentWeatherUrl;
+    @Value("${openWeather.key}")
+    private String openWeatherKey;
 }

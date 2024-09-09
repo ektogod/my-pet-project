@@ -2,10 +2,10 @@ package controller;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.tinkoff_lab.TinkoffLabApplication;
-import com.tinkoff_lab.dto.Translation;
-import com.tinkoff_lab.dto.requests.UserRequest;
-import com.tinkoff_lab.dto.responses.ErrorResponse;
-import com.tinkoff_lab.dto.responses.UserResponse;
+import com.tinkoff_lab.dto.translation.Translation;
+import com.tinkoff_lab.dto.translation.requests.UserRequest;
+import com.tinkoff_lab.dto.translation.responses.ErrorResponse;
+import com.tinkoff_lab.dto.translation.responses.UserResponse;
 import com.tinkoff_lab.service.ConnectionService;
 import com.tinkoff_lab.service.database.TranslationDatabaseService;
 import org.junit.jupiter.api.Assertions;

@@ -1,7 +1,7 @@
 package com.tinkoff_lab.utils;
 
 import com.tinkoff_lab.config.AppConfig;
-import com.tinkoff_lab.dto.responses.IPResponse;
+import com.tinkoff_lab.dto.translation.responses.IPResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;

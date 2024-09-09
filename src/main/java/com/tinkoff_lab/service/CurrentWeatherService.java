@@ -3,32 +3,30 @@ package com.tinkoff_lab.service;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.tinkoff_lab.CurrentWeather;
+import com.tinkoff_lab.dto.weather.CurrentWeather;
+import com.tinkoff_lab.client.WeatherClient;
 import com.tinkoff_lab.config.AppConfig;
 import com.tinkoff_lab.entity.City;
 import com.tinkoff_lab.entity.CityPK;
+import lombok.AccessLevel;
+import lombok.RequiredArgsConstructor;
+import lombok.experimental.FieldDefaults;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.web.client.RestTemplate;
 
 @Service
-public class CurrentWeatherService {
-    private final AppConfig appConfig;
-    private final Logger logger = LoggerFactory.getLogger(CurrentWeatherService.class);
+@RequiredArgsConstructor
+@FieldDefaults(makeFinal = true, level = AccessLevel.PRIVATE)
 
-    @Autowired
-    public CurrentWeatherService(AppConfig appConfig) {
-        this.appConfig = appConfig;
-    }
+public class CurrentWeatherService {
+    AppConfig appConfig;
+    Logger logger = LoggerFactory.getLogger(CurrentWeatherService.class);
+    WeatherClient client;
 
     public String getCurrentWeatherAsString(City city) {
         logger.info("Start getting current weather for city {}", city);
-        String url = String.format(appConfig.getCurrentWeatherUrl(), city.getLatitude(), city.getLongitude());
-
-        RestTemplate restTemplate = new RestTemplate();
-        String response = restTemplate.getForObject(url, String.class);
+        String response = client.getCurrentWeatherAsString(city.getLatitude(), city.getLongitude(), appConfig.getOpenWeatherKey());
         logger.info("Response from Weather API received");
 
         return parseResponse(response, city.getPk()).toString();

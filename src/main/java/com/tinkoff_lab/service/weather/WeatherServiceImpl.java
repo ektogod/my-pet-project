@@ -5,19 +5,18 @@ import com.tinkoff_lab.dao.UserCityDAO;
 import com.tinkoff_lab.dao.UserDAO;
 import com.tinkoff_lab.exception.EntityNotFoundException;
 import com.tinkoff_lab.exception.WrongWeatherRequestException;
-import com.tinkoff_lab.dto.CityDTO;
-import com.tinkoff_lab.dto.Coordinates;
+import com.tinkoff_lab.dto.weather.CityDTO;
+import com.tinkoff_lab.dto.weather.Coordinates;
 import com.tinkoff_lab.dto.weather.request.EmailCitiesRequest;
 import com.tinkoff_lab.dto.weather.request.EmailRequest;
 import com.tinkoff_lab.dto.weather.request.WeatherRequest;
 import com.tinkoff_lab.entity.City;
 import com.tinkoff_lab.entity.CityPK;
 import com.tinkoff_lab.entity.User;
-import com.tinkoff_lab.utils.CoordinatesUtils;
+import com.tinkoff_lab.CoordinatesDefiner;
 import lombok.AccessLevel;
 import lombok.RequiredArgsConstructor;
 import lombok.experimental.FieldDefaults;
-import org.hibernate.SessionFactory;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
@@ -37,6 +36,7 @@ public class WeatherServiceImpl implements WeatherService {
     CityDAO cityDAO;
     UserCityDAO userCityDAO;
     Logger logger = LoggerFactory.getLogger(WeatherServiceImpl.class);
+    CoordinatesDefiner definer;
 
     @Override
     public void add(WeatherRequest request) {
@@ -49,7 +49,7 @@ public class WeatherServiceImpl implements WeatherService {
 
         userDAO.insert(user);
         for (CityDTO cityDTO : request.cities()) {
-            Coordinates crd = CoordinatesUtils.getCoordinates(cityDTO.city(), cityDTO.country()); // throws exception if something incorrect
+            Coordinates crd = definer.getCoordinates(cityDTO.city(), cityDTO.country()); // throws exception if something incorrect
 
             CityPK pk = new CityPK(cityDTO.city(), cityDTO.country());
             City city = new City(pk, crd.latitude(), crd.longitude());
@@ -86,7 +86,7 @@ public class WeatherServiceImpl implements WeatherService {
             throw new EntityNotFoundException("User not found");
         }
         for (CityDTO cityDTO : request.cities()) {
-            Coordinates crd = CoordinatesUtils.getCoordinates(cityDTO.city(), cityDTO.country()); // throws exception if something incorrect
+            Coordinates crd = definer.getCoordinates(cityDTO.city(), cityDTO.country()); // throws exception if something incorrect
 
             CityPK pk = new CityPK(cityDTO.city(), cityDTO.country());
             City city = new City(pk, crd.latitude(), crd.longitude());

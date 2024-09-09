@@ -1,7 +1,7 @@
 package com.tinkoff_lab.service.database;
 
 import com.tinkoff_lab.dao.TranslationDAO;
-import com.tinkoff_lab.dto.Translation;
+import com.tinkoff_lab.dto.translation.Translation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

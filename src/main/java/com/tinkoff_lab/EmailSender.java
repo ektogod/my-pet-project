@@ -1,22 +1,21 @@
-package com.tinkoff_lab.service;
+package com.tinkoff_lab;
 
 import lombok.AccessLevel;
 import lombok.RequiredArgsConstructor;
 import lombok.experimental.FieldDefaults;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
-import org.springframework.stereotype.Service;
+import org.springframework.stereotype.Component;
 
-@Service
+@Component
 @RequiredArgsConstructor
 @FieldDefaults(level = AccessLevel.PRIVATE, makeFinal = true)
 
-public class EmailSenderService {
+public class EmailSender {
     JavaMailSender mailSender;
-    Logger logger = LoggerFactory.getLogger(EmailSenderService.class);
+    Logger logger = LoggerFactory.getLogger(EmailSender.class);
 
     public void sendEmails(String email, String text) {
         try {

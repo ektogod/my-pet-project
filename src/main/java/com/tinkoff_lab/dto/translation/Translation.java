@@ -1,4 +1,4 @@
-package com.tinkoff_lab.dto;
+package com.tinkoff_lab.dto.translation;
 
 public record Translation(Integer id,   //// record for saving info about database records
                           String ip,

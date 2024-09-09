@@ -1,6 +1,6 @@
 package com.tinkoff_lab.dto.weather.request;
 
-import com.tinkoff_lab.dto.CityDTO;
+import com.tinkoff_lab.dto.weather.CityDTO;
 import jakarta.validation.constraints.Email;
 
 import java.util.List;

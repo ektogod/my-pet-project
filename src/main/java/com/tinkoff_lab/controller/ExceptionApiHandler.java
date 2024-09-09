@@ -1,6 +1,6 @@
 package com.tinkoff_lab.controller;
 
-import com.tinkoff_lab.dto.responses.ErrorResponse;
+import com.tinkoff_lab.dto.translation.responses.ErrorResponse;
 import com.tinkoff_lab.exception.*;
 import com.tinkoff_lab.service.database.TranslationDatabaseService;
 import org.springframework.beans.factory.annotation.Autowired;

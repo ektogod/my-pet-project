@@ -1,5 +1,6 @@
 package com.tinkoff_lab.service;
 
+import com.tinkoff_lab.EmailSender;
 import com.tinkoff_lab.entity.City;
 import com.tinkoff_lab.entity.User;
 import com.tinkoff_lab.service.database.CityDatabaseService;
@@ -8,9 +9,10 @@ import lombok.RequiredArgsConstructor;
 import lombok.experimental.FieldDefaults;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.EnableScheduling;
+import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
@@ -22,11 +24,12 @@ import java.util.List;
 public class NotificationService {
     CityDatabaseService cityDatabaseService;
     CurrentWeatherService curWeatherService;
-    EmailSenderService emailSenderService;
+    EmailSender emailSender;
     Logger logger = LoggerFactory.getLogger(NotificationService.class);
 
 
-    //@Scheduled(fixedRate = 18000000)
+    @Scheduled(fixedRate = 18000000)
+    @Transactional
     public void notifySubscribers() {
         logger.info("Start notifying all subscribers");
         List<City> cities = cityDatabaseService.findAll();
@@ -34,7 +37,7 @@ public class NotificationService {
             logger.info("Handling city {}", city);
             String curWeather = curWeatherService.getCurrentWeatherAsString(city);
             for (User user : city.getUsers()) {
-                emailSenderService.sendEmails(user.getEmail(), curWeather);
+                emailSender.sendEmails(user.getEmail(), curWeather);
             }
         }
         logger.info("All users were notified");

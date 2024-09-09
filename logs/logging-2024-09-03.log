@@ -1,0 +1,114 @@
+2024-09-03 01:21:07 INFO  c.tinkoff_lab.TinkoffLabApplication - Application has terminated working
+
+2024-09-03 01:21:21 INFO  c.tinkoff_lab.TinkoffLabApplication - Application has started working
+2024-09-03 01:21:22 INFO  c.tinkoff_lab.TinkoffLabApplication - Starting TinkoffLabApplication using Java 21.0.1 with PID 21620 (C:\Users\Nikita\IdeaProjects\pet-project\target\classes started by Nikita in C:\Users\Nikita\IdeaProjects\pet-project)
+2024-09-03 01:21:22 INFO  c.tinkoff_lab.TinkoffLabApplication - No active profile set, falling back to 1 default profile: "default"
+2024-09-03 01:21:27 INFO  c.tinkoff_lab.TinkoffLabApplication - Started TinkoffLabApplication in 6.132 seconds (process running for 7.245)
+2024-09-03 01:21:27 INFO  com.tinkoff_lab.dao.CityDAO - Start finding all entities
+2024-09-03 01:21:28 INFO  com.tinkoff_lab.dao.CityDAO - Finding ended successfully
+2024-09-03 01:22:07 INFO  c.tinkoff_lab.TinkoffLabApplication - Application has terminated working
+
+2024-09-03 01:22:42 INFO  c.tinkoff_lab.TinkoffLabApplication - Application has started working
+2024-09-03 01:22:42 INFO  c.tinkoff_lab.TinkoffLabApplication - Starting TinkoffLabApplication using Java 21.0.1 with PID 19016 (C:\Users\Nikita\IdeaProjects\pet-project\target\classes started by Nikita in C:\Users\Nikita\IdeaProjects\pet-project)
+2024-09-03 01:22:42 INFO  c.tinkoff_lab.TinkoffLabApplication - No active profile set, falling back to 1 default profile: "default"
+2024-09-03 01:22:48 INFO  c.tinkoff_lab.TinkoffLabApplication - Started TinkoffLabApplication in 5.982 seconds (process running for 7.182)
+2024-09-03 01:22:48 INFO  com.tinkoff_lab.dao.CityDAO - Start finding all entities
+2024-09-03 01:22:48 INFO  com.tinkoff_lab.dao.CityDAO - Finding ended successfully
+2024-09-03 01:23:07 INFO  c.tinkoff_lab.TinkoffLabApplication - Application has terminated working
+
+2024-09-03 01:23:14 INFO  c.tinkoff_lab.TinkoffLabApplication - Application has started working
+2024-09-03 01:23:15 INFO  c.tinkoff_lab.TinkoffLabApplication - Starting TinkoffLabApplication using Java 21.0.1 with PID 19980 (C:\Users\Nikita\IdeaProjects\pet-project\target\classes started by Nikita in C:\Users\Nikita\IdeaProjects\pet-project)
+2024-09-03 01:23:15 INFO  c.tinkoff_lab.TinkoffLabApplication - No active profile set, falling back to 1 default profile: "default"
+2024-09-03 01:23:20 INFO  c.tinkoff_lab.TinkoffLabApplication - Started TinkoffLabApplication in 5.533 seconds (process running for 6.481)
+2024-09-03 01:23:20 INFO  com.tinkoff_lab.dao.CityDAO - Start finding all entities
+2024-09-03 01:23:20 INFO  com.tinkoff_lab.dao.CityDAO - Finding ended successfully
+2024-09-03 01:23:54 INFO  c.tinkoff_lab.TinkoffLabApplication - Application has terminated working
+
+2024-09-03 01:24:04 INFO  c.tinkoff_lab.TinkoffLabApplication - Application has started working
+2024-09-03 01:24:04 INFO  c.tinkoff_lab.TinkoffLabApplication - Starting TinkoffLabApplication using Java 21.0.1 with PID 6492 (C:\Users\Nikita\IdeaProjects\pet-project\target\classes started by Nikita in C:\Users\Nikita\IdeaProjects\pet-project)
+2024-09-03 01:24:04 INFO  c.tinkoff_lab.TinkoffLabApplication - No active profile set, falling back to 1 default profile: "default"
+2024-09-03 01:24:09 INFO  c.tinkoff_lab.TinkoffLabApplication - Started TinkoffLabApplication in 5.801 seconds (process running for 6.711)
+2024-09-03 01:24:09 INFO  com.tinkoff_lab.dao.CityDAO - Start finding all entities
+2024-09-03 01:24:10 INFO  com.tinkoff_lab.dao.CityDAO - Finding ended successfully
+2024-09-03 01:25:40 INFO  c.tinkoff_lab.TinkoffLabApplication - Application has terminated working
+
+2024-09-03 01:25:46 INFO  c.tinkoff_lab.TinkoffLabApplication - Application has started working
+2024-09-03 01:25:47 INFO  c.tinkoff_lab.TinkoffLabApplication - Starting TinkoffLabApplication using Java 21.0.1 with PID 23384 (C:\Users\Nikita\IdeaProjects\pet-project\target\classes started by Nikita in C:\Users\Nikita\IdeaProjects\pet-project)
+2024-09-03 01:25:47 INFO  c.tinkoff_lab.TinkoffLabApplication - No active profile set, falling back to 1 default profile: "default"
+2024-09-03 01:25:52 INFO  c.tinkoff_lab.TinkoffLabApplication - Started TinkoffLabApplication in 5.311 seconds (process running for 6.027)
+2024-09-03 01:25:52 INFO  com.tinkoff_lab.dao.CityDAO - Start finding all entities
+2024-09-03 01:25:52 INFO  com.tinkoff_lab.dao.CityDAO - Finding ended successfully
+2024-09-03 01:25:56 INFO  com.tinkoff_lab.dao.UserDAO - Start finding entity with id ektogod@mail.ru
+2024-09-03 01:25:56 INFO  com.tinkoff_lab.dao.UserDAO - Finding of entity with id ektogod@mail.ru ended successfully
+2024-09-03 01:26:03 INFO  c.tinkoff_lab.TinkoffLabApplication - Application has terminated working
+
+2024-09-03 01:26:06 INFO  c.tinkoff_lab.TinkoffLabApplication - Application has started working
+2024-09-03 01:26:07 INFO  c.tinkoff_lab.TinkoffLabApplication - Starting TinkoffLabApplication using Java 21.0.1 with PID 4528 (C:\Users\Nikita\IdeaProjects\pet-project\target\classes started by Nikita in C:\Users\Nikita\IdeaProjects\pet-project)
+2024-09-03 01:26:07 INFO  c.tinkoff_lab.TinkoffLabApplication - No active profile set, falling back to 1 default profile: "default"
+2024-09-03 01:26:13 INFO  c.tinkoff_lab.TinkoffLabApplication - Started TinkoffLabApplication in 6.434 seconds (process running for 7.522)
+2024-09-03 01:26:13 INFO  com.tinkoff_lab.dao.CityDAO - Start finding all entities
+2024-09-03 01:26:13 INFO  com.tinkoff_lab.dao.CityDAO - Finding ended successfully
+2024-09-03 01:26:18 INFO  com.tinkoff_lab.dao.UserDAO - Start finding entity with id ektogod@mail.ru
+2024-09-03 01:26:18 INFO  com.tinkoff_lab.dao.UserDAO - Finding of entity with id ektogod@mail.ru ended successfully
+2024-09-03 01:27:21 INFO  c.tinkoff_lab.TinkoffLabApplication - Application has terminated working
+
+2024-09-03 01:27:40 INFO  c.tinkoff_lab.TinkoffLabApplication - Application has started working
+2024-09-03 01:27:40 INFO  c.tinkoff_lab.TinkoffLabApplication - Starting TinkoffLabApplication using Java 21.0.1 with PID 19452 (C:\Users\Nikita\IdeaProjects\pet-project\target\classes started by Nikita in C:\Users\Nikita\IdeaProjects\pet-project)
+2024-09-03 01:27:40 INFO  c.tinkoff_lab.TinkoffLabApplication - No active profile set, falling back to 1 default profile: "default"
+2024-09-03 01:27:46 INFO  c.tinkoff_lab.TinkoffLabApplication - Started TinkoffLabApplication in 5.949 seconds (process running for 6.883)
+2024-09-03 01:27:46 INFO  com.tinkoff_lab.dao.CityDAO - Start finding all entities
+2024-09-03 01:27:46 INFO  com.tinkoff_lab.dao.CityDAO - Finding ended successfully
+2024-09-03 01:27:54 INFO  com.tinkoff_lab.dao.UserDAO - Start finding entity with id ektogod@mail.ru
+2024-09-03 01:27:55 INFO  com.tinkoff_lab.dao.UserDAO - Finding of entity with id ektogod@mail.ru ended successfully
+2024-09-03 01:28:01 INFO  c.tinkoff_lab.TinkoffLabApplication - Application has terminated working
+
+2024-09-03 01:28:27 INFO  c.tinkoff_lab.TinkoffLabApplication - Application has started working
+2024-09-03 01:28:28 INFO  c.tinkoff_lab.TinkoffLabApplication - Starting TinkoffLabApplication using Java 21.0.1 with PID 12948 (C:\Users\Nikita\IdeaProjects\pet-project\target\classes started by Nikita in C:\Users\Nikita\IdeaProjects\pet-project)
+2024-09-03 01:28:28 INFO  c.tinkoff_lab.TinkoffLabApplication - No active profile set, falling back to 1 default profile: "default"
+2024-09-03 01:28:33 INFO  c.tinkoff_lab.TinkoffLabApplication - Started TinkoffLabApplication in 5.814 seconds (process running for 6.75)
+2024-09-03 01:28:33 INFO  com.tinkoff_lab.dao.CityDAO - Start finding all entities
+2024-09-03 01:28:34 INFO  com.tinkoff_lab.dao.CityDAO - Finding ended successfully
+2024-09-03 01:28:42 INFO  com.tinkoff_lab.dao.UserDAO - Start finding entity with id ektogod@mail.ru
+2024-09-03 01:28:42 INFO  com.tinkoff_lab.dao.UserDAO - Finding of entity with id ektogod@mail.ru ended successfully
+2024-09-03 01:29:13 INFO  c.tinkoff_lab.TinkoffLabApplication - Application has terminated working
+
+2024-09-03 01:29:20 INFO  c.tinkoff_lab.TinkoffLabApplication - Application has started working
+2024-09-03 01:29:21 INFO  c.tinkoff_lab.TinkoffLabApplication - Starting TinkoffLabApplication using Java 21.0.1 with PID 20808 (C:\Users\Nikita\IdeaProjects\pet-project\target\classes started by Nikita in C:\Users\Nikita\IdeaProjects\pet-project)
+2024-09-03 01:29:21 INFO  c.tinkoff_lab.TinkoffLabApplication - No active profile set, falling back to 1 default profile: "default"
+2024-09-03 01:29:26 INFO  c.tinkoff_lab.TinkoffLabApplication - Started TinkoffLabApplication in 5.788 seconds (process running for 6.653)
+2024-09-03 01:29:26 INFO  com.tinkoff_lab.dao.CityDAO - Start finding all entities
+2024-09-03 01:29:27 INFO  com.tinkoff_lab.dao.CityDAO - Finding ended successfully
+2024-09-03 01:29:49 INFO  com.tinkoff_lab.dao.UserDAO - Start finding entity with id ektogod@mail.ru
+2024-09-03 01:29:49 INFO  com.tinkoff_lab.dao.UserDAO - Finding of entity with id ektogod@mail.ru ended successfully
+2024-09-03 01:30:29 INFO  c.tinkoff_lab.TinkoffLabApplication - Application has terminated working
+
+2024-09-03 01:30:39 INFO  c.tinkoff_lab.TinkoffLabApplication - Application has started working
+2024-09-03 01:30:39 INFO  c.tinkoff_lab.TinkoffLabApplication - Starting TinkoffLabApplication using Java 21.0.1 with PID 19112 (C:\Users\Nikita\IdeaProjects\pet-project\target\classes started by Nikita in C:\Users\Nikita\IdeaProjects\pet-project)
+2024-09-03 01:30:39 INFO  c.tinkoff_lab.TinkoffLabApplication - No active profile set, falling back to 1 default profile: "default"
+2024-09-03 01:30:45 INFO  c.tinkoff_lab.TinkoffLabApplication - Started TinkoffLabApplication in 5.834 seconds (process running for 6.794)
+2024-09-03 01:30:45 INFO  com.tinkoff_lab.dao.CityDAO - Start finding all entities
+2024-09-03 01:30:45 INFO  com.tinkoff_lab.dao.CityDAO - Finding ended successfully
+2024-09-03 01:30:53 INFO  com.tinkoff_lab.dao.UserDAO - Start finding entity with id ektogod@mail.ru
+2024-09-03 01:30:54 INFO  com.tinkoff_lab.dao.UserDAO - Finding of entity with id ektogod@mail.ru ended successfully
+2024-09-03 01:31:36 INFO  c.tinkoff_lab.TinkoffLabApplication - Application has terminated working
+
+2024-09-03 01:31:45 INFO  c.tinkoff_lab.TinkoffLabApplication - Application has started working
+2024-09-03 01:31:46 INFO  c.tinkoff_lab.TinkoffLabApplication - Starting TinkoffLabApplication using Java 21.0.1 with PID 18684 (C:\Users\Nikita\IdeaProjects\pet-project\target\classes started by Nikita in C:\Users\Nikita\IdeaProjects\pet-project)
+2024-09-03 01:31:46 INFO  c.tinkoff_lab.TinkoffLabApplication - No active profile set, falling back to 1 default profile: "default"
+2024-09-03 01:31:51 INFO  c.tinkoff_lab.TinkoffLabApplication - Started TinkoffLabApplication in 6.124 seconds (process running for 7.098)
+2024-09-03 01:31:52 INFO  com.tinkoff_lab.dao.CityDAO - Start finding all entities
+2024-09-03 01:31:52 INFO  com.tinkoff_lab.dao.CityDAO - Finding ended successfully
+2024-09-03 01:31:55 INFO  com.tinkoff_lab.dao.UserDAO - Start finding entity with id ektogod@mail.ru
+2024-09-03 01:31:55 INFO  com.tinkoff_lab.dao.UserDAO - Finding of entity with id ektogod@mail.ru ended successfully
+2024-09-03 01:32:03 INFO  c.tinkoff_lab.TinkoffLabApplication - Application has terminated working
+
+2024-09-03 01:32:24 INFO  c.tinkoff_lab.TinkoffLabApplication - Application has started working
+2024-09-03 01:32:25 INFO  c.tinkoff_lab.TinkoffLabApplication - Starting TinkoffLabApplication using Java 21.0.1 with PID 18680 (C:\Users\Nikita\IdeaProjects\pet-project\target\classes started by Nikita in C:\Users\Nikita\IdeaProjects\pet-project)
+2024-09-03 01:32:25 INFO  c.tinkoff_lab.TinkoffLabApplication - No active profile set, falling back to 1 default profile: "default"
+2024-09-03 01:32:30 INFO  c.tinkoff_lab.TinkoffLabApplication - Started TinkoffLabApplication in 5.598 seconds (process running for 6.506)
+2024-09-03 01:32:30 INFO  com.tinkoff_lab.dao.CityDAO - Start finding all entities
+2024-09-03 01:32:30 INFO  com.tinkoff_lab.dao.CityDAO - Finding ended successfully
+2024-09-03 01:32:38 INFO  com.tinkoff_lab.dao.UserDAO - Start finding entity with id ektogod@mail.ru
+2024-09-03 01:32:38 INFO  com.tinkoff_lab.dao.UserDAO - Finding of entity with id ektogod@mail.ru ended successfully
+2024-09-03 01:33:01 INFO  c.tinkoff_lab.TinkoffLabApplication - Application has terminated working
+

@@ -2,7 +2,7 @@ package controller;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.tinkoff_lab.TinkoffLabApplication;
-import com.tinkoff_lab.dto.CityDTO;
+import com.tinkoff_lab.dto.weather.CityDTO;
 import com.tinkoff_lab.dto.weather.request.EmailCitiesRequest;
 import com.tinkoff_lab.dto.weather.request.EmailRequest;
 import com.tinkoff_lab.dto.weather.request.WeatherRequest;

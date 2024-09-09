@@ -1,6 +1,6 @@
 package com.tinkoff_lab.dao;
 
-import com.tinkoff_lab.dto.Translation;
+import com.tinkoff_lab.dto.translation.Translation;
 import com.tinkoff_lab.exception.DatabaseException;
 import com.tinkoff_lab.service.ConnectionService;
 import lombok.AccessLevel;
@@ -8,7 +8,6 @@ import lombok.RequiredArgsConstructor;
 import lombok.experimental.FieldDefaults;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import java.sql.*;
