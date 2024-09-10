@@ -1,4 +1,4 @@
-package com.tinkoff_lab;
+package com.tinkoff_lab.external;
 
 import com.tinkoff_lab.client.CoordinateClient;
 import com.tinkoff_lab.config.AppConfig;

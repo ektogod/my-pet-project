@@ -1,4 +1,4 @@
-package com.tinkoff_lab.service;
+package com.tinkoff_lab.service.database;
 
 
 import com.tinkoff_lab.config.AppConfig;

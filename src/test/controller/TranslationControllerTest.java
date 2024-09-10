@@ -6,7 +6,7 @@ import com.tinkoff_lab.dto.translation.Translation;
 import com.tinkoff_lab.dto.translation.requests.UserRequest;
 import com.tinkoff_lab.dto.translation.responses.ErrorResponse;
 import com.tinkoff_lab.dto.translation.responses.UserResponse;
-import com.tinkoff_lab.service.ConnectionService;
+import com.tinkoff_lab.service.database.ConnectionService;
 import com.tinkoff_lab.service.database.TranslationDatabaseService;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;

@@ -1,4 +1,4 @@
-package com.tinkoff_lab.service;
+package com.tinkoff_lab.external;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonNode;
@@ -13,15 +13,15 @@ import lombok.RequiredArgsConstructor;
 import lombok.experimental.FieldDefaults;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.stereotype.Service;
+import org.springframework.stereotype.Component;
 
-@Service
+@Component
 @RequiredArgsConstructor
 @FieldDefaults(makeFinal = true, level = AccessLevel.PRIVATE)
 
-public class CurrentWeatherService {
+public class CurrentWeatherDefiner {
     AppConfig appConfig;
-    Logger logger = LoggerFactory.getLogger(CurrentWeatherService.class);
+    Logger logger = LoggerFactory.getLogger(CurrentWeatherDefiner.class);
     WeatherClient client;
 
     public String getCurrentWeatherAsString(City city) {

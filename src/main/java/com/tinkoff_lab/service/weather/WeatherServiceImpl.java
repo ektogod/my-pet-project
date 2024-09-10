@@ -13,7 +13,7 @@ import com.tinkoff_lab.dto.weather.request.WeatherRequest;
 import com.tinkoff_lab.entity.City;
 import com.tinkoff_lab.entity.CityPK;
 import com.tinkoff_lab.entity.User;
-import com.tinkoff_lab.CoordinatesDefiner;
+import com.tinkoff_lab.external.CoordinatesDefiner;
 import lombok.AccessLevel;
 import lombok.RequiredArgsConstructor;
 import lombok.experimental.FieldDefaults;

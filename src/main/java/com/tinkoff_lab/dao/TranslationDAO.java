@@ -2,7 +2,7 @@ package com.tinkoff_lab.dao;
 
 import com.tinkoff_lab.dto.translation.Translation;
 import com.tinkoff_lab.exception.DatabaseException;
-import com.tinkoff_lab.service.ConnectionService;
+import com.tinkoff_lab.service.database.ConnectionService;
 import lombok.AccessLevel;
 import lombok.RequiredArgsConstructor;
 import lombok.experimental.FieldDefaults;

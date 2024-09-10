@@ -1,6 +1,8 @@
 package com.tinkoff_lab.config;
 
 import com.tinkoff_lab.client.CoordinateClient;
+import com.tinkoff_lab.client.IPClient;
+import com.tinkoff_lab.client.TranslationClient;
 import com.tinkoff_lab.client.WeatherClient;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
@@ -40,5 +42,31 @@ public class RestConfig {
                 .build();
 
         return factory.createClient(WeatherClient.class);
+    }
+
+    @Bean
+    public TranslationClient translationRestTemplate() {
+        RestClient restClient = RestClient.builder()
+                .baseUrl(config.getTranslationURL())
+                .build();
+
+        HttpServiceProxyFactory factory = HttpServiceProxyFactory
+                .builderFor(RestClientAdapter.create(restClient))
+                .build();
+
+        return factory.createClient(TranslationClient.class);
+    }
+
+    @Bean
+    public IPClient IpRestTemplate() {
+        RestClient restClient = RestClient.builder()
+                .baseUrl(config.getIpUrl())
+                .build();
+
+        HttpServiceProxyFactory factory = HttpServiceProxyFactory
+                .builderFor(RestClientAdapter.create(restClient))
+                .build();
+
+        return factory.createClient(IPClient.class);
     }
 }
