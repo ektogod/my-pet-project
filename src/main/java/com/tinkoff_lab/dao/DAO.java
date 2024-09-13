@@ -9,7 +9,7 @@ public interface DAO<T, ID> {      // I decided its a good idea creating an inte
 
     List<T> findAll();
 
-    void update(ID id, T entity);
+    void update(T entity);
 
     void delete(ID id);
 

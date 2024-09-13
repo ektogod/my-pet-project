@@ -1,0 +1,1017 @@
+2024-09-05 00:02:21 INFO  c.tinkoff_lab.TinkoffLabApplication - Application has terminated working
+
+2024-09-05 00:03:51 INFO  c.tinkoff_lab.TinkoffLabApplication - Application has started working
+2024-09-05 00:03:52 INFO  c.tinkoff_lab.TinkoffLabApplication - Starting TinkoffLabApplication using Java 21.0.1 with PID 24736 (C:\Users\Nikita\IdeaProjects\pet-project\target\classes started by Nikita in C:\Users\Nikita\IdeaProjects\pet-project)
+2024-09-05 00:03:52 INFO  c.tinkoff_lab.TinkoffLabApplication - No active profile set, falling back to 1 default profile: "default"
+2024-09-05 00:03:57 INFO  c.tinkoff_lab.TinkoffLabApplication - Started TinkoffLabApplication in 5.926 seconds (process running for 6.762)
+2024-09-05 00:03:59 INFO  com.tinkoff_lab.dao.UserDAO - Start finding entity with id ektogod@gmail.com
+2024-09-05 00:03:59 INFO  com.tinkoff_lab.dao.UserDAO - Finding of entity with id ektogod@gmail.com ended successfully
+2024-09-05 00:28:52 INFO  c.tinkoff_lab.TinkoffLabApplication - Application has terminated working
+
+2024-09-05 00:50:32 INFO  c.t.controller.TranslationController - Request from user has received: UserRequest[text=null, originalLanguage=ru, finalLanguage=en]
+2024-09-05 00:50:32 INFO  c.t.s.t.TranslationServiceImpl - Sending translation request: text = null 
+2024-09-05 00:50:32 ERROR c.t.s.t.TranslationServiceImpl - Translation went wrong because something from parameters is null!
+2024-09-05 00:50:33 INFO  com.tinkoff_lab.dao.TranslationDAO - Start writing to database of query: Translation[id=null, ip=37.214.79.205, originalText=null, originalLang=ru, translatedText=, targetLang=en, time=2024/09/05 00:50:33, status=500, message=Translation went wrong because something from parameters is null!]
+2024-09-05 00:50:33 INFO  com.tinkoff_lab.dao.TranslationDAO - Connection with database established
+2024-09-05 00:50:33 INFO  com.tinkoff_lab.dao.TranslationDAO - Query has been successfully recorded
+2024-09-05 00:50:33 INFO  com.tinkoff_lab.dao.TranslationDAO - Starting finding entity with ID: 1
+2024-09-05 00:50:33 INFO  c.t.controller.TranslationController - Request from user has received: UserRequest[text=a, originalLanguage=null, finalLanguage=en]
+2024-09-05 00:50:33 INFO  c.t.s.t.TranslationServiceImpl - Sending translation request: text = a 
+2024-09-05 00:50:33 ERROR c.t.s.t.TranslationServiceImpl - Translation went wrong because something from parameters is null!
+2024-09-05 00:50:33 INFO  com.tinkoff_lab.dao.TranslationDAO - Start writing to database of query: Translation[id=null, ip=37.214.79.205, originalText=a, originalLang=null, translatedText=, targetLang=en, time=2024/09/05 00:50:33, status=500, message=Translation went wrong because something from parameters is null!]
+2024-09-05 00:50:33 INFO  com.tinkoff_lab.dao.TranslationDAO - Connection with database established
+2024-09-05 00:50:33 INFO  com.tinkoff_lab.dao.TranslationDAO - Query has been successfully recorded
+2024-09-05 00:50:33 INFO  com.tinkoff_lab.dao.TranslationDAO - Starting finding entity with ID: 1
+2024-09-05 00:50:33 INFO  c.t.controller.TranslationController - Request from user has received: UserRequest[text=aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa, originalLanguage=ru, finalLanguage=en]
+2024-09-05 00:50:33 INFO  c.t.s.t.TranslationServiceImpl - Sending translation request: text = aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa 
+2024-09-05 00:50:33 INFO  com.tinkoff_lab.dao.UserDAO - Start finding entity with id etokto@mail.ru
+2024-09-05 00:50:33 INFO  com.tinkoff_lab.dao.UserDAO - Finding of entity with id etokto@mail.ru ended successfully
+2024-09-05 00:50:33 INFO  com.tinkoff_lab.dao.CityDAO - Start finding entity with id com.tinkoff_lab.entity.CityPK@2455
+2024-09-05 00:50:33 INFO  com.tinkoff_lab.dao.CityDAO - Finding of entity with id com.tinkoff_lab.entity.CityPK@2455 ended successfully
+2024-09-05 00:50:33 INFO  c.t.controller.TranslationController - Request from user has received: UserRequest[text=a, originalLanguage=, finalLanguage=en]
+2024-09-05 00:50:33 INFO  c.t.s.t.TranslationServiceImpl - Sending translation request: text = a 
+2024-09-05 00:50:33 INFO  com.tinkoff_lab.dao.UserDAO - Start finding entity with id etokto@mail.ru
+2024-09-05 00:50:34 INFO  com.tinkoff_lab.dao.UserDAO - Finding of entity with id etokto@mail.ru ended successfully
+2024-09-05 00:50:34 INFO  com.tinkoff_lab.dao.CityDAO - Start finding entity with id com.tinkoff_lab.entity.CityPK@2455
+2024-09-05 00:50:34 INFO  com.tinkoff_lab.dao.CityDAO - Finding of entity with id com.tinkoff_lab.entity.CityPK@2455 ended successfully
+2024-09-05 00:50:34 INFO  c.t.controller.TranslationController - Request from user has received: UserRequest[text=a, originalLanguage=ru, finalLanguage=]
+2024-09-05 00:50:34 INFO  c.t.s.t.TranslationServiceImpl - Sending translation request: text = a 
+2024-09-05 00:50:34 INFO  com.tinkoff_lab.dao.UserDAO - Start finding entity with id etokto@mail.ru
+2024-09-05 00:50:34 INFO  com.tinkoff_lab.dao.UserDAO - Finding of entity with id etokto@mail.ru ended successfully
+2024-09-05 00:50:34 INFO  com.tinkoff_lab.dao.CityDAO - Start finding entity with id com.tinkoff_lab.entity.CityPK@2455
+2024-09-05 00:50:34 INFO  com.tinkoff_lab.dao.CityDAO - Finding of entity with id com.tinkoff_lab.entity.CityPK@2455 ended successfully
+2024-09-05 00:50:34 INFO  c.t.controller.TranslationController - Request from user has received: UserRequest[text=a, originalLanguage=ru, finalLanguage=null]
+2024-09-05 00:50:34 INFO  c.t.s.t.TranslationServiceImpl - Sending translation request: text = a 
+2024-09-05 00:50:34 ERROR c.t.s.t.TranslationServiceImpl - Translation went wrong because something from parameters is null!
+2024-09-05 00:50:34 INFO  com.tinkoff_lab.dao.TranslationDAO - Start writing to database of query: Translation[id=null, ip=37.214.79.205, originalText=a, originalLang=ru, translatedText=, targetLang=null, time=2024/09/05 00:50:34, status=500, message=Translation went wrong because something from parameters is null!]
+2024-09-05 00:50:34 INFO  com.tinkoff_lab.dao.TranslationDAO - Connection with database established
+2024-09-05 00:50:34 INFO  com.tinkoff_lab.dao.TranslationDAO - Query has been successfully recorded
+2024-09-05 00:50:34 INFO  com.tinkoff_lab.dao.TranslationDAO - Starting finding entity with ID: 1
+2024-09-05 00:50:34 INFO  c.t.controller.TranslationController - Request from user has received: UserRequest[text=, originalLanguage=ru, finalLanguage=en]
+2024-09-05 00:50:34 INFO  c.t.s.t.TranslationServiceImpl - Sending translation request: text =  
+2024-09-05 00:50:34 INFO  com.tinkoff_lab.dao.UserDAO - Start finding entity with id etokto@mail.ru
+2024-09-05 00:50:34 INFO  com.tinkoff_lab.dao.UserDAO - Finding of entity with id etokto@mail.ru ended successfully
+2024-09-05 00:50:34 INFO  com.tinkoff_lab.dao.CityDAO - Start finding entity with id com.tinkoff_lab.entity.CityPK@2455
+2024-09-05 00:50:34 INFO  com.tinkoff_lab.dao.CityDAO - Finding of entity with id com.tinkoff_lab.entity.CityPK@2455 ended successfully
+2024-09-05 00:50:34 INFO  c.t.controller.TranslationController - Request from user has received: UserRequest[text=Любовь, originalLanguage=ru, finalLanguage=en]
+2024-09-05 00:50:34 INFO  c.t.s.t.TranslationServiceImpl - Sending translation request: text = Любовь 
+2024-09-05 00:50:34 INFO  com.tinkoff_lab.dao.UserDAO - Start finding entity with id etokto@mail.ru
+2024-09-05 00:50:34 INFO  com.tinkoff_lab.dao.UserDAO - Finding of entity with id etokto@mail.ru ended successfully
+2024-09-05 00:50:34 INFO  com.tinkoff_lab.dao.CityDAO - Start finding entity with id com.tinkoff_lab.entity.CityPK@2455
+2024-09-05 00:50:34 INFO  com.tinkoff_lab.dao.CityDAO - Finding of entity with id com.tinkoff_lab.entity.CityPK@2455 ended successfully
+2024-09-05 00:50:34 INFO  c.t.controller.TranslationController - Request from user has received: UserRequest[text=любовь, originalLanguage=ru, finalLanguage=by]
+2024-09-05 00:50:34 INFO  c.t.s.t.TranslationServiceImpl - Sending translation request: text = любовь 
+2024-09-05 00:50:34 INFO  com.tinkoff_lab.dao.UserDAO - Start finding entity with id etokto@mail.ru
+2024-09-05 00:50:34 INFO  com.tinkoff_lab.dao.UserDAO - Finding of entity with id etokto@mail.ru ended successfully
+2024-09-05 00:50:34 INFO  com.tinkoff_lab.dao.CityDAO - Start finding entity with id com.tinkoff_lab.entity.CityPK@2455
+2024-09-05 00:50:34 INFO  com.tinkoff_lab.dao.CityDAO - Finding of entity with id com.tinkoff_lab.entity.CityPK@2455 ended successfully
+2024-09-05 00:51:52 INFO  c.t.controller.TranslationController - Request from user has received: UserRequest[text=null, originalLanguage=ru, finalLanguage=en]
+2024-09-05 00:51:52 INFO  c.t.s.t.TranslationServiceImpl - Sending translation request: text = null 
+2024-09-05 00:51:52 ERROR c.t.s.t.TranslationServiceImpl - Translation went wrong because something from parameters is null!
+2024-09-05 00:51:58 INFO  com.tinkoff_lab.dao.TranslationDAO - Start writing to database of query: Translation[id=null, ip=37.214.79.205, originalText=null, originalLang=ru, translatedText=, targetLang=en, time=2024/09/05 00:51:58, status=500, message=Translation went wrong because something from parameters is null!]
+2024-09-05 00:51:58 INFO  com.tinkoff_lab.dao.TranslationDAO - Connection with database established
+2024-09-05 00:51:58 INFO  com.tinkoff_lab.dao.TranslationDAO - Query has been successfully recorded
+2024-09-05 00:51:58 INFO  com.tinkoff_lab.dao.TranslationDAO - Starting finding entity with ID: 1
+2024-09-05 00:51:59 INFO  c.t.controller.TranslationController - Request from user has received: UserRequest[text=a, originalLanguage=null, finalLanguage=en]
+2024-09-05 00:51:59 INFO  c.t.s.t.TranslationServiceImpl - Sending translation request: text = a 
+2024-09-05 00:51:59 ERROR c.t.s.t.TranslationServiceImpl - Translation went wrong because something from parameters is null!
+2024-09-05 00:51:59 INFO  com.tinkoff_lab.dao.TranslationDAO - Start writing to database of query: Translation[id=null, ip=37.214.79.205, originalText=a, originalLang=null, translatedText=, targetLang=en, time=2024/09/05 00:51:59, status=500, message=Translation went wrong because something from parameters is null!]
+2024-09-05 00:51:59 INFO  com.tinkoff_lab.dao.TranslationDAO - Connection with database established
+2024-09-05 00:51:59 INFO  com.tinkoff_lab.dao.TranslationDAO - Query has been successfully recorded
+2024-09-05 00:51:59 INFO  com.tinkoff_lab.dao.TranslationDAO - Starting finding entity with ID: 1
+2024-09-05 00:51:59 INFO  c.t.controller.TranslationController - Request from user has received: UserRequest[text=aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa, originalLanguage=ru, finalLanguage=en]
+2024-09-05 00:51:59 INFO  c.t.s.t.TranslationServiceImpl - Sending translation request: text = aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa 
+2024-09-05 00:51:59 INFO  com.tinkoff_lab.dao.UserDAO - Start finding entity with id etokto@mail.ru
+2024-09-05 00:51:59 INFO  com.tinkoff_lab.dao.UserDAO - Finding of entity with id etokto@mail.ru ended successfully
+2024-09-05 00:51:59 INFO  com.tinkoff_lab.dao.CityDAO - Start finding entity with id com.tinkoff_lab.entity.CityPK@2455
+2024-09-05 00:51:59 INFO  com.tinkoff_lab.dao.CityDAO - Finding of entity with id com.tinkoff_lab.entity.CityPK@2455 ended successfully
+2024-09-05 00:51:59 INFO  c.t.controller.TranslationController - Request from user has received: UserRequest[text=a, originalLanguage=, finalLanguage=en]
+2024-09-05 00:51:59 INFO  c.t.s.t.TranslationServiceImpl - Sending translation request: text = a 
+2024-09-05 00:51:59 INFO  com.tinkoff_lab.dao.UserDAO - Start finding entity with id etokto@mail.ru
+2024-09-05 00:51:59 INFO  com.tinkoff_lab.dao.UserDAO - Finding of entity with id etokto@mail.ru ended successfully
+2024-09-05 00:51:59 INFO  com.tinkoff_lab.dao.CityDAO - Start finding entity with id com.tinkoff_lab.entity.CityPK@2455
+2024-09-05 00:51:59 INFO  com.tinkoff_lab.dao.CityDAO - Finding of entity with id com.tinkoff_lab.entity.CityPK@2455 ended successfully
+2024-09-05 00:51:59 INFO  c.t.controller.TranslationController - Request from user has received: UserRequest[text=a, originalLanguage=ru, finalLanguage=]
+2024-09-05 00:51:59 INFO  c.t.s.t.TranslationServiceImpl - Sending translation request: text = a 
+2024-09-05 00:51:59 INFO  com.tinkoff_lab.dao.UserDAO - Start finding entity with id etokto@mail.ru
+2024-09-05 00:51:59 INFO  com.tinkoff_lab.dao.UserDAO - Finding of entity with id etokto@mail.ru ended successfully
+2024-09-05 00:51:59 INFO  com.tinkoff_lab.dao.CityDAO - Start finding entity with id com.tinkoff_lab.entity.CityPK@2455
+2024-09-05 00:51:59 INFO  com.tinkoff_lab.dao.CityDAO - Finding of entity with id com.tinkoff_lab.entity.CityPK@2455 ended successfully
+2024-09-05 00:52:00 INFO  c.t.controller.TranslationController - Request from user has received: UserRequest[text=a, originalLanguage=ru, finalLanguage=null]
+2024-09-05 00:52:00 INFO  c.t.s.t.TranslationServiceImpl - Sending translation request: text = a 
+2024-09-05 00:52:00 ERROR c.t.s.t.TranslationServiceImpl - Translation went wrong because something from parameters is null!
+2024-09-05 00:52:00 INFO  com.tinkoff_lab.dao.TranslationDAO - Start writing to database of query: Translation[id=null, ip=37.214.79.205, originalText=a, originalLang=ru, translatedText=, targetLang=null, time=2024/09/05 00:52:00, status=500, message=Translation went wrong because something from parameters is null!]
+2024-09-05 00:52:00 INFO  com.tinkoff_lab.dao.TranslationDAO - Connection with database established
+2024-09-05 00:52:00 INFO  com.tinkoff_lab.dao.TranslationDAO - Query has been successfully recorded
+2024-09-05 00:52:00 INFO  com.tinkoff_lab.dao.TranslationDAO - Starting finding entity with ID: 1
+2024-09-05 00:52:00 INFO  c.t.controller.TranslationController - Request from user has received: UserRequest[text=, originalLanguage=ru, finalLanguage=en]
+2024-09-05 00:52:00 INFO  c.t.s.t.TranslationServiceImpl - Sending translation request: text =  
+2024-09-05 00:52:00 INFO  com.tinkoff_lab.dao.UserDAO - Start finding entity with id etokto@mail.ru
+2024-09-05 00:52:00 INFO  com.tinkoff_lab.dao.UserDAO - Finding of entity with id etokto@mail.ru ended successfully
+2024-09-05 00:52:00 INFO  com.tinkoff_lab.dao.CityDAO - Start finding entity with id com.tinkoff_lab.entity.CityPK@2455
+2024-09-05 00:52:00 INFO  com.tinkoff_lab.dao.CityDAO - Finding of entity with id com.tinkoff_lab.entity.CityPK@2455 ended successfully
+2024-09-05 00:52:00 INFO  c.t.controller.TranslationController - Request from user has received: UserRequest[text=Любовь, originalLanguage=ru, finalLanguage=en]
+2024-09-05 00:52:00 INFO  c.t.s.t.TranslationServiceImpl - Sending translation request: text = Любовь 
+2024-09-05 00:52:00 INFO  com.tinkoff_lab.dao.UserDAO - Start finding entity with id etokto@mail.ru
+2024-09-05 00:52:00 INFO  com.tinkoff_lab.dao.UserDAO - Finding of entity with id etokto@mail.ru ended successfully
+2024-09-05 00:52:00 INFO  com.tinkoff_lab.dao.CityDAO - Start finding entity with id com.tinkoff_lab.entity.CityPK@2455
+2024-09-05 00:52:00 INFO  com.tinkoff_lab.dao.CityDAO - Finding of entity with id com.tinkoff_lab.entity.CityPK@2455 ended successfully
+2024-09-05 00:52:00 INFO  c.t.controller.TranslationController - Request from user has received: UserRequest[text=любовь, originalLanguage=ru, finalLanguage=by]
+2024-09-05 00:52:00 INFO  c.t.s.t.TranslationServiceImpl - Sending translation request: text = любовь 
+2024-09-05 00:52:00 INFO  com.tinkoff_lab.dao.UserDAO - Start finding entity with id etokto@mail.ru
+2024-09-05 00:52:00 INFO  com.tinkoff_lab.dao.UserDAO - Finding of entity with id etokto@mail.ru ended successfully
+2024-09-05 00:52:00 INFO  com.tinkoff_lab.dao.CityDAO - Start finding entity with id com.tinkoff_lab.entity.CityPK@2455
+2024-09-05 00:52:00 INFO  com.tinkoff_lab.dao.CityDAO - Finding of entity with id com.tinkoff_lab.entity.CityPK@2455 ended successfully
+2024-09-05 00:53:52 INFO  c.t.controller.TranslationController - Request from user has received: UserRequest[text=null, originalLanguage=ru, finalLanguage=en]
+2024-09-05 00:53:52 INFO  c.t.s.t.TranslationServiceImpl - Sending translation request: text = null 
+2024-09-05 00:53:52 ERROR c.t.s.t.TranslationServiceImpl - Translation went wrong because something from parameters is null!
+2024-09-05 00:53:53 INFO  com.tinkoff_lab.dao.TranslationDAO - Start writing to database of query: Translation[id=null, ip=37.214.79.205, originalText=null, originalLang=ru, translatedText=, targetLang=en, time=2024/09/05 00:53:53, status=500, message=Translation went wrong because something from parameters is null!]
+2024-09-05 00:53:53 INFO  com.tinkoff_lab.dao.TranslationDAO - Connection with database established
+2024-09-05 00:53:53 INFO  com.tinkoff_lab.dao.TranslationDAO - Query has been successfully recorded
+2024-09-05 00:53:53 INFO  com.tinkoff_lab.dao.TranslationDAO - Starting finding entity with ID: 1
+2024-09-05 00:53:53 INFO  c.t.controller.TranslationController - Request from user has received: UserRequest[text=a, originalLanguage=null, finalLanguage=en]
+2024-09-05 00:53:53 INFO  c.t.s.t.TranslationServiceImpl - Sending translation request: text = a 
+2024-09-05 00:53:53 ERROR c.t.s.t.TranslationServiceImpl - Translation went wrong because something from parameters is null!
+2024-09-05 00:53:53 INFO  com.tinkoff_lab.dao.TranslationDAO - Start writing to database of query: Translation[id=null, ip=37.214.79.205, originalText=a, originalLang=null, translatedText=, targetLang=en, time=2024/09/05 00:53:53, status=500, message=Translation went wrong because something from parameters is null!]
+2024-09-05 00:53:53 INFO  com.tinkoff_lab.dao.TranslationDAO - Connection with database established
+2024-09-05 00:53:53 INFO  com.tinkoff_lab.dao.TranslationDAO - Query has been successfully recorded
+2024-09-05 00:53:53 INFO  com.tinkoff_lab.dao.TranslationDAO - Starting finding entity with ID: 1
+2024-09-05 00:53:53 INFO  c.t.controller.TranslationController - Request from user has received: UserRequest[text=aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa, originalLanguage=ru, finalLanguage=en]
+2024-09-05 00:53:53 INFO  c.t.s.t.TranslationServiceImpl - Sending translation request: text = aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa 
+2024-09-05 00:53:54 INFO  c.t.s.t.TranslationServiceImpl - Request has received: text = aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa 
+2024-09-05 00:53:54 INFO  c.t.s.t.TranslationServiceImpl - Translation successfully completed
+2024-09-05 00:53:54 INFO  com.tinkoff_lab.dao.TranslationDAO - Start writing to database of query: Translation[id=null, ip=37.214.79.205, originalText=aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa, originalLang=ru, translatedText=aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa, targetLang=en, time=2024/09/05 00:53:54, status=200, message=Ok]
+2024-09-05 00:53:54 INFO  com.tinkoff_lab.dao.TranslationDAO - Connection with database established
+2024-09-05 00:53:54 ERROR com.tinkoff_lab.dao.TranslationDAO - Insertion of query in database goes wrong!
+2024-09-05 00:53:55 INFO  c.t.controller.TranslationController - Request from user has received: UserRequest[text=a, originalLanguage=, finalLanguage=en]
+2024-09-05 00:53:55 INFO  c.t.s.t.TranslationServiceImpl - Sending translation request: text = a 
+2024-09-05 00:53:55 INFO  c.t.s.t.TranslationServiceImpl - Request has received: text = a 
+2024-09-05 00:53:55 ERROR c.t.s.t.TranslationServiceImpl - Something goes wrong with translation for text <a>, status is 403
+2024-09-05 00:53:55 INFO  com.tinkoff_lab.dao.TranslationDAO - Start writing to database of query: Translation[id=null, ip=37.214.79.205, originalText=a, originalLang=, translatedText=, targetLang=en, time=2024/09/05 00:53:55, status=403, message=INVALID LANGUAGE PAIR SPECIFIED. EXAMPLE: LANGPAIR=EN|IT USING 2 LETTER ISO OR RFC3066 LIKE ZH-CN. ALMOST ALL LANGUAGES SUPPORTED BUT SOME MAY HAVE NO CONTENT]
+2024-09-05 00:53:55 INFO  com.tinkoff_lab.dao.TranslationDAO - Connection with database established
+2024-09-05 00:53:55 INFO  com.tinkoff_lab.dao.TranslationDAO - Query has been successfully recorded
+2024-09-05 00:53:55 INFO  com.tinkoff_lab.dao.TranslationDAO - Starting finding entity with ID: 1
+2024-09-05 00:53:55 INFO  c.t.controller.TranslationController - Request from user has received: UserRequest[text=a, originalLanguage=ru, finalLanguage=]
+2024-09-05 00:53:55 INFO  c.t.s.t.TranslationServiceImpl - Sending translation request: text = a 
+2024-09-05 00:53:55 INFO  c.t.s.t.TranslationServiceImpl - Request has received: text = a 
+2024-09-05 00:53:55 ERROR c.t.s.t.TranslationServiceImpl - Something goes wrong with translation for text <a>, status is 403
+2024-09-05 00:53:55 INFO  com.tinkoff_lab.dao.TranslationDAO - Start writing to database of query: Translation[id=null, ip=37.214.79.205, originalText=a, originalLang=ru, translatedText=, targetLang=, time=2024/09/05 00:53:55, status=403, message=INVALID LANGUAGE PAIR SPECIFIED. EXAMPLE: LANGPAIR=EN|IT USING 2 LETTER ISO OR RFC3066 LIKE ZH-CN. ALMOST ALL LANGUAGES SUPPORTED BUT SOME MAY HAVE NO CONTENT]
+2024-09-05 00:53:55 INFO  com.tinkoff_lab.dao.TranslationDAO - Connection with database established
+2024-09-05 00:53:55 INFO  com.tinkoff_lab.dao.TranslationDAO - Query has been successfully recorded
+2024-09-05 00:53:55 INFO  com.tinkoff_lab.dao.TranslationDAO - Starting finding entity with ID: 1
+2024-09-05 00:53:56 INFO  c.t.controller.TranslationController - Request from user has received: UserRequest[text=a, originalLanguage=ru, finalLanguage=null]
+2024-09-05 00:53:56 INFO  c.t.s.t.TranslationServiceImpl - Sending translation request: text = a 
+2024-09-05 00:53:56 ERROR c.t.s.t.TranslationServiceImpl - Translation went wrong because something from parameters is null!
+2024-09-05 00:53:56 INFO  com.tinkoff_lab.dao.TranslationDAO - Start writing to database of query: Translation[id=null, ip=37.214.79.205, originalText=a, originalLang=ru, translatedText=, targetLang=null, time=2024/09/05 00:53:56, status=500, message=Translation went wrong because something from parameters is null!]
+2024-09-05 00:53:56 INFO  com.tinkoff_lab.dao.TranslationDAO - Connection with database established
+2024-09-05 00:53:56 INFO  com.tinkoff_lab.dao.TranslationDAO - Query has been successfully recorded
+2024-09-05 00:53:56 INFO  com.tinkoff_lab.dao.TranslationDAO - Starting finding entity with ID: 1
+2024-09-05 00:53:56 INFO  c.t.controller.TranslationController - Request from user has received: UserRequest[text=, originalLanguage=ru, finalLanguage=en]
+2024-09-05 00:53:56 INFO  c.t.s.t.TranslationServiceImpl - Sending translation request: text =  
+2024-09-05 00:53:56 INFO  c.t.s.t.TranslationServiceImpl - Request has received: text =  
+2024-09-05 00:53:56 ERROR c.t.s.t.TranslationServiceImpl - Something goes wrong with translation for text <>, status is 403
+2024-09-05 00:53:56 INFO  com.tinkoff_lab.dao.TranslationDAO - Start writing to database of query: Translation[id=null, ip=37.214.79.205, originalText=, originalLang=ru, translatedText=, targetLang=en, time=2024/09/05 00:53:56, status=403, message=NO QUERY SPECIFIED. EXAMPLE REQUEST: GET?Q=HELLO&LANGPAIR=EN|IT]
+2024-09-05 00:53:56 INFO  com.tinkoff_lab.dao.TranslationDAO - Connection with database established
+2024-09-05 00:53:56 INFO  com.tinkoff_lab.dao.TranslationDAO - Query has been successfully recorded
+2024-09-05 00:53:56 INFO  com.tinkoff_lab.dao.TranslationDAO - Starting finding entity with ID: 1
+2024-09-05 00:53:56 INFO  c.t.controller.TranslationController - Request from user has received: UserRequest[text=Любовь, originalLanguage=ru, finalLanguage=en]
+2024-09-05 00:53:56 INFO  c.t.s.t.TranslationServiceImpl - Sending translation request: text = Любовь 
+2024-09-05 00:53:57 INFO  c.t.s.t.TranslationServiceImpl - Request has received: text = Любовь 
+2024-09-05 00:53:57 INFO  c.t.s.t.TranslationServiceImpl - Translation successfully completed
+2024-09-05 00:53:57 INFO  com.tinkoff_lab.dao.TranslationDAO - Start writing to database of query: Translation[id=null, ip=37.214.79.205, originalText=Любовь, originalLang=ru, translatedText=Love, targetLang=en, time=2024/09/05 00:53:57, status=200, message=Ok]
+2024-09-05 00:53:57 INFO  com.tinkoff_lab.dao.TranslationDAO - Connection with database established
+2024-09-05 00:53:57 INFO  com.tinkoff_lab.dao.TranslationDAO - Query has been successfully recorded
+2024-09-05 00:53:57 INFO  c.t.controller.TranslationController - Response is sending to user
+2024-09-05 00:53:57 INFO  com.tinkoff_lab.dao.TranslationDAO - Starting finding entity with ID: 1
+2024-09-05 00:53:58 INFO  c.t.controller.TranslationController - Request from user has received: UserRequest[text=любовь, originalLanguage=ru, finalLanguage=by]
+2024-09-05 00:53:58 INFO  c.t.s.t.TranslationServiceImpl - Sending translation request: text = любовь 
+2024-09-05 00:53:58 INFO  c.t.s.t.TranslationServiceImpl - Request has received: text = любовь 
+2024-09-05 00:53:58 ERROR c.t.s.t.TranslationServiceImpl - Something goes wrong with translation for text <любовь>, status is 403
+2024-09-05 00:53:58 INFO  com.tinkoff_lab.dao.TranslationDAO - Start writing to database of query: Translation[id=null, ip=37.214.79.205, originalText=любовь, originalLang=ru, translatedText=, targetLang=by, time=2024/09/05 00:53:58, status=403, message='BY' IS AN INVALID TARGET LANGUAGE . EXAMPLE: LANGPAIR=EN|IT USING 2 LETTER ISO OR RFC3066 LIKE ZH-CN. ALMOST ALL LANGUAGES SUPPORTED BUT SOME MAY HAVE NO CONTENT]
+2024-09-05 00:53:58 INFO  com.tinkoff_lab.dao.TranslationDAO - Connection with database established
+2024-09-05 00:53:58 INFO  com.tinkoff_lab.dao.TranslationDAO - Query has been successfully recorded
+2024-09-05 00:53:58 INFO  com.tinkoff_lab.dao.TranslationDAO - Starting finding entity with ID: 1
+2024-09-05 01:01:43 INFO  c.t.s.weather.WeatherServiceImpl - Start adding user with email ektogod@gmail.com and cities [CityDTO[city=Minsk, country=Belarus], CityDTO[city=Grodno, country=Belarus]] to database
+2024-09-05 01:01:43 INFO  com.tinkoff_lab.dao.UserDAO - Start finding entity with id ektogod@gmail.com
+2024-09-05 01:01:44 INFO  com.tinkoff_lab.dao.UserDAO - Finding of entity with id ektogod@gmail.com ended successfully
+2024-09-05 01:01:44 INFO  com.tinkoff_lab.dao.UserDAO - Start inserting entity: com.tinkoff_lab.entity.User@1f1beab8
+2024-09-05 01:01:44 INFO  com.tinkoff_lab.dao.UserDAO - Inserting of entity com.tinkoff_lab.entity.User@1f1beab8 ended successfully
+2024-09-05 01:01:44 INFO  c.t.s.weather.CoordinateService - Start coordinate definition for city Minsk, country Belarus
+2024-09-05 01:01:44 INFO  c.t.s.weather.CountryCodeService - Start country code definition for country: Belarus
+2024-09-05 01:01:44 INFO  c.t.s.weather.CountryCodeService - Country code definition for country Belarus ended successfully
+2024-09-05 01:01:44 INFO  c.t.s.weather.CoordinateService - Coordinate definition for city Minsk, country Belarus ended successfully
+2024-09-05 01:01:44 INFO  com.tinkoff_lab.dao.CityDAO - Start updating entity: com.tinkoff_lab.entity.City@ff21bcf0
+2024-09-05 01:01:44 INFO  com.tinkoff_lab.dao.CityDAO - Updating entity com.tinkoff_lab.entity.City@ff21bcf0 ended successfully
+2024-09-05 01:01:44 INFO  com.tinkoff_lab.dao.UserCityDAO - Start adding UserCity where User: com.tinkoff_lab.entity.User@1f1beab8, City: com.tinkoff_lab.entity.City@ff21bcf0
+2024-09-05 01:01:44 INFO  com.tinkoff_lab.dao.UserCityDAO - Adding UserCit y where User: com.tinkoff_lab.entity.User@1f1beab8, City: com.tinkoff_lab.entity.City@ff21bcf0 ended successfully
+2024-09-05 01:01:44 INFO  c.t.s.weather.CoordinateService - Start coordinate definition for city Grodno, country Belarus
+2024-09-05 01:01:44 INFO  c.t.s.weather.CountryCodeService - Start country code definition for country: Belarus
+2024-09-05 01:01:44 INFO  c.t.s.weather.CountryCodeService - Country code definition for country Belarus ended successfully
+2024-09-05 01:01:44 INFO  c.t.s.weather.CoordinateService - Coordinate definition for city Grodno, country Belarus ended successfully
+2024-09-05 01:01:44 INFO  com.tinkoff_lab.dao.CityDAO - Start updating entity: com.tinkoff_lab.entity.City@d2f87f10
+2024-09-05 01:01:44 INFO  com.tinkoff_lab.dao.CityDAO - Updating entity com.tinkoff_lab.entity.City@d2f87f10 ended successfully
+2024-09-05 01:01:44 INFO  com.tinkoff_lab.dao.UserCityDAO - Start adding UserCity where User: com.tinkoff_lab.entity.User@1f1beab8, City: com.tinkoff_lab.entity.City@d2f87f10
+2024-09-05 01:01:44 INFO  com.tinkoff_lab.dao.UserCityDAO - Adding UserCit y where User: com.tinkoff_lab.entity.User@1f1beab8, City: com.tinkoff_lab.entity.City@d2f87f10 ended successfully
+2024-09-05 01:01:44 INFO  c.t.s.weather.WeatherServiceImpl - Adding user with email ektogod@gmail.com and cities [] to database ended successfully
+2024-09-05 01:01:44 INFO  com.tinkoff_lab.dao.UserDAO - Start finding entity with id ektogod@gmail.com
+2024-09-05 01:01:44 INFO  com.tinkoff_lab.dao.UserDAO - Finding of entity with id ektogod@gmail.com ended successfully
+2024-09-05 01:01:44 INFO  com.tinkoff_lab.dao.CityDAO - Start finding all entities
+2024-09-05 01:01:45 INFO  com.tinkoff_lab.dao.CityDAO - Finding ended successfully
+2024-09-05 01:03:32 INFO  c.t.s.weather.WeatherServiceImpl - Start adding user with email ektogod@gmail.com and cities [CityDTO[city=Minsk, country=Belarus], CityDTO[city=Grodno, country=Belarus]] to database
+2024-09-05 01:03:32 INFO  com.tinkoff_lab.dao.UserDAO - Start finding entity with id ektogod@gmail.com
+2024-09-05 01:03:32 INFO  com.tinkoff_lab.dao.UserDAO - Finding of entity with id ektogod@gmail.com ended successfully
+2024-09-05 01:03:32 INFO  com.tinkoff_lab.dao.UserDAO - Start inserting entity: com.tinkoff_lab.entity.User@1f1beab8
+2024-09-05 01:03:32 INFO  com.tinkoff_lab.dao.UserDAO - Inserting of entity com.tinkoff_lab.entity.User@1f1beab8 ended successfully
+2024-09-05 01:03:32 INFO  c.t.s.weather.CoordinateService - Start coordinate definition for city Minsk, country Belarus
+2024-09-05 01:03:32 INFO  c.t.s.weather.CountryCodeService - Start country code definition for country: Belarus
+2024-09-05 01:03:32 INFO  c.t.s.weather.CountryCodeService - Country code definition for country Belarus ended successfully
+2024-09-05 01:03:33 INFO  c.t.s.weather.CoordinateService - Coordinate definition for city Minsk, country Belarus ended successfully
+2024-09-05 01:03:33 INFO  com.tinkoff_lab.dao.CityDAO - Start updating entity: com.tinkoff_lab.entity.City@ff21bcf0
+2024-09-05 01:03:33 INFO  com.tinkoff_lab.dao.CityDAO - Updating entity com.tinkoff_lab.entity.City@ff21bcf0 ended successfully
+2024-09-05 01:03:33 INFO  com.tinkoff_lab.dao.UserCityDAO - Start adding UserCity where User: com.tinkoff_lab.entity.User@1f1beab8, City: com.tinkoff_lab.entity.City@ff21bcf0
+2024-09-05 01:03:33 INFO  com.tinkoff_lab.dao.UserCityDAO - Adding UserCit y where User: com.tinkoff_lab.entity.User@1f1beab8, City: com.tinkoff_lab.entity.City@ff21bcf0 ended successfully
+2024-09-05 01:03:33 INFO  c.t.s.weather.CoordinateService - Start coordinate definition for city Grodno, country Belarus
+2024-09-05 01:03:33 INFO  c.t.s.weather.CountryCodeService - Start country code definition for country: Belarus
+2024-09-05 01:03:33 INFO  c.t.s.weather.CountryCodeService - Country code definition for country Belarus ended successfully
+2024-09-05 01:03:33 INFO  c.t.s.weather.CoordinateService - Coordinate definition for city Grodno, country Belarus ended successfully
+2024-09-05 01:03:33 INFO  com.tinkoff_lab.dao.CityDAO - Start updating entity: com.tinkoff_lab.entity.City@d2f87f10
+2024-09-05 01:03:33 INFO  com.tinkoff_lab.dao.CityDAO - Updating entity com.tinkoff_lab.entity.City@d2f87f10 ended successfully
+2024-09-05 01:03:33 INFO  com.tinkoff_lab.dao.UserCityDAO - Start adding UserCity where User: com.tinkoff_lab.entity.User@1f1beab8, City: com.tinkoff_lab.entity.City@d2f87f10
+2024-09-05 01:03:33 INFO  com.tinkoff_lab.dao.UserCityDAO - Adding UserCit y where User: com.tinkoff_lab.entity.User@1f1beab8, City: com.tinkoff_lab.entity.City@d2f87f10 ended successfully
+2024-09-05 01:03:33 INFO  c.t.s.weather.WeatherServiceImpl - Adding user with email ektogod@gmail.com and cities [] to database ended successfully
+2024-09-05 01:03:33 INFO  com.tinkoff_lab.dao.UserDAO - Start finding entity with id ektogod@gmail.com
+2024-09-05 01:03:33 INFO  com.tinkoff_lab.dao.UserDAO - Finding of entity with id ektogod@gmail.com ended successfully
+2024-09-05 01:03:33 INFO  com.tinkoff_lab.dao.CityDAO - Start finding all entities
+2024-09-05 01:03:33 INFO  com.tinkoff_lab.dao.CityDAO - Finding ended successfully
+2024-09-05 01:23:40 INFO  com.tinkoff_lab.dao.UserDAO - Start inserting entity: com.tinkoff_lab.entity.User@ff6d48eb
+2024-09-05 01:23:41 INFO  com.tinkoff_lab.dao.UserDAO - Inserting of entity com.tinkoff_lab.entity.User@ff6d48eb ended successfully
+2024-09-05 01:23:41 INFO  com.tinkoff_lab.dao.CityDAO - Start inserting entity: com.tinkoff_lab.entity.City@5b3d5866
+2024-09-05 01:23:41 INFO  com.tinkoff_lab.dao.CityDAO - Inserting of entity com.tinkoff_lab.entity.City@5b3d5866 ended successfully
+2024-09-05 01:23:41 INFO  com.tinkoff_lab.dao.CityDAO - Start inserting entity: com.tinkoff_lab.entity.City@6b307e58
+2024-09-05 01:23:41 INFO  com.tinkoff_lab.dao.CityDAO - Inserting of entity com.tinkoff_lab.entity.City@6b307e58 ended successfully
+2024-09-05 01:23:41 INFO  com.tinkoff_lab.dao.CityDAO - Start inserting entity: com.tinkoff_lab.entity.City@7e0d54a2
+2024-09-05 01:23:41 INFO  com.tinkoff_lab.dao.CityDAO - Inserting of entity com.tinkoff_lab.entity.City@7e0d54a2 ended successfully
+2024-09-05 01:23:41 INFO  com.tinkoff_lab.dao.CityDAO - Start inserting entity: com.tinkoff_lab.entity.City@c2d96bc6
+2024-09-05 01:23:41 INFO  com.tinkoff_lab.dao.CityDAO - Inserting of entity com.tinkoff_lab.entity.City@c2d96bc6 ended successfully
+2024-09-05 01:23:41 INFO  com.tinkoff_lab.dao.UserCityDAO - Start adding UserCity where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@5b3d5866
+2024-09-05 01:23:41 INFO  com.tinkoff_lab.dao.UserCityDAO - Adding UserCit y where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@5b3d5866 ended successfully
+2024-09-05 01:23:41 INFO  com.tinkoff_lab.dao.UserCityDAO - Start adding UserCity where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@6b307e58
+2024-09-05 01:23:41 INFO  com.tinkoff_lab.dao.UserCityDAO - Adding UserCit y where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@6b307e58 ended successfully
+2024-09-05 01:23:41 INFO  com.tinkoff_lab.dao.UserCityDAO - Start adding UserCity where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@7e0d54a2
+2024-09-05 01:23:41 INFO  com.tinkoff_lab.dao.UserCityDAO - Adding UserCit y where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@7e0d54a2 ended successfully
+2024-09-05 01:23:41 INFO  com.tinkoff_lab.dao.UserCityDAO - Start adding UserCity where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@c2d96bc6
+2024-09-05 01:23:41 INFO  com.tinkoff_lab.dao.UserCityDAO - Adding UserCit y where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@c2d96bc6 ended successfully
+2024-09-05 01:26:56 INFO  com.tinkoff_lab.dao.UserDAO - Start inserting entity: com.tinkoff_lab.entity.User@ff6d48eb
+2024-09-05 01:26:56 INFO  com.tinkoff_lab.dao.UserDAO - Inserting of entity com.tinkoff_lab.entity.User@ff6d48eb ended successfully
+2024-09-05 01:26:56 INFO  com.tinkoff_lab.dao.CityDAO - Start inserting entity: com.tinkoff_lab.entity.City@e30c852f
+2024-09-05 01:26:56 INFO  com.tinkoff_lab.dao.CityDAO - Inserting of entity com.tinkoff_lab.entity.City@e30c852f ended successfully
+2024-09-05 01:26:56 INFO  com.tinkoff_lab.dao.CityDAO - Start inserting entity: com.tinkoff_lab.entity.City@7e0d54a2
+2024-09-05 01:26:56 INFO  com.tinkoff_lab.dao.CityDAO - Inserting of entity com.tinkoff_lab.entity.City@7e0d54a2 ended successfully
+2024-09-05 01:26:56 INFO  com.tinkoff_lab.dao.UserCityDAO - Start adding UserCity where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@e30c852f
+2024-09-05 01:26:57 INFO  com.tinkoff_lab.dao.UserCityDAO - Adding UserCit y where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@e30c852f ended successfully
+2024-09-05 01:26:57 INFO  com.tinkoff_lab.dao.UserCityDAO - Start adding UserCity where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@7e0d54a2
+2024-09-05 01:26:57 INFO  com.tinkoff_lab.dao.UserCityDAO - Adding UserCit y where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@7e0d54a2 ended successfully
+2024-09-05 01:28:41 INFO  com.tinkoff_lab.dao.UserDAO - Start inserting entity: com.tinkoff_lab.entity.User@ff6d48eb
+2024-09-05 01:28:41 INFO  com.tinkoff_lab.dao.UserDAO - Inserting of entity com.tinkoff_lab.entity.User@ff6d48eb ended successfully
+2024-09-05 01:28:41 INFO  com.tinkoff_lab.dao.CityDAO - Start inserting entity: com.tinkoff_lab.entity.City@e30c852f
+2024-09-05 01:28:41 INFO  com.tinkoff_lab.dao.CityDAO - Inserting of entity com.tinkoff_lab.entity.City@e30c852f ended successfully
+2024-09-05 01:28:41 INFO  com.tinkoff_lab.dao.CityDAO - Start inserting entity: com.tinkoff_lab.entity.City@7e0d54a2
+2024-09-05 01:28:41 INFO  com.tinkoff_lab.dao.CityDAO - Inserting of entity com.tinkoff_lab.entity.City@7e0d54a2 ended successfully
+2024-09-05 01:28:41 INFO  com.tinkoff_lab.dao.UserCityDAO - Start adding UserCity where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@e30c852f
+2024-09-05 01:28:41 INFO  com.tinkoff_lab.dao.UserCityDAO - Adding UserCit y where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@e30c852f ended successfully
+2024-09-05 01:28:41 INFO  com.tinkoff_lab.dao.UserCityDAO - Start adding UserCity where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@7e0d54a2
+2024-09-05 01:28:41 INFO  com.tinkoff_lab.dao.UserCityDAO - Adding UserCit y where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@7e0d54a2 ended successfully
+2024-09-05 01:28:41 INFO  com.tinkoff_lab.dao.UserDAO - Start finding entity with id ektogod@mail.ru
+2024-09-05 01:28:41 INFO  com.tinkoff_lab.dao.UserDAO - Finding of entity with id ektogod@mail.ru ended successfully
+2024-09-05 01:29:57 INFO  com.tinkoff_lab.dao.UserDAO - Start inserting entity: com.tinkoff_lab.entity.User@ff6d48eb
+2024-09-05 01:29:57 INFO  com.tinkoff_lab.dao.UserDAO - Inserting of entity com.tinkoff_lab.entity.User@ff6d48eb ended successfully
+2024-09-05 01:29:57 INFO  com.tinkoff_lab.dao.CityDAO - Start inserting entity: com.tinkoff_lab.entity.City@e30c852f
+2024-09-05 01:29:57 INFO  com.tinkoff_lab.dao.CityDAO - Inserting of entity com.tinkoff_lab.entity.City@e30c852f ended successfully
+2024-09-05 01:29:57 INFO  com.tinkoff_lab.dao.CityDAO - Start inserting entity: com.tinkoff_lab.entity.City@7e0d54a2
+2024-09-05 01:29:57 INFO  com.tinkoff_lab.dao.CityDAO - Inserting of entity com.tinkoff_lab.entity.City@7e0d54a2 ended successfully
+2024-09-05 01:29:57 INFO  com.tinkoff_lab.dao.UserCityDAO - Start adding UserCity where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@e30c852f
+2024-09-05 01:29:58 INFO  com.tinkoff_lab.dao.UserCityDAO - Adding UserCit y where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@e30c852f ended successfully
+2024-09-05 01:29:58 INFO  com.tinkoff_lab.dao.UserCityDAO - Start adding UserCity where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@7e0d54a2
+2024-09-05 01:29:58 INFO  com.tinkoff_lab.dao.UserCityDAO - Adding UserCit y where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@7e0d54a2 ended successfully
+2024-09-05 01:29:58 INFO  com.tinkoff_lab.dao.UserDAO - Start finding entity with id ektogod@mail.ru
+2024-09-05 01:29:58 INFO  com.tinkoff_lab.dao.UserDAO - Finding of entity with id ektogod@mail.ru ended successfully
+2024-09-05 01:32:12 INFO  com.tinkoff_lab.dao.UserDAO - Start inserting entity: com.tinkoff_lab.entity.User@ff6d48eb
+2024-09-05 01:32:12 INFO  com.tinkoff_lab.dao.UserDAO - Inserting of entity com.tinkoff_lab.entity.User@ff6d48eb ended successfully
+2024-09-05 01:32:12 INFO  com.tinkoff_lab.dao.CityDAO - Start inserting entity: com.tinkoff_lab.entity.City@e30c852f
+2024-09-05 01:32:12 INFO  com.tinkoff_lab.dao.CityDAO - Inserting of entity com.tinkoff_lab.entity.City@e30c852f ended successfully
+2024-09-05 01:32:12 INFO  com.tinkoff_lab.dao.CityDAO - Start inserting entity: com.tinkoff_lab.entity.City@7e0d54a2
+2024-09-05 01:32:13 INFO  com.tinkoff_lab.dao.CityDAO - Inserting of entity com.tinkoff_lab.entity.City@7e0d54a2 ended successfully
+2024-09-05 01:32:13 INFO  com.tinkoff_lab.dao.UserCityDAO - Start adding UserCity where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@e30c852f
+2024-09-05 01:32:13 INFO  com.tinkoff_lab.dao.UserCityDAO - Adding UserCit y where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@e30c852f ended successfully
+2024-09-05 01:32:13 INFO  com.tinkoff_lab.dao.UserCityDAO - Start adding UserCity where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@7e0d54a2
+2024-09-05 01:32:13 INFO  com.tinkoff_lab.dao.UserCityDAO - Adding UserCit y where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@7e0d54a2 ended successfully
+2024-09-05 01:32:13 INFO  com.tinkoff_lab.dao.UserDAO - Start finding entity with id ektogod@mail.ru
+2024-09-05 01:32:13 INFO  com.tinkoff_lab.dao.UserDAO - Finding of entity with id ektogod@mail.ru ended successfully
+2024-09-05 01:36:24 INFO  com.tinkoff_lab.dao.UserDAO - Start inserting entity: com.tinkoff_lab.entity.User@ff6d48eb
+2024-09-05 01:36:24 INFO  com.tinkoff_lab.dao.UserDAO - Inserting of entity com.tinkoff_lab.entity.User@ff6d48eb ended successfully
+2024-09-05 01:36:24 INFO  com.tinkoff_lab.dao.CityDAO - Start inserting entity: com.tinkoff_lab.entity.City@e30c852f
+2024-09-05 01:36:24 INFO  com.tinkoff_lab.dao.CityDAO - Inserting of entity com.tinkoff_lab.entity.City@e30c852f ended successfully
+2024-09-05 01:36:24 INFO  com.tinkoff_lab.dao.CityDAO - Start inserting entity: com.tinkoff_lab.entity.City@7e0d54a2
+2024-09-05 01:36:24 INFO  com.tinkoff_lab.dao.CityDAO - Inserting of entity com.tinkoff_lab.entity.City@7e0d54a2 ended successfully
+2024-09-05 01:36:24 INFO  com.tinkoff_lab.dao.UserCityDAO - Start adding UserCity where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@e30c852f
+2024-09-05 01:36:24 INFO  com.tinkoff_lab.dao.UserCityDAO - Adding UserCit y where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@e30c852f ended successfully
+2024-09-05 01:36:24 INFO  com.tinkoff_lab.dao.UserCityDAO - Start adding UserCity where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@7e0d54a2
+2024-09-05 01:36:24 INFO  com.tinkoff_lab.dao.UserCityDAO - Adding UserCit y where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@7e0d54a2 ended successfully
+2024-09-05 01:36:24 INFO  c.t.s.weather.WeatherServiceImpl - Start deleting user with email EmailRequest[email=ektogod@mail.ru]
+2024-09-05 01:36:24 INFO  com.tinkoff_lab.dao.UserDAO - Start finding entity with id ektogod@mail.ru
+2024-09-05 01:36:24 INFO  com.tinkoff_lab.dao.UserDAO - Finding of entity with id ektogod@mail.ru ended successfully
+2024-09-05 01:36:24 INFO  com.tinkoff_lab.dao.UserCityDAO - Start removing UserCity where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@e30c852f
+2024-09-05 01:36:24 INFO  com.tinkoff_lab.dao.UserCityDAO - Removing UserCity where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@e30c852f ended successfully
+2024-09-05 01:43:13 INFO  com.tinkoff_lab.dao.UserDAO - Start inserting entity: com.tinkoff_lab.entity.User@ff6d48eb
+2024-09-05 01:43:13 INFO  com.tinkoff_lab.dao.UserDAO - Inserting of entity com.tinkoff_lab.entity.User@ff6d48eb ended successfully
+2024-09-05 01:43:13 INFO  com.tinkoff_lab.dao.CityDAO - Start inserting entity: com.tinkoff_lab.entity.City@7e0d54a2
+2024-09-05 01:43:13 INFO  com.tinkoff_lab.dao.CityDAO - Inserting of entity com.tinkoff_lab.entity.City@7e0d54a2 ended successfully
+2024-09-05 01:43:13 INFO  com.tinkoff_lab.dao.UserCityDAO - Start adding UserCity where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@7e0d54a2
+2024-09-05 01:43:13 INFO  com.tinkoff_lab.dao.UserCityDAO - Adding UserCit y where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@7e0d54a2 ended successfully
+2024-09-05 01:43:14 INFO  c.t.s.weather.WeatherServiceImpl - Start adding cities [CityDTO[city=Grodno, country=Belarus], CityDTO[city=Minsk, country=Belarus]] to user with email ektogod@mail.ru
+2024-09-05 01:43:14 INFO  com.tinkoff_lab.dao.UserDAO - Start finding entity with id ektogod@mail.ru
+2024-09-05 01:43:14 INFO  com.tinkoff_lab.dao.UserDAO - Finding of entity with id ektogod@mail.ru ended successfully
+2024-09-05 01:43:14 INFO  c.t.s.weather.CoordinateService - Start coordinate definition for city Grodno, country Belarus
+2024-09-05 01:43:14 INFO  c.t.s.weather.CountryCodeService - Start country code definition for country: Belarus
+2024-09-05 01:43:14 INFO  c.t.s.weather.CountryCodeService - Country code definition for country Belarus ended successfully
+2024-09-05 01:43:14 INFO  c.t.s.weather.CoordinateService - Coordinate definition for city Grodno, country Belarus ended successfully
+2024-09-05 01:43:14 INFO  com.tinkoff_lab.dao.CityDAO - Start updating entity: com.tinkoff_lab.entity.City@d2f87f10
+2024-09-05 01:43:14 INFO  com.tinkoff_lab.dao.CityDAO - Updating entity com.tinkoff_lab.entity.City@d2f87f10 ended successfully
+2024-09-05 01:43:14 INFO  com.tinkoff_lab.dao.UserCityDAO - Start adding UserCity where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@d2f87f10
+2024-09-05 01:43:14 INFO  com.tinkoff_lab.dao.UserCityDAO - Adding UserCit y where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@d2f87f10 ended successfully
+2024-09-05 01:43:14 INFO  c.t.s.weather.CoordinateService - Start coordinate definition for city Minsk, country Belarus
+2024-09-05 01:43:14 INFO  c.t.s.weather.CountryCodeService - Start country code definition for country: Belarus
+2024-09-05 01:43:14 INFO  c.t.s.weather.CountryCodeService - Country code definition for country Belarus ended successfully
+2024-09-05 01:43:14 INFO  c.t.s.weather.CoordinateService - Coordinate definition for city Minsk, country Belarus ended successfully
+2024-09-05 01:43:14 INFO  com.tinkoff_lab.dao.CityDAO - Start updating entity: com.tinkoff_lab.entity.City@ff21bcf0
+2024-09-05 01:43:14 INFO  com.tinkoff_lab.dao.CityDAO - Updating entity com.tinkoff_lab.entity.City@ff21bcf0 ended successfully
+2024-09-05 01:43:14 INFO  com.tinkoff_lab.dao.UserCityDAO - Start adding UserCity where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@ff21bcf0
+2024-09-05 01:43:14 INFO  com.tinkoff_lab.dao.UserCityDAO - Adding UserCit y where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@ff21bcf0 ended successfully
+2024-09-05 01:43:14 INFO  c.t.s.weather.WeatherServiceImpl - Adding cities [CityDTO[city=Grodno, country=Belarus], CityDTO[city=Minsk, country=Belarus]] to user with email ektogod@mail.ru ended successfully
+2024-09-05 02:17:54 INFO  com.tinkoff_lab.dao.UserDAO - Start finding entity with id ektogod@mail.ru
+2024-09-05 02:17:54 INFO  com.tinkoff_lab.dao.UserDAO - Finding of entity with id ektogod@mail.ru ended successfully
+2024-09-05 02:25:08 INFO  c.t.s.weather.WeatherServiceImpl - Start getting all cities for user with email ektogod@mail.ru
+2024-09-05 02:25:13 INFO  com.tinkoff_lab.dao.UserDAO - Start finding entity with id ektogod@mail.ru
+2024-09-05 02:25:14 INFO  com.tinkoff_lab.dao.UserDAO - Finding of entity with id ektogod@mail.ru ended successfully
+2024-09-05 02:25:18 WARN  c.t.s.weather.WeatherServiceImpl - Getting all cities for user with email ektogod@mail.ru went wrong: user not found
+2024-09-05 02:26:07 INFO  c.t.s.weather.WeatherServiceImpl - Start getting all cities for user with email ektogod@mail.ru
+2024-09-05 02:26:07 INFO  com.tinkoff_lab.dao.UserDAO - Start finding entity with id ektogod@mail.ru
+2024-09-05 02:26:07 INFO  com.tinkoff_lab.dao.UserDAO - Finding of entity with id ektogod@mail.ru ended successfully
+2024-09-05 02:26:07 WARN  c.t.s.weather.WeatherServiceImpl - Getting all cities for user with email ektogod@mail.ru went wrong: user not found
+2024-09-05 02:28:57 INFO  c.t.s.weather.WeatherServiceImpl - Start getting all cities for user with email ektogod@mail.ru
+2024-09-05 02:28:57 INFO  com.tinkoff_lab.dao.UserDAO - Start finding entity with id ektogod@mail.ru
+2024-09-05 02:28:57 INFO  com.tinkoff_lab.dao.UserDAO - Finding of entity with id ektogod@mail.ru ended successfully
+2024-09-05 02:28:57 WARN  c.t.s.weather.WeatherServiceImpl - Getting all cities for user with email ektogod@mail.ru went wrong: user not found
+2024-09-05 02:33:16 INFO  c.t.s.weather.WeatherServiceImpl - Start getting all cities for user with email ektogod@mail.ru
+2024-09-05 02:33:16 INFO  com.tinkoff_lab.dao.UserDAO - Start finding entity with id ektogod@mail.ru
+2024-09-05 02:33:17 INFO  com.tinkoff_lab.dao.UserDAO - Finding of entity with id ektogod@mail.ru ended successfully
+2024-09-05 02:33:18 WARN  c.t.s.weather.WeatherServiceImpl - Getting all cities for user with email ektogod@mail.ru went wrong: user not found
+2024-09-05 02:35:44 INFO  c.tinkoff_lab.TinkoffLabApplication - Application has started working
+2024-09-05 02:35:45 INFO  c.tinkoff_lab.TinkoffLabApplication - Starting TinkoffLabApplication using Java 21.0.1 with PID 2896 (C:\Users\Nikita\IdeaProjects\pet-project\target\classes started by Nikita in C:\Users\Nikita\IdeaProjects\pet-project)
+2024-09-05 02:35:45 INFO  c.tinkoff_lab.TinkoffLabApplication - No active profile set, falling back to 1 default profile: "default"
+2024-09-05 02:35:51 INFO  c.tinkoff_lab.TinkoffLabApplication - Started TinkoffLabApplication in 6.896 seconds (process running for 8.116)
+2024-09-05 02:36:01 INFO  c.t.s.weather.WeatherServiceImpl - Start getting all cities for user with email ektoddgod@gmail.com
+2024-09-05 02:36:01 INFO  com.tinkoff_lab.dao.UserDAO - Start finding entity with id ektoddgod@gmail.com
+2024-09-05 02:36:01 INFO  com.tinkoff_lab.dao.UserDAO - Finding of entity with id ektoddgod@gmail.com ended successfully
+2024-09-05 02:36:01 WARN  c.t.s.weather.WeatherServiceImpl - Getting all cities for user with email ektoddgod@gmail.com went wrong: user not found
+2024-09-05 02:38:46 INFO  c.tinkoff_lab.TinkoffLabApplication - Application has terminated working
+
+2024-09-05 02:40:32 INFO  c.t.s.weather.WeatherServiceImpl - Start deleting user with email EmailRequest[email=ektogod@mail.ru]
+2024-09-05 02:40:32 INFO  com.tinkoff_lab.dao.UserDAO - Start finding entity with id ektogod@mail.ru
+2024-09-05 02:40:32 INFO  com.tinkoff_lab.dao.UserDAO - Finding of entity with id ektogod@mail.ru ended successfully
+2024-09-05 02:40:32 WARN  c.t.s.weather.WeatherServiceImpl - Deleting user with email ektogod@mail.ru went wrong: user not found
+2024-09-05 02:44:18 INFO  c.t.s.weather.WeatherServiceImpl - Start deleting user with email EmailRequest[email=ektogod@mail.ru]
+2024-09-05 02:44:18 INFO  com.tinkoff_lab.dao.UserDAO - Start finding entity with id ektogod@mail.ru
+2024-09-05 02:44:18 INFO  com.tinkoff_lab.dao.UserDAO - Finding of entity with id ektogod@mail.ru ended successfully
+2024-09-05 02:44:18 WARN  c.t.s.weather.WeatherServiceImpl - Deleting user with email ektogod@mail.ru went wrong: user not found
+2024-09-05 02:49:45 INFO  c.t.s.weather.WeatherServiceImpl - Start getting all cities for user with email ektogod@mail.ru
+2024-09-05 02:49:45 INFO  com.tinkoff_lab.dao.UserDAO - Start finding entity with id ektogod@mail.ru
+2024-09-05 02:49:45 INFO  com.tinkoff_lab.dao.UserDAO - Finding of entity with id ektogod@mail.ru ended successfully
+2024-09-05 02:49:45 WARN  c.t.s.weather.WeatherServiceImpl - Getting all cities for user with email ektogod@mail.ru went wrong: user not found
+2024-09-05 02:49:45 INFO  c.t.s.weather.WeatherServiceImpl - Start deleting user with email EmailRequest[email=ektogod@mail.ru]
+2024-09-05 02:49:45 INFO  com.tinkoff_lab.dao.UserDAO - Start finding entity with id ektogod@mail.ru
+2024-09-05 02:49:46 INFO  com.tinkoff_lab.dao.UserDAO - Finding of entity with id ektogod@mail.ru ended successfully
+2024-09-05 02:49:46 WARN  c.t.s.weather.WeatherServiceImpl - Deleting user with email ektogod@mail.ru went wrong: user not found
+2024-09-05 02:49:46 INFO  c.t.s.weather.WeatherServiceImpl - Start deleting user with email EmailRequest[email=ektogod@mail.ru]
+2024-09-05 02:49:46 INFO  com.tinkoff_lab.dao.UserDAO - Start finding entity with id ektogod@mail.ru
+2024-09-05 02:49:46 INFO  com.tinkoff_lab.dao.UserDAO - Finding of entity with id ektogod@mail.ru ended successfully
+2024-09-05 02:49:46 WARN  c.t.s.weather.WeatherServiceImpl - Deleting user with email ektogod@mail.ru went wrong: user not found
+2024-09-05 02:58:21 INFO  c.t.s.weather.WeatherServiceImpl - Start adding user with email ektogod@mail.ru and cities [CityDTO[city=Minsk, country=Belraus]] to database
+2024-09-05 02:58:21 INFO  com.tinkoff_lab.dao.UserDAO - Start finding entity with id ektogod@mail.ru
+2024-09-05 02:58:21 INFO  com.tinkoff_lab.dao.UserDAO - Finding of entity with id ektogod@mail.ru ended successfully
+2024-09-05 02:58:21 INFO  com.tinkoff_lab.dao.UserDAO - Start inserting entity: com.tinkoff_lab.entity.User@ff6d48eb
+2024-09-05 02:58:21 INFO  com.tinkoff_lab.dao.UserDAO - Inserting of entity com.tinkoff_lab.entity.User@ff6d48eb ended successfully
+2024-09-05 02:58:21 INFO  c.t.s.weather.CoordinateService - Start coordinate definition for city Minsk, country Belraus
+2024-09-05 02:58:21 INFO  c.t.s.weather.CountryCodeService - Start country code definition for country: Belraus
+2024-09-05 02:58:21 WARN  c.t.s.weather.CountryCodeService - Something wrong with country Belraus: code not defined.
+2024-09-05 02:58:22 INFO  c.t.s.weather.WeatherServiceImpl - Start adding user with email ektogod@mail.ru and cities [CityDTO[city=Minsk, country=Belraus]] to database
+2024-09-05 02:58:22 INFO  com.tinkoff_lab.dao.UserDAO - Start finding entity with id ektogod@mail.ru
+2024-09-05 02:58:22 INFO  com.tinkoff_lab.dao.UserDAO - Finding of entity with id ektogod@mail.ru ended successfully
+2024-09-05 02:58:22 WARN  c.t.s.weather.WeatherServiceImpl - User with email ektogod@mail.ru already exists!
+2024-09-05 02:59:12 INFO  com.tinkoff_lab.dao.UserDAO - Start inserting entity: com.tinkoff_lab.entity.User@ff6d48eb
+2024-09-05 02:59:12 INFO  com.tinkoff_lab.dao.UserDAO - Inserting of entity com.tinkoff_lab.entity.User@ff6d48eb ended successfully
+2024-09-05 02:59:12 INFO  com.tinkoff_lab.dao.CityDAO - Start inserting entity: com.tinkoff_lab.entity.City@e30c852f
+2024-09-05 02:59:12 INFO  com.tinkoff_lab.dao.CityDAO - Inserting of entity com.tinkoff_lab.entity.City@e30c852f ended successfully
+2024-09-05 02:59:12 INFO  com.tinkoff_lab.dao.CityDAO - Start inserting entity: com.tinkoff_lab.entity.City@7e0d54a2
+2024-09-05 02:59:12 INFO  com.tinkoff_lab.dao.CityDAO - Inserting of entity com.tinkoff_lab.entity.City@7e0d54a2 ended successfully
+2024-09-05 02:59:12 INFO  com.tinkoff_lab.dao.UserCityDAO - Start adding UserCity where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@e30c852f
+2024-09-05 02:59:12 INFO  com.tinkoff_lab.dao.UserCityDAO - Adding UserCit y where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@e30c852f ended successfully
+2024-09-05 02:59:12 INFO  com.tinkoff_lab.dao.UserCityDAO - Start adding UserCity where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@7e0d54a2
+2024-09-05 02:59:12 INFO  com.tinkoff_lab.dao.UserCityDAO - Adding UserCit y where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@7e0d54a2 ended successfully
+2024-09-05 02:59:12 INFO  c.t.s.weather.WeatherServiceImpl - Start deleting user with email EmailRequest[email=ektogod@mail.ru]
+2024-09-05 02:59:12 INFO  com.tinkoff_lab.dao.UserDAO - Start finding entity with id ektogod@mail.ru
+2024-09-05 02:59:12 INFO  com.tinkoff_lab.dao.UserDAO - Finding of entity with id ektogod@mail.ru ended successfully
+2024-09-05 02:59:12 INFO  com.tinkoff_lab.dao.UserCityDAO - Start removing UserCity where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@e30c852f
+2024-09-05 02:59:12 INFO  com.tinkoff_lab.dao.UserCityDAO - Removing UserCity where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@e30c852f ended successfully
+2024-09-05 02:59:13 INFO  com.tinkoff_lab.dao.UserDAO - Start inserting entity: com.tinkoff_lab.entity.User@ff6d48eb
+2024-09-05 02:59:13 INFO  com.tinkoff_lab.dao.UserDAO - Inserting of entity com.tinkoff_lab.entity.User@ff6d48eb ended successfully
+2024-09-05 02:59:13 INFO  com.tinkoff_lab.dao.CityDAO - Start inserting entity: com.tinkoff_lab.entity.City@e30c852f
+2024-09-05 02:59:13 INFO  com.tinkoff_lab.dao.CityDAO - Inserting of entity com.tinkoff_lab.entity.City@e30c852f ended successfully
+2024-09-05 02:59:13 INFO  com.tinkoff_lab.dao.CityDAO - Start inserting entity: com.tinkoff_lab.entity.City@7e0d54a2
+2024-09-05 02:59:13 INFO  com.tinkoff_lab.dao.CityDAO - Inserting of entity com.tinkoff_lab.entity.City@7e0d54a2 ended successfully
+2024-09-05 02:59:13 INFO  com.tinkoff_lab.dao.UserCityDAO - Start adding UserCity where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@e30c852f
+2024-09-05 02:59:13 INFO  com.tinkoff_lab.dao.UserCityDAO - Adding UserCit y where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@e30c852f ended successfully
+2024-09-05 02:59:13 INFO  com.tinkoff_lab.dao.UserCityDAO - Start adding UserCity where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@7e0d54a2
+2024-09-05 02:59:13 INFO  com.tinkoff_lab.dao.UserCityDAO - Adding UserCit y where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@7e0d54a2 ended successfully
+2024-09-05 02:59:13 INFO  c.t.s.weather.WeatherServiceImpl - Start getting all cities for user with email ektogod@mail.ru
+2024-09-05 02:59:13 INFO  com.tinkoff_lab.dao.UserDAO - Start finding entity with id ektogod@mail.ru
+2024-09-05 02:59:13 INFO  com.tinkoff_lab.dao.UserDAO - Finding of entity with id ektogod@mail.ru ended successfully
+2024-09-05 02:59:13 WARN  c.t.s.weather.WeatherServiceImpl - Getting all cities for user with email ektogod@mail.ru ended successfully
+2024-09-05 02:59:13 INFO  c.t.s.weather.WeatherServiceImpl - Start getting all cities for user with email ektogod@mail.ru
+2024-09-05 02:59:13 INFO  com.tinkoff_lab.dao.UserDAO - Start finding entity with id ektogod@mail.ru
+2024-09-05 02:59:13 INFO  com.tinkoff_lab.dao.UserDAO - Finding of entity with id ektogod@mail.ru ended successfully
+2024-09-05 02:59:13 WARN  c.t.s.weather.WeatherServiceImpl - Getting all cities for user with email ektogod@mail.ru went wrong: user not found
+2024-09-05 02:59:13 INFO  c.t.s.weather.WeatherServiceImpl - Start deleting user with email EmailRequest[email=ektogod@mail.ru]
+2024-09-05 02:59:13 INFO  com.tinkoff_lab.dao.UserDAO - Start finding entity with id ektogod@mail.ru
+2024-09-05 02:59:13 INFO  com.tinkoff_lab.dao.UserDAO - Finding of entity with id ektogod@mail.ru ended successfully
+2024-09-05 02:59:13 WARN  c.t.s.weather.WeatherServiceImpl - Deleting user with email ektogod@mail.ru went wrong: user not found
+2024-09-05 02:59:13 INFO  c.t.s.weather.WeatherServiceImpl - Start deleting user with email EmailRequest[email=ektogod@mail.ru]
+2024-09-05 02:59:13 INFO  com.tinkoff_lab.dao.UserDAO - Start finding entity with id ektogod@mail.ru
+2024-09-05 02:59:13 INFO  com.tinkoff_lab.dao.UserDAO - Finding of entity with id ektogod@mail.ru ended successfully
+2024-09-05 02:59:13 WARN  c.t.s.weather.WeatherServiceImpl - Deleting user with email ektogod@mail.ru went wrong: user not found
+2024-09-05 02:59:13 INFO  com.tinkoff_lab.dao.UserDAO - Start inserting entity: com.tinkoff_lab.entity.User@ff6d48eb
+2024-09-05 02:59:13 INFO  com.tinkoff_lab.dao.UserDAO - Inserting of entity com.tinkoff_lab.entity.User@ff6d48eb ended successfully
+2024-09-05 02:59:13 INFO  com.tinkoff_lab.dao.CityDAO - Start inserting entity: com.tinkoff_lab.entity.City@7e0d54a2
+2024-09-05 02:59:13 INFO  com.tinkoff_lab.dao.CityDAO - Inserting of entity com.tinkoff_lab.entity.City@7e0d54a2 ended successfully
+2024-09-05 02:59:13 INFO  com.tinkoff_lab.dao.UserCityDAO - Start adding UserCity where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@7e0d54a2
+2024-09-05 02:59:13 INFO  com.tinkoff_lab.dao.UserCityDAO - Adding UserCit y where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@7e0d54a2 ended successfully
+2024-09-05 02:59:13 INFO  c.t.s.weather.WeatherServiceImpl - Start adding cities [CityDTO[city=Grodno, country=Belarus], CityDTO[city=Minsk, country=Belarus]] to user with email ektogod@mail.ru
+2024-09-05 02:59:13 INFO  com.tinkoff_lab.dao.UserDAO - Start finding entity with id ektogod@mail.ru
+2024-09-05 02:59:13 INFO  com.tinkoff_lab.dao.UserDAO - Finding of entity with id ektogod@mail.ru ended successfully
+2024-09-05 02:59:13 INFO  c.t.s.weather.CoordinateService - Start coordinate definition for city Grodno, country Belarus
+2024-09-05 02:59:13 INFO  c.t.s.weather.CountryCodeService - Start country code definition for country: Belarus
+2024-09-05 02:59:13 INFO  c.t.s.weather.CountryCodeService - Country code definition for country Belarus ended successfully
+2024-09-05 02:59:15 INFO  c.t.s.weather.CoordinateService - Coordinate definition for city Grodno, country Belarus ended successfully
+2024-09-05 02:59:15 INFO  com.tinkoff_lab.dao.CityDAO - Start updating entity: com.tinkoff_lab.entity.City@d2f87f10
+2024-09-05 02:59:15 INFO  com.tinkoff_lab.dao.CityDAO - Updating entity com.tinkoff_lab.entity.City@d2f87f10 ended successfully
+2024-09-05 02:59:15 INFO  com.tinkoff_lab.dao.UserCityDAO - Start adding UserCity where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@d2f87f10
+2024-09-05 02:59:15 INFO  com.tinkoff_lab.dao.UserCityDAO - Adding UserCit y where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@d2f87f10 ended successfully
+2024-09-05 02:59:15 INFO  c.t.s.weather.CoordinateService - Start coordinate definition for city Minsk, country Belarus
+2024-09-05 02:59:15 INFO  c.t.s.weather.CountryCodeService - Start country code definition for country: Belarus
+2024-09-05 02:59:15 INFO  c.t.s.weather.CountryCodeService - Country code definition for country Belarus ended successfully
+2024-09-05 02:59:17 INFO  c.t.s.weather.CoordinateService - Coordinate definition for city Minsk, country Belarus ended successfully
+2024-09-05 02:59:17 INFO  com.tinkoff_lab.dao.CityDAO - Start updating entity: com.tinkoff_lab.entity.City@ff21bcf0
+2024-09-05 02:59:17 INFO  com.tinkoff_lab.dao.CityDAO - Updating entity com.tinkoff_lab.entity.City@ff21bcf0 ended successfully
+2024-09-05 02:59:17 INFO  com.tinkoff_lab.dao.UserCityDAO - Start adding UserCity where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@ff21bcf0
+2024-09-05 02:59:17 INFO  com.tinkoff_lab.dao.UserCityDAO - Adding UserCit y where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@ff21bcf0 ended successfully
+2024-09-05 02:59:17 INFO  c.t.s.weather.WeatherServiceImpl - Adding cities [CityDTO[city=Grodno, country=Belarus], CityDTO[city=Minsk, country=Belarus]] to user with email ektogod@mail.ru ended successfully
+2024-09-05 02:59:17 INFO  c.t.s.weather.WeatherServiceImpl - Start adding user with email ektogod@mail.ru and cities [CityDTO[city=Minsk, country=Belraus]] to database
+2024-09-05 02:59:17 INFO  com.tinkoff_lab.dao.UserDAO - Start finding entity with id ektogod@mail.ru
+2024-09-05 02:59:17 INFO  com.tinkoff_lab.dao.UserDAO - Finding of entity with id ektogod@mail.ru ended successfully
+2024-09-05 02:59:17 INFO  com.tinkoff_lab.dao.UserDAO - Start inserting entity: com.tinkoff_lab.entity.User@ff6d48eb
+2024-09-05 02:59:17 INFO  com.tinkoff_lab.dao.UserDAO - Inserting of entity com.tinkoff_lab.entity.User@ff6d48eb ended successfully
+2024-09-05 02:59:17 INFO  c.t.s.weather.CoordinateService - Start coordinate definition for city Minsk, country Belraus
+2024-09-05 02:59:17 INFO  c.t.s.weather.CountryCodeService - Start country code definition for country: Belraus
+2024-09-05 02:59:17 WARN  c.t.s.weather.CountryCodeService - Something wrong with country Belraus: code not defined.
+2024-09-05 02:59:17 INFO  c.t.s.weather.WeatherServiceImpl - Start adding user with email ektogod@mail.ru and cities [CityDTO[city=Asjlas, country=Belarus]] to database
+2024-09-05 02:59:17 INFO  com.tinkoff_lab.dao.UserDAO - Start finding entity with id ektogod@mail.ru
+2024-09-05 02:59:17 INFO  com.tinkoff_lab.dao.UserDAO - Finding of entity with id ektogod@mail.ru ended successfully
+2024-09-05 02:59:17 WARN  c.t.s.weather.WeatherServiceImpl - User with email ektogod@mail.ru already exists!
+2024-09-05 02:59:17 INFO  c.t.s.weather.WeatherServiceImpl - Start adding user with email ektogod@gmail.com and cities [CityDTO[city=Minsk, country=Belarus], CityDTO[city=Grodno, country=Belarus]] to database
+2024-09-05 02:59:17 INFO  com.tinkoff_lab.dao.UserDAO - Start finding entity with id ektogod@gmail.com
+2024-09-05 02:59:17 INFO  com.tinkoff_lab.dao.UserDAO - Finding of entity with id ektogod@gmail.com ended successfully
+2024-09-05 02:59:17 INFO  com.tinkoff_lab.dao.UserDAO - Start inserting entity: com.tinkoff_lab.entity.User@1f1beab8
+2024-09-05 02:59:17 INFO  com.tinkoff_lab.dao.UserDAO - Inserting of entity com.tinkoff_lab.entity.User@1f1beab8 ended successfully
+2024-09-05 02:59:17 INFO  c.t.s.weather.CoordinateService - Start coordinate definition for city Minsk, country Belarus
+2024-09-05 02:59:17 INFO  c.t.s.weather.CountryCodeService - Start country code definition for country: Belarus
+2024-09-05 02:59:17 INFO  c.t.s.weather.CountryCodeService - Country code definition for country Belarus ended successfully
+2024-09-05 02:59:20 INFO  c.t.s.weather.CoordinateService - Coordinate definition for city Minsk, country Belarus ended successfully
+2024-09-05 02:59:20 INFO  com.tinkoff_lab.dao.CityDAO - Start updating entity: com.tinkoff_lab.entity.City@ff21bcf0
+2024-09-05 02:59:20 INFO  com.tinkoff_lab.dao.CityDAO - Updating entity com.tinkoff_lab.entity.City@ff21bcf0 ended successfully
+2024-09-05 02:59:20 INFO  com.tinkoff_lab.dao.UserCityDAO - Start adding UserCity where User: com.tinkoff_lab.entity.User@1f1beab8, City: com.tinkoff_lab.entity.City@ff21bcf0
+2024-09-05 02:59:20 INFO  com.tinkoff_lab.dao.UserCityDAO - Adding UserCit y where User: com.tinkoff_lab.entity.User@1f1beab8, City: com.tinkoff_lab.entity.City@ff21bcf0 ended successfully
+2024-09-05 02:59:20 INFO  c.t.s.weather.CoordinateService - Start coordinate definition for city Grodno, country Belarus
+2024-09-05 02:59:20 INFO  c.t.s.weather.CountryCodeService - Start country code definition for country: Belarus
+2024-09-05 02:59:20 INFO  c.t.s.weather.CountryCodeService - Country code definition for country Belarus ended successfully
+2024-09-05 02:59:20 INFO  c.t.s.weather.CoordinateService - Coordinate definition for city Grodno, country Belarus ended successfully
+2024-09-05 02:59:20 INFO  com.tinkoff_lab.dao.CityDAO - Start updating entity: com.tinkoff_lab.entity.City@d2f87f10
+2024-09-05 02:59:20 INFO  com.tinkoff_lab.dao.CityDAO - Updating entity com.tinkoff_lab.entity.City@d2f87f10 ended successfully
+2024-09-05 02:59:20 INFO  com.tinkoff_lab.dao.UserCityDAO - Start adding UserCity where User: com.tinkoff_lab.entity.User@1f1beab8, City: com.tinkoff_lab.entity.City@d2f87f10
+2024-09-05 02:59:20 INFO  com.tinkoff_lab.dao.UserCityDAO - Adding UserCit y where User: com.tinkoff_lab.entity.User@1f1beab8, City: com.tinkoff_lab.entity.City@d2f87f10 ended successfully
+2024-09-05 02:59:20 INFO  c.t.s.weather.WeatherServiceImpl - Adding user with email ektogod@gmail.com and cities [] to database ended successfully
+2024-09-05 02:59:20 INFO  com.tinkoff_lab.dao.UserDAO - Start finding entity with id ektogod@gmail.com
+2024-09-05 02:59:20 INFO  com.tinkoff_lab.dao.UserDAO - Finding of entity with id ektogod@gmail.com ended successfully
+2024-09-05 02:59:20 INFO  com.tinkoff_lab.dao.CityDAO - Start finding all entities
+2024-09-05 02:59:20 INFO  com.tinkoff_lab.dao.CityDAO - Finding ended successfully
+2024-09-05 03:02:08 INFO  com.tinkoff_lab.dao.UserDAO - Start inserting entity: com.tinkoff_lab.entity.User@ff6d48eb
+2024-09-05 03:02:08 INFO  com.tinkoff_lab.dao.UserDAO - Inserting of entity com.tinkoff_lab.entity.User@ff6d48eb ended successfully
+2024-09-05 03:02:08 INFO  com.tinkoff_lab.dao.CityDAO - Start inserting entity: com.tinkoff_lab.entity.City@e30c852f
+2024-09-05 03:02:08 INFO  com.tinkoff_lab.dao.CityDAO - Inserting of entity com.tinkoff_lab.entity.City@e30c852f ended successfully
+2024-09-05 03:02:08 INFO  com.tinkoff_lab.dao.CityDAO - Start inserting entity: com.tinkoff_lab.entity.City@7e0d54a2
+2024-09-05 03:02:08 INFO  com.tinkoff_lab.dao.CityDAO - Inserting of entity com.tinkoff_lab.entity.City@7e0d54a2 ended successfully
+2024-09-05 03:02:08 INFO  com.tinkoff_lab.dao.UserCityDAO - Start adding UserCity where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@e30c852f
+2024-09-05 03:02:08 INFO  com.tinkoff_lab.dao.UserCityDAO - Adding UserCit y where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@e30c852f ended successfully
+2024-09-05 03:02:08 INFO  com.tinkoff_lab.dao.UserCityDAO - Start adding UserCity where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@7e0d54a2
+2024-09-05 03:02:08 INFO  com.tinkoff_lab.dao.UserCityDAO - Adding UserCit y where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@7e0d54a2 ended successfully
+2024-09-05 03:02:08 INFO  c.t.s.weather.WeatherServiceImpl - Start deleting user with email EmailRequest[email=ektogod@mail.ru]
+2024-09-05 03:02:08 INFO  com.tinkoff_lab.dao.UserDAO - Start finding entity with id ektogod@mail.ru
+2024-09-05 03:02:08 INFO  com.tinkoff_lab.dao.UserDAO - Finding of entity with id ektogod@mail.ru ended successfully
+2024-09-05 03:02:08 INFO  com.tinkoff_lab.dao.UserCityDAO - Start removing UserCity where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@e30c852f
+2024-09-05 03:02:08 INFO  com.tinkoff_lab.dao.UserCityDAO - Removing UserCity where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@e30c852f ended successfully
+2024-09-05 03:02:09 INFO  com.tinkoff_lab.dao.UserDAO - Start inserting entity: com.tinkoff_lab.entity.User@ff6d48eb
+2024-09-05 03:02:09 INFO  com.tinkoff_lab.dao.UserDAO - Inserting of entity com.tinkoff_lab.entity.User@ff6d48eb ended successfully
+2024-09-05 03:02:09 INFO  com.tinkoff_lab.dao.CityDAO - Start inserting entity: com.tinkoff_lab.entity.City@e30c852f
+2024-09-05 03:02:09 INFO  com.tinkoff_lab.dao.CityDAO - Inserting of entity com.tinkoff_lab.entity.City@e30c852f ended successfully
+2024-09-05 03:02:09 INFO  com.tinkoff_lab.dao.CityDAO - Start inserting entity: com.tinkoff_lab.entity.City@7e0d54a2
+2024-09-05 03:02:09 INFO  com.tinkoff_lab.dao.CityDAO - Inserting of entity com.tinkoff_lab.entity.City@7e0d54a2 ended successfully
+2024-09-05 03:02:09 INFO  com.tinkoff_lab.dao.UserCityDAO - Start adding UserCity where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@e30c852f
+2024-09-05 03:02:09 INFO  com.tinkoff_lab.dao.UserCityDAO - Adding UserCit y where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@e30c852f ended successfully
+2024-09-05 03:02:09 INFO  com.tinkoff_lab.dao.UserCityDAO - Start adding UserCity where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@7e0d54a2
+2024-09-05 03:02:09 INFO  com.tinkoff_lab.dao.UserCityDAO - Adding UserCit y where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@7e0d54a2 ended successfully
+2024-09-05 03:02:09 INFO  c.t.s.weather.WeatherServiceImpl - Start getting all cities for user with email ektogod@mail.ru
+2024-09-05 03:02:09 INFO  com.tinkoff_lab.dao.UserDAO - Start finding entity with id ektogod@mail.ru
+2024-09-05 03:02:09 INFO  com.tinkoff_lab.dao.UserDAO - Finding of entity with id ektogod@mail.ru ended successfully
+2024-09-05 03:02:09 WARN  c.t.s.weather.WeatherServiceImpl - Getting all cities for user with email ektogod@mail.ru ended successfully
+2024-09-05 03:02:09 INFO  c.t.s.weather.WeatherServiceImpl - Start getting all cities for user with email ektogod@mail.ru
+2024-09-05 03:02:09 INFO  com.tinkoff_lab.dao.UserDAO - Start finding entity with id ektogod@mail.ru
+2024-09-05 03:02:09 INFO  com.tinkoff_lab.dao.UserDAO - Finding of entity with id ektogod@mail.ru ended successfully
+2024-09-05 03:02:09 WARN  c.t.s.weather.WeatherServiceImpl - Getting all cities for user with email ektogod@mail.ru went wrong: user not found
+2024-09-05 03:02:09 INFO  c.t.s.weather.WeatherServiceImpl - Start deleting user with email EmailRequest[email=ektogod@mail.ru]
+2024-09-05 03:02:09 INFO  com.tinkoff_lab.dao.UserDAO - Start finding entity with id ektogod@mail.ru
+2024-09-05 03:02:09 INFO  com.tinkoff_lab.dao.UserDAO - Finding of entity with id ektogod@mail.ru ended successfully
+2024-09-05 03:02:09 WARN  c.t.s.weather.WeatherServiceImpl - Deleting user with email ektogod@mail.ru went wrong: user not found
+2024-09-05 03:02:09 INFO  c.t.s.weather.WeatherServiceImpl - Start deleting user with email EmailRequest[email=ektogod@mail.ru]
+2024-09-05 03:02:09 INFO  com.tinkoff_lab.dao.UserDAO - Start finding entity with id ektogod@mail.ru
+2024-09-05 03:02:09 INFO  com.tinkoff_lab.dao.UserDAO - Finding of entity with id ektogod@mail.ru ended successfully
+2024-09-05 03:02:09 WARN  c.t.s.weather.WeatherServiceImpl - Deleting user with email ektogod@mail.ru went wrong: user not found
+2024-09-05 03:02:09 INFO  com.tinkoff_lab.dao.UserDAO - Start inserting entity: com.tinkoff_lab.entity.User@ff6d48eb
+2024-09-05 03:02:09 INFO  com.tinkoff_lab.dao.UserDAO - Inserting of entity com.tinkoff_lab.entity.User@ff6d48eb ended successfully
+2024-09-05 03:02:09 INFO  com.tinkoff_lab.dao.CityDAO - Start inserting entity: com.tinkoff_lab.entity.City@7e0d54a2
+2024-09-05 03:02:09 INFO  com.tinkoff_lab.dao.CityDAO - Inserting of entity com.tinkoff_lab.entity.City@7e0d54a2 ended successfully
+2024-09-05 03:02:09 INFO  com.tinkoff_lab.dao.UserCityDAO - Start adding UserCity where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@7e0d54a2
+2024-09-05 03:02:09 INFO  com.tinkoff_lab.dao.UserCityDAO - Adding UserCit y where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@7e0d54a2 ended successfully
+2024-09-05 03:02:09 INFO  c.t.s.weather.WeatherServiceImpl - Start adding cities [CityDTO[city=Grodno, country=Belarus], CityDTO[city=Minsk, country=Belarus]] to user with email ektogod@mail.ru
+2024-09-05 03:02:09 INFO  com.tinkoff_lab.dao.UserDAO - Start finding entity with id ektogod@mail.ru
+2024-09-05 03:02:09 INFO  com.tinkoff_lab.dao.UserDAO - Finding of entity with id ektogod@mail.ru ended successfully
+2024-09-05 03:02:09 INFO  c.t.s.weather.CoordinateService - Start coordinate definition for city Grodno, country Belarus
+2024-09-05 03:02:09 INFO  c.t.s.weather.CountryCodeService - Start country code definition for country: Belarus
+2024-09-05 03:02:09 INFO  c.t.s.weather.CountryCodeService - Country code definition for country Belarus ended successfully
+2024-09-05 03:02:13 INFO  c.t.s.weather.CoordinateService - Coordinate definition for city Grodno, country Belarus ended successfully
+2024-09-05 03:02:13 INFO  com.tinkoff_lab.dao.CityDAO - Start updating entity: com.tinkoff_lab.entity.City@d2f87f10
+2024-09-05 03:02:13 INFO  com.tinkoff_lab.dao.CityDAO - Updating entity com.tinkoff_lab.entity.City@d2f87f10 ended successfully
+2024-09-05 03:02:13 INFO  com.tinkoff_lab.dao.UserCityDAO - Start adding UserCity where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@d2f87f10
+2024-09-05 03:02:13 INFO  com.tinkoff_lab.dao.UserCityDAO - Adding UserCit y where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@d2f87f10 ended successfully
+2024-09-05 03:02:13 INFO  c.t.s.weather.CoordinateService - Start coordinate definition for city Minsk, country Belarus
+2024-09-05 03:02:13 INFO  c.t.s.weather.CountryCodeService - Start country code definition for country: Belarus
+2024-09-05 03:02:13 INFO  c.t.s.weather.CountryCodeService - Country code definition for country Belarus ended successfully
+2024-09-05 03:02:13 INFO  c.t.s.weather.CoordinateService - Coordinate definition for city Minsk, country Belarus ended successfully
+2024-09-05 03:02:13 INFO  com.tinkoff_lab.dao.CityDAO - Start updating entity: com.tinkoff_lab.entity.City@ff21bcf0
+2024-09-05 03:02:13 INFO  com.tinkoff_lab.dao.CityDAO - Updating entity com.tinkoff_lab.entity.City@ff21bcf0 ended successfully
+2024-09-05 03:02:13 INFO  com.tinkoff_lab.dao.UserCityDAO - Start adding UserCity where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@ff21bcf0
+2024-09-05 03:02:13 INFO  com.tinkoff_lab.dao.UserCityDAO - Adding UserCit y where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@ff21bcf0 ended successfully
+2024-09-05 03:02:13 INFO  c.t.s.weather.WeatherServiceImpl - Adding cities [CityDTO[city=Grodno, country=Belarus], CityDTO[city=Minsk, country=Belarus]] to user with email ektogod@mail.ru ended successfully
+2024-09-05 03:02:13 INFO  com.tinkoff_lab.dao.UserDAO - Start finding entity with id ektogod@mail.ru
+2024-09-05 03:02:13 INFO  com.tinkoff_lab.dao.UserDAO - Finding of entity with id ektogod@mail.ru ended successfully
+2024-09-05 03:02:13 INFO  c.t.s.weather.WeatherServiceImpl - Start adding user with email ektogod@mail.ru and cities [CityDTO[city=Minsk, country=Belraus]] to database
+2024-09-05 03:02:13 INFO  com.tinkoff_lab.dao.UserDAO - Start finding entity with id ektogod@mail.ru
+2024-09-05 03:02:13 INFO  com.tinkoff_lab.dao.UserDAO - Finding of entity with id ektogod@mail.ru ended successfully
+2024-09-05 03:02:13 INFO  com.tinkoff_lab.dao.UserDAO - Start inserting entity: com.tinkoff_lab.entity.User@ff6d48eb
+2024-09-05 03:02:13 INFO  com.tinkoff_lab.dao.UserDAO - Inserting of entity com.tinkoff_lab.entity.User@ff6d48eb ended successfully
+2024-09-05 03:02:13 INFO  c.t.s.weather.CoordinateService - Start coordinate definition for city Minsk, country Belraus
+2024-09-05 03:02:13 INFO  c.t.s.weather.CountryCodeService - Start country code definition for country: Belraus
+2024-09-05 03:02:13 WARN  c.t.s.weather.CountryCodeService - Something wrong with country Belraus: code not defined.
+2024-09-05 03:02:13 INFO  c.t.s.weather.WeatherServiceImpl - Start adding user with email ektodog@mail.ru and cities [CityDTO[city=Asjlas, country=Belarus]] to database
+2024-09-05 03:02:13 INFO  com.tinkoff_lab.dao.UserDAO - Start finding entity with id ektodog@mail.ru
+2024-09-05 03:02:13 INFO  com.tinkoff_lab.dao.UserDAO - Finding of entity with id ektodog@mail.ru ended successfully
+2024-09-05 03:02:13 INFO  com.tinkoff_lab.dao.UserDAO - Start inserting entity: com.tinkoff_lab.entity.User@909e712b
+2024-09-05 03:02:14 INFO  com.tinkoff_lab.dao.UserDAO - Inserting of entity com.tinkoff_lab.entity.User@909e712b ended successfully
+2024-09-05 03:02:14 INFO  c.t.s.weather.CoordinateService - Start coordinate definition for city Asjlas, country Belarus
+2024-09-05 03:02:14 INFO  c.t.s.weather.CountryCodeService - Start country code definition for country: Belarus
+2024-09-05 03:02:14 INFO  c.t.s.weather.CountryCodeService - Country code definition for country Belarus ended successfully
+2024-09-05 03:02:14 INFO  c.t.s.weather.CoordinateService - Coordinate definition for city Asjlas, country Belarus ended successfully
+2024-09-05 03:02:14 INFO  c.t.s.weather.WeatherServiceImpl - Start adding user with email ektogod@gmail.com and cities [CityDTO[city=Minsk, country=Belarus], CityDTO[city=Grodno, country=Belarus]] to database
+2024-09-05 03:02:14 INFO  com.tinkoff_lab.dao.UserDAO - Start finding entity with id ektogod@gmail.com
+2024-09-05 03:02:14 INFO  com.tinkoff_lab.dao.UserDAO - Finding of entity with id ektogod@gmail.com ended successfully
+2024-09-05 03:02:14 INFO  com.tinkoff_lab.dao.UserDAO - Start inserting entity: com.tinkoff_lab.entity.User@1f1beab8
+2024-09-05 03:02:14 INFO  com.tinkoff_lab.dao.UserDAO - Inserting of entity com.tinkoff_lab.entity.User@1f1beab8 ended successfully
+2024-09-05 03:02:14 INFO  c.t.s.weather.CoordinateService - Start coordinate definition for city Minsk, country Belarus
+2024-09-05 03:02:14 INFO  c.t.s.weather.CountryCodeService - Start country code definition for country: Belarus
+2024-09-05 03:02:14 INFO  c.t.s.weather.CountryCodeService - Country code definition for country Belarus ended successfully
+2024-09-05 03:02:14 INFO  c.t.s.weather.CoordinateService - Coordinate definition for city Minsk, country Belarus ended successfully
+2024-09-05 03:02:14 INFO  com.tinkoff_lab.dao.CityDAO - Start updating entity: com.tinkoff_lab.entity.City@ff21bcf0
+2024-09-05 03:02:14 INFO  com.tinkoff_lab.dao.CityDAO - Updating entity com.tinkoff_lab.entity.City@ff21bcf0 ended successfully
+2024-09-05 03:02:14 INFO  com.tinkoff_lab.dao.UserCityDAO - Start adding UserCity where User: com.tinkoff_lab.entity.User@1f1beab8, City: com.tinkoff_lab.entity.City@ff21bcf0
+2024-09-05 03:02:14 INFO  com.tinkoff_lab.dao.UserCityDAO - Adding UserCit y where User: com.tinkoff_lab.entity.User@1f1beab8, City: com.tinkoff_lab.entity.City@ff21bcf0 ended successfully
+2024-09-05 03:02:14 INFO  c.t.s.weather.CoordinateService - Start coordinate definition for city Grodno, country Belarus
+2024-09-05 03:02:14 INFO  c.t.s.weather.CountryCodeService - Start country code definition for country: Belarus
+2024-09-05 03:02:14 INFO  c.t.s.weather.CountryCodeService - Country code definition for country Belarus ended successfully
+2024-09-05 03:02:14 INFO  c.t.s.weather.CoordinateService - Coordinate definition for city Grodno, country Belarus ended successfully
+2024-09-05 03:02:14 INFO  com.tinkoff_lab.dao.CityDAO - Start updating entity: com.tinkoff_lab.entity.City@d2f87f10
+2024-09-05 03:02:14 INFO  com.tinkoff_lab.dao.CityDAO - Updating entity com.tinkoff_lab.entity.City@d2f87f10 ended successfully
+2024-09-05 03:02:14 INFO  com.tinkoff_lab.dao.UserCityDAO - Start adding UserCity where User: com.tinkoff_lab.entity.User@1f1beab8, City: com.tinkoff_lab.entity.City@d2f87f10
+2024-09-05 03:02:14 INFO  com.tinkoff_lab.dao.UserCityDAO - Adding UserCit y where User: com.tinkoff_lab.entity.User@1f1beab8, City: com.tinkoff_lab.entity.City@d2f87f10 ended successfully
+2024-09-05 03:02:14 INFO  c.t.s.weather.WeatherServiceImpl - Adding user with email ektogod@gmail.com and cities [] to database ended successfully
+2024-09-05 03:02:14 INFO  com.tinkoff_lab.dao.UserDAO - Start finding entity with id ektogod@gmail.com
+2024-09-05 03:02:14 INFO  com.tinkoff_lab.dao.UserDAO - Finding of entity with id ektogod@gmail.com ended successfully
+2024-09-05 03:02:14 INFO  com.tinkoff_lab.dao.CityDAO - Start finding all entities
+2024-09-05 03:02:14 INFO  com.tinkoff_lab.dao.CityDAO - Finding ended successfully
+2024-09-05 03:04:30 INFO  com.tinkoff_lab.dao.UserDAO - Start inserting entity: com.tinkoff_lab.entity.User@ff6d48eb
+2024-09-05 03:04:31 INFO  com.tinkoff_lab.dao.UserDAO - Inserting of entity com.tinkoff_lab.entity.User@ff6d48eb ended successfully
+2024-09-05 03:04:31 INFO  com.tinkoff_lab.dao.CityDAO - Start inserting entity: com.tinkoff_lab.entity.City@e30c852f
+2024-09-05 03:04:31 INFO  com.tinkoff_lab.dao.CityDAO - Inserting of entity com.tinkoff_lab.entity.City@e30c852f ended successfully
+2024-09-05 03:04:31 INFO  com.tinkoff_lab.dao.CityDAO - Start inserting entity: com.tinkoff_lab.entity.City@7e0d54a2
+2024-09-05 03:04:31 INFO  com.tinkoff_lab.dao.CityDAO - Inserting of entity com.tinkoff_lab.entity.City@7e0d54a2 ended successfully
+2024-09-05 03:04:31 INFO  com.tinkoff_lab.dao.UserCityDAO - Start adding UserCity where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@e30c852f
+2024-09-05 03:04:31 INFO  com.tinkoff_lab.dao.UserCityDAO - Adding UserCit y where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@e30c852f ended successfully
+2024-09-05 03:04:31 INFO  com.tinkoff_lab.dao.UserCityDAO - Start adding UserCity where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@7e0d54a2
+2024-09-05 03:04:31 INFO  com.tinkoff_lab.dao.UserCityDAO - Adding UserCit y where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@7e0d54a2 ended successfully
+2024-09-05 03:04:36 INFO  c.t.s.weather.WeatherServiceImpl - Start deleting user with email EmailRequest[email=ektogod@mail.ru]
+2024-09-05 03:04:36 INFO  com.tinkoff_lab.dao.UserDAO - Start finding entity with id ektogod@mail.ru
+2024-09-05 03:04:36 INFO  com.tinkoff_lab.dao.UserDAO - Finding of entity with id ektogod@mail.ru ended successfully
+2024-09-05 03:04:36 INFO  com.tinkoff_lab.dao.UserCityDAO - Start removing UserCity where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@e30c852f
+2024-09-05 03:04:36 INFO  com.tinkoff_lab.dao.UserCityDAO - Removing UserCity where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@e30c852f ended successfully
+2024-09-05 03:04:36 INFO  com.tinkoff_lab.dao.UserDAO - Start inserting entity: com.tinkoff_lab.entity.User@ff6d48eb
+2024-09-05 03:04:36 INFO  com.tinkoff_lab.dao.UserDAO - Inserting of entity com.tinkoff_lab.entity.User@ff6d48eb ended successfully
+2024-09-05 03:04:36 INFO  com.tinkoff_lab.dao.CityDAO - Start inserting entity: com.tinkoff_lab.entity.City@e30c852f
+2024-09-05 03:04:36 INFO  com.tinkoff_lab.dao.CityDAO - Inserting of entity com.tinkoff_lab.entity.City@e30c852f ended successfully
+2024-09-05 03:04:36 INFO  com.tinkoff_lab.dao.CityDAO - Start inserting entity: com.tinkoff_lab.entity.City@7e0d54a2
+2024-09-05 03:04:36 INFO  com.tinkoff_lab.dao.CityDAO - Inserting of entity com.tinkoff_lab.entity.City@7e0d54a2 ended successfully
+2024-09-05 03:04:36 INFO  com.tinkoff_lab.dao.UserCityDAO - Start adding UserCity where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@e30c852f
+2024-09-05 03:04:37 INFO  com.tinkoff_lab.dao.UserCityDAO - Adding UserCit y where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@e30c852f ended successfully
+2024-09-05 03:04:37 INFO  com.tinkoff_lab.dao.UserCityDAO - Start adding UserCity where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@7e0d54a2
+2024-09-05 03:04:37 INFO  com.tinkoff_lab.dao.UserCityDAO - Adding UserCit y where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@7e0d54a2 ended successfully
+2024-09-05 03:04:38 INFO  c.t.s.weather.WeatherServiceImpl - Start getting all cities for user with email ektogod@mail.ru
+2024-09-05 03:04:38 INFO  com.tinkoff_lab.dao.UserDAO - Start finding entity with id ektogod@mail.ru
+2024-09-05 03:04:38 INFO  com.tinkoff_lab.dao.UserDAO - Finding of entity with id ektogod@mail.ru ended successfully
+2024-09-05 03:04:38 WARN  c.t.s.weather.WeatherServiceImpl - Getting all cities for user with email ektogod@mail.ru ended successfully
+2024-09-05 03:04:41 INFO  c.t.s.weather.WeatherServiceImpl - Start getting all cities for user with email ektogod@mail.ru
+2024-09-05 03:04:41 INFO  com.tinkoff_lab.dao.UserDAO - Start finding entity with id ektogod@mail.ru
+2024-09-05 03:04:41 INFO  com.tinkoff_lab.dao.UserDAO - Finding of entity with id ektogod@mail.ru ended successfully
+2024-09-05 03:04:41 WARN  c.t.s.weather.WeatherServiceImpl - Getting all cities for user with email ektogod@mail.ru went wrong: user not found
+2024-09-05 03:04:43 INFO  c.t.s.weather.WeatherServiceImpl - Start deleting user with email EmailRequest[email=ektogod@mail.ru]
+2024-09-05 03:04:43 INFO  com.tinkoff_lab.dao.UserDAO - Start finding entity with id ektogod@mail.ru
+2024-09-05 03:04:44 INFO  com.tinkoff_lab.dao.UserDAO - Finding of entity with id ektogod@mail.ru ended successfully
+2024-09-05 03:04:44 WARN  c.t.s.weather.WeatherServiceImpl - Deleting user with email ektogod@mail.ru went wrong: user not found
+2024-09-05 03:04:45 INFO  c.t.s.weather.WeatherServiceImpl - Start deleting user with email EmailRequest[email=ektogod@mail.ru]
+2024-09-05 03:04:45 INFO  com.tinkoff_lab.dao.UserDAO - Start finding entity with id ektogod@mail.ru
+2024-09-05 03:04:45 INFO  com.tinkoff_lab.dao.UserDAO - Finding of entity with id ektogod@mail.ru ended successfully
+2024-09-05 03:04:45 WARN  c.t.s.weather.WeatherServiceImpl - Deleting user with email ektogod@mail.ru went wrong: user not found
+2024-09-05 03:04:46 INFO  com.tinkoff_lab.dao.UserDAO - Start inserting entity: com.tinkoff_lab.entity.User@ff6d48eb
+2024-09-05 03:04:46 INFO  com.tinkoff_lab.dao.UserDAO - Inserting of entity com.tinkoff_lab.entity.User@ff6d48eb ended successfully
+2024-09-05 03:04:46 INFO  com.tinkoff_lab.dao.CityDAO - Start inserting entity: com.tinkoff_lab.entity.City@7e0d54a2
+2024-09-05 03:04:46 INFO  com.tinkoff_lab.dao.CityDAO - Inserting of entity com.tinkoff_lab.entity.City@7e0d54a2 ended successfully
+2024-09-05 03:04:46 INFO  com.tinkoff_lab.dao.UserCityDAO - Start adding UserCity where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@7e0d54a2
+2024-09-05 03:04:46 INFO  com.tinkoff_lab.dao.UserCityDAO - Adding UserCit y where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@7e0d54a2 ended successfully
+2024-09-05 03:04:47 INFO  c.t.s.weather.WeatherServiceImpl - Start adding cities [CityDTO[city=Grodno, country=Belarus], CityDTO[city=Minsk, country=Belarus]] to user with email ektogod@mail.ru
+2024-09-05 03:04:47 INFO  com.tinkoff_lab.dao.UserDAO - Start finding entity with id ektogod@mail.ru
+2024-09-05 03:04:47 INFO  com.tinkoff_lab.dao.UserDAO - Finding of entity with id ektogod@mail.ru ended successfully
+2024-09-05 03:04:47 INFO  c.t.s.weather.CoordinateService - Start coordinate definition for city Grodno, country Belarus
+2024-09-05 03:04:47 INFO  c.t.s.weather.CountryCodeService - Start country code definition for country: Belarus
+2024-09-05 03:04:47 INFO  c.t.s.weather.CountryCodeService - Country code definition for country Belarus ended successfully
+2024-09-05 03:04:47 INFO  c.t.s.weather.CoordinateService - Coordinate definition for city Grodno, country Belarus ended successfully
+2024-09-05 03:04:47 INFO  com.tinkoff_lab.dao.CityDAO - Start updating entity: com.tinkoff_lab.entity.City@d2f87f10
+2024-09-05 03:04:47 INFO  com.tinkoff_lab.dao.CityDAO - Updating entity com.tinkoff_lab.entity.City@d2f87f10 ended successfully
+2024-09-05 03:04:47 INFO  com.tinkoff_lab.dao.UserCityDAO - Start adding UserCity where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@d2f87f10
+2024-09-05 03:04:47 INFO  com.tinkoff_lab.dao.UserCityDAO - Adding UserCit y where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@d2f87f10 ended successfully
+2024-09-05 03:04:47 INFO  c.t.s.weather.CoordinateService - Start coordinate definition for city Minsk, country Belarus
+2024-09-05 03:04:47 INFO  c.t.s.weather.CountryCodeService - Start country code definition for country: Belarus
+2024-09-05 03:04:47 INFO  c.t.s.weather.CountryCodeService - Country code definition for country Belarus ended successfully
+2024-09-05 03:04:47 INFO  c.t.s.weather.CoordinateService - Coordinate definition for city Minsk, country Belarus ended successfully
+2024-09-05 03:04:47 INFO  com.tinkoff_lab.dao.CityDAO - Start updating entity: com.tinkoff_lab.entity.City@ff21bcf0
+2024-09-05 03:04:47 INFO  com.tinkoff_lab.dao.CityDAO - Updating entity com.tinkoff_lab.entity.City@ff21bcf0 ended successfully
+2024-09-05 03:04:47 INFO  com.tinkoff_lab.dao.UserCityDAO - Start adding UserCity where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@ff21bcf0
+2024-09-05 03:04:47 INFO  com.tinkoff_lab.dao.UserCityDAO - Adding UserCit y where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@ff21bcf0 ended successfully
+2024-09-05 03:04:47 INFO  c.t.s.weather.WeatherServiceImpl - Adding cities [CityDTO[city=Grodno, country=Belarus], CityDTO[city=Minsk, country=Belarus]] to user with email ektogod@mail.ru ended successfully
+2024-09-05 03:04:47 INFO  com.tinkoff_lab.dao.UserDAO - Start finding entity with id ektogod@mail.ru
+2024-09-05 03:04:48 INFO  com.tinkoff_lab.dao.UserDAO - Finding of entity with id ektogod@mail.ru ended successfully
+2024-09-05 03:04:49 INFO  c.t.s.weather.WeatherServiceImpl - Start adding user with email ektogod@mail.ru and cities [CityDTO[city=Minsk, country=Belraus]] to database
+2024-09-05 03:04:49 INFO  com.tinkoff_lab.dao.UserDAO - Start finding entity with id ektogod@mail.ru
+2024-09-05 03:04:50 INFO  com.tinkoff_lab.dao.UserDAO - Finding of entity with id ektogod@mail.ru ended successfully
+2024-09-05 03:04:50 INFO  com.tinkoff_lab.dao.UserDAO - Start inserting entity: com.tinkoff_lab.entity.User@ff6d48eb
+2024-09-05 03:04:50 INFO  com.tinkoff_lab.dao.UserDAO - Inserting of entity com.tinkoff_lab.entity.User@ff6d48eb ended successfully
+2024-09-05 03:04:50 INFO  c.t.s.weather.CoordinateService - Start coordinate definition for city Minsk, country Belraus
+2024-09-05 03:04:50 INFO  c.t.s.weather.CountryCodeService - Start country code definition for country: Belraus
+2024-09-05 03:04:50 WARN  c.t.s.weather.CountryCodeService - Something wrong with country Belraus: code not defined.
+2024-09-05 03:05:01 INFO  c.t.s.weather.WeatherServiceImpl - Start adding user with email ektodog@mail.ru and cities [CityDTO[city=Asjlas, country=Belarus]] to database
+2024-09-05 03:05:01 INFO  com.tinkoff_lab.dao.UserDAO - Start finding entity with id ektodog@mail.ru
+2024-09-05 03:05:02 INFO  com.tinkoff_lab.dao.UserDAO - Finding of entity with id ektodog@mail.ru ended successfully
+2024-09-05 03:05:03 INFO  com.tinkoff_lab.dao.UserDAO - Start inserting entity: com.tinkoff_lab.entity.User@909e712b
+2024-09-05 03:05:03 INFO  com.tinkoff_lab.dao.UserDAO - Inserting of entity com.tinkoff_lab.entity.User@909e712b ended successfully
+2024-09-05 03:05:03 INFO  c.t.s.weather.CoordinateService - Start coordinate definition for city Asjlas, country Belarus
+2024-09-05 03:05:03 INFO  c.t.s.weather.CountryCodeService - Start country code definition for country: Belarus
+2024-09-05 03:05:03 INFO  c.t.s.weather.CountryCodeService - Country code definition for country Belarus ended successfully
+2024-09-05 03:05:03 INFO  c.t.s.weather.CoordinateService - Coordinate definition for city Asjlas, country Belarus ended successfully
+2024-09-05 03:05:16 INFO  c.t.s.weather.WeatherServiceImpl - Start adding user with email ektogod@gmail.com and cities [CityDTO[city=Minsk, country=Belarus], CityDTO[city=Grodno, country=Belarus]] to database
+2024-09-05 03:05:16 INFO  com.tinkoff_lab.dao.UserDAO - Start finding entity with id ektogod@gmail.com
+2024-09-05 03:06:30 INFO  c.t.s.weather.WeatherServiceImpl - Start adding user with email ektogod@mail.ru and cities [CityDTO[city=Minsk, country=Belraus]] to database
+2024-09-05 03:06:30 INFO  com.tinkoff_lab.dao.UserDAO - Start finding entity with id ektogod@mail.ru
+2024-09-05 03:06:31 INFO  com.tinkoff_lab.dao.UserDAO - Finding of entity with id ektogod@mail.ru ended successfully
+2024-09-05 03:06:32 INFO  com.tinkoff_lab.dao.UserDAO - Start inserting entity: com.tinkoff_lab.entity.User@ff6d48eb
+2024-09-05 03:06:33 INFO  com.tinkoff_lab.dao.UserDAO - Inserting of entity com.tinkoff_lab.entity.User@ff6d48eb ended successfully
+2024-09-05 03:06:34 INFO  c.t.s.weather.CoordinateService - Start coordinate definition for city Minsk, country Belraus
+2024-09-05 03:06:34 INFO  c.t.s.weather.CountryCodeService - Start country code definition for country: Belraus
+2024-09-05 03:06:34 WARN  c.t.s.weather.CountryCodeService - Something wrong with country Belraus: code not defined.
+2024-09-05 03:07:17 INFO  c.t.s.weather.WeatherServiceImpl - Start adding user with email ektodog@mail.ru and cities [CityDTO[city=Asjlas, country=Belarus]] to database
+2024-09-05 03:07:17 INFO  com.tinkoff_lab.dao.UserDAO - Start finding entity with id ektodog@mail.ru
+2024-09-05 03:08:26 INFO  c.t.s.weather.WeatherServiceImpl - Start adding user with email ektogod@mail.ru and cities [CityDTO[city=Minsk, country=Belraus]] to database
+2024-09-05 03:08:26 INFO  com.tinkoff_lab.dao.UserDAO - Start finding entity with id ektogod@mail.ru
+2024-09-05 03:08:27 INFO  com.tinkoff_lab.dao.UserDAO - Finding of entity with id ektogod@mail.ru ended successfully
+2024-09-05 03:08:27 INFO  com.tinkoff_lab.dao.UserDAO - Start inserting entity: com.tinkoff_lab.entity.User@ff6d48eb
+2024-09-05 03:08:27 INFO  com.tinkoff_lab.dao.UserDAO - Inserting of entity com.tinkoff_lab.entity.User@ff6d48eb ended successfully
+2024-09-05 03:08:27 INFO  c.t.s.weather.CoordinateService - Start coordinate definition for city Minsk, country Belraus
+2024-09-05 03:08:27 INFO  c.t.s.weather.CountryCodeService - Start country code definition for country: Belraus
+2024-09-05 03:08:27 WARN  c.t.s.weather.CountryCodeService - Something wrong with country Belraus: code not defined.
+2024-09-05 03:08:40 INFO  c.t.s.weather.WeatherServiceImpl - Start adding user with email ektodog@mail.ru and cities [CityDTO[city=Asjlas, country=Belarus]] to database
+2024-09-05 03:08:40 INFO  com.tinkoff_lab.dao.UserDAO - Start finding entity with id ektodog@mail.ru
+2024-09-05 03:08:41 INFO  com.tinkoff_lab.dao.UserDAO - Finding of entity with id ektodog@mail.ru ended successfully
+2024-09-05 03:08:41 INFO  com.tinkoff_lab.dao.UserDAO - Start inserting entity: com.tinkoff_lab.entity.User@909e712b
+2024-09-05 03:08:41 INFO  com.tinkoff_lab.dao.UserDAO - Inserting of entity com.tinkoff_lab.entity.User@909e712b ended successfully
+2024-09-05 03:08:41 INFO  c.t.s.weather.CoordinateService - Start coordinate definition for city Asjlas, country Belarus
+2024-09-05 03:08:41 INFO  c.t.s.weather.CountryCodeService - Start country code definition for country: Belarus
+2024-09-05 03:08:41 INFO  c.t.s.weather.CountryCodeService - Country code definition for country Belarus ended successfully
+2024-09-05 03:08:42 INFO  c.t.s.weather.CoordinateService - Coordinate definition for city Asjlas, country Belarus ended successfully
+2024-09-05 03:11:17 INFO  c.t.s.weather.WeatherServiceImpl - Start adding user with email ektogod@mail.ru and cities [CityDTO[city=Minsk, country=Belraus]] to database
+2024-09-05 03:11:17 INFO  com.tinkoff_lab.dao.UserDAO - Start finding entity with id ektogod@mail.ru
+2024-09-05 03:11:17 INFO  com.tinkoff_lab.dao.UserDAO - Finding of entity with id ektogod@mail.ru ended successfully
+2024-09-05 03:11:17 INFO  com.tinkoff_lab.dao.UserDAO - Start inserting entity: com.tinkoff_lab.entity.User@ff6d48eb
+2024-09-05 03:11:18 INFO  com.tinkoff_lab.dao.UserDAO - Inserting of entity com.tinkoff_lab.entity.User@ff6d48eb ended successfully
+2024-09-05 03:11:18 INFO  c.t.s.weather.CoordinateService - Start coordinate definition for city Minsk, country Belraus
+2024-09-05 03:11:18 INFO  c.t.s.weather.CountryCodeService - Start country code definition for country: Belraus
+2024-09-05 03:11:18 WARN  c.t.s.weather.CountryCodeService - Something wrong with country Belraus: code not defined.
+2024-09-05 03:11:21 INFO  c.t.s.weather.WeatherServiceImpl - Start adding user with email ektodog@mail.ru and cities [CityDTO[city=Asjlas, country=Belarus]] to database
+2024-09-05 03:11:21 INFO  com.tinkoff_lab.dao.UserDAO - Start finding entity with id ektodog@mail.ru
+2024-09-05 03:11:21 INFO  com.tinkoff_lab.dao.UserDAO - Finding of entity with id ektodog@mail.ru ended successfully
+2024-09-05 03:11:21 INFO  com.tinkoff_lab.dao.UserDAO - Start inserting entity: com.tinkoff_lab.entity.User@909e712b
+2024-09-05 03:11:21 INFO  com.tinkoff_lab.dao.UserDAO - Inserting of entity com.tinkoff_lab.entity.User@909e712b ended successfully
+2024-09-05 03:11:21 INFO  c.t.s.weather.CoordinateService - Start coordinate definition for city Asjlas, country Belarus
+2024-09-05 03:11:21 INFO  c.t.s.weather.CountryCodeService - Start country code definition for country: Belarus
+2024-09-05 03:11:21 INFO  c.t.s.weather.CountryCodeService - Country code definition for country Belarus ended successfully
+2024-09-05 03:11:56 INFO  c.t.s.weather.CoordinateService - Coordinate definition for city Asjlas, country Belarus ended successfully
+2024-09-05 03:12:48 INFO  com.tinkoff_lab.dao.UserDAO - Start inserting entity: com.tinkoff_lab.entity.User@ff6d48eb
+2024-09-05 03:12:48 INFO  com.tinkoff_lab.dao.UserDAO - Inserting of entity com.tinkoff_lab.entity.User@ff6d48eb ended successfully
+2024-09-05 03:12:48 INFO  com.tinkoff_lab.dao.CityDAO - Start inserting entity: com.tinkoff_lab.entity.City@e30c852f
+2024-09-05 03:12:48 INFO  com.tinkoff_lab.dao.CityDAO - Inserting of entity com.tinkoff_lab.entity.City@e30c852f ended successfully
+2024-09-05 03:12:48 INFO  com.tinkoff_lab.dao.CityDAO - Start inserting entity: com.tinkoff_lab.entity.City@7e0d54a2
+2024-09-05 03:12:48 INFO  com.tinkoff_lab.dao.CityDAO - Inserting of entity com.tinkoff_lab.entity.City@7e0d54a2 ended successfully
+2024-09-05 03:12:48 INFO  com.tinkoff_lab.dao.UserCityDAO - Start adding UserCity where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@e30c852f
+2024-09-05 03:12:48 INFO  com.tinkoff_lab.dao.UserCityDAO - Adding UserCit y where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@e30c852f ended successfully
+2024-09-05 03:12:48 INFO  com.tinkoff_lab.dao.UserCityDAO - Start adding UserCity where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@7e0d54a2
+2024-09-05 03:12:49 INFO  com.tinkoff_lab.dao.UserCityDAO - Adding UserCit y where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@7e0d54a2 ended successfully
+2024-09-05 03:12:49 INFO  c.t.s.weather.WeatherServiceImpl - Start deleting user with email EmailRequest[email=ektogod@mail.ru]
+2024-09-05 03:12:49 INFO  com.tinkoff_lab.dao.UserDAO - Start finding entity with id ektogod@mail.ru
+2024-09-05 03:12:49 INFO  com.tinkoff_lab.dao.UserDAO - Finding of entity with id ektogod@mail.ru ended successfully
+2024-09-05 03:12:49 INFO  com.tinkoff_lab.dao.UserCityDAO - Start removing UserCity where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@e30c852f
+2024-09-05 03:12:49 INFO  com.tinkoff_lab.dao.UserCityDAO - Removing UserCity where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@e30c852f ended successfully
+2024-09-05 03:12:49 INFO  com.tinkoff_lab.dao.UserDAO - Start inserting entity: com.tinkoff_lab.entity.User@ff6d48eb
+2024-09-05 03:12:49 INFO  com.tinkoff_lab.dao.UserDAO - Inserting of entity com.tinkoff_lab.entity.User@ff6d48eb ended successfully
+2024-09-05 03:12:49 INFO  com.tinkoff_lab.dao.CityDAO - Start inserting entity: com.tinkoff_lab.entity.City@e30c852f
+2024-09-05 03:12:49 INFO  com.tinkoff_lab.dao.CityDAO - Inserting of entity com.tinkoff_lab.entity.City@e30c852f ended successfully
+2024-09-05 03:12:49 INFO  com.tinkoff_lab.dao.CityDAO - Start inserting entity: com.tinkoff_lab.entity.City@7e0d54a2
+2024-09-05 03:12:49 INFO  com.tinkoff_lab.dao.CityDAO - Inserting of entity com.tinkoff_lab.entity.City@7e0d54a2 ended successfully
+2024-09-05 03:12:49 INFO  com.tinkoff_lab.dao.UserCityDAO - Start adding UserCity where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@e30c852f
+2024-09-05 03:12:49 INFO  com.tinkoff_lab.dao.UserCityDAO - Adding UserCit y where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@e30c852f ended successfully
+2024-09-05 03:12:49 INFO  com.tinkoff_lab.dao.UserCityDAO - Start adding UserCity where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@7e0d54a2
+2024-09-05 03:12:49 INFO  com.tinkoff_lab.dao.UserCityDAO - Adding UserCit y where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@7e0d54a2 ended successfully
+2024-09-05 03:12:49 INFO  c.t.s.weather.WeatherServiceImpl - Start getting all cities for user with email ektogod@mail.ru
+2024-09-05 03:12:49 INFO  com.tinkoff_lab.dao.UserDAO - Start finding entity with id ektogod@mail.ru
+2024-09-05 03:12:50 INFO  com.tinkoff_lab.dao.UserDAO - Finding of entity with id ektogod@mail.ru ended successfully
+2024-09-05 03:12:50 WARN  c.t.s.weather.WeatherServiceImpl - Getting all cities for user with email ektogod@mail.ru ended successfully
+2024-09-05 03:12:50 INFO  c.t.s.weather.WeatherServiceImpl - Start getting all cities for user with email ektogod@mail.ru
+2024-09-05 03:12:50 INFO  com.tinkoff_lab.dao.UserDAO - Start finding entity with id ektogod@mail.ru
+2024-09-05 03:12:50 INFO  com.tinkoff_lab.dao.UserDAO - Finding of entity with id ektogod@mail.ru ended successfully
+2024-09-05 03:12:50 WARN  c.t.s.weather.WeatherServiceImpl - Getting all cities for user with email ektogod@mail.ru went wrong: user not found
+2024-09-05 03:12:50 INFO  c.t.s.weather.WeatherServiceImpl - Start deleting user with email EmailRequest[email=ektogod@mail.ru]
+2024-09-05 03:12:50 INFO  com.tinkoff_lab.dao.UserDAO - Start finding entity with id ektogod@mail.ru
+2024-09-05 03:12:50 INFO  com.tinkoff_lab.dao.UserDAO - Finding of entity with id ektogod@mail.ru ended successfully
+2024-09-05 03:12:50 WARN  c.t.s.weather.WeatherServiceImpl - Deleting user with email ektogod@mail.ru went wrong: user not found
+2024-09-05 03:12:50 INFO  c.t.s.weather.WeatherServiceImpl - Start deleting user with email EmailRequest[email=ektogod@mail.ru]
+2024-09-05 03:12:50 INFO  com.tinkoff_lab.dao.UserDAO - Start finding entity with id ektogod@mail.ru
+2024-09-05 03:12:50 INFO  com.tinkoff_lab.dao.UserDAO - Finding of entity with id ektogod@mail.ru ended successfully
+2024-09-05 03:12:50 WARN  c.t.s.weather.WeatherServiceImpl - Deleting user with email ektogod@mail.ru went wrong: user not found
+2024-09-05 03:12:50 INFO  com.tinkoff_lab.dao.UserDAO - Start inserting entity: com.tinkoff_lab.entity.User@ff6d48eb
+2024-09-05 03:12:50 INFO  com.tinkoff_lab.dao.UserDAO - Inserting of entity com.tinkoff_lab.entity.User@ff6d48eb ended successfully
+2024-09-05 03:12:50 INFO  com.tinkoff_lab.dao.CityDAO - Start inserting entity: com.tinkoff_lab.entity.City@7e0d54a2
+2024-09-05 03:12:50 INFO  com.tinkoff_lab.dao.CityDAO - Inserting of entity com.tinkoff_lab.entity.City@7e0d54a2 ended successfully
+2024-09-05 03:12:50 INFO  com.tinkoff_lab.dao.UserCityDAO - Start adding UserCity where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@7e0d54a2
+2024-09-05 03:12:50 INFO  com.tinkoff_lab.dao.UserCityDAO - Adding UserCit y where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@7e0d54a2 ended successfully
+2024-09-05 03:12:50 INFO  c.t.s.weather.WeatherServiceImpl - Start adding cities [CityDTO[city=Grodno, country=Belarus], CityDTO[city=Minsk, country=Belarus]] to user with email ektogod@mail.ru
+2024-09-05 03:12:50 INFO  com.tinkoff_lab.dao.UserDAO - Start finding entity with id ektogod@mail.ru
+2024-09-05 03:12:50 INFO  com.tinkoff_lab.dao.UserDAO - Finding of entity with id ektogod@mail.ru ended successfully
+2024-09-05 03:12:50 INFO  c.t.s.weather.CoordinateService - Start coordinate definition for city Grodno, country Belarus
+2024-09-05 03:12:50 INFO  c.t.s.weather.CountryCodeService - Start country code definition for country: Belarus
+2024-09-05 03:12:50 INFO  c.t.s.weather.CountryCodeService - Country code definition for country Belarus ended successfully
+2024-09-05 03:12:51 INFO  c.t.s.weather.CoordinateService - Coordinate definition for city Grodno, country Belarus ended successfully
+2024-09-05 03:12:51 INFO  com.tinkoff_lab.dao.CityDAO - Start updating entity: com.tinkoff_lab.entity.City@d2f87f10
+2024-09-05 03:12:51 INFO  com.tinkoff_lab.dao.CityDAO - Updating entity com.tinkoff_lab.entity.City@d2f87f10 ended successfully
+2024-09-05 03:12:51 INFO  com.tinkoff_lab.dao.UserCityDAO - Start adding UserCity where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@d2f87f10
+2024-09-05 03:12:51 INFO  com.tinkoff_lab.dao.UserCityDAO - Adding UserCit y where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@d2f87f10 ended successfully
+2024-09-05 03:12:51 INFO  c.t.s.weather.CoordinateService - Start coordinate definition for city Minsk, country Belarus
+2024-09-05 03:12:51 INFO  c.t.s.weather.CountryCodeService - Start country code definition for country: Belarus
+2024-09-05 03:12:51 INFO  c.t.s.weather.CountryCodeService - Country code definition for country Belarus ended successfully
+2024-09-05 03:12:51 INFO  c.t.s.weather.CoordinateService - Coordinate definition for city Minsk, country Belarus ended successfully
+2024-09-05 03:12:51 INFO  com.tinkoff_lab.dao.CityDAO - Start updating entity: com.tinkoff_lab.entity.City@ff21bcf0
+2024-09-05 03:12:51 INFO  com.tinkoff_lab.dao.CityDAO - Updating entity com.tinkoff_lab.entity.City@ff21bcf0 ended successfully
+2024-09-05 03:12:51 INFO  com.tinkoff_lab.dao.UserCityDAO - Start adding UserCity where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@ff21bcf0
+2024-09-05 03:12:51 INFO  com.tinkoff_lab.dao.UserCityDAO - Adding UserCit y where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@ff21bcf0 ended successfully
+2024-09-05 03:12:51 INFO  c.t.s.weather.WeatherServiceImpl - Adding cities [CityDTO[city=Grodno, country=Belarus], CityDTO[city=Minsk, country=Belarus]] to user with email ektogod@mail.ru ended successfully
+2024-09-05 03:12:51 INFO  com.tinkoff_lab.dao.UserDAO - Start finding entity with id ektogod@mail.ru
+2024-09-05 03:12:51 INFO  com.tinkoff_lab.dao.UserDAO - Finding of entity with id ektogod@mail.ru ended successfully
+2024-09-05 03:12:51 INFO  c.t.s.weather.WeatherServiceImpl - Start adding user with email ektogod@mail.ru and cities [CityDTO[city=Minsk, country=Belraus]] to database
+2024-09-05 03:12:51 INFO  com.tinkoff_lab.dao.UserDAO - Start finding entity with id ektogod@mail.ru
+2024-09-05 03:12:51 INFO  com.tinkoff_lab.dao.UserDAO - Finding of entity with id ektogod@mail.ru ended successfully
+2024-09-05 03:12:51 INFO  com.tinkoff_lab.dao.UserDAO - Start inserting entity: com.tinkoff_lab.entity.User@ff6d48eb
+2024-09-05 03:12:51 INFO  com.tinkoff_lab.dao.UserDAO - Inserting of entity com.tinkoff_lab.entity.User@ff6d48eb ended successfully
+2024-09-05 03:12:51 INFO  c.t.s.weather.CoordinateService - Start coordinate definition for city Minsk, country Belraus
+2024-09-05 03:12:51 INFO  c.t.s.weather.CountryCodeService - Start country code definition for country: Belraus
+2024-09-05 03:12:51 WARN  c.t.s.weather.CountryCodeService - Something wrong with country Belraus: code not defined.
+2024-09-05 03:12:51 INFO  c.t.s.weather.WeatherServiceImpl - Start adding user with email ektodog@mail.ru and cities [CityDTO[city=Asjlas, country=Belarus]] to database
+2024-09-05 03:12:51 INFO  com.tinkoff_lab.dao.UserDAO - Start finding entity with id ektodog@mail.ru
+2024-09-05 03:12:51 INFO  com.tinkoff_lab.dao.UserDAO - Finding of entity with id ektodog@mail.ru ended successfully
+2024-09-05 03:12:51 INFO  com.tinkoff_lab.dao.UserDAO - Start inserting entity: com.tinkoff_lab.entity.User@909e712b
+2024-09-05 03:12:51 INFO  com.tinkoff_lab.dao.UserDAO - Inserting of entity com.tinkoff_lab.entity.User@909e712b ended successfully
+2024-09-05 03:12:51 INFO  c.t.s.weather.CoordinateService - Start coordinate definition for city Asjlas, country Belarus
+2024-09-05 03:12:51 INFO  c.t.s.weather.CountryCodeService - Start country code definition for country: Belarus
+2024-09-05 03:12:51 INFO  c.t.s.weather.CountryCodeService - Country code definition for country Belarus ended successfully
+2024-09-05 03:12:52 WARN  c.t.s.weather.CoordinateService - Something wrong with location. Coordinates not defined for city Asjlas, country Belarus
+2024-09-05 03:12:52 INFO  c.t.s.weather.WeatherServiceImpl - Start adding user with email ektogod@gmail.com and cities [CityDTO[city=Minsk, country=Belarus], CityDTO[city=Grodno, country=Belarus]] to database
+2024-09-05 03:12:52 INFO  com.tinkoff_lab.dao.UserDAO - Start finding entity with id ektogod@gmail.com
+2024-09-05 03:12:52 INFO  com.tinkoff_lab.dao.UserDAO - Finding of entity with id ektogod@gmail.com ended successfully
+2024-09-05 03:12:52 INFO  com.tinkoff_lab.dao.UserDAO - Start inserting entity: com.tinkoff_lab.entity.User@1f1beab8
+2024-09-05 03:12:52 INFO  com.tinkoff_lab.dao.UserDAO - Inserting of entity com.tinkoff_lab.entity.User@1f1beab8 ended successfully
+2024-09-05 03:12:52 INFO  c.t.s.weather.CoordinateService - Start coordinate definition for city Minsk, country Belarus
+2024-09-05 03:12:52 INFO  c.t.s.weather.CountryCodeService - Start country code definition for country: Belarus
+2024-09-05 03:12:52 INFO  c.t.s.weather.CountryCodeService - Country code definition for country Belarus ended successfully
+2024-09-05 03:12:52 INFO  c.t.s.weather.CoordinateService - Coordinate definition for city Minsk, country Belarus ended successfully
+2024-09-05 03:12:52 INFO  com.tinkoff_lab.dao.CityDAO - Start updating entity: com.tinkoff_lab.entity.City@ff21bcf0
+2024-09-05 03:12:52 INFO  com.tinkoff_lab.dao.CityDAO - Updating entity com.tinkoff_lab.entity.City@ff21bcf0 ended successfully
+2024-09-05 03:12:52 INFO  com.tinkoff_lab.dao.UserCityDAO - Start adding UserCity where User: com.tinkoff_lab.entity.User@1f1beab8, City: com.tinkoff_lab.entity.City@ff21bcf0
+2024-09-05 03:12:52 INFO  com.tinkoff_lab.dao.UserCityDAO - Adding UserCit y where User: com.tinkoff_lab.entity.User@1f1beab8, City: com.tinkoff_lab.entity.City@ff21bcf0 ended successfully
+2024-09-05 03:12:52 INFO  c.t.s.weather.CoordinateService - Start coordinate definition for city Grodno, country Belarus
+2024-09-05 03:12:52 INFO  c.t.s.weather.CountryCodeService - Start country code definition for country: Belarus
+2024-09-05 03:12:52 INFO  c.t.s.weather.CountryCodeService - Country code definition for country Belarus ended successfully
+2024-09-05 03:12:52 INFO  c.t.s.weather.CoordinateService - Coordinate definition for city Grodno, country Belarus ended successfully
+2024-09-05 03:12:52 INFO  com.tinkoff_lab.dao.CityDAO - Start updating entity: com.tinkoff_lab.entity.City@d2f87f10
+2024-09-05 03:12:52 INFO  com.tinkoff_lab.dao.CityDAO - Updating entity com.tinkoff_lab.entity.City@d2f87f10 ended successfully
+2024-09-05 03:12:52 INFO  com.tinkoff_lab.dao.UserCityDAO - Start adding UserCity where User: com.tinkoff_lab.entity.User@1f1beab8, City: com.tinkoff_lab.entity.City@d2f87f10
+2024-09-05 03:12:52 INFO  com.tinkoff_lab.dao.UserCityDAO - Adding UserCit y where User: com.tinkoff_lab.entity.User@1f1beab8, City: com.tinkoff_lab.entity.City@d2f87f10 ended successfully
+2024-09-05 03:12:52 INFO  c.t.s.weather.WeatherServiceImpl - Adding user with email ektogod@gmail.com and cities [] to database ended successfully
+2024-09-05 03:12:52 INFO  com.tinkoff_lab.dao.UserDAO - Start finding entity with id ektogod@gmail.com
+2024-09-05 03:12:52 INFO  com.tinkoff_lab.dao.UserDAO - Finding of entity with id ektogod@gmail.com ended successfully
+2024-09-05 03:12:52 INFO  com.tinkoff_lab.dao.CityDAO - Start finding all entities
+2024-09-05 03:12:52 INFO  com.tinkoff_lab.dao.CityDAO - Finding ended successfully
+2024-09-05 22:50:53 INFO  com.tinkoff_lab.dao.UserDAO - Start inserting entity: com.tinkoff_lab.entity.User@ff6d48eb
+2024-09-05 22:50:53 INFO  com.tinkoff_lab.dao.UserDAO - Inserting of entity com.tinkoff_lab.entity.User@ff6d48eb ended successfully
+2024-09-05 22:50:53 INFO  com.tinkoff_lab.dao.CityDAO - Start inserting entity: com.tinkoff_lab.entity.City@e30c852f
+2024-09-05 22:50:53 INFO  com.tinkoff_lab.dao.CityDAO - Inserting of entity com.tinkoff_lab.entity.City@e30c852f ended successfully
+2024-09-05 22:50:53 INFO  com.tinkoff_lab.dao.CityDAO - Start inserting entity: com.tinkoff_lab.entity.City@7e0d54a2
+2024-09-05 22:50:53 INFO  com.tinkoff_lab.dao.CityDAO - Inserting of entity com.tinkoff_lab.entity.City@7e0d54a2 ended successfully
+2024-09-05 22:50:53 INFO  com.tinkoff_lab.dao.UserCityDAO - Start adding UserCity where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@e30c852f
+2024-09-05 22:50:54 INFO  com.tinkoff_lab.dao.UserCityDAO - Adding UserCit y where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@e30c852f ended successfully
+2024-09-05 22:50:54 INFO  com.tinkoff_lab.dao.UserCityDAO - Start adding UserCity where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@7e0d54a2
+2024-09-05 22:50:54 INFO  com.tinkoff_lab.dao.UserCityDAO - Adding UserCit y where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@7e0d54a2 ended successfully
+2024-09-05 22:50:54 INFO  c.t.s.weather.WeatherServiceImpl - Start deleting user with email EmailRequest[email=ektogod@mail.ru]
+2024-09-05 22:50:54 INFO  com.tinkoff_lab.dao.UserDAO - Start finding entity with id ektogod@mail.ru
+2024-09-05 22:50:54 INFO  com.tinkoff_lab.dao.UserDAO - Finding of entity with id ektogod@mail.ru ended successfully
+2024-09-05 22:50:54 INFO  com.tinkoff_lab.dao.UserCityDAO - Start removing UserCity where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@e30c852f
+2024-09-05 22:50:54 INFO  com.tinkoff_lab.dao.UserCityDAO - Removing UserCity where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@e30c852f ended successfully
+2024-09-05 22:50:54 INFO  com.tinkoff_lab.dao.UserDAO - Start inserting entity: com.tinkoff_lab.entity.User@ff6d48eb
+2024-09-05 22:50:54 INFO  com.tinkoff_lab.dao.UserDAO - Inserting of entity com.tinkoff_lab.entity.User@ff6d48eb ended successfully
+2024-09-05 22:50:54 INFO  com.tinkoff_lab.dao.CityDAO - Start inserting entity: com.tinkoff_lab.entity.City@e30c852f
+2024-09-05 22:50:54 INFO  com.tinkoff_lab.dao.CityDAO - Inserting of entity com.tinkoff_lab.entity.City@e30c852f ended successfully
+2024-09-05 22:50:54 INFO  com.tinkoff_lab.dao.CityDAO - Start inserting entity: com.tinkoff_lab.entity.City@7e0d54a2
+2024-09-05 22:50:54 INFO  com.tinkoff_lab.dao.CityDAO - Inserting of entity com.tinkoff_lab.entity.City@7e0d54a2 ended successfully
+2024-09-05 22:50:54 INFO  com.tinkoff_lab.dao.UserCityDAO - Start adding UserCity where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@e30c852f
+2024-09-05 22:50:54 INFO  com.tinkoff_lab.dao.UserCityDAO - Adding UserCit y where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@e30c852f ended successfully
+2024-09-05 22:50:54 INFO  com.tinkoff_lab.dao.UserCityDAO - Start adding UserCity where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@7e0d54a2
+2024-09-05 22:50:54 INFO  com.tinkoff_lab.dao.UserCityDAO - Adding UserCit y where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@7e0d54a2 ended successfully
+2024-09-05 22:50:54 INFO  c.t.s.weather.WeatherServiceImpl - Start getting all cities for user with email ektogod@mail.ru
+2024-09-05 22:50:54 INFO  com.tinkoff_lab.dao.UserDAO - Start finding entity with id ektogod@mail.ru
+2024-09-05 22:50:54 INFO  com.tinkoff_lab.dao.UserDAO - Finding of entity with id ektogod@mail.ru ended successfully
+2024-09-05 22:50:54 WARN  c.t.s.weather.WeatherServiceImpl - Getting all cities for user with email ektogod@mail.ru ended successfully
+2024-09-05 22:50:54 INFO  c.t.s.weather.WeatherServiceImpl - Start getting all cities for user with email ektogod@mail.ru
+2024-09-05 22:50:54 INFO  com.tinkoff_lab.dao.UserDAO - Start finding entity with id ektogod@mail.ru
+2024-09-05 22:50:54 INFO  com.tinkoff_lab.dao.UserDAO - Finding of entity with id ektogod@mail.ru ended successfully
+2024-09-05 22:50:54 WARN  c.t.s.weather.WeatherServiceImpl - Getting all cities for user with email ektogod@mail.ru went wrong: user not found
+2024-09-05 22:50:54 INFO  c.t.s.weather.WeatherServiceImpl - Start deleting user with email EmailRequest[email=ektogod@mail.ru]
+2024-09-05 22:50:54 INFO  com.tinkoff_lab.dao.UserDAO - Start finding entity with id ektogod@mail.ru
+2024-09-05 22:50:54 INFO  com.tinkoff_lab.dao.UserDAO - Finding of entity with id ektogod@mail.ru ended successfully
+2024-09-05 22:50:54 WARN  c.t.s.weather.WeatherServiceImpl - Deleting user with email ektogod@mail.ru went wrong: user not found
+2024-09-05 22:50:54 INFO  c.t.s.weather.WeatherServiceImpl - Start deleting user with email EmailRequest[email=ektogod@mail.ru]
+2024-09-05 22:50:54 INFO  com.tinkoff_lab.dao.UserDAO - Start finding entity with id ektogod@mail.ru
+2024-09-05 22:50:54 INFO  com.tinkoff_lab.dao.UserDAO - Finding of entity with id ektogod@mail.ru ended successfully
+2024-09-05 22:50:54 WARN  c.t.s.weather.WeatherServiceImpl - Deleting user with email ektogod@mail.ru went wrong: user not found
+2024-09-05 22:50:55 INFO  com.tinkoff_lab.dao.UserDAO - Start inserting entity: com.tinkoff_lab.entity.User@ff6d48eb
+2024-09-05 22:50:55 INFO  com.tinkoff_lab.dao.UserDAO - Inserting of entity com.tinkoff_lab.entity.User@ff6d48eb ended successfully
+2024-09-05 22:50:55 INFO  com.tinkoff_lab.dao.CityDAO - Start inserting entity: com.tinkoff_lab.entity.City@7e0d54a2
+2024-09-05 22:50:55 INFO  com.tinkoff_lab.dao.CityDAO - Inserting of entity com.tinkoff_lab.entity.City@7e0d54a2 ended successfully
+2024-09-05 22:50:55 INFO  com.tinkoff_lab.dao.UserCityDAO - Start adding UserCity where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@7e0d54a2
+2024-09-05 22:50:55 INFO  com.tinkoff_lab.dao.UserCityDAO - Adding UserCit y where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@7e0d54a2 ended successfully
+2024-09-05 22:50:55 INFO  c.t.s.weather.WeatherServiceImpl - Start adding cities [CityDTO[city=Grodno, country=Belarus], CityDTO[city=Minsk, country=Belarus]] to user with email ektogod@mail.ru
+2024-09-05 22:50:55 INFO  com.tinkoff_lab.dao.UserDAO - Start finding entity with id ektogod@mail.ru
+2024-09-05 22:50:55 INFO  com.tinkoff_lab.dao.UserDAO - Finding of entity with id ektogod@mail.ru ended successfully
+2024-09-05 22:50:55 INFO  c.t.s.weather.CoordinateService - Start coordinate definition for city Grodno, country Belarus
+2024-09-05 22:50:55 INFO  c.t.s.weather.CountryCodeService - Start country code definition for country: Belarus
+2024-09-05 22:50:55 INFO  c.t.s.weather.CountryCodeService - Country code definition for country Belarus ended successfully
+2024-09-05 22:50:55 INFO  c.t.s.weather.CoordinateService - Coordinate definition for city Grodno, country Belarus ended successfully
+2024-09-05 22:50:55 INFO  com.tinkoff_lab.dao.CityDAO - Start updating entity: com.tinkoff_lab.entity.City@d2f87f10
+2024-09-05 22:50:55 INFO  com.tinkoff_lab.dao.CityDAO - Updating entity com.tinkoff_lab.entity.City@d2f87f10 ended successfully
+2024-09-05 22:50:55 INFO  com.tinkoff_lab.dao.UserCityDAO - Start adding UserCity where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@d2f87f10
+2024-09-05 22:50:55 INFO  com.tinkoff_lab.dao.UserCityDAO - Adding UserCit y where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@d2f87f10 ended successfully
+2024-09-05 22:50:55 INFO  c.t.s.weather.CoordinateService - Start coordinate definition for city Minsk, country Belarus
+2024-09-05 22:50:55 INFO  c.t.s.weather.CountryCodeService - Start country code definition for country: Belarus
+2024-09-05 22:50:55 INFO  c.t.s.weather.CountryCodeService - Country code definition for country Belarus ended successfully
+2024-09-05 22:50:55 INFO  c.t.s.weather.CoordinateService - Coordinate definition for city Minsk, country Belarus ended successfully
+2024-09-05 22:50:55 INFO  com.tinkoff_lab.dao.CityDAO - Start updating entity: com.tinkoff_lab.entity.City@ff21bcf0
+2024-09-05 22:50:55 INFO  com.tinkoff_lab.dao.CityDAO - Updating entity com.tinkoff_lab.entity.City@ff21bcf0 ended successfully
+2024-09-05 22:50:55 INFO  com.tinkoff_lab.dao.UserCityDAO - Start adding UserCity where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@ff21bcf0
+2024-09-05 22:50:55 INFO  com.tinkoff_lab.dao.UserCityDAO - Adding UserCit y where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@ff21bcf0 ended successfully
+2024-09-05 22:50:55 INFO  c.t.s.weather.WeatherServiceImpl - Adding cities [CityDTO[city=Grodno, country=Belarus], CityDTO[city=Minsk, country=Belarus]] to user with email ektogod@mail.ru ended successfully
+2024-09-05 22:50:55 INFO  com.tinkoff_lab.dao.UserDAO - Start finding entity with id ektogod@mail.ru
+2024-09-05 22:50:55 INFO  com.tinkoff_lab.dao.UserDAO - Finding of entity with id ektogod@mail.ru ended successfully
+2024-09-05 22:50:55 INFO  c.t.s.weather.WeatherServiceImpl - Start adding user with email ektogod@mail.ru and cities [CityDTO[city=Minsk, country=Belraus]] to database
+2024-09-05 22:50:55 INFO  com.tinkoff_lab.dao.UserDAO - Start finding entity with id ektogod@mail.ru
+2024-09-05 22:50:55 INFO  com.tinkoff_lab.dao.UserDAO - Finding of entity with id ektogod@mail.ru ended successfully
+2024-09-05 22:50:55 INFO  com.tinkoff_lab.dao.UserDAO - Start inserting entity: com.tinkoff_lab.entity.User@ff6d48eb
+2024-09-05 22:50:56 INFO  com.tinkoff_lab.dao.UserDAO - Inserting of entity com.tinkoff_lab.entity.User@ff6d48eb ended successfully
+2024-09-05 22:50:56 INFO  c.t.s.weather.CoordinateService - Start coordinate definition for city Minsk, country Belraus
+2024-09-05 22:50:56 INFO  c.t.s.weather.CountryCodeService - Start country code definition for country: Belraus
+2024-09-05 22:50:56 WARN  c.t.s.weather.CountryCodeService - Something wrong with country Belraus: code not defined.
+2024-09-05 22:50:56 INFO  c.t.s.weather.WeatherServiceImpl - Start adding user with email ektodog@mail.ru and cities [CityDTO[city=Asjlas, country=Belarus]] to database
+2024-09-05 22:50:56 INFO  com.tinkoff_lab.dao.UserDAO - Start finding entity with id ektodog@mail.ru
+2024-09-05 22:50:56 INFO  com.tinkoff_lab.dao.UserDAO - Finding of entity with id ektodog@mail.ru ended successfully
+2024-09-05 22:50:56 INFO  com.tinkoff_lab.dao.UserDAO - Start inserting entity: com.tinkoff_lab.entity.User@909e712b
+2024-09-05 22:50:56 INFO  com.tinkoff_lab.dao.UserDAO - Inserting of entity com.tinkoff_lab.entity.User@909e712b ended successfully
+2024-09-05 22:50:56 INFO  c.t.s.weather.CoordinateService - Start coordinate definition for city Asjlas, country Belarus
+2024-09-05 22:50:56 INFO  c.t.s.weather.CountryCodeService - Start country code definition for country: Belarus
+2024-09-05 22:50:56 INFO  c.t.s.weather.CountryCodeService - Country code definition for country Belarus ended successfully
+2024-09-05 22:50:56 WARN  c.t.s.weather.CoordinateService - Something wrong with location. Coordinates not defined for city Asjlas, country Belarus
+2024-09-05 22:50:56 INFO  c.t.s.weather.WeatherServiceImpl - Start adding user with email ektogod@gmail.com and cities [CityDTO[city=Minsk, country=Belarus], CityDTO[city=Grodno, country=Belarus]] to database
+2024-09-05 22:50:56 INFO  com.tinkoff_lab.dao.UserDAO - Start finding entity with id ektogod@gmail.com
+2024-09-05 22:50:56 INFO  com.tinkoff_lab.dao.UserDAO - Finding of entity with id ektogod@gmail.com ended successfully
+2024-09-05 22:50:56 INFO  com.tinkoff_lab.dao.UserDAO - Start inserting entity: com.tinkoff_lab.entity.User@1f1beab8
+2024-09-05 22:50:56 INFO  com.tinkoff_lab.dao.UserDAO - Inserting of entity com.tinkoff_lab.entity.User@1f1beab8 ended successfully
+2024-09-05 22:50:56 INFO  c.t.s.weather.CoordinateService - Start coordinate definition for city Minsk, country Belarus
+2024-09-05 22:50:56 INFO  c.t.s.weather.CountryCodeService - Start country code definition for country: Belarus
+2024-09-05 22:50:56 INFO  c.t.s.weather.CountryCodeService - Country code definition for country Belarus ended successfully
+2024-09-05 22:50:56 INFO  c.t.s.weather.CoordinateService - Coordinate definition for city Minsk, country Belarus ended successfully
+2024-09-05 22:50:56 INFO  com.tinkoff_lab.dao.CityDAO - Start updating entity: com.tinkoff_lab.entity.City@ff21bcf0
+2024-09-05 22:50:56 INFO  com.tinkoff_lab.dao.CityDAO - Updating entity com.tinkoff_lab.entity.City@ff21bcf0 ended successfully
+2024-09-05 22:50:56 INFO  com.tinkoff_lab.dao.UserCityDAO - Start adding UserCity where User: com.tinkoff_lab.entity.User@1f1beab8, City: com.tinkoff_lab.entity.City@ff21bcf0
+2024-09-05 22:50:56 INFO  com.tinkoff_lab.dao.UserCityDAO - Adding UserCit y where User: com.tinkoff_lab.entity.User@1f1beab8, City: com.tinkoff_lab.entity.City@ff21bcf0 ended successfully
+2024-09-05 22:50:56 INFO  c.t.s.weather.CoordinateService - Start coordinate definition for city Grodno, country Belarus
+2024-09-05 22:50:56 INFO  c.t.s.weather.CountryCodeService - Start country code definition for country: Belarus
+2024-09-05 22:50:56 INFO  c.t.s.weather.CountryCodeService - Country code definition for country Belarus ended successfully
+2024-09-05 22:50:56 INFO  c.t.s.weather.CoordinateService - Coordinate definition for city Grodno, country Belarus ended successfully
+2024-09-05 22:50:56 INFO  com.tinkoff_lab.dao.CityDAO - Start updating entity: com.tinkoff_lab.entity.City@d2f87f10
+2024-09-05 22:50:56 INFO  com.tinkoff_lab.dao.CityDAO - Updating entity com.tinkoff_lab.entity.City@d2f87f10 ended successfully
+2024-09-05 22:50:56 INFO  com.tinkoff_lab.dao.UserCityDAO - Start adding UserCity where User: com.tinkoff_lab.entity.User@1f1beab8, City: com.tinkoff_lab.entity.City@d2f87f10
+2024-09-05 22:50:56 INFO  com.tinkoff_lab.dao.UserCityDAO - Adding UserCit y where User: com.tinkoff_lab.entity.User@1f1beab8, City: com.tinkoff_lab.entity.City@d2f87f10 ended successfully
+2024-09-05 22:50:56 INFO  c.t.s.weather.WeatherServiceImpl - Adding user with email ektogod@gmail.com and cities [] to database ended successfully
+2024-09-05 22:50:56 INFO  com.tinkoff_lab.dao.UserDAO - Start finding entity with id ektogod@gmail.com
+2024-09-05 22:50:56 INFO  com.tinkoff_lab.dao.UserDAO - Finding of entity with id ektogod@gmail.com ended successfully
+2024-09-05 22:50:56 INFO  com.tinkoff_lab.dao.CityDAO - Start finding all entities
+2024-09-05 22:50:56 INFO  com.tinkoff_lab.dao.CityDAO - Finding ended successfully
+2024-09-05 22:54:46 INFO  com.tinkoff_lab.dao.UserDAO - Start inserting entity: com.tinkoff_lab.entity.User@ff6d48eb
+2024-09-05 22:54:46 INFO  com.tinkoff_lab.dao.UserDAO - Inserting of entity com.tinkoff_lab.entity.User@ff6d48eb ended successfully
+2024-09-05 22:54:46 INFO  com.tinkoff_lab.dao.CityDAO - Start inserting entity: com.tinkoff_lab.entity.City@e30c852f
+2024-09-05 22:54:46 INFO  com.tinkoff_lab.dao.CityDAO - Inserting of entity com.tinkoff_lab.entity.City@e30c852f ended successfully
+2024-09-05 22:54:46 INFO  com.tinkoff_lab.dao.CityDAO - Start inserting entity: com.tinkoff_lab.entity.City@7e0d54a2
+2024-09-05 22:54:46 INFO  com.tinkoff_lab.dao.CityDAO - Inserting of entity com.tinkoff_lab.entity.City@7e0d54a2 ended successfully
+2024-09-05 22:54:46 INFO  com.tinkoff_lab.dao.UserCityDAO - Start adding UserCity where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@e30c852f
+2024-09-05 22:54:46 INFO  com.tinkoff_lab.dao.UserCityDAO - Adding UserCit y where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@e30c852f ended successfully
+2024-09-05 22:54:46 INFO  com.tinkoff_lab.dao.UserCityDAO - Start adding UserCity where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@7e0d54a2
+2024-09-05 22:54:46 INFO  com.tinkoff_lab.dao.UserCityDAO - Adding UserCit y where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@7e0d54a2 ended successfully
+2024-09-05 22:54:46 INFO  c.t.s.weather.WeatherServiceImpl - Start deleting user with email EmailRequest[email=ektogod@mail.ru]
+2024-09-05 22:54:46 INFO  com.tinkoff_lab.dao.UserDAO - Start finding entity with id ektogod@mail.ru
+2024-09-05 22:54:46 INFO  com.tinkoff_lab.dao.UserDAO - Finding of entity with id ektogod@mail.ru ended successfully
+2024-09-05 22:54:46 INFO  com.tinkoff_lab.dao.UserCityDAO - Start removing UserCity where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@e30c852f
+2024-09-05 22:54:46 INFO  com.tinkoff_lab.dao.UserCityDAO - Removing UserCity where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@e30c852f ended successfully
+2024-09-05 22:54:46 INFO  com.tinkoff_lab.dao.UserCityDAO - Start removing UserCity where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@7e0d54a2
+2024-09-05 22:54:46 INFO  com.tinkoff_lab.dao.UserCityDAO - Removing UserCity where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@7e0d54a2 ended successfully
+2024-09-05 22:54:46 INFO  com.tinkoff_lab.dao.UserDAO - Start removing entity with id ektogod@mail.ru
+2024-09-05 22:54:47 INFO  com.tinkoff_lab.dao.UserDAO - Removing entity with id ektogod@mail.ru ended successfully
+2024-09-05 22:54:47 INFO  c.t.s.weather.WeatherServiceImpl - Deleting user with email ektogod@mail.ru ended successfully
+2024-09-05 23:47:18 INFO  c.tinkoff_lab.TinkoffLabApplication - Application has started working
+2024-09-05 23:47:39 INFO  c.tinkoff_lab.TinkoffLabApplication - Application has started working
+2024-09-05 23:47:40 INFO  c.tinkoff_lab.TinkoffLabApplication - Starting TinkoffLabApplication using Java 21.0.1 with PID 5900 (C:\Users\Nikita\IdeaProjects\pet-project\target\classes started by Nikita in C:\Users\Nikita\IdeaProjects\pet-project)
+2024-09-05 23:47:40 INFO  c.tinkoff_lab.TinkoffLabApplication - No active profile set, falling back to 1 default profile: "default"
+2024-09-05 23:47:46 INFO  c.tinkoff_lab.TinkoffLabApplication - Started TinkoffLabApplication in 6.753 seconds (process running for 7.706)
+2024-09-05 23:49:31 INFO  c.t.s.weather.WeatherServiceImpl - Start adding user with email ekto@mail.ru and cities [CityDTO[city=Berbfsd, country=Belarus], CityDTO[city=Vitebsk, country=Belarus]] to database
+2024-09-05 23:49:31 INFO  com.tinkoff_lab.dao.UserDAO - Start finding entity with id ekto@mail.ru
+2024-09-05 23:49:31 INFO  com.tinkoff_lab.dao.UserDAO - Finding of entity with id ekto@mail.ru ended successfully
+2024-09-05 23:49:31 INFO  com.tinkoff_lab.dao.UserDAO - Start inserting entity: com.tinkoff_lab.entity.User@e95c846d
+2024-09-05 23:49:31 INFO  com.tinkoff_lab.dao.UserDAO - Inserting of entity com.tinkoff_lab.entity.User@e95c846d ended successfully
+2024-09-05 23:49:31 INFO  c.t.s.weather.CoordinateService - Start coordinate definition for city Berbfsd, country Belarus
+2024-09-05 23:49:31 INFO  c.t.s.weather.CountryCodeService - Start country code definition for country: Belarus
+2024-09-05 23:49:31 INFO  c.t.s.weather.CountryCodeService - Country code definition for country Belarus ended successfully
+2024-09-05 23:49:31 WARN  c.t.s.weather.CoordinateService - Something wrong with location. Coordinates not defined for city Berbfsd, country Belarus

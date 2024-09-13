@@ -1,11 +1,13 @@
 package com.tinkoff_lab.dao;
 
-import com.tinkoff_lab.dto.Translation;
-import com.tinkoff_lab.exceptions.DatabaseException;
-import com.tinkoff_lab.services.ConnectionService;
+import com.tinkoff_lab.dto.translation.Translation;
+import com.tinkoff_lab.exception.DatabaseException;
+import com.tinkoff_lab.service.database.ConnectionService;
+import lombok.AccessLevel;
+import lombok.RequiredArgsConstructor;
+import lombok.experimental.FieldDefaults;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import java.sql.*;
@@ -13,14 +15,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Component
-public class TranslationDAO implements DAO<Translation, Integer> {            // class for saving records in database
-    private final ConnectionService connectionService;
-    private final Logger logger = LoggerFactory.getLogger(TranslationDAO.class);
+@RequiredArgsConstructor
+@FieldDefaults(level = AccessLevel.PRIVATE, makeFinal = true)
 
-    @Autowired
-    public TranslationDAO(ConnectionService connectionService) {
-        this.connectionService = connectionService;
-    }
+public class TranslationDAO implements DAO<Translation, Integer> {            // class for saving records in database
+    ConnectionService connectionService;
+    Logger logger = LoggerFactory.getLogger(TranslationDAO.class);
 
     @Override
     public Integer insert(Translation entity) {
@@ -78,7 +78,7 @@ public class TranslationDAO implements DAO<Translation, Integer> {            //
     }
 
     @Override
-    public void update(Integer id, Translation entity) {
+    public void update(Translation entity) {
         logger.info("Starting updating entity: {}", entity);
         String sql = "UPDATE query " +
                 "SET IP = ?, " +
@@ -95,7 +95,7 @@ public class TranslationDAO implements DAO<Translation, Integer> {            //
             PreparedStatement statement = connection.prepareStatement(sql);
 
             prepareStatement(statement, entity);
-            statement.setInt(9, id);
+            statement.setInt(9, entity.id());
 
             statement.executeUpdate();
             logger.info("Updating ended successfully for entity: {}", entity);
@@ -131,7 +131,7 @@ public class TranslationDAO implements DAO<Translation, Integer> {            //
             ResultSet resultSet = statement.executeQuery();
 
             if (resultSet.next()) {
-                return new Translation(
+                return new Translation(id,
                         resultSet.getString(2),
                         resultSet.getString(3),
                         resultSet.getString(4),
