@@ -1,4 +1,4 @@
-package com.tinkoff_lab.dto.weather.request;
+package com.tinkoff_lab.dto.weather.request.email;
 
 import com.tinkoff_lab.dto.weather.CityDTO;
 

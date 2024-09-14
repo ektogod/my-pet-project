@@ -59,9 +59,9 @@
 
 2024-08-29 03:47:52 INFO  c.t.services.TranslationServiceImpl - Request has received: text = Соседи приходят, им слышится стук копыт, мешают уснуть, тревожат их сон. 
 2024-08-29 03:47:52 INFO  c.t.services.TranslationServiceImpl - Translation successfully completed
-2024-08-29 03:47:53 INFO  com.tinkoff_lab.dao.TranslationDAO - Start writing to database of query: Translation[id=null, ip=37.214.65.239, originalText=Соседи приходят, им слышится стук копыт, мешают уснуть, тревожат их сон., originalLang=ru, translatedText=Прыходзяць суседзі, чуюць шум капытоў, перашкаджаюць ім заснуць, парушаюць сон., targetLang=be, time=2024/08/29 03:47:53, status=200, message=Ok]
-2024-08-29 03:47:53 INFO  com.tinkoff_lab.dao.TranslationDAO - Connection with database established
-2024-08-29 03:47:53 INFO  com.tinkoff_lab.dao.TranslationDAO - Query has been successfully recorded
+2024-08-29 03:47:53 INFO  com.tinkoff_lab.dao.jdbc.TranslationDAO - Start writing to database of query: Translation[id=null, ip=37.214.65.239, originalText=Соседи приходят, им слышится стук копыт, мешают уснуть, тревожат их сон., originalLang=ru, translatedText=Прыходзяць суседзі, чуюць шум капытоў, перашкаджаюць ім заснуць, парушаюць сон., targetLang=be, time=2024/08/29 03:47:53, status=200, message=Ok]
+2024-08-29 03:47:53 INFO  com.tinkoff_lab.dao.jdbc.TranslationDAO - Connection with database established
+2024-08-29 03:47:53 INFO  com.tinkoff_lab.dao.jdbc.TranslationDAO - Query has been successfully recorded
 2024-08-29 03:47:53 INFO  c.t.c.TranslationController - Response is sending to user
 2024-08-29 03:48:13 INFO  c.tinkoff_lab.TinkoffLabApplication - Application has started working
 2024-08-29 03:48:14 INFO  c.tinkoff_lab.TinkoffLabApplication - Starting TinkoffLabApplication using Java 21.0.1 with PID 25268 (C:\Users\Nikita\IdeaProjects\pet-project\target\classes started by Nikita in C:\Users\Nikita\IdeaProjects\pet-project)
@@ -71,9 +71,9 @@
 2024-08-29 03:48:23 INFO  c.t.services.TranslationServiceImpl - Sending translation request: text = Соседи приходят, им слышится стук копыт, мешают уснуть, тревожат их сон. 
 2024-08-29 03:48:24 INFO  c.t.services.TranslationServiceImpl - Request has received: text = Соседи приходят, им слышится стук копыт, мешают уснуть, тревожат их сон. 
 2024-08-29 03:48:24 INFO  c.t.services.TranslationServiceImpl - Translation successfully completed
-2024-08-29 03:48:24 INFO  com.tinkoff_lab.dao.TranslationDAO - Start writing to database of query: Translation[id=null, ip=37.214.65.239, originalText=Соседи приходят, им слышится стук копыт, мешают уснуть, тревожат их сон., originalLang=ru, translatedText=Прыходзяць суседзі, чуюць шум капытоў, перашкаджаюць ім заснуць, парушаюць сон., targetLang=be, time=2024/08/29 03:48:24, status=200, message=Ok]
-2024-08-29 03:48:24 INFO  com.tinkoff_lab.dao.TranslationDAO - Connection with database established
-2024-08-29 03:48:24 INFO  com.tinkoff_lab.dao.TranslationDAO - Query has been successfully recorded
+2024-08-29 03:48:24 INFO  com.tinkoff_lab.dao.jdbc.TranslationDAO - Start writing to database of query: Translation[id=null, ip=37.214.65.239, originalText=Соседи приходят, им слышится стук копыт, мешают уснуть, тревожат их сон., originalLang=ru, translatedText=Прыходзяць суседзі, чуюць шум капытоў, перашкаджаюць ім заснуць, парушаюць сон., targetLang=be, time=2024/08/29 03:48:24, status=200, message=Ok]
+2024-08-29 03:48:24 INFO  com.tinkoff_lab.dao.jdbc.TranslationDAO - Connection with database established
+2024-08-29 03:48:24 INFO  com.tinkoff_lab.dao.jdbc.TranslationDAO - Query has been successfully recorded
 2024-08-29 03:48:24 INFO  c.t.c.TranslationController - Response is sending to user
 2024-08-29 03:48:34 INFO  c.tinkoff_lab.TinkoffLabApplication - Application has terminated working
 

@@ -1,183 +1,308 @@
-2024-09-13 00:01:27 INFO  c.tinkoff_lab.TinkoffLabApplication - Application has terminated working
+2024-09-15 00:28:43 INFO  c.tinkoff_lab.TinkoffLabApplication - Application has started working
+2024-09-15 00:28:44 INFO  c.tinkoff_lab.TinkoffLabApplication - Starting TinkoffLabApplication using Java 21.0.1 with PID 11480 (C:\Users\Nikita\IdeaProjects\pet-project\target\classes started by Nikita in C:\Users\Nikita\IdeaProjects\pet-project)
+2024-09-15 00:28:44 INFO  c.tinkoff_lab.TinkoffLabApplication - No active profile set, falling back to 1 default profile: "default"
+2024-09-15 00:28:49 INFO  c.tinkoff_lab.TinkoffLabApplication - Started TinkoffLabApplication in 5.524 seconds (process running for 6.298)
+2024-09-15 00:29:21 INFO  c.t.s.w.WeatherTelegramServiceImpl - Start adding user with username ektogod and cities [CityDTO[city=Minsk, country=Belarus]] to database
+2024-09-15 00:29:21 INFO  c.t.dao.hibernate.TelegramUserDAO - Start finding entity with id 804296491
+2024-09-15 00:29:21 INFO  c.t.dao.hibernate.TelegramUserDAO - Finding of entity with id 804296491 ended successfully
+2024-09-15 00:29:21 WARN  c.t.s.w.WeatherTelegramServiceImpl - User with username ektogod already exists!
+2024-09-15 00:34:52 INFO  c.t.s.w.WeatherTelegramServiceImpl - Start adding user with username ektogod and cities [CityDTO[city=Minsk, country=Belarus]] to database
+2024-09-15 00:34:52 INFO  c.t.dao.hibernate.TelegramUserDAO - Start finding entity with id 804296491
+2024-09-15 00:34:52 INFO  c.t.dao.hibernate.TelegramUserDAO - Finding of entity with id 804296491 ended successfully
+2024-09-15 00:34:52 WARN  c.t.s.w.WeatherTelegramServiceImpl - User with username ektogod already exists!
+2024-09-15 00:35:03 INFO  c.t.s.w.WeatherTelegramServiceImpl - Start removing cities null from user with username ektogod
+2024-09-15 00:35:03 INFO  c.t.dao.hibernate.TelegramUserDAO - Start finding entity with id 804296491
+2024-09-15 00:35:03 INFO  c.t.dao.hibernate.TelegramUserDAO - Finding of entity with id 804296491 ended successfully
+2024-09-15 00:35:21 INFO  c.t.s.w.WeatherTelegramServiceImpl - Start getting all cities for user with username ektogod
+2024-09-15 00:35:21 INFO  c.t.dao.hibernate.TelegramUserDAO - Start finding entity with id 804296491
+2024-09-15 00:35:21 INFO  c.t.dao.hibernate.TelegramUserDAO - Finding of entity with id 804296491 ended successfully
+2024-09-15 00:35:21 WARN  c.t.s.w.WeatherTelegramServiceImpl - Getting all cities for user with username ektogod ended successfully
+2024-09-15 00:38:13 INFO  c.t.s.w.WeatherTelegramServiceImpl - Start getting all cities for user with username ektogod
+2024-09-15 00:38:13 INFO  c.t.dao.hibernate.TelegramUserDAO - Start finding entity with id 804296491
+2024-09-15 00:38:13 INFO  c.t.dao.hibernate.TelegramUserDAO - Finding of entity with id 804296491 ended successfully
+2024-09-15 00:38:13 WARN  c.t.s.w.WeatherTelegramServiceImpl - Getting all cities for user with username ektogod ended successfully
+2024-09-15 00:38:26 INFO  c.t.s.w.WeatherTelegramServiceImpl - Start deleting user with username ektogod
+2024-09-15 00:38:26 INFO  c.t.dao.hibernate.TelegramUserDAO - Start finding entity with id 804296491
+2024-09-15 00:38:26 INFO  c.t.dao.hibernate.TelegramUserDAO - Finding of entity with id 804296491 ended successfully
+2024-09-15 00:38:26 INFO  c.t.dao.hibernate.UserCityDAO - Start removing TelegramUserCity where User: com.tinkoff_lab.entity.TelegramUser@2ba08bec, City: com.tinkoff_lab.entity.City@ff21bcf0
+2024-09-15 00:38:26 INFO  c.t.dao.hibernate.UserCityDAO - Removing TelegramUserCity where User: com.tinkoff_lab.entity.TelegramUser@2ba08bec, City: com.tinkoff_lab.entity.City@ff21bcf0 ended successfully
+2024-09-15 00:38:26 INFO  c.t.dao.hibernate.TelegramUserDAO - Start removing entity with id 804296491
+2024-09-15 00:38:26 INFO  c.t.dao.hibernate.TelegramUserDAO - Removing entity with id 804296491 ended successfully
+2024-09-15 00:38:26 INFO  c.t.s.w.WeatherTelegramServiceImpl - Deleting user with username ektogod ended successfully
+2024-09-15 00:39:09 INFO  c.tinkoff_lab.TinkoffLabApplication - Application has terminated working
 
-2024-09-13 00:01:42 INFO  c.tinkoff_lab.TinkoffLabApplication - Application has started working
-2024-09-13 00:01:43 INFO  c.tinkoff_lab.TinkoffLabApplication - Starting TinkoffLabApplication using Java 21.0.1 with PID 16808 (C:\Users\Nikita\IdeaProjects\pet-project\target\classes started by Nikita in C:\Users\Nikita\IdeaProjects\pet-project)
-2024-09-13 00:01:43 INFO  c.tinkoff_lab.TinkoffLabApplication - No active profile set, falling back to 1 default profile: "default"
-2024-09-13 00:02:22 INFO  c.tinkoff_lab.TinkoffLabApplication - Application has started working
-2024-09-13 00:02:23 INFO  c.tinkoff_lab.TinkoffLabApplication - Starting TinkoffLabApplication using Java 21.0.1 with PID 10524 (C:\Users\Nikita\IdeaProjects\pet-project\target\classes started by Nikita in C:\Users\Nikita\IdeaProjects\pet-project)
-2024-09-13 00:02:23 INFO  c.tinkoff_lab.TinkoffLabApplication - No active profile set, falling back to 1 default profile: "default"
-2024-09-13 00:02:27 INFO  c.tinkoff_lab.TinkoffLabApplication - Started TinkoffLabApplication in 5.204 seconds (process running for 6.109)
-2024-09-13 00:02:52 INFO  c.tinkoff_lab.TinkoffLabApplication - Application has terminated working
+2024-09-15 00:39:20 INFO  c.tinkoff_lab.TinkoffLabApplication - Application has started working
+2024-09-15 00:39:21 INFO  c.tinkoff_lab.TinkoffLabApplication - Starting TinkoffLabApplication using Java 21.0.1 with PID 11364 (C:\Users\Nikita\IdeaProjects\pet-project\target\classes started by Nikita in C:\Users\Nikita\IdeaProjects\pet-project)
+2024-09-15 00:39:21 INFO  c.tinkoff_lab.TinkoffLabApplication - No active profile set, falling back to 1 default profile: "default"
+2024-09-15 00:39:25 INFO  c.tinkoff_lab.TinkoffLabApplication - Started TinkoffLabApplication in 5.119 seconds (process running for 5.84)
+2024-09-15 00:39:50 INFO  c.t.s.w.WeatherTelegramServiceImpl - Start adding user with username ektogod and cities [Minsk, Belarus, Grodno, Belarus] to database
+2024-09-15 00:39:50 INFO  c.t.dao.hibernate.TelegramUserDAO - Start finding entity with id 804296491
+2024-09-15 00:39:51 INFO  c.t.dao.hibernate.TelegramUserDAO - Finding of entity with id 804296491 ended successfully
+2024-09-15 00:39:51 INFO  c.t.dao.hibernate.TelegramUserDAO - Start inserting entity: com.tinkoff_lab.entity.TelegramUser@7d8620f6
+2024-09-15 00:39:51 INFO  c.t.dao.hibernate.TelegramUserDAO - Inserting of entity com.tinkoff_lab.entity.TelegramUser@7d8620f6 ended successfully
+2024-09-15 00:39:51 INFO  c.t.external.CoordinatesDefiner - Start coordinate definition for city Minsk, country Belarus
+2024-09-15 00:39:51 INFO  c.tinkoff_lab.utils.CountryCodeUtils - Start country code definition for country: Belarus
+2024-09-15 00:39:51 INFO  c.tinkoff_lab.utils.CountryCodeUtils - Country code definition for country Belarus ended successfully
+2024-09-15 00:39:51 INFO  c.t.external.CoordinatesDefiner - Coordinate definition for city Minsk, country Belarus ended successfully
+2024-09-15 00:39:51 INFO  c.tinkoff_lab.dao.hibernate.CityDAO - Start updating entity: com.tinkoff_lab.entity.City@ff21bcf0
+2024-09-15 00:39:51 INFO  c.tinkoff_lab.dao.hibernate.CityDAO - Updating entity com.tinkoff_lab.entity.City@ff21bcf0 ended successfully
+2024-09-15 00:39:51 INFO  c.t.dao.hibernate.UserCityDAO - Start adding TelegramUserCity where TelegramUser: com.tinkoff_lab.entity.TelegramUser@7d8620f6, City: com.tinkoff_lab.entity.City@ff21bcf0
+2024-09-15 00:39:51 INFO  c.t.dao.hibernate.UserCityDAO - Adding TelegramUserCity where User: com.tinkoff_lab.entity.TelegramUser@7d8620f6, City: com.tinkoff_lab.entity.City@ff21bcf0 ended successfully
+2024-09-15 00:39:51 INFO  c.t.external.CoordinatesDefiner - Start coordinate definition for city Grodno, country Belarus
+2024-09-15 00:39:51 INFO  c.tinkoff_lab.utils.CountryCodeUtils - Start country code definition for country: Belarus
+2024-09-15 00:39:51 INFO  c.tinkoff_lab.utils.CountryCodeUtils - Country code definition for country Belarus ended successfully
+2024-09-15 00:39:51 INFO  c.t.external.CoordinatesDefiner - Coordinate definition for city Grodno, country Belarus ended successfully
+2024-09-15 00:39:51 INFO  c.tinkoff_lab.dao.hibernate.CityDAO - Start updating entity: com.tinkoff_lab.entity.City@d2f87f10
+2024-09-15 00:39:51 INFO  c.tinkoff_lab.dao.hibernate.CityDAO - Updating entity com.tinkoff_lab.entity.City@d2f87f10 ended successfully
+2024-09-15 00:39:51 INFO  c.t.dao.hibernate.UserCityDAO - Start adding TelegramUserCity where TelegramUser: com.tinkoff_lab.entity.TelegramUser@7d8620f6, City: com.tinkoff_lab.entity.City@d2f87f10
+2024-09-15 00:39:51 INFO  c.t.dao.hibernate.UserCityDAO - Adding TelegramUserCity where User: com.tinkoff_lab.entity.TelegramUser@7d8620f6, City: com.tinkoff_lab.entity.City@d2f87f10 ended successfully
+2024-09-15 00:39:51 INFO  c.t.s.w.WeatherTelegramServiceImpl - Adding user with username ektogod and cities [com.tinkoff_lab.entity.City@ff21bcf0, com.tinkoff_lab.entity.City@d2f87f10] to database ended successfully
+2024-09-15 00:43:37 INFO  c.tinkoff_lab.TinkoffLabApplication - Application has terminated working
 
-2024-09-13 00:03:43 INFO  c.tinkoff_lab.TinkoffLabApplication - Application has started working
-2024-09-13 00:03:44 INFO  c.tinkoff_lab.TinkoffLabApplication - Starting TinkoffLabApplication using Java 21.0.1 with PID 15096 (C:\Users\Nikita\IdeaProjects\pet-project\target\classes started by Nikita in C:\Users\Nikita\IdeaProjects\pet-project)
-2024-09-13 00:03:44 INFO  c.tinkoff_lab.TinkoffLabApplication - No active profile set, falling back to 1 default profile: "default"
-2024-09-13 00:03:49 INFO  c.tinkoff_lab.TinkoffLabApplication - Started TinkoffLabApplication in 5.253 seconds (process running for 6.066)
-2024-09-13 00:04:56 INFO  c.tinkoff_lab.TinkoffLabApplication - Application has terminated working
+2024-09-15 00:43:55 INFO  c.tinkoff_lab.TinkoffLabApplication - Application has started working
+2024-09-15 00:43:55 INFO  c.tinkoff_lab.TinkoffLabApplication - Starting TinkoffLabApplication using Java 21.0.1 with PID 3364 (C:\Users\Nikita\IdeaProjects\pet-project\target\classes started by Nikita in C:\Users\Nikita\IdeaProjects\pet-project)
+2024-09-15 00:43:55 INFO  c.tinkoff_lab.TinkoffLabApplication - No active profile set, falling back to 1 default profile: "default"
+2024-09-15 00:44:01 INFO  c.tinkoff_lab.TinkoffLabApplication - Started TinkoffLabApplication in 5.959 seconds (process running for 6.813)
+2024-09-15 00:45:12 INFO  c.t.s.w.WeatherTelegramServiceImpl - Start adding user with username ektogod and cities [Minsk, Belarus, Grodno, Belarus] to database
+2024-09-15 00:45:12 INFO  c.t.dao.hibernate.TelegramUserDAO - Start finding entity with id 804296491
+2024-09-15 00:45:12 INFO  c.t.dao.hibernate.TelegramUserDAO - Finding of entity with id 804296491 ended successfully
+2024-09-15 00:45:12 INFO  c.t.dao.hibernate.TelegramUserDAO - Start inserting entity: com.tinkoff_lab.entity.TelegramUser@4e4ac654
+2024-09-15 00:45:12 INFO  c.t.dao.hibernate.TelegramUserDAO - Inserting of entity com.tinkoff_lab.entity.TelegramUser@4e4ac654 ended successfully
+2024-09-15 00:45:12 INFO  c.t.external.CoordinatesDefiner - Start coordinate definition for city Minsk, country Belarus
+2024-09-15 00:45:12 INFO  c.tinkoff_lab.utils.CountryCodeUtils - Start country code definition for country: Belarus
+2024-09-15 00:45:12 INFO  c.tinkoff_lab.utils.CountryCodeUtils - Country code definition for country Belarus ended successfully
+2024-09-15 00:45:12 INFO  c.t.external.CoordinatesDefiner - Coordinate definition for city Minsk, country Belarus ended successfully
+2024-09-15 00:45:12 INFO  c.tinkoff_lab.dao.hibernate.CityDAO - Start updating entity: com.tinkoff_lab.entity.City@ff21bcf0
+2024-09-15 00:45:12 INFO  c.tinkoff_lab.dao.hibernate.CityDAO - Updating entity com.tinkoff_lab.entity.City@ff21bcf0 ended successfully
+2024-09-15 00:45:12 INFO  c.t.dao.hibernate.UserCityDAO - Start adding TelegramUserCity where TelegramUser: com.tinkoff_lab.entity.TelegramUser@4e4ac654, City: com.tinkoff_lab.entity.City@ff21bcf0
+2024-09-15 00:45:12 INFO  c.t.dao.hibernate.UserCityDAO - Adding TelegramUserCity where User: com.tinkoff_lab.entity.TelegramUser@4e4ac654, City: com.tinkoff_lab.entity.City@ff21bcf0 ended successfully
+2024-09-15 00:45:12 INFO  c.t.external.CoordinatesDefiner - Start coordinate definition for city Grodno, country Belarus
+2024-09-15 00:45:12 INFO  c.tinkoff_lab.utils.CountryCodeUtils - Start country code definition for country: Belarus
+2024-09-15 00:45:12 INFO  c.tinkoff_lab.utils.CountryCodeUtils - Country code definition for country Belarus ended successfully
+2024-09-15 00:45:12 INFO  c.t.external.CoordinatesDefiner - Coordinate definition for city Grodno, country Belarus ended successfully
+2024-09-15 00:45:12 INFO  c.tinkoff_lab.dao.hibernate.CityDAO - Start updating entity: com.tinkoff_lab.entity.City@d2f87f10
+2024-09-15 00:45:12 INFO  c.tinkoff_lab.dao.hibernate.CityDAO - Updating entity com.tinkoff_lab.entity.City@d2f87f10 ended successfully
+2024-09-15 00:45:12 INFO  c.t.dao.hibernate.UserCityDAO - Start adding TelegramUserCity where TelegramUser: com.tinkoff_lab.entity.TelegramUser@4e4ac654, City: com.tinkoff_lab.entity.City@d2f87f10
+2024-09-15 00:45:12 INFO  c.t.dao.hibernate.UserCityDAO - Adding TelegramUserCity where User: com.tinkoff_lab.entity.TelegramUser@4e4ac654, City: com.tinkoff_lab.entity.City@d2f87f10 ended successfully
+2024-09-15 00:45:12 INFO  c.t.s.w.WeatherTelegramServiceImpl - Adding user with username ektogod and cities [com.tinkoff_lab.entity.City@ff21bcf0, com.tinkoff_lab.entity.City@d2f87f10] to database ended successfully
+2024-09-15 00:46:57 INFO  c.t.s.w.WeatherTelegramServiceImpl - Start getting all cities for user with username ektogod
+2024-09-15 00:46:57 INFO  c.t.dao.hibernate.TelegramUserDAO - Start finding entity with id 804296491
+2024-09-15 00:46:57 INFO  c.t.dao.hibernate.TelegramUserDAO - Finding of entity with id 804296491 ended successfully
+2024-09-15 00:46:57 WARN  c.t.s.w.WeatherTelegramServiceImpl - Getting all cities for user with username ektogod ended successfully
+2024-09-15 00:48:06 INFO  c.tinkoff_lab.TinkoffLabApplication - Application has terminated working
 
-2024-09-13 00:17:50 INFO  c.tinkoff_lab.TinkoffLabApplication - Application has started working
-2024-09-13 00:17:51 INFO  c.tinkoff_lab.TinkoffLabApplication - Starting TinkoffLabApplication using Java 21.0.1 with PID 5280 (C:\Users\Nikita\IdeaProjects\pet-project\target\classes started by Nikita in C:\Users\Nikita\IdeaProjects\pet-project)
-2024-09-13 00:17:51 INFO  c.tinkoff_lab.TinkoffLabApplication - No active profile set, falling back to 1 default profile: "default"
-2024-09-13 00:17:56 INFO  c.tinkoff_lab.TinkoffLabApplication - Started TinkoffLabApplication in 6.138 seconds (process running for 7.044)
-2024-09-13 14:51:10 INFO  c.tinkoff_lab.TinkoffLabApplication - Application has started working
-2024-09-13 14:51:11 INFO  c.tinkoff_lab.TinkoffLabApplication - Starting TinkoffLabApplication using Java 21.0.1 with PID 14768 (C:\Users\Nikita\IdeaProjects\pet-project\target\classes started by Nikita in C:\Users\Nikita\IdeaProjects\pet-project)
-2024-09-13 14:51:11 INFO  c.tinkoff_lab.TinkoffLabApplication - No active profile set, falling back to 1 default profile: "default"
-2024-09-13 14:51:17 INFO  c.tinkoff_lab.TinkoffLabApplication - Started TinkoffLabApplication in 6.277 seconds (process running for 7.335)
-2024-09-13 15:05:29 INFO  c.t.controller.TranslationController - Request from user has received: UserRequest[text=я люблю тебя, originalLanguage=ru, finalLanguage=be]
-2024-09-13 15:05:29 INFO  c.t.s.t.TranslationServiceImpl - Sending translation request: text = я люблю тебя 
-2024-09-13 15:05:29 INFO  c.t.external.TranslationDefiner - Request has received: text = я люблю тебя 
-2024-09-13 15:05:29 INFO  c.t.external.TranslationDefiner - Translation successfully completed
-2024-09-13 15:05:30 INFO  com.tinkoff_lab.dao.TranslationDAO - Start writing to database of query: Translation[id=null, ip=37.214.71.177, originalText=я люблю тебя, originalLang=ru, translatedText=я цябе люблю, targetLang=be, time=2024/09/13 15:05:30, status=200, message=Ok]
-2024-09-13 15:05:30 INFO  com.tinkoff_lab.dao.TranslationDAO - Connection with database established
-2024-09-13 15:05:30 INFO  com.tinkoff_lab.dao.TranslationDAO - Query has been successfully recorded
-2024-09-13 15:05:30 INFO  c.t.controller.TranslationController - Response is sending to user
-2024-09-13 15:07:50 INFO  c.t.controller.TranslationController - Request from user has received: UserRequest[text=я люблю тебя, originalLanguage=ru, finalLanguage=be]
-2024-09-13 15:07:50 INFO  c.t.s.t.TranslationServiceImpl - Sending translation request: text = я люблю тебя 
-2024-09-13 15:07:50 INFO  c.t.external.TranslationDefiner - Request has received: text = я люблю тебя 
-2024-09-13 15:07:50 INFO  c.t.external.TranslationDefiner - Translation successfully completed
-2024-09-13 15:07:51 INFO  com.tinkoff_lab.dao.TranslationDAO - Start writing to database of query: Translation[id=null, ip=37.214.71.177, originalText=я люблю тебя, originalLang=ru, translatedText=я цябе люблю, targetLang=be, time=2024/09/13 15:07:51, status=200, message=Ok]
-2024-09-13 15:07:51 INFO  com.tinkoff_lab.dao.TranslationDAO - Connection with database established
-2024-09-13 15:07:51 INFO  com.tinkoff_lab.dao.TranslationDAO - Query has been successfully recorded
-2024-09-13 15:07:51 INFO  c.t.controller.TranslationController - Response is sending to user
-2024-09-13 16:01:16 INFO  c.t.controller.TranslationController - Request from user has received: UserRequest[text=я люблю тебя, originalLanguage=ru, finalLanguage=be]
-2024-09-13 16:01:16 INFO  c.t.s.t.TranslationServiceImpl - Sending translation request: text = я люблю тебя 
-2024-09-13 16:01:16 INFO  c.t.external.TranslationDefiner - Request has received: text = я люблю тебя 
-2024-09-13 16:01:16 INFO  c.t.external.TranslationDefiner - Translation successfully completed
-2024-09-13 16:01:16 INFO  com.tinkoff_lab.dao.TranslationDAO - Start writing to database of query: Translation[id=null, ip=37.214.71.177, originalText=я люблю тебя, originalLang=ru, translatedText=я цябе люблю, targetLang=be, time=2024/09/13 16:01:16, status=200, message=Ok]
-2024-09-13 16:01:16 INFO  com.tinkoff_lab.dao.TranslationDAO - Connection with database established
-2024-09-13 16:01:16 INFO  com.tinkoff_lab.dao.TranslationDAO - Query has been successfully recorded
-2024-09-13 16:01:17 INFO  c.t.controller.TranslationController - Response is sending to user
-2024-09-13 16:05:21 INFO  c.t.controller.TranslationController - Request from user has received: UserRequest[text=илья, originalLanguage=ru, finalLanguage=be]
-2024-09-13 16:05:21 INFO  c.t.s.t.TranslationServiceImpl - Sending translation request: text = илья 
-2024-09-13 16:05:22 INFO  c.t.external.TranslationDefiner - Request has received: text = илья 
-2024-09-13 16:05:22 INFO  c.t.external.TranslationDefiner - Translation successfully completed
-2024-09-13 16:05:22 INFO  com.tinkoff_lab.dao.TranslationDAO - Start writing to database of query: Translation[id=null, ip=37.214.71.177, originalText=илья, originalLang=ru, translatedText=ilia, targetLang=be, time=2024/09/13 16:05:22, status=200, message=Ok]
-2024-09-13 16:05:22 INFO  com.tinkoff_lab.dao.TranslationDAO - Connection with database established
-2024-09-13 16:05:22 INFO  com.tinkoff_lab.dao.TranslationDAO - Query has been successfully recorded
-2024-09-13 16:05:22 INFO  c.t.controller.TranslationController - Response is sending to user
-2024-09-13 18:45:48 INFO  c.t.controller.TranslationController - Request from user has received: UserRequest[text=ru,, originalLanguage=be, finalLanguage=я люблю тебя, дорогая]
-2024-09-13 18:45:48 INFO  c.t.s.t.TranslationServiceImpl - Sending translation request: text = ru, 
-2024-09-13 18:45:48 INFO  c.t.external.TranslationDefiner - Request has received: text = ru, 
-2024-09-13 18:45:48 ERROR c.t.external.TranslationDefiner - Something goes wrong with translation for text <ru,>, status is 403
-2024-09-13 18:45:48 INFO  com.tinkoff_lab.dao.TranslationDAO - Start writing to database of query: Translation[id=null, ip=37.214.71.177, originalText=ru,, originalLang=be, translatedText=, targetLang=я люблю тебя, дорогая, time=2024/09/13 18:45:48, status=403, message='я люблю тебя, дорогая' IS AN INVALID TARGET LANGUAGE . EXAMPLE: LANGPAIR=EN|IT USING 2 LETTER ISO OR RFC3066 LIKE ZH-CN. ALMOST ALL LANGUAGES SUPPORTED BUT SOME MAY HAVE NO CONTENT]
-2024-09-13 18:45:48 INFO  com.tinkoff_lab.dao.TranslationDAO - Connection with database established
-2024-09-13 18:45:49 ERROR com.tinkoff_lab.dao.TranslationDAO - Insertion of query in database goes wrong!
-2024-09-13 18:47:32 INFO  c.t.controller.TranslationController - Request from user has received: UserRequest[text=я люблю тебя, originalLanguage=ru, finalLanguage=be]
-2024-09-13 18:47:32 INFO  c.t.s.t.TranslationServiceImpl - Sending translation request: text = я люблю тебя 
-2024-09-13 18:47:32 INFO  c.t.external.TranslationDefiner - Request has received: text = я люблю тебя 
-2024-09-13 18:47:32 INFO  c.t.external.TranslationDefiner - Translation successfully completed
-2024-09-13 18:47:33 INFO  com.tinkoff_lab.dao.TranslationDAO - Start writing to database of query: Translation[id=null, ip=37.214.71.177, originalText=я люблю тебя, originalLang=ru, translatedText=я цябе люблю, targetLang=be, time=2024/09/13 18:47:33, status=200, message=Ok]
-2024-09-13 18:47:33 INFO  com.tinkoff_lab.dao.TranslationDAO - Connection with database established
-2024-09-13 18:47:33 INFO  com.tinkoff_lab.dao.TranslationDAO - Query has been successfully recorded
-2024-09-13 18:47:33 INFO  c.t.controller.TranslationController - Response is sending to user
-2024-09-13 18:48:31 INFO  c.t.controller.TranslationController - Request from user has received: UserRequest[text=я люблю тебя, originalLanguage=ru,, finalLanguage=be]
-2024-09-13 18:48:31 INFO  c.t.s.t.TranslationServiceImpl - Sending translation request: text = я люблю тебя 
-2024-09-13 18:48:31 INFO  c.t.external.TranslationDefiner - Request has received: text = я люблю тебя 
-2024-09-13 18:48:31 ERROR c.t.external.TranslationDefiner - Something goes wrong with translation for text <я люблю тебя>, status is 403
-2024-09-13 18:48:31 INFO  com.tinkoff_lab.dao.TranslationDAO - Start writing to database of query: Translation[id=null, ip=37.214.71.177, originalText=я люблю тебя, originalLang=ru,, translatedText=, targetLang=be, time=2024/09/13 18:48:31, status=403, message='RU,' IS AN INVALID SOURCE LANGUAGE . EXAMPLE: LANGPAIR=EN|IT USING 2 LETTER ISO OR RFC3066 LIKE ZH-CN. ALMOST ALL LANGUAGES SUPPORTED BUT SOME MAY HAVE NO CONTENT]
-2024-09-13 18:48:31 INFO  com.tinkoff_lab.dao.TranslationDAO - Connection with database established
-2024-09-13 18:48:31 INFO  com.tinkoff_lab.dao.TranslationDAO - Query has been successfully recorded
-2024-09-13 18:48:46 INFO  c.t.controller.TranslationController - Request from user has received: UserRequest[text=я люблю тебя, дорогая, originalLanguage=ru, finalLanguage=be]
-2024-09-13 18:48:46 INFO  c.t.s.t.TranslationServiceImpl - Sending translation request: text = я люблю тебя, дорогая 
-2024-09-13 18:48:47 INFO  c.t.external.TranslationDefiner - Request has received: text = я люблю тебя, дорогая 
-2024-09-13 18:48:47 INFO  c.t.external.TranslationDefiner - Translation successfully completed
-2024-09-13 18:48:47 INFO  com.tinkoff_lab.dao.TranslationDAO - Start writing to database of query: Translation[id=null, ip=37.214.71.177, originalText=я люблю тебя, дорогая, originalLang=ru, translatedText=я люблю цябе, дарагая, targetLang=be, time=2024/09/13 18:48:47, status=200, message=Ok]
-2024-09-13 18:48:47 INFO  com.tinkoff_lab.dao.TranslationDAO - Connection with database established
-2024-09-13 18:48:47 INFO  com.tinkoff_lab.dao.TranslationDAO - Query has been successfully recorded
-2024-09-13 18:48:47 INFO  c.t.controller.TranslationController - Response is sending to user
-2024-09-13 18:49:01 INFO  c.t.controller.TranslationController - Request from user has received: UserRequest[text=ru,, originalLanguage=be, finalLanguage=хай]
-2024-09-13 18:49:01 INFO  c.t.s.t.TranslationServiceImpl - Sending translation request: text = ru, 
-2024-09-13 18:49:01 INFO  c.t.external.TranslationDefiner - Request has received: text = ru, 
-2024-09-13 18:49:01 ERROR c.t.external.TranslationDefiner - Something goes wrong with translation for text <ru,>, status is 403
-2024-09-13 18:49:01 INFO  com.tinkoff_lab.dao.TranslationDAO - Start writing to database of query: Translation[id=null, ip=37.214.71.177, originalText=ru,, originalLang=be, translatedText=, targetLang=хай, time=2024/09/13 18:49:01, status=403, message='хай' IS AN INVALID TARGET LANGUAGE . EXAMPLE: LANGPAIR=EN|IT USING 2 LETTER ISO OR RFC3066 LIKE ZH-CN. ALMOST ALL LANGUAGES SUPPORTED BUT SOME MAY HAVE NO CONTENT]
-2024-09-13 18:49:01 INFO  com.tinkoff_lab.dao.TranslationDAO - Connection with database established
-2024-09-13 18:49:01 INFO  com.tinkoff_lab.dao.TranslationDAO - Query has been successfully recorded
-2024-09-13 18:49:17 INFO  c.tinkoff_lab.TinkoffLabApplication - Application has terminated working
+2024-09-15 00:48:21 INFO  c.tinkoff_lab.TinkoffLabApplication - Application has started working
+2024-09-15 00:48:22 INFO  c.tinkoff_lab.TinkoffLabApplication - Starting TinkoffLabApplication using Java 21.0.1 with PID 16808 (C:\Users\Nikita\IdeaProjects\pet-project\target\classes started by Nikita in C:\Users\Nikita\IdeaProjects\pet-project)
+2024-09-15 00:48:22 INFO  c.tinkoff_lab.TinkoffLabApplication - No active profile set, falling back to 1 default profile: "default"
+2024-09-15 00:48:26 INFO  c.tinkoff_lab.TinkoffLabApplication - Started TinkoffLabApplication in 4.962 seconds (process running for 5.637)
+2024-09-15 00:48:30 INFO  c.t.s.w.WeatherTelegramServiceImpl - Start getting all cities for user with username ektogod
+2024-09-15 00:48:30 INFO  c.t.dao.hibernate.TelegramUserDAO - Start finding entity with id 804296491
+2024-09-15 00:48:30 INFO  c.t.dao.hibernate.TelegramUserDAO - Finding of entity with id 804296491 ended successfully
+2024-09-15 00:48:30 WARN  c.t.s.w.WeatherTelegramServiceImpl - Getting all cities for user with username ektogod ended successfully
+2024-09-15 00:48:36 INFO  c.t.s.w.WeatherTelegramServiceImpl - Start getting all cities for user with username ektogod
+2024-09-15 00:48:36 INFO  c.t.dao.hibernate.TelegramUserDAO - Start finding entity with id 804296491
+2024-09-15 00:48:36 INFO  c.t.dao.hibernate.TelegramUserDAO - Finding of entity with id 804296491 ended successfully
+2024-09-15 00:48:36 WARN  c.t.s.w.WeatherTelegramServiceImpl - Getting all cities for user with username ektogod ended successfully
+2024-09-15 00:50:20 INFO  c.tinkoff_lab.TinkoffLabApplication - Application has terminated working
 
-2024-09-13 18:49:51 INFO  c.tinkoff_lab.TinkoffLabApplication - Application has started working
-2024-09-13 18:49:52 INFO  c.tinkoff_lab.TinkoffLabApplication - Starting TinkoffLabApplication using Java 21.0.1 with PID 11524 (C:\Users\Nikita\IdeaProjects\pet-project\target\classes started by Nikita in C:\Users\Nikita\IdeaProjects\pet-project)
-2024-09-13 18:49:52 INFO  c.tinkoff_lab.TinkoffLabApplication - No active profile set, falling back to 1 default profile: "default"
-2024-09-13 18:49:58 INFO  c.tinkoff_lab.TinkoffLabApplication - Started TinkoffLabApplication in 6.506 seconds (process running for 8.219)
-2024-09-13 18:53:12 INFO  c.t.controller.TranslationController - Request from user has received: UserRequest[text=ru,, originalLanguage=be, finalLanguage=я люблю тебя, малышка]
-2024-09-13 18:53:16 INFO  c.t.s.t.TranslationServiceImpl - Sending translation request: text = ru, 
-2024-09-13 18:56:46 INFO  c.t.external.TranslationDefiner - Request has received: text = ru, 
-2024-09-13 18:58:56 INFO  c.t.controller.TranslationController - Request from user has received: UserRequest[text=я люблю тебя, малышка, originalLanguage=ru,, finalLanguage=be]
-2024-09-13 18:58:56 INFO  c.t.s.t.TranslationServiceImpl - Sending translation request: text = я люблю тебя, малышка 
-2024-09-13 18:58:57 INFO  c.t.external.TranslationDefiner - Request has received: text = я люблю тебя, малышка 
-2024-09-13 18:58:57 ERROR c.t.external.TranslationDefiner - Something goes wrong with translation for text <ru,>, status is 403
-2024-09-13 18:59:10 ERROR c.t.external.TranslationDefiner - Something goes wrong with translation for text <я люблю тебя, малышка>, status is 403
-2024-09-13 18:59:10 INFO  com.tinkoff_lab.dao.TranslationDAO - Start writing to database of query: Translation[id=null, ip=37.214.71.177, originalText=ru,, originalLang=be, translatedText=, targetLang=я люблю тебя, малышка, time=2024/09/13 18:58:57, status=403, message='я люблю тебя, малышка' IS AN INVALID TARGET LANGUAGE . EXAMPLE: LANGPAIR=EN|IT USING 2 LETTER ISO OR RFC3066 LIKE ZH-CN. ALMOST ALL LANGUAGES SUPPORTED BUT SOME MAY HAVE NO CONTENT]
-2024-09-13 18:59:10 INFO  com.tinkoff_lab.dao.TranslationDAO - Start writing to database of query: Translation[id=null, ip=37.214.71.177, originalText=я люблю тебя, малышка, originalLang=ru,, translatedText=, targetLang=be, time=2024/09/13 18:59:10, status=403, message='RU,' IS AN INVALID SOURCE LANGUAGE . EXAMPLE: LANGPAIR=EN|IT USING 2 LETTER ISO OR RFC3066 LIKE ZH-CN. ALMOST ALL LANGUAGES SUPPORTED BUT SOME MAY HAVE NO CONTENT]
-2024-09-13 18:59:11 INFO  com.tinkoff_lab.dao.TranslationDAO - Connection with database established
-2024-09-13 18:59:11 INFO  com.tinkoff_lab.dao.TranslationDAO - Query has been successfully recorded
-2024-09-13 18:59:11 INFO  com.tinkoff_lab.dao.TranslationDAO - Connection with database established
-2024-09-13 18:59:11 ERROR com.tinkoff_lab.dao.TranslationDAO - Insertion of query in database goes wrong!
-2024-09-13 18:59:40 INFO  c.t.controller.TranslationController - Request from user has received: UserRequest[text=s, originalLanguage=ru,, finalLanguage=be]
-2024-09-13 18:59:40 INFO  c.t.s.t.TranslationServiceImpl - Sending translation request: text = s 
-2024-09-13 18:59:40 INFO  c.t.external.TranslationDefiner - Request has received: text = s 
-2024-09-13 18:59:40 ERROR c.t.external.TranslationDefiner - Something goes wrong with translation for text <s>, status is 403
-2024-09-13 18:59:40 INFO  com.tinkoff_lab.dao.TranslationDAO - Start writing to database of query: Translation[id=null, ip=37.214.71.177, originalText=s, originalLang=ru,, translatedText=, targetLang=be, time=2024/09/13 18:59:40, status=403, message='RU,' IS AN INVALID SOURCE LANGUAGE . EXAMPLE: LANGPAIR=EN|IT USING 2 LETTER ISO OR RFC3066 LIKE ZH-CN. ALMOST ALL LANGUAGES SUPPORTED BUT SOME MAY HAVE NO CONTENT]
-2024-09-13 18:59:40 INFO  com.tinkoff_lab.dao.TranslationDAO - Connection with database established
-2024-09-13 18:59:40 INFO  com.tinkoff_lab.dao.TranslationDAO - Query has been successfully recorded
-2024-09-13 18:59:57 INFO  c.t.controller.TranslationController - Request from user has received: UserRequest[text=я люблю тебя, малышка, originalLanguage=ru, finalLanguage=be]
-2024-09-13 18:59:57 INFO  c.t.s.t.TranslationServiceImpl - Sending translation request: text = я люблю тебя, малышка 
-2024-09-13 18:59:57 INFO  c.t.external.TranslationDefiner - Request has received: text = я люблю тебя, малышка 
-2024-09-13 18:59:57 INFO  c.t.external.TranslationDefiner - Translation successfully completed
-2024-09-13 18:59:58 INFO  com.tinkoff_lab.dao.TranslationDAO - Start writing to database of query: Translation[id=null, ip=37.214.71.177, originalText=я люблю тебя, малышка, originalLang=ru, translatedText=я люблю цябе, дзіцятка, targetLang=be, time=2024/09/13 18:59:58, status=200, message=Ok]
-2024-09-13 18:59:58 INFO  com.tinkoff_lab.dao.TranslationDAO - Connection with database established
-2024-09-13 18:59:58 INFO  com.tinkoff_lab.dao.TranslationDAO - Query has been successfully recorded
-2024-09-13 18:59:58 INFO  c.t.controller.TranslationController - Response is sending to user
-2024-09-13 19:17:16 INFO  c.tinkoff_lab.TinkoffLabApplication - Application has terminated working
+2024-09-15 00:50:27 INFO  c.tinkoff_lab.TinkoffLabApplication - Application has started working
+2024-09-15 00:50:28 INFO  c.tinkoff_lab.TinkoffLabApplication - Starting TinkoffLabApplication using Java 21.0.1 with PID 10960 (C:\Users\Nikita\IdeaProjects\pet-project\target\classes started by Nikita in C:\Users\Nikita\IdeaProjects\pet-project)
+2024-09-15 00:50:28 INFO  c.tinkoff_lab.TinkoffLabApplication - No active profile set, falling back to 1 default profile: "default"
+2024-09-15 00:50:32 INFO  c.tinkoff_lab.TinkoffLabApplication - Started TinkoffLabApplication in 4.91 seconds (process running for 5.573)
+2024-09-15 00:50:40 INFO  c.t.s.w.WeatherTelegramServiceImpl - Start getting all cities for user with username ektogod
+2024-09-15 00:50:40 INFO  c.t.dao.hibernate.TelegramUserDAO - Start finding entity with id 804296491
+2024-09-15 00:50:40 INFO  c.t.dao.hibernate.TelegramUserDAO - Finding of entity with id 804296491 ended successfully
+2024-09-15 00:50:40 WARN  c.t.s.w.WeatherTelegramServiceImpl - Getting all cities for user with username ektogod ended successfully
+2024-09-15 00:53:40 INFO  c.tinkoff_lab.TinkoffLabApplication - Application has terminated working
 
-2024-09-13 19:17:28 INFO  c.tinkoff_lab.TinkoffLabApplication - Application has started working
-2024-09-13 19:17:29 INFO  c.tinkoff_lab.TinkoffLabApplication - Starting TinkoffLabApplication using Java 21.0.1 with PID 17724 (C:\Users\Nikita\IdeaProjects\pet-project\target\classes started by Nikita in C:\Users\Nikita\IdeaProjects\pet-project)
-2024-09-13 19:17:29 INFO  c.tinkoff_lab.TinkoffLabApplication - No active profile set, falling back to 1 default profile: "default"
-2024-09-13 19:17:34 INFO  c.tinkoff_lab.TinkoffLabApplication - Started TinkoffLabApplication in 5.467 seconds (process running for 6.236)
-2024-09-13 19:19:37 INFO  c.t.controller.TranslationController - Request from user has received: UserRequest[text=I love you babe, originalLanguage=en, finalLanguage=ru]
-2024-09-13 19:19:37 INFO  c.t.s.t.TranslationServiceImpl - Sending translation request: text = I love you babe 
-2024-09-13 19:19:38 INFO  c.t.external.TranslationDefiner - Request has received: text = I love you babe 
-2024-09-13 19:19:38 INFO  c.t.external.TranslationDefiner - Translation successfully completed
-2024-09-13 19:19:38 INFO  com.tinkoff_lab.dao.TranslationDAO - Start writing to database of query: Translation[id=null, ip=37.214.71.177, originalText=I love you babe, originalLang=en, translatedText=Я люблю тебя, targetLang=ru, time=2024/09/13 19:19:38, status=200, message=Ok]
-2024-09-13 19:19:38 INFO  com.tinkoff_lab.dao.TranslationDAO - Connection with database established
-2024-09-13 19:19:38 INFO  com.tinkoff_lab.dao.TranslationDAO - Query has been successfully recorded
-2024-09-13 19:19:38 INFO  c.t.controller.TranslationController - Response is sending to user
-2024-09-13 19:21:23 INFO  c.t.controller.TranslationController - Request from user has received: UserRequest[text=If you knew how strong I love you, originalLanguage=en, finalLanguage=ru]
-2024-09-13 19:21:23 INFO  c.t.s.t.TranslationServiceImpl - Sending translation request: text = If you knew how strong I love you 
-2024-09-13 19:21:24 INFO  c.t.external.TranslationDefiner - Request has received: text = If you knew how strong I love you 
-2024-09-13 19:21:24 INFO  c.t.external.TranslationDefiner - Translation successfully completed
-2024-09-13 19:21:24 INFO  com.tinkoff_lab.dao.TranslationDAO - Start writing to database of query: Translation[id=null, ip=37.214.71.177, originalText=If you knew how strong I love you, originalLang=en, translatedText=Если бы ты знала, как сильно я тебя люблю, targetLang=ru, time=2024/09/13 19:21:24, status=200, message=Ok]
-2024-09-13 19:21:24 INFO  com.tinkoff_lab.dao.TranslationDAO - Connection with database established
-2024-09-13 19:21:24 INFO  com.tinkoff_lab.dao.TranslationDAO - Query has been successfully recorded
-2024-09-13 19:21:24 INFO  c.t.controller.TranslationController - Response is sending to user
-2024-09-13 19:21:57 INFO  c.t.controller.TranslationController - Request from user has received: UserRequest[text=how are you, girly?, originalLanguage=en, finalLanguage=ru]
-2024-09-13 19:21:57 INFO  c.t.s.t.TranslationServiceImpl - Sending translation request: text = how are you, girly? 
-2024-09-13 19:21:57 INFO  c.t.external.TranslationDefiner - Request has received: text = how are you, girly? 
-2024-09-13 19:21:57 INFO  c.t.external.TranslationDefiner - Translation successfully completed
-2024-09-13 19:21:57 INFO  com.tinkoff_lab.dao.TranslationDAO - Start writing to database of query: Translation[id=null, ip=37.214.71.177, originalText=how are you, girly?, originalLang=en, translatedText=как ты, девчонка?, targetLang=ru, time=2024/09/13 19:21:57, status=200, message=Ok]
-2024-09-13 19:21:57 INFO  com.tinkoff_lab.dao.TranslationDAO - Connection with database established
-2024-09-13 19:21:57 INFO  com.tinkoff_lab.dao.TranslationDAO - Query has been successfully recorded
-2024-09-13 19:21:57 INFO  c.t.controller.TranslationController - Response is sending to user
-2024-09-13 19:44:26 INFO  c.t.controller.TranslationController - Request from user has received: UserRequest[text=What are going to do this night, girly?), originalLanguage=en, finalLanguage=ru]
-2024-09-13 19:44:26 INFO  c.t.s.t.TranslationServiceImpl - Sending translation request: text = What are going to do this night, girly?) 
-2024-09-13 19:44:27 INFO  c.t.external.TranslationDefiner - Request has received: text = What are going to do this night, girly?) 
-2024-09-13 19:44:27 INFO  c.t.external.TranslationDefiner - Translation successfully completed
-2024-09-13 19:44:27 INFO  com.tinkoff_lab.dao.TranslationDAO - Start writing to database of query: Translation[id=null, ip=37.214.71.177, originalText=What are going to do this night, girly?), originalLang=en, translatedText=Что будем делать этой ночью, девчонка?), targetLang=ru, time=2024/09/13 19:44:27, status=200, message=Ok]
-2024-09-13 19:44:27 INFO  com.tinkoff_lab.dao.TranslationDAO - Connection with database established
-2024-09-13 19:44:27 INFO  com.tinkoff_lab.dao.TranslationDAO - Query has been successfully recorded
-2024-09-13 19:44:27 INFO  c.t.controller.TranslationController - Response is sending to user
-2024-09-13 20:28:34 INFO  c.t.controller.TranslationController - Request from user has received: UserRequest[text=sorry, girly, it was fun while it lasted, originalLanguage=en, finalLanguage=ru]
-2024-09-13 20:28:34 INFO  c.t.s.t.TranslationServiceImpl - Sending translation request: text = sorry, girly, it was fun while it lasted 
-2024-09-13 20:28:35 INFO  c.t.external.TranslationDefiner - Request has received: text = sorry, girly, it was fun while it lasted 
-2024-09-13 20:28:35 INFO  c.t.external.TranslationDefiner - Translation successfully completed
-2024-09-13 20:28:35 INFO  com.tinkoff_lab.dao.TranslationDAO - Start writing to database of query: Translation[id=null, ip=37.214.71.177, originalText=sorry, girly, it was fun while it lasted, originalLang=en, translatedText=извини, девчонка, было весело, пока это продолжалось, targetLang=ru, time=2024/09/13 20:28:35, status=200, message=Ok]
-2024-09-13 20:28:35 INFO  com.tinkoff_lab.dao.TranslationDAO - Connection with database established
-2024-09-13 20:28:35 INFO  com.tinkoff_lab.dao.TranslationDAO - Query has been successfully recorded
-2024-09-13 20:28:35 INFO  c.t.controller.TranslationController - Response is sending to user
-2024-09-13 20:57:49 INFO  c.t.controller.TranslationController - Request from user has received: UserRequest[text=we will be together forever, originalLanguage=en, finalLanguage=ru]
-2024-09-13 20:57:49 INFO  c.t.s.t.TranslationServiceImpl - Sending translation request: text = we will be together forever 
-2024-09-13 20:57:50 INFO  c.t.external.TranslationDefiner - Request has received: text = we will be together forever 
-2024-09-13 20:57:50 INFO  c.t.external.TranslationDefiner - Translation successfully completed
-2024-09-13 20:57:50 INFO  com.tinkoff_lab.dao.TranslationDAO - Start writing to database of query: Translation[id=null, ip=37.214.71.177, originalText=we will be together forever, originalLang=en, translatedText=Мы вечно будем вместе, targetLang=ru, time=2024/09/13 20:57:50, status=200, message=Ok]
-2024-09-13 20:57:50 INFO  com.tinkoff_lab.dao.TranslationDAO - Connection with database established
-2024-09-13 20:57:50 INFO  com.tinkoff_lab.dao.TranslationDAO - Query has been successfully recorded
-2024-09-13 20:57:50 INFO  c.t.controller.TranslationController - Response is sending to user
+2024-09-15 00:53:56 INFO  c.tinkoff_lab.TinkoffLabApplication - Application has started working
+2024-09-15 00:53:57 INFO  c.tinkoff_lab.TinkoffLabApplication - Starting TinkoffLabApplication using Java 21.0.1 with PID 13732 (C:\Users\Nikita\IdeaProjects\pet-project\target\classes started by Nikita in C:\Users\Nikita\IdeaProjects\pet-project)
+2024-09-15 00:53:57 INFO  c.tinkoff_lab.TinkoffLabApplication - No active profile set, falling back to 1 default profile: "default"
+2024-09-15 00:54:01 INFO  c.tinkoff_lab.TinkoffLabApplication - Started TinkoffLabApplication in 4.754 seconds (process running for 5.471)
+2024-09-15 00:54:21 INFO  c.t.s.w.WeatherTelegramServiceImpl - Start getting all cities for user with username ektogod
+2024-09-15 00:54:21 INFO  c.t.dao.hibernate.TelegramUserDAO - Start finding entity with id 804296491
+2024-09-15 00:54:21 INFO  c.t.dao.hibernate.TelegramUserDAO - Finding of entity with id 804296491 ended successfully
+2024-09-15 00:54:21 WARN  c.t.s.w.WeatherTelegramServiceImpl - Getting all cities for user with username ektogod ended successfully
+2024-09-15 00:54:35 INFO  c.t.s.w.WeatherTelegramServiceImpl - Start deleting user with username ektogod
+2024-09-15 00:54:35 INFO  c.t.dao.hibernate.TelegramUserDAO - Start finding entity with id 804296491
+2024-09-15 00:54:35 INFO  c.t.dao.hibernate.TelegramUserDAO - Finding of entity with id 804296491 ended successfully
+2024-09-15 00:54:35 INFO  c.t.dao.hibernate.UserCityDAO - Start removing TelegramUserCity where User: com.tinkoff_lab.entity.TelegramUser@54b07a99, City: com.tinkoff_lab.entity.City@ff21bcf0
+2024-09-15 00:54:35 INFO  c.t.dao.hibernate.UserCityDAO - Removing TelegramUserCity where User: com.tinkoff_lab.entity.TelegramUser@54b07a99, City: com.tinkoff_lab.entity.City@ff21bcf0 ended successfully
+2024-09-15 00:54:35 INFO  c.t.dao.hibernate.UserCityDAO - Start removing TelegramUserCity where User: com.tinkoff_lab.entity.TelegramUser@54b07a99, City: com.tinkoff_lab.entity.City@d2f87f10
+2024-09-15 00:54:35 INFO  c.t.dao.hibernate.UserCityDAO - Removing TelegramUserCity where User: com.tinkoff_lab.entity.TelegramUser@54b07a99, City: com.tinkoff_lab.entity.City@d2f87f10 ended successfully
+2024-09-15 00:54:35 INFO  c.t.dao.hibernate.TelegramUserDAO - Start removing entity with id 804296491
+2024-09-15 00:54:35 INFO  c.t.dao.hibernate.TelegramUserDAO - Removing entity with id 804296491 ended successfully
+2024-09-15 00:54:35 INFO  c.t.s.w.WeatherTelegramServiceImpl - Deleting user with username ektogod ended successfully
+2024-09-15 00:54:44 INFO  c.tinkoff_lab.TinkoffLabApplication - Application has terminated working
+
+2024-09-15 01:28:11 INFO  c.tinkoff_lab.TinkoffLabApplication - Application has started working
+2024-09-15 01:28:12 INFO  c.tinkoff_lab.TinkoffLabApplication - Starting TinkoffLabApplication using Java 21.0.1 with PID 20764 (C:\Users\Nikita\IdeaProjects\pet-project\target\classes started by Nikita in C:\Users\Nikita\IdeaProjects\pet-project)
+2024-09-15 01:28:12 INFO  c.tinkoff_lab.TinkoffLabApplication - No active profile set, falling back to 1 default profile: "default"
+2024-09-15 01:28:18 INFO  c.tinkoff_lab.TinkoffLabApplication - Started TinkoffLabApplication in 6.09 seconds (process running for 7.006)
+2024-09-15 01:28:59 INFO  c.t.s.w.WeatherTelegramServiceImpl - Start getting all cities for user with username ektogod
+2024-09-15 01:28:59 INFO  c.t.dao.hibernate.TelegramUserDAO - Start finding entity with id 804296491
+2024-09-15 01:28:59 INFO  c.t.dao.hibernate.TelegramUserDAO - Finding of entity with id 804296491 ended successfully
+2024-09-15 01:28:59 WARN  c.t.s.w.WeatherTelegramServiceImpl - Getting all cities for user with username ektogod went wrong: user not found
+2024-09-15 01:31:39 INFO  c.t.s.w.WeatherTelegramServiceImpl - Start adding user with username ektogod and cities [CityDTO[city=Minsk, country=Belarus], CityDTO[city=Grodno, country=Belarus]] to database
+2024-09-15 01:31:39 INFO  c.t.dao.hibernate.TelegramUserDAO - Start updating entity: com.tinkoff_lab.entity.TelegramUser@12a8b8a0
+2024-09-15 01:31:39 INFO  c.t.dao.hibernate.TelegramUserDAO - Updating entity com.tinkoff_lab.entity.TelegramUser@12a8b8a0 ended successfully
+2024-09-15 01:31:39 INFO  c.t.external.CoordinatesDefiner - Start coordinate definition for city Minsk, country Belarus
+2024-09-15 01:31:39 INFO  c.tinkoff_lab.utils.CountryCodeUtils - Start country code definition for country: Belarus
+2024-09-15 01:31:39 INFO  c.tinkoff_lab.utils.CountryCodeUtils - Country code definition for country Belarus ended successfully
+2024-09-15 01:31:39 INFO  c.t.external.CoordinatesDefiner - Coordinate definition for city Minsk, country Belarus ended successfully
+2024-09-15 01:31:39 INFO  c.tinkoff_lab.dao.hibernate.CityDAO - Start updating entity: com.tinkoff_lab.entity.City@ff21bcf0
+2024-09-15 01:31:40 INFO  c.tinkoff_lab.dao.hibernate.CityDAO - Updating entity com.tinkoff_lab.entity.City@ff21bcf0 ended successfully
+2024-09-15 01:31:40 INFO  c.t.dao.hibernate.UserCityDAO - Start adding TelegramUserCity where TelegramUser: com.tinkoff_lab.entity.TelegramUser@12a8b8a0, City: com.tinkoff_lab.entity.City@ff21bcf0
+2024-09-15 01:31:40 INFO  c.t.dao.hibernate.UserCityDAO - Adding TelegramUserCity where User: com.tinkoff_lab.entity.TelegramUser@12a8b8a0, City: com.tinkoff_lab.entity.City@ff21bcf0 ended successfully
+2024-09-15 01:31:40 INFO  c.t.external.CoordinatesDefiner - Start coordinate definition for city Grodno, country Belarus
+2024-09-15 01:31:40 INFO  c.tinkoff_lab.utils.CountryCodeUtils - Start country code definition for country: Belarus
+2024-09-15 01:31:40 INFO  c.tinkoff_lab.utils.CountryCodeUtils - Country code definition for country Belarus ended successfully
+2024-09-15 01:31:40 INFO  c.t.external.CoordinatesDefiner - Coordinate definition for city Grodno, country Belarus ended successfully
+2024-09-15 01:31:40 INFO  c.tinkoff_lab.dao.hibernate.CityDAO - Start updating entity: com.tinkoff_lab.entity.City@d2f87f10
+2024-09-15 01:31:40 INFO  c.tinkoff_lab.dao.hibernate.CityDAO - Updating entity com.tinkoff_lab.entity.City@d2f87f10 ended successfully
+2024-09-15 01:31:40 INFO  c.t.dao.hibernate.UserCityDAO - Start adding TelegramUserCity where TelegramUser: com.tinkoff_lab.entity.TelegramUser@12a8b8a0, City: com.tinkoff_lab.entity.City@d2f87f10
+2024-09-15 01:31:40 INFO  c.t.dao.hibernate.UserCityDAO - Adding TelegramUserCity where User: com.tinkoff_lab.entity.TelegramUser@12a8b8a0, City: com.tinkoff_lab.entity.City@d2f87f10 ended successfully
+2024-09-15 01:31:40 INFO  c.t.s.w.WeatherTelegramServiceImpl - Adding user with username ektogod and cities [] to database ended successfully
+2024-09-15 01:31:44 INFO  c.t.s.w.WeatherTelegramServiceImpl - Start getting all cities for user with username ektogod
+2024-09-15 01:31:44 INFO  c.t.dao.hibernate.TelegramUserDAO - Start finding entity with id 804296491
+2024-09-15 01:31:44 INFO  c.t.dao.hibernate.TelegramUserDAO - Finding of entity with id 804296491 ended successfully
+2024-09-15 01:31:44 WARN  c.t.s.w.WeatherTelegramServiceImpl - Getting all cities for user with username ektogod ended successfully
+2024-09-15 01:32:05 INFO  c.t.s.w.WeatherTelegramServiceImpl - Start adding user with username ektogod and cities [CityDTO[city=Vitebsk, country=Belarus]] to database
+2024-09-15 01:32:05 INFO  c.t.dao.hibernate.TelegramUserDAO - Start updating entity: com.tinkoff_lab.entity.TelegramUser@6371b14c
+2024-09-15 01:32:05 INFO  c.t.dao.hibernate.TelegramUserDAO - Updating entity com.tinkoff_lab.entity.TelegramUser@6371b14c ended successfully
+2024-09-15 01:32:05 INFO  c.t.external.CoordinatesDefiner - Start coordinate definition for city Vitebsk, country Belarus
+2024-09-15 01:32:05 INFO  c.tinkoff_lab.utils.CountryCodeUtils - Start country code definition for country: Belarus
+2024-09-15 01:32:05 INFO  c.tinkoff_lab.utils.CountryCodeUtils - Country code definition for country Belarus ended successfully
+2024-09-15 01:32:05 INFO  c.t.external.CoordinatesDefiner - Coordinate definition for city Vitebsk, country Belarus ended successfully
+2024-09-15 01:32:05 INFO  c.tinkoff_lab.dao.hibernate.CityDAO - Start updating entity: com.tinkoff_lab.entity.City@a50b17b9
+2024-09-15 01:32:05 INFO  c.tinkoff_lab.dao.hibernate.CityDAO - Updating entity com.tinkoff_lab.entity.City@a50b17b9 ended successfully
+2024-09-15 01:32:05 INFO  c.t.dao.hibernate.UserCityDAO - Start adding TelegramUserCity where TelegramUser: com.tinkoff_lab.entity.TelegramUser@6371b14c, City: com.tinkoff_lab.entity.City@a50b17b9
+2024-09-15 01:32:05 INFO  c.t.dao.hibernate.UserCityDAO - Adding TelegramUserCity where User: com.tinkoff_lab.entity.TelegramUser@6371b14c, City: com.tinkoff_lab.entity.City@a50b17b9 ended successfully
+2024-09-15 01:32:05 INFO  c.t.s.w.WeatherTelegramServiceImpl - Adding user with username ektogod and cities [] to database ended successfully
+2024-09-15 01:32:13 INFO  c.t.s.w.WeatherTelegramServiceImpl - Start getting all cities for user with username ektogod
+2024-09-15 01:32:13 INFO  c.t.dao.hibernate.TelegramUserDAO - Start finding entity with id 804296491
+2024-09-15 01:32:13 INFO  c.t.dao.hibernate.TelegramUserDAO - Finding of entity with id 804296491 ended successfully
+2024-09-15 01:32:13 WARN  c.t.s.w.WeatherTelegramServiceImpl - Getting all cities for user with username ektogod ended successfully
+2024-09-15 01:40:28 INFO  c.tinkoff_lab.TinkoffLabApplication - Application has terminated working
+
+2024-09-15 01:40:47 INFO  c.tinkoff_lab.TinkoffLabApplication - Application has started working
+2024-09-15 01:40:48 INFO  c.tinkoff_lab.TinkoffLabApplication - Starting TinkoffLabApplication using Java 21.0.1 with PID 21788 (C:\Users\Nikita\IdeaProjects\pet-project\target\classes started by Nikita in C:\Users\Nikita\IdeaProjects\pet-project)
+2024-09-15 01:40:48 INFO  c.tinkoff_lab.TinkoffLabApplication - No active profile set, falling back to 1 default profile: "default"
+2024-09-15 01:40:53 INFO  c.tinkoff_lab.TinkoffLabApplication - Started TinkoffLabApplication in 5.197 seconds (process running for 5.987)
+2024-09-15 01:40:55 INFO  c.t.s.w.WeatherTelegramServiceImpl - Start getting all cities for user with username ektogod
+2024-09-15 01:40:55 INFO  c.t.dao.hibernate.TelegramUserDAO - Start finding entity with id 804296491
+2024-09-15 01:40:55 INFO  c.t.dao.hibernate.TelegramUserDAO - Finding of entity with id 804296491 ended successfully
+2024-09-15 01:40:55 WARN  c.t.s.w.WeatherTelegramServiceImpl - Getting all cities for user with username ektogod ended successfully
+2024-09-15 01:41:06 INFO  c.t.s.w.WeatherTelegramServiceImpl - Start adding user with username ektogod and cities [CityDTO[city=Minsk, country=Belarus], CityDTO[city=Grodno, country=Belarus]] to database
+2024-09-15 01:41:06 INFO  c.t.dao.hibernate.TelegramUserDAO - Start finding entity with id 804296491
+2024-09-15 01:41:06 INFO  c.t.dao.hibernate.TelegramUserDAO - Finding of entity with id 804296491 ended successfully
+2024-09-15 01:41:06 INFO  c.t.dao.hibernate.TelegramUserDAO - Start finding entity with id 804296491
+2024-09-15 01:41:06 INFO  c.t.dao.hibernate.TelegramUserDAO - Finding of entity with id 804296491 ended successfully
+2024-09-15 01:41:06 INFO  c.t.external.CoordinatesDefiner - Start coordinate definition for city Minsk, country Belarus
+2024-09-15 01:41:06 INFO  c.tinkoff_lab.utils.CountryCodeUtils - Start country code definition for country: Belarus
+2024-09-15 01:41:06 INFO  c.tinkoff_lab.utils.CountryCodeUtils - Country code definition for country Belarus ended successfully
+2024-09-15 01:41:07 INFO  c.t.external.CoordinatesDefiner - Coordinate definition for city Minsk, country Belarus ended successfully
+2024-09-15 01:41:07 INFO  c.tinkoff_lab.dao.hibernate.CityDAO - Start updating entity: com.tinkoff_lab.entity.City@ff21bcf0
+2024-09-15 01:41:07 INFO  c.tinkoff_lab.dao.hibernate.CityDAO - Updating entity com.tinkoff_lab.entity.City@ff21bcf0 ended successfully
+2024-09-15 01:41:07 INFO  c.t.dao.hibernate.UserCityDAO - Start adding TelegramUserCity where TelegramUser: com.tinkoff_lab.entity.TelegramUser@3443f909, City: com.tinkoff_lab.entity.City@ff21bcf0
+2024-09-15 01:41:07 INFO  c.t.dao.hibernate.UserCityDAO - Adding TelegramUserCity where User: com.tinkoff_lab.entity.TelegramUser@3443f909, City: com.tinkoff_lab.entity.City@ff21bcf0 ended successfully
+2024-09-15 01:41:07 INFO  c.t.external.CoordinatesDefiner - Start coordinate definition for city Grodno, country Belarus
+2024-09-15 01:41:07 INFO  c.tinkoff_lab.utils.CountryCodeUtils - Start country code definition for country: Belarus
+2024-09-15 01:41:07 INFO  c.tinkoff_lab.utils.CountryCodeUtils - Country code definition for country Belarus ended successfully
+2024-09-15 01:41:07 INFO  c.t.external.CoordinatesDefiner - Coordinate definition for city Grodno, country Belarus ended successfully
+2024-09-15 01:41:07 INFO  c.tinkoff_lab.dao.hibernate.CityDAO - Start updating entity: com.tinkoff_lab.entity.City@d2f87f10
+2024-09-15 01:41:07 INFO  c.tinkoff_lab.dao.hibernate.CityDAO - Updating entity com.tinkoff_lab.entity.City@d2f87f10 ended successfully
+2024-09-15 01:41:07 INFO  c.t.dao.hibernate.UserCityDAO - Start adding TelegramUserCity where TelegramUser: com.tinkoff_lab.entity.TelegramUser@3443f909, City: com.tinkoff_lab.entity.City@d2f87f10
+2024-09-15 01:41:07 INFO  c.t.dao.hibernate.UserCityDAO - Adding TelegramUserCity where User: com.tinkoff_lab.entity.TelegramUser@3443f909, City: com.tinkoff_lab.entity.City@d2f87f10 ended successfully
+2024-09-15 01:41:07 INFO  c.t.s.w.WeatherTelegramServiceImpl - Adding user with username ektogod and cities [com.tinkoff_lab.entity.City@ff21bcf0, com.tinkoff_lab.entity.City@a50b17b9, com.tinkoff_lab.entity.City@d2f87f10] to database ended successfully
+2024-09-15 01:41:10 INFO  c.t.s.w.WeatherTelegramServiceImpl - Start getting all cities for user with username ektogod
+2024-09-15 01:41:10 INFO  c.t.dao.hibernate.TelegramUserDAO - Start finding entity with id 804296491
+2024-09-15 01:41:10 INFO  c.t.dao.hibernate.TelegramUserDAO - Finding of entity with id 804296491 ended successfully
+2024-09-15 01:41:10 WARN  c.t.s.w.WeatherTelegramServiceImpl - Getting all cities for user with username ektogod ended successfully
+2024-09-15 01:41:31 INFO  c.t.s.w.WeatherTelegramServiceImpl - Start adding user with username ektogod and cities [CityDTO[city=Brest, country=Belarus]] to database
+2024-09-15 01:41:31 INFO  c.t.dao.hibernate.TelegramUserDAO - Start finding entity with id 804296491
+2024-09-15 01:41:31 INFO  c.t.dao.hibernate.TelegramUserDAO - Finding of entity with id 804296491 ended successfully
+2024-09-15 01:41:31 INFO  c.t.dao.hibernate.TelegramUserDAO - Start finding entity with id 804296491
+2024-09-15 01:41:31 INFO  c.t.dao.hibernate.TelegramUserDAO - Finding of entity with id 804296491 ended successfully
+2024-09-15 01:41:31 INFO  c.t.external.CoordinatesDefiner - Start coordinate definition for city Brest, country Belarus
+2024-09-15 01:41:31 INFO  c.tinkoff_lab.utils.CountryCodeUtils - Start country code definition for country: Belarus
+2024-09-15 01:41:31 INFO  c.tinkoff_lab.utils.CountryCodeUtils - Country code definition for country Belarus ended successfully
+2024-09-15 01:41:31 INFO  c.t.external.CoordinatesDefiner - Coordinate definition for city Brest, country Belarus ended successfully
+2024-09-15 01:41:31 INFO  c.tinkoff_lab.dao.hibernate.CityDAO - Start updating entity: com.tinkoff_lab.entity.City@d778666d
+2024-09-15 01:41:32 INFO  c.tinkoff_lab.dao.hibernate.CityDAO - Updating entity com.tinkoff_lab.entity.City@d778666d ended successfully
+2024-09-15 01:41:32 INFO  c.t.dao.hibernate.UserCityDAO - Start adding TelegramUserCity where TelegramUser: com.tinkoff_lab.entity.TelegramUser@4715fe69, City: com.tinkoff_lab.entity.City@d778666d
+2024-09-15 01:41:32 INFO  c.t.dao.hibernate.UserCityDAO - Adding TelegramUserCity where User: com.tinkoff_lab.entity.TelegramUser@4715fe69, City: com.tinkoff_lab.entity.City@d778666d ended successfully
+2024-09-15 01:41:32 INFO  c.t.s.w.WeatherTelegramServiceImpl - Adding user with username ektogod and cities [com.tinkoff_lab.entity.City@ff21bcf0, com.tinkoff_lab.entity.City@a50b17b9, com.tinkoff_lab.entity.City@d778666d, com.tinkoff_lab.entity.City@d2f87f10] to database ended successfully
+2024-09-15 01:41:36 INFO  c.t.s.w.WeatherTelegramServiceImpl - Start getting all cities for user with username ektogod
+2024-09-15 01:41:36 INFO  c.t.dao.hibernate.TelegramUserDAO - Start finding entity with id 804296491
+2024-09-15 01:41:36 INFO  c.t.dao.hibernate.TelegramUserDAO - Finding of entity with id 804296491 ended successfully
+2024-09-15 01:41:36 WARN  c.t.s.w.WeatherTelegramServiceImpl - Getting all cities for user with username ektogod ended successfully
+2024-09-15 01:41:57 INFO  c.t.s.w.WeatherTelegramServiceImpl - Start removing cities [CityDTO[city=Minsk, country=Belarus], CityDTO[city=Grodno, country=Belarus]] from user with username ektogod
+2024-09-15 01:41:57 INFO  c.t.dao.hibernate.TelegramUserDAO - Start finding entity with id 804296491
+2024-09-15 01:41:57 INFO  c.t.dao.hibernate.TelegramUserDAO - Finding of entity with id 804296491 ended successfully
+2024-09-15 01:41:57 INFO  c.tinkoff_lab.dao.hibernate.CityDAO - Start finding entity with id Minsk, Belarus
+2024-09-15 01:41:57 INFO  c.tinkoff_lab.dao.hibernate.CityDAO - Finding of entity with id Minsk, Belarus ended successfully
+2024-09-15 01:41:57 INFO  c.t.dao.hibernate.UserCityDAO - Start removing TelegramUserCity where User: com.tinkoff_lab.entity.TelegramUser@24fe1304, City: com.tinkoff_lab.entity.City@ff21bcf0
+2024-09-15 01:41:57 INFO  c.t.dao.hibernate.UserCityDAO - Removing TelegramUserCity where User: com.tinkoff_lab.entity.TelegramUser@24fe1304, City: com.tinkoff_lab.entity.City@ff21bcf0 ended successfully
+2024-09-15 01:41:57 INFO  c.tinkoff_lab.dao.hibernate.CityDAO - Start finding entity with id Grodno, Belarus
+2024-09-15 01:41:57 INFO  c.tinkoff_lab.dao.hibernate.CityDAO - Finding of entity with id Grodno, Belarus ended successfully
+2024-09-15 01:41:57 INFO  c.t.dao.hibernate.UserCityDAO - Start removing TelegramUserCity where User: com.tinkoff_lab.entity.TelegramUser@24fe1304, City: com.tinkoff_lab.entity.City@d2f87f10
+2024-09-15 01:41:57 INFO  c.t.dao.hibernate.UserCityDAO - Removing TelegramUserCity where User: com.tinkoff_lab.entity.TelegramUser@24fe1304, City: com.tinkoff_lab.entity.City@d2f87f10 ended successfully
+2024-09-15 01:41:57 INFO  c.t.s.w.WeatherTelegramServiceImpl - Removing cities [CityDTO[city=Minsk, country=Belarus], CityDTO[city=Grodno, country=Belarus]] from user with username ektogod ended successfully
+2024-09-15 01:42:01 INFO  c.t.s.w.WeatherTelegramServiceImpl - Start getting all cities for user with username ektogod
+2024-09-15 01:42:01 INFO  c.t.dao.hibernate.TelegramUserDAO - Start finding entity with id 804296491
+2024-09-15 01:42:01 INFO  c.t.dao.hibernate.TelegramUserDAO - Finding of entity with id 804296491 ended successfully
+2024-09-15 01:42:01 WARN  c.t.s.w.WeatherTelegramServiceImpl - Getting all cities for user with username ektogod ended successfully
+2024-09-15 01:43:34 INFO  c.t.s.w.WeatherTelegramServiceImpl - Start adding user with username ektogod and cities [CityDTO[city=ffhf, country=fd]] to database
+2024-09-15 01:43:34 INFO  c.t.dao.hibernate.TelegramUserDAO - Start finding entity with id 804296491
+2024-09-15 01:43:34 INFO  c.t.dao.hibernate.TelegramUserDAO - Finding of entity with id 804296491 ended successfully
+2024-09-15 01:43:34 INFO  c.t.dao.hibernate.TelegramUserDAO - Start finding entity with id 804296491
+2024-09-15 01:43:34 INFO  c.t.dao.hibernate.TelegramUserDAO - Finding of entity with id 804296491 ended successfully
+2024-09-15 01:43:34 INFO  c.t.external.CoordinatesDefiner - Start coordinate definition for city ffhf, country fd
+2024-09-15 01:43:34 INFO  c.tinkoff_lab.utils.CountryCodeUtils - Start country code definition for country: fd
+2024-09-15 01:43:34 WARN  c.tinkoff_lab.utils.CountryCodeUtils - Something wrong with country fd: code not defined.
+2024-09-15 01:43:41 INFO  c.t.s.w.WeatherTelegramServiceImpl - Start getting all cities for user with username ektogod
+2024-09-15 01:43:41 INFO  c.t.dao.hibernate.TelegramUserDAO - Start finding entity with id 804296491
+2024-09-15 01:43:41 INFO  c.t.dao.hibernate.TelegramUserDAO - Finding of entity with id 804296491 ended successfully
+2024-09-15 01:43:41 WARN  c.t.s.w.WeatherTelegramServiceImpl - Getting all cities for user with username ektogod ended successfully
+2024-09-15 01:44:03 INFO  c.t.s.w.WeatherTelegramServiceImpl - Start adding user with username ektogod and cities [CityDTO[city=dfd, country=Belarus]] to database
+2024-09-15 01:44:03 INFO  c.t.dao.hibernate.TelegramUserDAO - Start finding entity with id 804296491
+2024-09-15 01:44:03 INFO  c.t.dao.hibernate.TelegramUserDAO - Finding of entity with id 804296491 ended successfully
+2024-09-15 01:44:03 INFO  c.t.dao.hibernate.TelegramUserDAO - Start finding entity with id 804296491
+2024-09-15 01:44:03 INFO  c.t.dao.hibernate.TelegramUserDAO - Finding of entity with id 804296491 ended successfully
+2024-09-15 01:44:03 INFO  c.t.external.CoordinatesDefiner - Start coordinate definition for city dfd, country Belarus
+2024-09-15 01:44:03 INFO  c.tinkoff_lab.utils.CountryCodeUtils - Start country code definition for country: Belarus
+2024-09-15 01:44:03 INFO  c.tinkoff_lab.utils.CountryCodeUtils - Country code definition for country Belarus ended successfully
+2024-09-15 01:44:04 WARN  c.t.external.CoordinatesDefiner - Something wrong with location. Coordinates not defined for city dfd, country Belarus
+2024-09-15 01:44:11 INFO  c.t.s.w.WeatherTelegramServiceImpl - Start getting all cities for user with username ektogod
+2024-09-15 01:44:11 INFO  c.t.dao.hibernate.TelegramUserDAO - Start finding entity with id 804296491
+2024-09-15 01:44:11 INFO  c.t.dao.hibernate.TelegramUserDAO - Finding of entity with id 804296491 ended successfully
+2024-09-15 01:44:11 WARN  c.t.s.w.WeatherTelegramServiceImpl - Getting all cities for user with username ektogod ended successfully
+2024-09-15 01:44:18 INFO  c.t.s.w.WeatherTelegramServiceImpl - Start removing cities [CityDTO[city=ds, country=ds]] from user with username ektogod
+2024-09-15 01:44:18 INFO  c.t.dao.hibernate.TelegramUserDAO - Start finding entity with id 804296491
+2024-09-15 01:44:18 INFO  c.t.dao.hibernate.TelegramUserDAO - Finding of entity with id 804296491 ended successfully
+2024-09-15 01:44:18 INFO  c.tinkoff_lab.dao.hibernate.CityDAO - Start finding entity with id ds, ds
+2024-09-15 01:44:18 INFO  c.tinkoff_lab.dao.hibernate.CityDAO - Finding of entity with id ds, ds ended successfully
+2024-09-15 01:44:18 ERROR c.t.s.w.WeatherTelegramServiceImpl - Removing went wrong because CityDTO[city=ds, country=ds] not in database
+2024-09-15 01:44:23 INFO  c.t.s.w.WeatherTelegramServiceImpl - Start getting all cities for user with username ektogod
+2024-09-15 01:44:23 INFO  c.t.dao.hibernate.TelegramUserDAO - Start finding entity with id 804296491
+2024-09-15 01:44:23 INFO  c.t.dao.hibernate.TelegramUserDAO - Finding of entity with id 804296491 ended successfully
+2024-09-15 01:44:23 WARN  c.t.s.w.WeatherTelegramServiceImpl - Getting all cities for user with username ektogod ended successfully
+2024-09-15 01:44:52 INFO  c.t.controller.TranslationController - Request from user has received: UserRequest[text=как дела, малышка?, originalLanguage=ru, finalLanguage=be]
+2024-09-15 01:44:52 INFO  c.t.s.t.TranslationServiceImpl - Sending translation request: text = как дела, малышка? 
+2024-09-15 01:44:53 INFO  c.t.external.TranslationDefiner - Request has received: text = как дела, малышка? 
+2024-09-15 01:44:53 INFO  c.t.external.TranslationDefiner - Translation successfully completed
+2024-09-15 01:44:53 INFO  c.t.dao.jdbc.TranslationDAO - Start writing to database of query: Translation[id=null, ip=37.214.71.177, originalText=как дела, малышка?, originalLang=ru, translatedText=як справы, дзетка?, targetLang=be, time=2024/09/15 01:44:53, status=200, message=Ok]
+2024-09-15 01:44:53 INFO  c.t.dao.jdbc.TranslationDAO - Connection with database established
+2024-09-15 01:44:53 INFO  c.t.dao.jdbc.TranslationDAO - Query has been successfully recorded
+2024-09-15 01:44:53 INFO  c.t.controller.TranslationController - Response is sending to user
+2024-09-15 01:47:16 INFO  c.t.s.w.WeatherTelegramServiceImpl - Start removing cities [CityDTO[city=d, country=ds]] from user with username ektogod
+2024-09-15 01:47:16 INFO  c.t.dao.hibernate.TelegramUserDAO - Start finding entity with id 804296491
+2024-09-15 01:47:16 INFO  c.t.dao.hibernate.TelegramUserDAO - Finding of entity with id 804296491 ended successfully
+2024-09-15 01:47:16 INFO  c.tinkoff_lab.dao.hibernate.CityDAO - Start finding entity with id d, ds
+2024-09-15 01:47:16 INFO  c.tinkoff_lab.dao.hibernate.CityDAO - Finding of entity with id d, ds ended successfully
+2024-09-15 01:47:16 ERROR c.t.s.w.WeatherTelegramServiceImpl - Removing went wrong because CityDTO[city=d, country=ds] not in database
+2024-09-15 01:55:53 INFO  c.t.s.w.WeatherTelegramServiceImpl - Start getting all cities for user with username ektogod
+2024-09-15 01:55:53 INFO  c.t.dao.hibernate.TelegramUserDAO - Start finding entity with id 804296491
+2024-09-15 01:55:53 INFO  c.t.dao.hibernate.TelegramUserDAO - Finding of entity with id 804296491 ended successfully
+2024-09-15 01:55:53 WARN  c.t.s.w.WeatherTelegramServiceImpl - Getting all cities for user with username ektogod ended successfully

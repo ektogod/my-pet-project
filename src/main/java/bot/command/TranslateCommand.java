@@ -19,8 +19,8 @@ public class TranslateCommand extends Command{
 
     @Override
     public void execute(AbsSender absSender, User user, Chat chat, String[] strings) {
-        String msg = "Firstly write original and target languages. Example:\nru, be";
-        state.setState(States.TRANSLATE_LANGS);
+        String msg = "First write the text to be translated";
+        state.setState(States.TRANSLATE_TEXT);
         sendMsg(absSender, chat.getId(), msg);
     }
 }

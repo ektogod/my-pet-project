@@ -1,15 +1,15 @@
 package com.tinkoff_lab.service.weather;
 
-import com.tinkoff_lab.dao.CityDAO;
-import com.tinkoff_lab.dao.UserCityDAO;
-import com.tinkoff_lab.dao.UserDAO;
+import com.tinkoff_lab.dao.hibernate.CityDAO;
+import com.tinkoff_lab.dao.hibernate.UserCityDAO;
+import com.tinkoff_lab.dao.hibernate.UserDAO;
 import com.tinkoff_lab.exception.EntityNotFoundException;
 import com.tinkoff_lab.exception.WrongWeatherRequestException;
 import com.tinkoff_lab.dto.weather.CityDTO;
 import com.tinkoff_lab.dto.weather.Coordinates;
-import com.tinkoff_lab.dto.weather.request.EmailCitiesRequest;
-import com.tinkoff_lab.dto.weather.request.EmailRequest;
-import com.tinkoff_lab.dto.weather.request.WeatherRequest;
+import com.tinkoff_lab.dto.weather.request.email.EmailCitiesRequest;
+import com.tinkoff_lab.dto.weather.request.email.EmailRequest;
+import com.tinkoff_lab.dto.weather.request.email.WeatherEmailRequest;
 import com.tinkoff_lab.entity.City;
 import com.tinkoff_lab.entity.CityPK;
 import com.tinkoff_lab.entity.User;
@@ -39,7 +39,7 @@ public class WeatherServiceImpl implements WeatherService {
     CoordinatesDefiner definer;
 
     @Override
-    public void add(WeatherRequest request) {
+    public void add(WeatherEmailRequest request) {
         logger.info("Start adding user with email {} and cities {} to database", request.email(), request.cities());
         User user = new User(request.email(), request.name());
         if (userDAO.findByID(user.getEmail()) != null) {

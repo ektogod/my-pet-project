@@ -1,5 +1,5 @@
-2024-08-31 03:57:35 INFO  com.tinkoff_lab.dao.UserDAO - Start inserting entity: com.tinkoff_lab.entity.User@2a4a95c4
-2024-08-31 03:57:35 INFO  com.tinkoff_lab.dao.UserDAO - Inserting of entity com.tinkoff_lab.entity.User@2a4a95c4 ended successfully
+2024-08-31 03:57:35 INFO  com.tinkoff_lab.dao.hibernate.UserDAO - Start inserting entity: com.tinkoff_lab.entity.User@2a4a95c4
+2024-08-31 03:57:35 INFO  com.tinkoff_lab.dao.hibernate.UserDAO - Inserting of entity com.tinkoff_lab.entity.User@2a4a95c4 ended successfully
 2024-08-31 03:59:21 INFO  c.tinkoff_lab.TinkoffLabApplication - Application has started working
 2024-08-31 03:59:21 INFO  c.tinkoff_lab.TinkoffLabApplication - Starting TinkoffLabApplication using Java 21.0.1 with PID 17012 (C:\Users\Nikita\IdeaProjects\pet-project\target\classes started by Nikita in C:\Users\Nikita\IdeaProjects\pet-project)
 2024-08-31 03:59:21 INFO  c.tinkoff_lab.TinkoffLabApplication - No active profile set, falling back to 1 default profile: "default"
@@ -42,37 +42,37 @@
 2024-08-31 04:22:02 INFO  c.tinkoff_lab.TinkoffLabApplication - Started TinkoffLabApplication in 5.07 seconds (process running for 5.824)
 2024-08-31 04:27:40 INFO  c.tinkoff_lab.TinkoffLabApplication - Application has terminated working
 
-2024-08-31 04:28:22 INFO  com.tinkoff_lab.dao.UserDAO - Start inserting entity: com.tinkoff_lab.entity.User@5add0cc0
-2024-08-31 04:28:22 INFO  com.tinkoff_lab.dao.UserDAO - Inserting of entity com.tinkoff_lab.entity.User@5add0cc0 ended successfully
-2024-08-31 04:32:41 INFO  com.tinkoff_lab.dao.UserDAO - Start inserting entity: com.tinkoff_lab.entity.User@71979130
-2024-08-31 04:32:41 INFO  com.tinkoff_lab.dao.UserDAO - Inserting of entity com.tinkoff_lab.entity.User@71979130 ended successfully
+2024-08-31 04:28:22 INFO  com.tinkoff_lab.dao.hibernate.UserDAO - Start inserting entity: com.tinkoff_lab.entity.User@5add0cc0
+2024-08-31 04:28:22 INFO  com.tinkoff_lab.dao.hibernate.UserDAO - Inserting of entity com.tinkoff_lab.entity.User@5add0cc0 ended successfully
+2024-08-31 04:32:41 INFO  com.tinkoff_lab.dao.hibernate.UserDAO - Start inserting entity: com.tinkoff_lab.entity.User@71979130
+2024-08-31 04:32:41 INFO  com.tinkoff_lab.dao.hibernate.UserDAO - Inserting of entity com.tinkoff_lab.entity.User@71979130 ended successfully
 2024-08-31 04:33:55 INFO  c.tinkoff_lab.TinkoffLabApplication - Application has started working
 2024-08-31 04:33:56 INFO  c.tinkoff_lab.TinkoffLabApplication - Starting TinkoffLabApplication using Java 21.0.1 with PID 6904 (C:\Users\Nikita\IdeaProjects\pet-project\target\classes started by Nikita in C:\Users\Nikita\IdeaProjects\pet-project)
 2024-08-31 04:33:56 INFO  c.tinkoff_lab.TinkoffLabApplication - No active profile set, falling back to 1 default profile: "default"
 2024-08-31 04:34:01 INFO  c.tinkoff_lab.TinkoffLabApplication - Started TinkoffLabApplication in 5.263 seconds (process running for 6.258)
 2024-08-31 04:34:40 INFO  c.tinkoff_lab.TinkoffLabApplication - Application has terminated working
 
-2024-08-31 04:35:14 INFO  com.tinkoff_lab.dao.UserDAO - Start inserting entity: com.tinkoff_lab.entity.User@de2fce54
-2024-08-31 04:35:14 INFO  com.tinkoff_lab.dao.UserDAO - Inserting of entity com.tinkoff_lab.entity.User@de2fce54 ended successfully
-2024-08-31 04:36:03 INFO  com.tinkoff_lab.dao.UserDAO - Start inserting entity: com.tinkoff_lab.entity.User@de2fce54
-2024-08-31 04:36:03 INFO  com.tinkoff_lab.dao.UserDAO - Inserting of entity com.tinkoff_lab.entity.User@de2fce54 ended successfully
-2024-08-31 04:40:58 INFO  com.tinkoff_lab.dao.UserDAO - Start inserting entity: com.tinkoff_lab.entity.User@de2fce54
-2024-08-31 04:40:58 INFO  com.tinkoff_lab.dao.UserDAO - Inserting of entity com.tinkoff_lab.entity.User@de2fce54 ended successfully
-2024-08-31 04:41:58 INFO  com.tinkoff_lab.dao.UserDAO - Start inserting entity: com.tinkoff_lab.entity.User@de2fce54
-2024-08-31 04:41:58 INFO  com.tinkoff_lab.dao.UserDAO - Inserting of entity com.tinkoff_lab.entity.User@de2fce54 ended successfully
-2024-08-31 04:44:31 INFO  com.tinkoff_lab.dao.UserDAO - Start inserting entity: com.tinkoff_lab.entity.User@de2fce54
-2024-08-31 04:44:31 INFO  com.tinkoff_lab.dao.UserDAO - Inserting of entity com.tinkoff_lab.entity.User@de2fce54 ended successfully
-2024-08-31 04:47:01 INFO  com.tinkoff_lab.dao.UserDAO - Start inserting entity: com.tinkoff_lab.entity.User@de2fce54
-2024-08-31 04:47:01 INFO  com.tinkoff_lab.dao.UserDAO - Inserting of entity com.tinkoff_lab.entity.User@de2fce54 ended successfully
-2024-08-31 05:19:00 INFO  com.tinkoff_lab.dao.UserDAO - Start inserting entity: com.tinkoff_lab.entity.User@de2fce54
-2024-08-31 05:19:00 INFO  com.tinkoff_lab.dao.UserDAO - Inserting of entity com.tinkoff_lab.entity.User@de2fce54 ended successfully
-2024-08-31 05:21:28 INFO  com.tinkoff_lab.dao.UserDAO - Start inserting entity: com.tinkoff_lab.entity.User@de2fce54
-2024-08-31 05:21:28 INFO  com.tinkoff_lab.dao.UserDAO - Inserting of entity com.tinkoff_lab.entity.User@de2fce54 ended successfully
-2024-08-31 05:35:19 INFO  com.tinkoff_lab.dao.UserDAO - Start inserting entity: com.tinkoff_lab.entity.User@de2fce54
-2024-08-31 05:35:19 INFO  com.tinkoff_lab.dao.UserDAO - Inserting of entity com.tinkoff_lab.entity.User@de2fce54 ended successfully
-2024-08-31 05:43:42 INFO  com.tinkoff_lab.dao.UserDAO - Start inserting entity: com.tinkoff_lab.entity.User@de2fce54
-2024-08-31 05:43:42 INFO  com.tinkoff_lab.dao.UserDAO - Inserting of entity com.tinkoff_lab.entity.User@de2fce54 ended successfully
-2024-08-31 05:59:10 INFO  com.tinkoff_lab.dao.UserDAO - Start inserting entity: com.tinkoff_lab.entity.User@de2fce54
-2024-08-31 05:59:10 INFO  com.tinkoff_lab.dao.UserDAO - Inserting of entity com.tinkoff_lab.entity.User@de2fce54 ended successfully
-2024-08-31 06:02:28 INFO  com.tinkoff_lab.dao.UserDAO - Start inserting entity: com.tinkoff_lab.entity.User@de2fce54
-2024-08-31 06:02:28 INFO  com.tinkoff_lab.dao.UserDAO - Inserting of entity com.tinkoff_lab.entity.User@de2fce54 ended successfully
+2024-08-31 04:35:14 INFO  com.tinkoff_lab.dao.hibernate.UserDAO - Start inserting entity: com.tinkoff_lab.entity.User@de2fce54
+2024-08-31 04:35:14 INFO  com.tinkoff_lab.dao.hibernate.UserDAO - Inserting of entity com.tinkoff_lab.entity.User@de2fce54 ended successfully
+2024-08-31 04:36:03 INFO  com.tinkoff_lab.dao.hibernate.UserDAO - Start inserting entity: com.tinkoff_lab.entity.User@de2fce54
+2024-08-31 04:36:03 INFO  com.tinkoff_lab.dao.hibernate.UserDAO - Inserting of entity com.tinkoff_lab.entity.User@de2fce54 ended successfully
+2024-08-31 04:40:58 INFO  com.tinkoff_lab.dao.hibernate.UserDAO - Start inserting entity: com.tinkoff_lab.entity.User@de2fce54
+2024-08-31 04:40:58 INFO  com.tinkoff_lab.dao.hibernate.UserDAO - Inserting of entity com.tinkoff_lab.entity.User@de2fce54 ended successfully
+2024-08-31 04:41:58 INFO  com.tinkoff_lab.dao.hibernate.UserDAO - Start inserting entity: com.tinkoff_lab.entity.User@de2fce54
+2024-08-31 04:41:58 INFO  com.tinkoff_lab.dao.hibernate.UserDAO - Inserting of entity com.tinkoff_lab.entity.User@de2fce54 ended successfully
+2024-08-31 04:44:31 INFO  com.tinkoff_lab.dao.hibernate.UserDAO - Start inserting entity: com.tinkoff_lab.entity.User@de2fce54
+2024-08-31 04:44:31 INFO  com.tinkoff_lab.dao.hibernate.UserDAO - Inserting of entity com.tinkoff_lab.entity.User@de2fce54 ended successfully
+2024-08-31 04:47:01 INFO  com.tinkoff_lab.dao.hibernate.UserDAO - Start inserting entity: com.tinkoff_lab.entity.User@de2fce54
+2024-08-31 04:47:01 INFO  com.tinkoff_lab.dao.hibernate.UserDAO - Inserting of entity com.tinkoff_lab.entity.User@de2fce54 ended successfully
+2024-08-31 05:19:00 INFO  com.tinkoff_lab.dao.hibernate.UserDAO - Start inserting entity: com.tinkoff_lab.entity.User@de2fce54
+2024-08-31 05:19:00 INFO  com.tinkoff_lab.dao.hibernate.UserDAO - Inserting of entity com.tinkoff_lab.entity.User@de2fce54 ended successfully
+2024-08-31 05:21:28 INFO  com.tinkoff_lab.dao.hibernate.UserDAO - Start inserting entity: com.tinkoff_lab.entity.User@de2fce54
+2024-08-31 05:21:28 INFO  com.tinkoff_lab.dao.hibernate.UserDAO - Inserting of entity com.tinkoff_lab.entity.User@de2fce54 ended successfully
+2024-08-31 05:35:19 INFO  com.tinkoff_lab.dao.hibernate.UserDAO - Start inserting entity: com.tinkoff_lab.entity.User@de2fce54
+2024-08-31 05:35:19 INFO  com.tinkoff_lab.dao.hibernate.UserDAO - Inserting of entity com.tinkoff_lab.entity.User@de2fce54 ended successfully
+2024-08-31 05:43:42 INFO  com.tinkoff_lab.dao.hibernate.UserDAO - Start inserting entity: com.tinkoff_lab.entity.User@de2fce54
+2024-08-31 05:43:42 INFO  com.tinkoff_lab.dao.hibernate.UserDAO - Inserting of entity com.tinkoff_lab.entity.User@de2fce54 ended successfully
+2024-08-31 05:59:10 INFO  com.tinkoff_lab.dao.hibernate.UserDAO - Start inserting entity: com.tinkoff_lab.entity.User@de2fce54
+2024-08-31 05:59:10 INFO  com.tinkoff_lab.dao.hibernate.UserDAO - Inserting of entity com.tinkoff_lab.entity.User@de2fce54 ended successfully
+2024-08-31 06:02:28 INFO  com.tinkoff_lab.dao.hibernate.UserDAO - Start inserting entity: com.tinkoff_lab.entity.User@de2fce54
+2024-08-31 06:02:28 INFO  com.tinkoff_lab.dao.hibernate.UserDAO - Inserting of entity com.tinkoff_lab.entity.User@de2fce54 ended successfully

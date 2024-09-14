@@ -1,5 +1,6 @@
-package com.tinkoff_lab.dao;
+package com.tinkoff_lab.dao.hibernate;
 
+import com.tinkoff_lab.dao.DAO;
 import com.tinkoff_lab.entity.User;
 import com.tinkoff_lab.exception.DatabaseException;
 import lombok.AccessLevel;

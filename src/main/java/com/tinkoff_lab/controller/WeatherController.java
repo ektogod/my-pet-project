@@ -1,8 +1,8 @@
 package com.tinkoff_lab.controller;
 
-import com.tinkoff_lab.dto.weather.request.EmailCitiesRequest;
-import com.tinkoff_lab.dto.weather.request.EmailRequest;
-import com.tinkoff_lab.dto.weather.request.WeatherRequest;
+import com.tinkoff_lab.dto.weather.request.email.EmailCitiesRequest;
+import com.tinkoff_lab.dto.weather.request.email.EmailRequest;
+import com.tinkoff_lab.dto.weather.request.email.WeatherEmailRequest;
 import com.tinkoff_lab.entity.CityPK;
 import com.tinkoff_lab.service.weather.WeatherServiceImpl;
 import jakarta.validation.Valid;
@@ -24,8 +24,8 @@ public class WeatherController {
     }
 
     @PostMapping("/subscribe")
-    public ResponseEntity<Void> subscribe(@Valid @RequestBody WeatherRequest weatherRequest){
-        weatherService.add(weatherRequest);
+    public ResponseEntity<Void> subscribe(@Valid @RequestBody WeatherEmailRequest weatherEmailRequest){
+        weatherService.add(weatherEmailRequest);
         return new ResponseEntity<>(HttpStatusCode.valueOf(201));
     }
 

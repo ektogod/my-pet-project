@@ -3,6 +3,7 @@ package com.tinkoff_lab.entity;
 import jakarta.persistence.*;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.util.HashSet;
@@ -10,9 +11,11 @@ import java.util.Set;
 
 @Entity
 @Table(name = "user")
+@EqualsAndHashCode(onlyExplicitlyIncluded = true)
+@NoArgsConstructor
 @Getter
 @Setter
-@EqualsAndHashCode(onlyExplicitlyIncluded = true)
+
 public class User {
     @Id
     @Column(name = "email")
@@ -29,8 +32,5 @@ public class User {
     public User(String email, String name) {
         this.email = email;
         this.name = name;
-    }
-
-    public User() {
     }
 }

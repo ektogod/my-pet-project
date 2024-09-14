@@ -1,5 +1,6 @@
-package com.tinkoff_lab.dao;
+package com.tinkoff_lab.dao.jdbc;
 
+import com.tinkoff_lab.dao.DAO;
 import com.tinkoff_lab.dto.translation.Translation;
 import com.tinkoff_lab.exception.DatabaseException;
 import com.tinkoff_lab.service.database.ConnectionService;

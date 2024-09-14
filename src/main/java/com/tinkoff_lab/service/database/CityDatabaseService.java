@@ -1,6 +1,6 @@
 package com.tinkoff_lab.service.database;
 
-import com.tinkoff_lab.dao.CityDAO;
+import com.tinkoff_lab.dao.hibernate.CityDAO;
 import com.tinkoff_lab.entity.City;
 import com.tinkoff_lab.entity.CityPK;
 import org.springframework.beans.factory.annotation.Autowired;

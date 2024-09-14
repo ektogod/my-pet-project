@@ -1,8 +1,6 @@
 package bot.command;
 
-import bot.CurrentState;
 import lombok.NonNull;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.telegram.telegrambots.extensions.bots.commandbot.commands.BotCommand;
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
 import org.telegram.telegrambots.meta.bots.AbsSender;

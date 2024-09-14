@@ -1,14 +1,14 @@
 package com.tinkoff_lab.service.weather;
 
-import com.tinkoff_lab.dto.weather.request.EmailCitiesRequest;
-import com.tinkoff_lab.dto.weather.request.EmailRequest;
-import com.tinkoff_lab.dto.weather.request.WeatherRequest;
+import com.tinkoff_lab.dto.weather.request.email.EmailCitiesRequest;
+import com.tinkoff_lab.dto.weather.request.email.EmailRequest;
+import com.tinkoff_lab.dto.weather.request.email.WeatherEmailRequest;
 import com.tinkoff_lab.entity.CityPK;
 
 import java.util.List;
 
 public interface WeatherService {
-    void add(WeatherRequest request);
+    void add(WeatherEmailRequest request);
 
     void deleteUser(EmailRequest email);
 

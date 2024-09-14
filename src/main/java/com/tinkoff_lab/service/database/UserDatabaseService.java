@@ -1,6 +1,6 @@
 package com.tinkoff_lab.service.database;
 
-import com.tinkoff_lab.dao.UserDAO;
+import com.tinkoff_lab.dao.hibernate.UserDAO;
 import com.tinkoff_lab.entity.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

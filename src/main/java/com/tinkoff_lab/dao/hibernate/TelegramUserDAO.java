@@ -1,7 +1,8 @@
-package com.tinkoff_lab.dao;
+package com.tinkoff_lab.dao.hibernate;
 
-import com.tinkoff_lab.entity.City;
-import com.tinkoff_lab.entity.CityPK;
+import com.tinkoff_lab.dao.DAO;
+import com.tinkoff_lab.entity.TelegramUser;
+import com.tinkoff_lab.entity.User;
 import com.tinkoff_lab.exception.DatabaseException;
 import lombok.AccessLevel;
 import lombok.RequiredArgsConstructor;
@@ -19,12 +20,12 @@ import java.util.List;
 @RequiredArgsConstructor
 @FieldDefaults(level = AccessLevel.PRIVATE, makeFinal = true)
 
-public class CityDAO implements DAO<City, CityPK> {
+public class TelegramUserDAO implements DAO<TelegramUser, Long> {
     SessionFactory sessionFactory;
-    Logger logger = LoggerFactory.getLogger(CityDAO.class);
+    Logger logger = LoggerFactory.getLogger(TelegramUserDAO.class);
 
     @Override
-    public CityPK insert(City entity) {
+    public Long insert(TelegramUser entity) {
         logger.info("Start inserting entity: {}", entity);
         try {
             Session session = sessionFactory.getCurrentSession();
@@ -35,18 +36,18 @@ public class CityDAO implements DAO<City, CityPK> {
         }
 
         logger.info("Inserting of entity {} ended successfully", entity);
-        return entity.getPk();
+        return entity.getChatId();
     }
 
     @Override
-    public City findByID(CityPK id) {
+    public TelegramUser findByID(Long id) {
         logger.info("Start finding entity with id {}", id);
-        City city;
-        try {
+        TelegramUser user;
+        try  {
             Session session = sessionFactory.getCurrentSession();
-            city = session.get(City.class, id);
-            if (city != null) {
-                Hibernate.initialize(city.getUsers());
+            user = session.get(TelegramUser.class, id);
+            if (user != null) {
+                Hibernate.initialize(user.getCities());
             }
         } catch (Exception ex) {
             logger.error("Finding of entity with id {} went wrong", id);
@@ -54,18 +55,18 @@ public class CityDAO implements DAO<City, CityPK> {
         }
 
         logger.info("Finding of entity with id {} ended successfully", id);
-        return city;
+        return user;
     }
 
     @Override
-    public List<City> findAll() {
+    public List<TelegramUser> findAll() {
         logger.info("Start finding all entities");
-        List<City> cities;
+        List<TelegramUser> users;
         try {
             Session session = sessionFactory.getCurrentSession();
-            cities = session.createNativeQuery("SELECT * FROM city", City.class).list();
-            cities.forEach(city -> {
-                Hibernate.initialize(city.getUsers());
+            users = session.createNativeQuery("SELECT * FROM tg-user", TelegramUser.class).list();
+            users.forEach(user -> {
+                Hibernate.initialize(user.getCities());
             });
         } catch (Exception ex) {
             logger.error("Something went wrong with finding all entities");
@@ -73,11 +74,11 @@ public class CityDAO implements DAO<City, CityPK> {
         }
 
         logger.info("Finding ended successfully");
-        return cities;
+        return users;
     }
 
     @Override
-    public void update(City entity) {
+    public void update(TelegramUser entity) {
         logger.info("Start updating entity: {}", entity);
         try {
             Session session = sessionFactory.getCurrentSession();
@@ -86,22 +87,20 @@ public class CityDAO implements DAO<City, CityPK> {
             logger.error("Updating of entity {} went wrong", entity);
             throw new DatabaseException(ex.getMessage());
         }
-
         logger.info("Updating entity {} ended successfully", entity);
     }
 
     @Override
-    public void delete(CityPK id) {
+    public void delete(Long id) {
         logger.info("Start removing entity with id {}", id);
         try {
             Session session = sessionFactory.getCurrentSession();
-            City city = session.get(City.class, id);
-            session.remove(city);
+            TelegramUser user = session.get(TelegramUser.class, id);
+            session.remove(user);
         } catch (Exception ex) {
             logger.error("Removing entity with id {} went wrong", id);
             throw new DatabaseException(ex.getMessage());
         }
-
         logger.info("Removing entity with id {} ended successfully", id);
     }
 }

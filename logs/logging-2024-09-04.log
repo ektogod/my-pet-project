@@ -3,8 +3,8 @@
 2024-09-04 00:21:07 INFO  c.tinkoff_lab.TinkoffLabApplication - No active profile set, falling back to 1 default profile: "default"
 2024-09-04 00:21:13 INFO  c.tinkoff_lab.TinkoffLabApplication - Started TinkoffLabApplication in 6.163 seconds (process running for 7.355)
 2024-09-04 00:21:13 INFO  c.t.service.NotificationService - Start notifying all subscribers
-2024-09-04 00:21:13 INFO  com.tinkoff_lab.dao.CityDAO - Start finding all entities
-2024-09-04 00:21:13 INFO  com.tinkoff_lab.dao.CityDAO - Finding ended successfully
+2024-09-04 00:21:13 INFO  com.tinkoff_lab.dao.hibernate.CityDAO - Start finding all entities
+2024-09-04 00:21:13 INFO  com.tinkoff_lab.dao.hibernate.CityDAO - Finding ended successfully
 2024-09-04 00:21:13 INFO  c.t.service.CurrentWeatherService - Start getting current weather for city com.tinkoff_lab.entity.City@d778666d
 2024-09-04 00:21:14 INFO  c.t.service.CurrentWeatherService - Response from Weather API received
 2024-09-04 00:21:14 INFO  c.t.service.CurrentWeatherService - Start parsing Weather API response
@@ -22,8 +22,8 @@
 2024-09-04 00:21:14 INFO  c.t.service.CurrentWeatherService - Start parsing Weather API response
 2024-09-04 00:21:14 INFO  c.t.service.CurrentWeatherService - Parsing ended successfully
 2024-09-04 00:21:43 INFO  c.t.service.NotificationService - Start notifying all subscribers
-2024-09-04 00:21:43 INFO  com.tinkoff_lab.dao.CityDAO - Start finding all entities
-2024-09-04 00:21:43 INFO  com.tinkoff_lab.dao.CityDAO - Finding ended successfully
+2024-09-04 00:21:43 INFO  com.tinkoff_lab.dao.hibernate.CityDAO - Start finding all entities
+2024-09-04 00:21:43 INFO  com.tinkoff_lab.dao.hibernate.CityDAO - Finding ended successfully
 2024-09-04 00:21:43 INFO  c.t.service.CurrentWeatherService - Start getting current weather for city com.tinkoff_lab.entity.City@d778666d
 2024-09-04 00:21:44 INFO  c.t.service.CurrentWeatherService - Response from Weather API received
 2024-09-04 00:21:44 INFO  c.t.service.CurrentWeatherService - Start parsing Weather API response
@@ -47,8 +47,8 @@
 2024-09-04 00:25:34 INFO  c.tinkoff_lab.TinkoffLabApplication - No active profile set, falling back to 1 default profile: "default"
 2024-09-04 00:25:42 INFO  c.tinkoff_lab.TinkoffLabApplication - Started TinkoffLabApplication in 8.601 seconds (process running for 10.193)
 2024-09-04 00:25:42 INFO  c.t.service.NotificationService - Start notifying all subscribers
-2024-09-04 00:25:42 INFO  com.tinkoff_lab.dao.CityDAO - Start finding all entities
-2024-09-04 00:25:43 INFO  com.tinkoff_lab.dao.CityDAO - Finding ended successfully
+2024-09-04 00:25:42 INFO  com.tinkoff_lab.dao.hibernate.CityDAO - Start finding all entities
+2024-09-04 00:25:43 INFO  com.tinkoff_lab.dao.hibernate.CityDAO - Finding ended successfully
 2024-09-04 00:25:43 INFO  c.t.service.CurrentWeatherService - Start getting current weather for city com.tinkoff_lab.entity.City@d778666d
 2024-09-04 00:25:43 INFO  c.t.service.CurrentWeatherService - Response from Weather API received
 2024-09-04 00:25:56 INFO  c.t.service.CurrentWeatherService - Start parsing Weather API response
@@ -72,8 +72,8 @@
 2024-09-04 00:27:48 INFO  c.tinkoff_lab.TinkoffLabApplication - No active profile set, falling back to 1 default profile: "default"
 2024-09-04 00:27:54 INFO  c.tinkoff_lab.TinkoffLabApplication - Started TinkoffLabApplication in 6.437 seconds (process running for 7.518)
 2024-09-04 00:27:54 INFO  c.t.service.NotificationService - Start notifying all subscribers
-2024-09-04 00:27:54 INFO  com.tinkoff_lab.dao.CityDAO - Start finding all entities
-2024-09-04 00:27:54 INFO  com.tinkoff_lab.dao.CityDAO - Finding ended successfully
+2024-09-04 00:27:54 INFO  com.tinkoff_lab.dao.hibernate.CityDAO - Start finding all entities
+2024-09-04 00:27:54 INFO  com.tinkoff_lab.dao.hibernate.CityDAO - Finding ended successfully
 2024-09-04 00:27:54 INFO  c.t.service.CurrentWeatherService - Start getting current weather for city com.tinkoff_lab.entity.City@d778666d
 2024-09-04 00:27:54 INFO  c.t.service.CurrentWeatherService - Response from Weather API received
 2024-09-04 00:27:54 INFO  c.t.service.CurrentWeatherService - Start parsing Weather API response
@@ -97,8 +97,8 @@
 2024-09-04 00:28:24 INFO  c.tinkoff_lab.TinkoffLabApplication - No active profile set, falling back to 1 default profile: "default"
 2024-09-04 00:28:31 INFO  c.tinkoff_lab.TinkoffLabApplication - Started TinkoffLabApplication in 7.126 seconds (process running for 8.628)
 2024-09-04 00:28:31 INFO  c.t.service.NotificationService - Start notifying all subscribers
-2024-09-04 00:28:31 INFO  com.tinkoff_lab.dao.CityDAO - Start finding all entities
-2024-09-04 00:28:31 INFO  com.tinkoff_lab.dao.CityDAO - Finding ended successfully
+2024-09-04 00:28:31 INFO  com.tinkoff_lab.dao.hibernate.CityDAO - Start finding all entities
+2024-09-04 00:28:31 INFO  com.tinkoff_lab.dao.hibernate.CityDAO - Finding ended successfully
 2024-09-04 00:28:31 INFO  c.t.service.CurrentWeatherService - Start getting current weather for city com.tinkoff_lab.entity.City@d778666d
 2024-09-04 00:28:31 INFO  c.t.service.CurrentWeatherService - Response from Weather API received
 2024-09-04 00:28:31 INFO  c.t.service.CurrentWeatherService - Start parsing Weather API response
@@ -122,8 +122,8 @@
 2024-09-04 00:34:00 INFO  c.tinkoff_lab.TinkoffLabApplication - No active profile set, falling back to 1 default profile: "default"
 2024-09-04 00:34:09 INFO  c.tinkoff_lab.TinkoffLabApplication - Started TinkoffLabApplication in 10.244 seconds (process running for 11.988)
 2024-09-04 00:34:09 INFO  c.t.service.NotificationService - Start notifying all subscribers
-2024-09-04 00:34:09 INFO  com.tinkoff_lab.dao.CityDAO - Start finding all entities
-2024-09-04 00:34:10 INFO  com.tinkoff_lab.dao.CityDAO - Finding ended successfully
+2024-09-04 00:34:09 INFO  com.tinkoff_lab.dao.hibernate.CityDAO - Start finding all entities
+2024-09-04 00:34:10 INFO  com.tinkoff_lab.dao.hibernate.CityDAO - Finding ended successfully
 2024-09-04 00:34:10 INFO  c.t.service.CurrentWeatherService - Start getting current weather for city com.tinkoff_lab.entity.City@d778666d
 2024-09-04 00:34:10 INFO  c.t.service.CurrentWeatherService - Response from Weather API received
 2024-09-04 00:34:10 INFO  c.t.service.CurrentWeatherService - Start parsing Weather API response
@@ -147,8 +147,8 @@
 2024-09-04 01:11:32 INFO  c.tinkoff_lab.TinkoffLabApplication - No active profile set, falling back to 1 default profile: "default"
 2024-09-04 01:11:38 INFO  c.tinkoff_lab.TinkoffLabApplication - Started TinkoffLabApplication in 6.23 seconds (process running for 7.174)
 2024-09-04 01:11:38 INFO  c.t.service.NotificationService - Start notifying all subscribers
-2024-09-04 01:11:38 INFO  com.tinkoff_lab.dao.CityDAO - Start finding all entities
-2024-09-04 01:11:38 INFO  com.tinkoff_lab.dao.CityDAO - Finding ended successfully
+2024-09-04 01:11:38 INFO  com.tinkoff_lab.dao.hibernate.CityDAO - Start finding all entities
+2024-09-04 01:11:38 INFO  com.tinkoff_lab.dao.hibernate.CityDAO - Finding ended successfully
 2024-09-04 01:11:38 INFO  c.t.service.CurrentWeatherService - Start getting current weather for city com.tinkoff_lab.entity.City@d778666d
 2024-09-04 01:11:39 INFO  c.t.service.CurrentWeatherService - Response from Weather API received
 2024-09-04 01:11:39 INFO  c.t.service.CurrentWeatherService - Start parsing Weather API response
@@ -166,8 +166,8 @@
 2024-09-04 01:11:39 INFO  c.t.service.CurrentWeatherService - Start parsing Weather API response
 2024-09-04 01:11:39 INFO  c.t.service.CurrentWeatherService - Parsing ended successfully
 2024-09-04 01:12:08 INFO  c.t.service.NotificationService - Start notifying all subscribers
-2024-09-04 01:12:08 INFO  com.tinkoff_lab.dao.CityDAO - Start finding all entities
-2024-09-04 01:12:08 INFO  com.tinkoff_lab.dao.CityDAO - Finding ended successfully
+2024-09-04 01:12:08 INFO  com.tinkoff_lab.dao.hibernate.CityDAO - Start finding all entities
+2024-09-04 01:12:08 INFO  com.tinkoff_lab.dao.hibernate.CityDAO - Finding ended successfully
 2024-09-04 01:12:08 INFO  c.t.service.CurrentWeatherService - Start getting current weather for city com.tinkoff_lab.entity.City@d778666d
 2024-09-04 01:12:08 INFO  c.t.service.CurrentWeatherService - Response from Weather API received
 2024-09-04 01:12:08 INFO  c.t.service.CurrentWeatherService - Start parsing Weather API response
@@ -185,38 +185,38 @@
 2024-09-04 01:12:08 INFO  c.t.service.CurrentWeatherService - Start parsing Weather API response
 2024-09-04 01:12:08 INFO  c.t.service.CurrentWeatherService - Parsing ended successfully
 2024-09-04 01:12:18 INFO  c.t.s.weather.WeatherServiceImpl - Start deleting user with email ektogod@mail.ru
-2024-09-04 01:12:18 INFO  com.tinkoff_lab.dao.UserDAO - Start finding entity with id ektogod@mail.ru
-2024-09-04 01:12:18 INFO  com.tinkoff_lab.dao.UserDAO - Finding of entity with id ektogod@mail.ru ended successfully
-2024-09-04 01:12:18 INFO  com.tinkoff_lab.dao.UserCityDAO - Start removing UserCity where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@ff21bcf0
-2024-09-04 01:12:18 INFO  com.tinkoff_lab.dao.UserCityDAO - Removing UserCity where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@ff21bcf0 went wrong
+2024-09-04 01:12:18 INFO  com.tinkoff_lab.dao.hibernate.UserDAO - Start finding entity with id ektogod@mail.ru
+2024-09-04 01:12:18 INFO  com.tinkoff_lab.dao.hibernate.UserDAO - Finding of entity with id ektogod@mail.ru ended successfully
+2024-09-04 01:12:18 INFO  com.tinkoff_lab.dao.hibernate.UserCityDAO - Start removing UserCity where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@ff21bcf0
+2024-09-04 01:12:18 INFO  com.tinkoff_lab.dao.hibernate.UserCityDAO - Removing UserCity where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@ff21bcf0 went wrong
 2024-09-04 01:12:32 INFO  c.t.s.weather.WeatherServiceImpl - Start deleting user with email ektogod@mail.ru
-2024-09-04 01:12:32 INFO  com.tinkoff_lab.dao.UserDAO - Start finding entity with id ektogod@mail.ru
-2024-09-04 01:12:32 INFO  com.tinkoff_lab.dao.UserDAO - Finding of entity with id ektogod@mail.ru ended successfully
-2024-09-04 01:12:32 INFO  com.tinkoff_lab.dao.UserCityDAO - Start removing UserCity where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@ff21bcf0
-2024-09-04 01:12:32 INFO  com.tinkoff_lab.dao.UserCityDAO - Removing UserCity where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@ff21bcf0 went wrong
+2024-09-04 01:12:32 INFO  com.tinkoff_lab.dao.hibernate.UserDAO - Start finding entity with id ektogod@mail.ru
+2024-09-04 01:12:32 INFO  com.tinkoff_lab.dao.hibernate.UserDAO - Finding of entity with id ektogod@mail.ru ended successfully
+2024-09-04 01:12:32 INFO  com.tinkoff_lab.dao.hibernate.UserCityDAO - Start removing UserCity where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@ff21bcf0
+2024-09-04 01:12:32 INFO  com.tinkoff_lab.dao.hibernate.UserCityDAO - Removing UserCity where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@ff21bcf0 went wrong
 2024-09-04 01:12:33 INFO  c.t.s.weather.WeatherServiceImpl - Start deleting user with email ektogod@mail.ru
-2024-09-04 01:12:33 INFO  com.tinkoff_lab.dao.UserDAO - Start finding entity with id ektogod@mail.ru
-2024-09-04 01:12:33 INFO  com.tinkoff_lab.dao.UserDAO - Finding of entity with id ektogod@mail.ru ended successfully
-2024-09-04 01:12:33 INFO  com.tinkoff_lab.dao.UserCityDAO - Start removing UserCity where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@ff21bcf0
-2024-09-04 01:12:33 INFO  com.tinkoff_lab.dao.UserCityDAO - Removing UserCity where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@ff21bcf0 went wrong
+2024-09-04 01:12:33 INFO  com.tinkoff_lab.dao.hibernate.UserDAO - Start finding entity with id ektogod@mail.ru
+2024-09-04 01:12:33 INFO  com.tinkoff_lab.dao.hibernate.UserDAO - Finding of entity with id ektogod@mail.ru ended successfully
+2024-09-04 01:12:33 INFO  com.tinkoff_lab.dao.hibernate.UserCityDAO - Start removing UserCity where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@ff21bcf0
+2024-09-04 01:12:33 INFO  com.tinkoff_lab.dao.hibernate.UserCityDAO - Removing UserCity where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@ff21bcf0 went wrong
 2024-09-04 01:12:34 INFO  c.t.s.weather.WeatherServiceImpl - Start deleting user with email ektogod@mail.ru
-2024-09-04 01:12:34 INFO  com.tinkoff_lab.dao.UserDAO - Start finding entity with id ektogod@mail.ru
-2024-09-04 01:12:34 INFO  com.tinkoff_lab.dao.UserDAO - Finding of entity with id ektogod@mail.ru ended successfully
-2024-09-04 01:12:34 INFO  com.tinkoff_lab.dao.UserCityDAO - Start removing UserCity where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@ff21bcf0
-2024-09-04 01:12:34 INFO  com.tinkoff_lab.dao.UserCityDAO - Removing UserCity where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@ff21bcf0 went wrong
+2024-09-04 01:12:34 INFO  com.tinkoff_lab.dao.hibernate.UserDAO - Start finding entity with id ektogod@mail.ru
+2024-09-04 01:12:34 INFO  com.tinkoff_lab.dao.hibernate.UserDAO - Finding of entity with id ektogod@mail.ru ended successfully
+2024-09-04 01:12:34 INFO  com.tinkoff_lab.dao.hibernate.UserCityDAO - Start removing UserCity where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@ff21bcf0
+2024-09-04 01:12:34 INFO  com.tinkoff_lab.dao.hibernate.UserCityDAO - Removing UserCity where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@ff21bcf0 went wrong
 2024-09-04 01:12:35 INFO  c.t.s.weather.WeatherServiceImpl - Start deleting user with email ektogod@mail.ru
-2024-09-04 01:12:35 INFO  com.tinkoff_lab.dao.UserDAO - Start finding entity with id ektogod@mail.ru
-2024-09-04 01:12:35 INFO  com.tinkoff_lab.dao.UserDAO - Finding of entity with id ektogod@mail.ru ended successfully
-2024-09-04 01:12:35 INFO  com.tinkoff_lab.dao.UserCityDAO - Start removing UserCity where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@ff21bcf0
-2024-09-04 01:12:35 INFO  com.tinkoff_lab.dao.UserCityDAO - Removing UserCity where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@ff21bcf0 went wrong
+2024-09-04 01:12:35 INFO  com.tinkoff_lab.dao.hibernate.UserDAO - Start finding entity with id ektogod@mail.ru
+2024-09-04 01:12:35 INFO  com.tinkoff_lab.dao.hibernate.UserDAO - Finding of entity with id ektogod@mail.ru ended successfully
+2024-09-04 01:12:35 INFO  com.tinkoff_lab.dao.hibernate.UserCityDAO - Start removing UserCity where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@ff21bcf0
+2024-09-04 01:12:35 INFO  com.tinkoff_lab.dao.hibernate.UserCityDAO - Removing UserCity where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@ff21bcf0 went wrong
 2024-09-04 01:12:36 INFO  c.t.s.weather.WeatherServiceImpl - Start deleting user with email ektogod@mail.ru
-2024-09-04 01:12:36 INFO  com.tinkoff_lab.dao.UserDAO - Start finding entity with id ektogod@mail.ru
-2024-09-04 01:12:36 INFO  com.tinkoff_lab.dao.UserDAO - Finding of entity with id ektogod@mail.ru ended successfully
-2024-09-04 01:12:36 INFO  com.tinkoff_lab.dao.UserCityDAO - Start removing UserCity where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@ff21bcf0
-2024-09-04 01:12:36 INFO  com.tinkoff_lab.dao.UserCityDAO - Removing UserCity where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@ff21bcf0 went wrong
+2024-09-04 01:12:36 INFO  com.tinkoff_lab.dao.hibernate.UserDAO - Start finding entity with id ektogod@mail.ru
+2024-09-04 01:12:36 INFO  com.tinkoff_lab.dao.hibernate.UserDAO - Finding of entity with id ektogod@mail.ru ended successfully
+2024-09-04 01:12:36 INFO  com.tinkoff_lab.dao.hibernate.UserCityDAO - Start removing UserCity where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@ff21bcf0
+2024-09-04 01:12:36 INFO  com.tinkoff_lab.dao.hibernate.UserCityDAO - Removing UserCity where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@ff21bcf0 went wrong
 2024-09-04 01:12:38 INFO  c.t.service.NotificationService - Start notifying all subscribers
-2024-09-04 01:12:38 INFO  com.tinkoff_lab.dao.CityDAO - Start finding all entities
-2024-09-04 01:12:38 INFO  com.tinkoff_lab.dao.CityDAO - Finding ended successfully
+2024-09-04 01:12:38 INFO  com.tinkoff_lab.dao.hibernate.CityDAO - Start finding all entities
+2024-09-04 01:12:38 INFO  com.tinkoff_lab.dao.hibernate.CityDAO - Finding ended successfully
 2024-09-04 01:12:38 INFO  c.t.service.CurrentWeatherService - Start getting current weather for city com.tinkoff_lab.entity.City@d778666d
 2024-09-04 01:12:38 INFO  c.t.service.CurrentWeatherService - Response from Weather API received
 2024-09-04 01:12:38 INFO  c.t.service.CurrentWeatherService - Start parsing Weather API response
@@ -240,8 +240,8 @@
 2024-09-04 01:13:32 INFO  c.tinkoff_lab.TinkoffLabApplication - No active profile set, falling back to 1 default profile: "default"
 2024-09-04 01:13:38 INFO  c.tinkoff_lab.TinkoffLabApplication - Started TinkoffLabApplication in 5.835 seconds (process running for 6.573)
 2024-09-04 01:13:38 INFO  c.t.service.NotificationService - Start notifying all subscribers
-2024-09-04 01:13:38 INFO  com.tinkoff_lab.dao.CityDAO - Start finding all entities
-2024-09-04 01:13:38 INFO  com.tinkoff_lab.dao.CityDAO - Finding ended successfully
+2024-09-04 01:13:38 INFO  com.tinkoff_lab.dao.hibernate.CityDAO - Start finding all entities
+2024-09-04 01:13:38 INFO  com.tinkoff_lab.dao.hibernate.CityDAO - Finding ended successfully
 2024-09-04 01:13:38 INFO  c.t.service.CurrentWeatherService - Start getting current weather for city com.tinkoff_lab.entity.City@d778666d
 2024-09-04 01:13:38 INFO  c.t.service.CurrentWeatherService - Response from Weather API received
 2024-09-04 01:13:38 INFO  c.t.service.CurrentWeatherService - Start parsing Weather API response
@@ -259,26 +259,26 @@
 2024-09-04 01:13:38 INFO  c.t.service.CurrentWeatherService - Start parsing Weather API response
 2024-09-04 01:13:38 INFO  c.t.service.CurrentWeatherService - Parsing ended successfully
 2024-09-04 01:13:39 INFO  c.t.s.weather.WeatherServiceImpl - Start deleting user with email ektogod@mail.ru
-2024-09-04 01:13:39 INFO  com.tinkoff_lab.dao.UserDAO - Start finding entity with id ektogod@mail.ru
-2024-09-04 01:13:39 INFO  com.tinkoff_lab.dao.UserDAO - Finding of entity with id ektogod@mail.ru ended successfully
-2024-09-04 01:13:39 INFO  com.tinkoff_lab.dao.UserCityDAO - Start removing UserCity where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@ff21bcf0
-2024-09-04 01:13:39 INFO  com.tinkoff_lab.dao.UserCityDAO - Removing UserCity where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@ff21bcf0 ended successfully
+2024-09-04 01:13:39 INFO  com.tinkoff_lab.dao.hibernate.UserDAO - Start finding entity with id ektogod@mail.ru
+2024-09-04 01:13:39 INFO  com.tinkoff_lab.dao.hibernate.UserDAO - Finding of entity with id ektogod@mail.ru ended successfully
+2024-09-04 01:13:39 INFO  com.tinkoff_lab.dao.hibernate.UserCityDAO - Start removing UserCity where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@ff21bcf0
+2024-09-04 01:13:39 INFO  com.tinkoff_lab.dao.hibernate.UserCityDAO - Removing UserCity where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@ff21bcf0 ended successfully
 2024-09-04 01:13:41 INFO  c.t.s.weather.WeatherServiceImpl - Start deleting user with email ektogod@mail.ru
-2024-09-04 01:13:41 INFO  com.tinkoff_lab.dao.UserDAO - Start finding entity with id ektogod@mail.ru
-2024-09-04 01:13:41 INFO  com.tinkoff_lab.dao.UserDAO - Finding of entity with id ektogod@mail.ru ended successfully
-2024-09-04 01:13:41 INFO  com.tinkoff_lab.dao.UserCityDAO - Start removing UserCity where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@a50b17b9
-2024-09-04 01:13:41 INFO  com.tinkoff_lab.dao.UserCityDAO - Removing UserCity where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@a50b17b9 ended successfully
+2024-09-04 01:13:41 INFO  com.tinkoff_lab.dao.hibernate.UserDAO - Start finding entity with id ektogod@mail.ru
+2024-09-04 01:13:41 INFO  com.tinkoff_lab.dao.hibernate.UserDAO - Finding of entity with id ektogod@mail.ru ended successfully
+2024-09-04 01:13:41 INFO  com.tinkoff_lab.dao.hibernate.UserCityDAO - Start removing UserCity where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@a50b17b9
+2024-09-04 01:13:41 INFO  com.tinkoff_lab.dao.hibernate.UserCityDAO - Removing UserCity where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@a50b17b9 ended successfully
 2024-09-04 01:13:42 INFO  c.t.s.weather.WeatherServiceImpl - Start deleting user with email ektogod@mail.ru
-2024-09-04 01:13:42 INFO  com.tinkoff_lab.dao.UserDAO - Start finding entity with id ektogod@mail.ru
-2024-09-04 01:13:42 INFO  com.tinkoff_lab.dao.UserDAO - Finding of entity with id ektogod@mail.ru ended successfully
-2024-09-04 01:13:42 INFO  com.tinkoff_lab.dao.UserCityDAO - Start removing UserCity where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@d2f87f10
-2024-09-04 01:13:42 INFO  com.tinkoff_lab.dao.UserCityDAO - Removing UserCity where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@d2f87f10 ended successfully
-2024-09-04 01:13:42 INFO  com.tinkoff_lab.dao.UserDAO - Start removing entity with id ektogod@mail.ru
-2024-09-04 01:13:42 INFO  com.tinkoff_lab.dao.UserDAO - Removing entity with id ektogod@mail.ru ended successfully
+2024-09-04 01:13:42 INFO  com.tinkoff_lab.dao.hibernate.UserDAO - Start finding entity with id ektogod@mail.ru
+2024-09-04 01:13:42 INFO  com.tinkoff_lab.dao.hibernate.UserDAO - Finding of entity with id ektogod@mail.ru ended successfully
+2024-09-04 01:13:42 INFO  com.tinkoff_lab.dao.hibernate.UserCityDAO - Start removing UserCity where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@d2f87f10
+2024-09-04 01:13:42 INFO  com.tinkoff_lab.dao.hibernate.UserCityDAO - Removing UserCity where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@d2f87f10 ended successfully
+2024-09-04 01:13:42 INFO  com.tinkoff_lab.dao.hibernate.UserDAO - Start removing entity with id ektogod@mail.ru
+2024-09-04 01:13:42 INFO  com.tinkoff_lab.dao.hibernate.UserDAO - Removing entity with id ektogod@mail.ru ended successfully
 2024-09-04 01:13:42 INFO  c.t.s.weather.WeatherServiceImpl - Deleting user with email ektogod@mail.ru ended successfully
 2024-09-04 01:14:08 INFO  c.t.service.NotificationService - Start notifying all subscribers
-2024-09-04 01:14:08 INFO  com.tinkoff_lab.dao.CityDAO - Start finding all entities
-2024-09-04 01:14:08 INFO  com.tinkoff_lab.dao.CityDAO - Finding ended successfully
+2024-09-04 01:14:08 INFO  com.tinkoff_lab.dao.hibernate.CityDAO - Start finding all entities
+2024-09-04 01:14:08 INFO  com.tinkoff_lab.dao.hibernate.CityDAO - Finding ended successfully
 2024-09-04 01:14:08 INFO  c.t.service.CurrentWeatherService - Start getting current weather for city com.tinkoff_lab.entity.City@d778666d
 2024-09-04 01:14:08 INFO  c.t.service.CurrentWeatherService - Response from Weather API received
 2024-09-04 01:14:08 INFO  c.t.service.CurrentWeatherService - Start parsing Weather API response
@@ -296,30 +296,30 @@
 2024-09-04 01:14:08 INFO  c.t.service.CurrentWeatherService - Start parsing Weather API response
 2024-09-04 01:14:08 INFO  c.t.service.CurrentWeatherService - Parsing ended successfully
 2024-09-04 01:14:35 INFO  c.t.s.weather.WeatherServiceImpl - Start adding user with email ektogod@gmail.com and cities [CityDTO[city=Minsk, country=Belarus], CityDTO[city=Grodno, country=Belarus]] to database
-2024-09-04 01:14:35 INFO  com.tinkoff_lab.dao.UserDAO - Start finding entity with id ektogod@gmail.com
-2024-09-04 01:14:35 INFO  com.tinkoff_lab.dao.UserDAO - Finding of entity with id ektogod@gmail.com ended successfully
-2024-09-04 01:14:35 INFO  com.tinkoff_lab.dao.UserDAO - Start inserting entity: com.tinkoff_lab.entity.User@1f1beab8
-2024-09-04 01:14:35 INFO  com.tinkoff_lab.dao.UserDAO - Inserting of entity com.tinkoff_lab.entity.User@1f1beab8 ended successfully
+2024-09-04 01:14:35 INFO  com.tinkoff_lab.dao.hibernate.UserDAO - Start finding entity with id ektogod@gmail.com
+2024-09-04 01:14:35 INFO  com.tinkoff_lab.dao.hibernate.UserDAO - Finding of entity with id ektogod@gmail.com ended successfully
+2024-09-04 01:14:35 INFO  com.tinkoff_lab.dao.hibernate.UserDAO - Start inserting entity: com.tinkoff_lab.entity.User@1f1beab8
+2024-09-04 01:14:35 INFO  com.tinkoff_lab.dao.hibernate.UserDAO - Inserting of entity com.tinkoff_lab.entity.User@1f1beab8 ended successfully
 2024-09-04 01:14:35 INFO  c.t.s.weather.CoordinateService - Start coordinate definition for city Minsk, country Belarus
 2024-09-04 01:14:35 INFO  c.t.s.weather.CountryCodeService - Start country code definition for country: Belarus
 2024-09-04 01:14:35 INFO  c.t.s.weather.CountryCodeService - Country code definition for country Belarus ended successfully
 2024-09-04 01:14:36 INFO  c.t.s.weather.CoordinateService - Coordinate definition for city Minsk, country Belarus ended successfully
-2024-09-04 01:14:36 INFO  com.tinkoff_lab.dao.CityDAO - Start updating entity: com.tinkoff_lab.entity.City@ff21bcf0
-2024-09-04 01:14:36 INFO  com.tinkoff_lab.dao.CityDAO - Updating entity com.tinkoff_lab.entity.City@ff21bcf0 ended successfully
-2024-09-04 01:14:36 INFO  com.tinkoff_lab.dao.UserCityDAO - Start adding UserCity where User: com.tinkoff_lab.entity.User@1f1beab8, City: com.tinkoff_lab.entity.City@ff21bcf0
-2024-09-04 01:14:36 INFO  com.tinkoff_lab.dao.UserCityDAO - Adding UserCit y where User: com.tinkoff_lab.entity.User@1f1beab8, City: com.tinkoff_lab.entity.City@ff21bcf0 ended successfully
+2024-09-04 01:14:36 INFO  com.tinkoff_lab.dao.hibernate.CityDAO - Start updating entity: com.tinkoff_lab.entity.City@ff21bcf0
+2024-09-04 01:14:36 INFO  com.tinkoff_lab.dao.hibernate.CityDAO - Updating entity com.tinkoff_lab.entity.City@ff21bcf0 ended successfully
+2024-09-04 01:14:36 INFO  com.tinkoff_lab.dao.hibernate.UserCityDAO - Start adding UserCity where User: com.tinkoff_lab.entity.User@1f1beab8, City: com.tinkoff_lab.entity.City@ff21bcf0
+2024-09-04 01:14:36 INFO  com.tinkoff_lab.dao.hibernate.UserCityDAO - Adding UserCit y where User: com.tinkoff_lab.entity.User@1f1beab8, City: com.tinkoff_lab.entity.City@ff21bcf0 ended successfully
 2024-09-04 01:14:36 INFO  c.t.s.weather.CoordinateService - Start coordinate definition for city Grodno, country Belarus
 2024-09-04 01:14:36 INFO  c.t.s.weather.CountryCodeService - Start country code definition for country: Belarus
 2024-09-04 01:14:36 INFO  c.t.s.weather.CountryCodeService - Country code definition for country Belarus ended successfully
 2024-09-04 01:14:36 INFO  c.t.s.weather.CoordinateService - Coordinate definition for city Grodno, country Belarus ended successfully
-2024-09-04 01:14:36 INFO  com.tinkoff_lab.dao.CityDAO - Start updating entity: com.tinkoff_lab.entity.City@d2f87f10
-2024-09-04 01:14:36 INFO  com.tinkoff_lab.dao.CityDAO - Updating entity com.tinkoff_lab.entity.City@d2f87f10 ended successfully
-2024-09-04 01:14:36 INFO  com.tinkoff_lab.dao.UserCityDAO - Start adding UserCity where User: com.tinkoff_lab.entity.User@1f1beab8, City: com.tinkoff_lab.entity.City@d2f87f10
-2024-09-04 01:14:36 INFO  com.tinkoff_lab.dao.UserCityDAO - Adding UserCit y where User: com.tinkoff_lab.entity.User@1f1beab8, City: com.tinkoff_lab.entity.City@d2f87f10 ended successfully
+2024-09-04 01:14:36 INFO  com.tinkoff_lab.dao.hibernate.CityDAO - Start updating entity: com.tinkoff_lab.entity.City@d2f87f10
+2024-09-04 01:14:36 INFO  com.tinkoff_lab.dao.hibernate.CityDAO - Updating entity com.tinkoff_lab.entity.City@d2f87f10 ended successfully
+2024-09-04 01:14:36 INFO  com.tinkoff_lab.dao.hibernate.UserCityDAO - Start adding UserCity where User: com.tinkoff_lab.entity.User@1f1beab8, City: com.tinkoff_lab.entity.City@d2f87f10
+2024-09-04 01:14:36 INFO  com.tinkoff_lab.dao.hibernate.UserCityDAO - Adding UserCit y where User: com.tinkoff_lab.entity.User@1f1beab8, City: com.tinkoff_lab.entity.City@d2f87f10 ended successfully
 2024-09-04 01:14:36 INFO  c.t.s.weather.WeatherServiceImpl - Adding user with email ektogod@gmail.com and cities [] to database ended successfully
 2024-09-04 01:14:38 INFO  c.t.service.NotificationService - Start notifying all subscribers
-2024-09-04 01:14:38 INFO  com.tinkoff_lab.dao.CityDAO - Start finding all entities
-2024-09-04 01:14:38 INFO  com.tinkoff_lab.dao.CityDAO - Finding ended successfully
+2024-09-04 01:14:38 INFO  com.tinkoff_lab.dao.hibernate.CityDAO - Start finding all entities
+2024-09-04 01:14:38 INFO  com.tinkoff_lab.dao.hibernate.CityDAO - Finding ended successfully
 2024-09-04 01:14:38 INFO  c.t.service.CurrentWeatherService - Start getting current weather for city com.tinkoff_lab.entity.City@d778666d
 2024-09-04 01:14:38 INFO  c.t.service.CurrentWeatherService - Response from Weather API received
 2024-09-04 01:14:38 INFO  c.t.service.CurrentWeatherService - Start parsing Weather API response
@@ -345,8 +345,8 @@
 2024-09-04 01:15:07 INFO  c.tinkoff_lab.TinkoffLabApplication - Application has terminated working
 
 2024-09-04 01:15:07 INFO  c.t.service.NotificationService - Start notifying all subscribers
-2024-09-04 01:15:07 INFO  com.tinkoff_lab.dao.CityDAO - Start finding all entities
-2024-09-04 01:15:07 INFO  com.tinkoff_lab.dao.CityDAO - Finding ended successfully
+2024-09-04 01:15:07 INFO  com.tinkoff_lab.dao.hibernate.CityDAO - Start finding all entities
+2024-09-04 01:15:07 INFO  com.tinkoff_lab.dao.hibernate.CityDAO - Finding ended successfully
 2024-09-04 01:15:07 INFO  c.t.service.CurrentWeatherService - Start getting current weather for city com.tinkoff_lab.entity.City@d778666d
 2024-09-04 01:15:08 INFO  c.t.service.CurrentWeatherService - Response from Weather API received
 2024-09-04 01:15:08 INFO  c.t.service.CurrentWeatherService - Start parsing Weather API response
@@ -368,8 +368,8 @@
 2024-09-04 01:15:19 INFO  c.tinkoff_lab.TinkoffLabApplication - No active profile set, falling back to 1 default profile: "default"
 2024-09-04 01:15:25 INFO  c.tinkoff_lab.TinkoffLabApplication - Started TinkoffLabApplication in 5.794 seconds (process running for 7.023)
 2024-09-04 01:15:25 INFO  c.t.service.NotificationService - Start notifying all subscribers
-2024-09-04 01:15:25 INFO  com.tinkoff_lab.dao.CityDAO - Start finding all entities
-2024-09-04 01:15:25 INFO  com.tinkoff_lab.dao.CityDAO - Finding ended successfully
+2024-09-04 01:15:25 INFO  com.tinkoff_lab.dao.hibernate.CityDAO - Start finding all entities
+2024-09-04 01:15:25 INFO  com.tinkoff_lab.dao.hibernate.CityDAO - Finding ended successfully
 2024-09-04 01:15:25 INFO  c.t.service.CurrentWeatherService - Start getting current weather for city com.tinkoff_lab.entity.City@d778666d
 2024-09-04 01:15:25 INFO  c.t.service.CurrentWeatherService - Response from Weather API received
 2024-09-04 01:15:25 INFO  c.t.service.CurrentWeatherService - Start parsing Weather API response
@@ -393,8 +393,8 @@
 2024-09-04 01:17:26 INFO  c.tinkoff_lab.TinkoffLabApplication - No active profile set, falling back to 1 default profile: "default"
 2024-09-04 01:17:31 INFO  c.tinkoff_lab.TinkoffLabApplication - Started TinkoffLabApplication in 5.53 seconds (process running for 6.356)
 2024-09-04 01:17:31 INFO  c.t.service.NotificationService - Start notifying all subscribers
-2024-09-04 01:17:31 INFO  com.tinkoff_lab.dao.CityDAO - Start finding all entities
-2024-09-04 01:17:31 INFO  com.tinkoff_lab.dao.CityDAO - Finding ended successfully
+2024-09-04 01:17:31 INFO  com.tinkoff_lab.dao.hibernate.CityDAO - Start finding all entities
+2024-09-04 01:17:31 INFO  com.tinkoff_lab.dao.hibernate.CityDAO - Finding ended successfully
 2024-09-04 01:17:31 INFO  c.t.service.CurrentWeatherService - Start getting current weather for city com.tinkoff_lab.entity.City@d778666d
 2024-09-04 01:17:31 INFO  c.t.service.CurrentWeatherService - Response from Weather API received
 2024-09-04 01:17:31 INFO  c.t.service.CurrentWeatherService - Start parsing Weather API response
@@ -418,8 +418,8 @@
 2024-09-04 01:17:39 INFO  c.tinkoff_lab.TinkoffLabApplication - No active profile set, falling back to 1 default profile: "default"
 2024-09-04 01:17:45 INFO  c.tinkoff_lab.TinkoffLabApplication - Started TinkoffLabApplication in 5.78 seconds (process running for 6.866)
 2024-09-04 01:17:45 INFO  c.t.service.NotificationService - Start notifying all subscribers
-2024-09-04 01:17:45 INFO  com.tinkoff_lab.dao.CityDAO - Start finding all entities
-2024-09-04 01:17:45 INFO  com.tinkoff_lab.dao.CityDAO - Finding ended successfully
+2024-09-04 01:17:45 INFO  com.tinkoff_lab.dao.hibernate.CityDAO - Start finding all entities
+2024-09-04 01:17:45 INFO  com.tinkoff_lab.dao.hibernate.CityDAO - Finding ended successfully
 2024-09-04 01:17:45 INFO  c.t.service.CurrentWeatherService - Start getting current weather for city com.tinkoff_lab.entity.City@d778666d
 2024-09-04 01:17:45 INFO  c.t.service.CurrentWeatherService - Response from Weather API received
 2024-09-04 01:17:45 INFO  c.t.service.CurrentWeatherService - Start parsing Weather API response
@@ -443,8 +443,8 @@
 2024-09-04 01:20:14 INFO  c.tinkoff_lab.TinkoffLabApplication - No active profile set, falling back to 1 default profile: "default"
 2024-09-04 01:20:19 INFO  c.tinkoff_lab.TinkoffLabApplication - Started TinkoffLabApplication in 5.553 seconds (process running for 6.434)
 2024-09-04 01:20:19 INFO  c.t.service.NotificationService - Start notifying all subscribers
-2024-09-04 01:20:19 INFO  com.tinkoff_lab.dao.CityDAO - Start finding all entities
-2024-09-04 01:20:19 INFO  com.tinkoff_lab.dao.CityDAO - Finding ended successfully
+2024-09-04 01:20:19 INFO  com.tinkoff_lab.dao.hibernate.CityDAO - Start finding all entities
+2024-09-04 01:20:19 INFO  com.tinkoff_lab.dao.hibernate.CityDAO - Finding ended successfully
 2024-09-04 01:20:19 INFO  c.t.service.CurrentWeatherService - Start getting current weather for city com.tinkoff_lab.entity.City@d778666d
 2024-09-04 01:20:20 INFO  c.t.service.CurrentWeatherService - Response from Weather API received
 2024-09-04 01:20:20 INFO  c.t.service.CurrentWeatherService - Start parsing Weather API response
@@ -468,8 +468,8 @@
 2024-09-04 01:20:26 INFO  c.tinkoff_lab.TinkoffLabApplication - No active profile set, falling back to 1 default profile: "default"
 2024-09-04 01:20:31 INFO  c.tinkoff_lab.TinkoffLabApplication - Started TinkoffLabApplication in 6.02 seconds (process running for 6.966)
 2024-09-04 01:20:31 INFO  c.t.service.NotificationService - Start notifying all subscribers
-2024-09-04 01:20:31 INFO  com.tinkoff_lab.dao.CityDAO - Start finding all entities
-2024-09-04 01:20:32 INFO  com.tinkoff_lab.dao.CityDAO - Finding ended successfully
+2024-09-04 01:20:31 INFO  com.tinkoff_lab.dao.hibernate.CityDAO - Start finding all entities
+2024-09-04 01:20:32 INFO  com.tinkoff_lab.dao.hibernate.CityDAO - Finding ended successfully
 2024-09-04 01:20:32 INFO  c.t.service.CurrentWeatherService - Start getting current weather for city com.tinkoff_lab.entity.City@d778666d
 2024-09-04 01:20:32 INFO  c.t.service.CurrentWeatherService - Response from Weather API received
 2024-09-04 01:20:32 INFO  c.t.service.CurrentWeatherService - Start parsing Weather API response
@@ -493,8 +493,8 @@
 2024-09-04 01:24:12 INFO  c.tinkoff_lab.TinkoffLabApplication - No active profile set, falling back to 1 default profile: "default"
 2024-09-04 01:24:18 INFO  c.tinkoff_lab.TinkoffLabApplication - Started TinkoffLabApplication in 6.211 seconds (process running for 7.356)
 2024-09-04 01:24:18 INFO  c.t.service.NotificationService - Start notifying all subscribers
-2024-09-04 01:24:18 INFO  com.tinkoff_lab.dao.CityDAO - Start finding all entities
-2024-09-04 01:24:18 INFO  com.tinkoff_lab.dao.CityDAO - Finding ended successfully
+2024-09-04 01:24:18 INFO  com.tinkoff_lab.dao.hibernate.CityDAO - Start finding all entities
+2024-09-04 01:24:18 INFO  com.tinkoff_lab.dao.hibernate.CityDAO - Finding ended successfully
 2024-09-04 01:24:18 INFO  c.t.service.CurrentWeatherService - Start getting current weather for city com.tinkoff_lab.entity.City@d778666d
 2024-09-04 01:24:18 INFO  c.t.service.CurrentWeatherService - Response from Weather API received
 2024-09-04 01:24:18 INFO  c.t.service.CurrentWeatherService - Start parsing Weather API response
@@ -518,8 +518,8 @@
 2024-09-04 01:25:12 INFO  c.tinkoff_lab.TinkoffLabApplication - No active profile set, falling back to 1 default profile: "default"
 2024-09-04 01:25:17 INFO  c.tinkoff_lab.TinkoffLabApplication - Started TinkoffLabApplication in 5.815 seconds (process running for 6.777)
 2024-09-04 01:25:17 INFO  c.t.service.NotificationService - Start notifying all subscribers
-2024-09-04 01:25:17 INFO  com.tinkoff_lab.dao.CityDAO - Start finding all entities
-2024-09-04 01:25:17 INFO  com.tinkoff_lab.dao.CityDAO - Finding ended successfully
+2024-09-04 01:25:17 INFO  com.tinkoff_lab.dao.hibernate.CityDAO - Start finding all entities
+2024-09-04 01:25:17 INFO  com.tinkoff_lab.dao.hibernate.CityDAO - Finding ended successfully
 2024-09-04 01:25:17 INFO  c.t.service.CurrentWeatherService - Start getting current weather for city com.tinkoff_lab.entity.City@d778666d
 2024-09-04 01:25:18 INFO  c.t.service.CurrentWeatherService - Response from Weather API received
 2024-09-04 01:25:18 INFO  c.t.service.CurrentWeatherService - Start parsing Weather API response
@@ -543,8 +543,8 @@
 2024-09-04 01:27:39 INFO  c.tinkoff_lab.TinkoffLabApplication - No active profile set, falling back to 1 default profile: "default"
 2024-09-04 01:27:45 INFO  c.tinkoff_lab.TinkoffLabApplication - Started TinkoffLabApplication in 5.861 seconds (process running for 6.722)
 2024-09-04 01:27:45 INFO  c.t.service.NotificationService - Start notifying all subscribers
-2024-09-04 01:27:45 INFO  com.tinkoff_lab.dao.CityDAO - Start finding all entities
-2024-09-04 01:27:45 INFO  com.tinkoff_lab.dao.CityDAO - Finding ended successfully
+2024-09-04 01:27:45 INFO  com.tinkoff_lab.dao.hibernate.CityDAO - Start finding all entities
+2024-09-04 01:27:45 INFO  com.tinkoff_lab.dao.hibernate.CityDAO - Finding ended successfully
 2024-09-04 01:27:45 INFO  c.t.service.CurrentWeatherService - Start getting current weather for city com.tinkoff_lab.entity.City@d778666d
 2024-09-04 01:27:45 INFO  c.t.service.CurrentWeatherService - Response from Weather API received
 2024-09-04 01:27:45 INFO  c.t.service.CurrentWeatherService - Start parsing Weather API response
@@ -568,8 +568,8 @@
 2024-09-04 01:46:27 INFO  c.tinkoff_lab.TinkoffLabApplication - No active profile set, falling back to 1 default profile: "default"
 2024-09-04 01:46:33 INFO  c.tinkoff_lab.TinkoffLabApplication - Started TinkoffLabApplication in 6.774 seconds (process running for 8.265)
 2024-09-04 01:46:33 INFO  c.t.service.NotificationService - Start notifying all subscribers
-2024-09-04 01:46:33 INFO  com.tinkoff_lab.dao.CityDAO - Start finding all entities
-2024-09-04 01:46:33 INFO  com.tinkoff_lab.dao.CityDAO - Finding ended successfully
+2024-09-04 01:46:33 INFO  com.tinkoff_lab.dao.hibernate.CityDAO - Start finding all entities
+2024-09-04 01:46:33 INFO  com.tinkoff_lab.dao.hibernate.CityDAO - Finding ended successfully
 2024-09-04 01:46:33 INFO  c.t.service.CurrentWeatherService - Start getting current weather for city com.tinkoff_lab.entity.City@d778666d
 2024-09-04 01:46:34 INFO  c.t.service.CurrentWeatherService - Response from Weather API received
 2024-09-04 01:46:34 INFO  c.t.service.CurrentWeatherService - Start parsing Weather API response
@@ -593,8 +593,8 @@
 2024-09-04 01:49:05 INFO  c.tinkoff_lab.TinkoffLabApplication - No active profile set, falling back to 1 default profile: "default"
 2024-09-04 01:49:11 INFO  c.tinkoff_lab.TinkoffLabApplication - Started TinkoffLabApplication in 6.042 seconds (process running for 6.8)
 2024-09-04 01:49:11 INFO  c.t.service.NotificationService - Start notifying all subscribers
-2024-09-04 01:49:11 INFO  com.tinkoff_lab.dao.CityDAO - Start finding all entities
-2024-09-04 01:49:11 INFO  com.tinkoff_lab.dao.CityDAO - Finding ended successfully
+2024-09-04 01:49:11 INFO  com.tinkoff_lab.dao.hibernate.CityDAO - Start finding all entities
+2024-09-04 01:49:11 INFO  com.tinkoff_lab.dao.hibernate.CityDAO - Finding ended successfully
 2024-09-04 01:49:11 INFO  c.t.service.CurrentWeatherService - Start getting current weather for city com.tinkoff_lab.entity.City@d778666d
 2024-09-04 01:49:11 INFO  c.t.service.CurrentWeatherService - Response from Weather API received
 2024-09-04 01:49:12 INFO  c.t.service.CurrentWeatherService - Start parsing Weather API response
@@ -618,8 +618,8 @@
 2024-09-04 01:49:22 INFO  c.tinkoff_lab.TinkoffLabApplication - No active profile set, falling back to 1 default profile: "default"
 2024-09-04 01:49:29 INFO  c.tinkoff_lab.TinkoffLabApplication - Started TinkoffLabApplication in 7.021 seconds (process running for 8.04)
 2024-09-04 01:49:29 INFO  c.t.service.NotificationService - Start notifying all subscribers
-2024-09-04 01:49:29 INFO  com.tinkoff_lab.dao.CityDAO - Start finding all entities
-2024-09-04 01:49:29 INFO  com.tinkoff_lab.dao.CityDAO - Finding ended successfully
+2024-09-04 01:49:29 INFO  com.tinkoff_lab.dao.hibernate.CityDAO - Start finding all entities
+2024-09-04 01:49:29 INFO  com.tinkoff_lab.dao.hibernate.CityDAO - Finding ended successfully
 2024-09-04 01:49:29 INFO  c.t.service.CurrentWeatherService - Start getting current weather for city com.tinkoff_lab.entity.City@d778666d
 2024-09-04 01:49:29 INFO  c.t.service.CurrentWeatherService - Response from Weather API received
 2024-09-04 01:49:29 INFO  c.t.service.CurrentWeatherService - Start parsing Weather API response
@@ -643,8 +643,8 @@
 2024-09-04 01:52:15 INFO  c.tinkoff_lab.TinkoffLabApplication - No active profile set, falling back to 1 default profile: "default"
 2024-09-04 01:52:21 INFO  c.tinkoff_lab.TinkoffLabApplication - Started TinkoffLabApplication in 6.247 seconds (process running for 7.325)
 2024-09-04 01:52:21 INFO  c.t.service.NotificationService - Start notifying all subscribers
-2024-09-04 01:52:21 INFO  com.tinkoff_lab.dao.CityDAO - Start finding all entities
-2024-09-04 01:52:21 INFO  com.tinkoff_lab.dao.CityDAO - Finding ended successfully
+2024-09-04 01:52:21 INFO  com.tinkoff_lab.dao.hibernate.CityDAO - Start finding all entities
+2024-09-04 01:52:21 INFO  com.tinkoff_lab.dao.hibernate.CityDAO - Finding ended successfully
 2024-09-04 01:52:21 INFO  c.t.service.CurrentWeatherService - Start getting current weather for city com.tinkoff_lab.entity.City@d778666d
 2024-09-04 01:52:22 INFO  c.t.service.CurrentWeatherService - Response from Weather API received
 2024-09-04 01:52:22 INFO  c.t.service.CurrentWeatherService - Start parsing Weather API response
@@ -668,8 +668,8 @@
 2024-09-04 02:32:00 INFO  c.tinkoff_lab.TinkoffLabApplication - No active profile set, falling back to 1 default profile: "default"
 2024-09-04 02:32:06 INFO  c.tinkoff_lab.TinkoffLabApplication - Started TinkoffLabApplication in 6.116 seconds (process running for 7.031)
 2024-09-04 02:32:06 INFO  c.t.service.NotificationService - Start notifying all subscribers
-2024-09-04 02:32:06 INFO  com.tinkoff_lab.dao.CityDAO - Start finding all entities
-2024-09-04 02:32:06 INFO  com.tinkoff_lab.dao.CityDAO - Finding ended successfully
+2024-09-04 02:32:06 INFO  com.tinkoff_lab.dao.hibernate.CityDAO - Start finding all entities
+2024-09-04 02:32:06 INFO  com.tinkoff_lab.dao.hibernate.CityDAO - Finding ended successfully
 2024-09-04 02:32:06 INFO  c.t.service.CurrentWeatherService - Start getting current weather for city com.tinkoff_lab.entity.City@d778666d
 2024-09-04 02:32:06 INFO  c.t.service.CurrentWeatherService - Response from Weather API received
 2024-09-04 02:32:06 INFO  c.t.service.CurrentWeatherService - Start parsing Weather API response
@@ -693,8 +693,8 @@
 2024-09-04 02:32:22 INFO  c.tinkoff_lab.TinkoffLabApplication - No active profile set, falling back to 1 default profile: "default"
 2024-09-04 02:32:29 INFO  c.tinkoff_lab.TinkoffLabApplication - Started TinkoffLabApplication in 7.826 seconds (process running for 8.992)
 2024-09-04 02:32:29 INFO  c.t.service.NotificationService - Start notifying all subscribers
-2024-09-04 02:32:29 INFO  com.tinkoff_lab.dao.CityDAO - Start finding all entities
-2024-09-04 02:32:30 INFO  com.tinkoff_lab.dao.CityDAO - Finding ended successfully
+2024-09-04 02:32:29 INFO  com.tinkoff_lab.dao.hibernate.CityDAO - Start finding all entities
+2024-09-04 02:32:30 INFO  com.tinkoff_lab.dao.hibernate.CityDAO - Finding ended successfully
 2024-09-04 02:32:30 INFO  c.t.service.CurrentWeatherService - Start getting current weather for city com.tinkoff_lab.entity.City@d778666d
 2024-09-04 02:32:30 INFO  c.t.service.CurrentWeatherService - Response from Weather API received
 2024-09-04 02:32:30 INFO  c.t.service.CurrentWeatherService - Start parsing Weather API response
@@ -718,8 +718,8 @@
 2024-09-04 02:34:34 INFO  c.tinkoff_lab.TinkoffLabApplication - No active profile set, falling back to 1 default profile: "default"
 2024-09-04 02:34:40 INFO  c.tinkoff_lab.TinkoffLabApplication - Started TinkoffLabApplication in 6.585 seconds (process running for 7.654)
 2024-09-04 02:34:40 INFO  c.t.service.NotificationService - Start notifying all subscribers
-2024-09-04 02:34:40 INFO  com.tinkoff_lab.dao.CityDAO - Start finding all entities
-2024-09-04 02:34:40 INFO  com.tinkoff_lab.dao.CityDAO - Finding ended successfully
+2024-09-04 02:34:40 INFO  com.tinkoff_lab.dao.hibernate.CityDAO - Start finding all entities
+2024-09-04 02:34:40 INFO  com.tinkoff_lab.dao.hibernate.CityDAO - Finding ended successfully
 2024-09-04 02:34:40 INFO  c.t.service.CurrentWeatherService - Start getting current weather for city com.tinkoff_lab.entity.City@d778666d
 2024-09-04 02:34:41 INFO  c.t.service.CurrentWeatherService - Response from Weather API received
 2024-09-04 02:34:41 INFO  c.t.service.CurrentWeatherService - Start parsing Weather API response
@@ -743,8 +743,8 @@
 2024-09-04 02:36:31 INFO  c.tinkoff_lab.TinkoffLabApplication - No active profile set, falling back to 1 default profile: "default"
 2024-09-04 02:36:36 INFO  c.tinkoff_lab.TinkoffLabApplication - Started TinkoffLabApplication in 5.457 seconds (process running for 6.311)
 2024-09-04 02:36:36 INFO  c.t.service.NotificationService - Start notifying all subscribers
-2024-09-04 02:36:36 INFO  com.tinkoff_lab.dao.CityDAO - Start finding all entities
-2024-09-04 02:36:36 INFO  com.tinkoff_lab.dao.CityDAO - Finding ended successfully
+2024-09-04 02:36:36 INFO  com.tinkoff_lab.dao.hibernate.CityDAO - Start finding all entities
+2024-09-04 02:36:36 INFO  com.tinkoff_lab.dao.hibernate.CityDAO - Finding ended successfully
 2024-09-04 02:36:36 INFO  c.t.service.CurrentWeatherService - Start getting current weather for city com.tinkoff_lab.entity.City@d778666d
 2024-09-04 02:36:37 INFO  c.t.service.CurrentWeatherService - Response from Weather API received
 2024-09-04 02:36:37 INFO  c.t.service.CurrentWeatherService - Start parsing Weather API response
@@ -768,8 +768,8 @@
 2024-09-04 02:37:26 INFO  c.tinkoff_lab.TinkoffLabApplication - No active profile set, falling back to 1 default profile: "default"
 2024-09-04 02:37:32 INFO  c.tinkoff_lab.TinkoffLabApplication - Started TinkoffLabApplication in 6.084 seconds (process running for 7.039)
 2024-09-04 02:37:32 INFO  c.t.service.NotificationService - Start notifying all subscribers
-2024-09-04 02:37:32 INFO  com.tinkoff_lab.dao.CityDAO - Start finding all entities
-2024-09-04 02:37:32 INFO  com.tinkoff_lab.dao.CityDAO - Finding ended successfully
+2024-09-04 02:37:32 INFO  com.tinkoff_lab.dao.hibernate.CityDAO - Start finding all entities
+2024-09-04 02:37:32 INFO  com.tinkoff_lab.dao.hibernate.CityDAO - Finding ended successfully
 2024-09-04 02:37:32 INFO  c.t.service.CurrentWeatherService - Start getting current weather for city com.tinkoff_lab.entity.City@d778666d
 2024-09-04 02:37:33 INFO  c.t.service.CurrentWeatherService - Response from Weather API received
 2024-09-04 02:37:33 INFO  c.t.service.CurrentWeatherService - Start parsing Weather API response
@@ -793,8 +793,8 @@
 2024-09-04 02:47:15 INFO  c.tinkoff_lab.TinkoffLabApplication - No active profile set, falling back to 1 default profile: "default"
 2024-09-04 02:47:21 INFO  c.tinkoff_lab.TinkoffLabApplication - Started TinkoffLabApplication in 6.766 seconds (process running for 8.433)
 2024-09-04 02:47:21 INFO  c.t.service.NotificationService - Start notifying all subscribers
-2024-09-04 02:47:21 INFO  com.tinkoff_lab.dao.CityDAO - Start finding all entities
-2024-09-04 02:47:22 INFO  com.tinkoff_lab.dao.CityDAO - Finding ended successfully
+2024-09-04 02:47:21 INFO  com.tinkoff_lab.dao.hibernate.CityDAO - Start finding all entities
+2024-09-04 02:47:22 INFO  com.tinkoff_lab.dao.hibernate.CityDAO - Finding ended successfully
 2024-09-04 02:47:22 INFO  c.t.service.CurrentWeatherService - Start getting current weather for city com.tinkoff_lab.entity.City@d778666d
 2024-09-04 02:47:22 INFO  c.t.service.CurrentWeatherService - Response from Weather API received
 2024-09-04 02:47:22 INFO  c.t.service.CurrentWeatherService - Start parsing Weather API response
@@ -812,8 +812,8 @@
 2024-09-04 02:47:25 INFO  c.t.service.CurrentWeatherService - Start parsing Weather API response
 2024-09-04 02:47:25 INFO  c.t.service.CurrentWeatherService - Parsing ended successfully
 2024-09-04 02:47:51 INFO  c.t.service.NotificationService - Start notifying all subscribers
-2024-09-04 02:47:51 INFO  com.tinkoff_lab.dao.CityDAO - Start finding all entities
-2024-09-04 02:47:51 INFO  com.tinkoff_lab.dao.CityDAO - Finding ended successfully
+2024-09-04 02:47:51 INFO  com.tinkoff_lab.dao.hibernate.CityDAO - Start finding all entities
+2024-09-04 02:47:51 INFO  com.tinkoff_lab.dao.hibernate.CityDAO - Finding ended successfully
 2024-09-04 02:47:51 INFO  c.t.service.CurrentWeatherService - Start getting current weather for city com.tinkoff_lab.entity.City@d778666d
 2024-09-04 02:47:51 INFO  c.t.service.CurrentWeatherService - Response from Weather API received
 2024-09-04 02:47:51 INFO  c.t.service.CurrentWeatherService - Start parsing Weather API response
@@ -831,8 +831,8 @@
 2024-09-04 02:47:54 INFO  c.t.service.CurrentWeatherService - Start parsing Weather API response
 2024-09-04 02:47:54 INFO  c.t.service.CurrentWeatherService - Parsing ended successfully
 2024-09-04 02:48:21 INFO  c.t.service.NotificationService - Start notifying all subscribers
-2024-09-04 02:48:21 INFO  com.tinkoff_lab.dao.CityDAO - Start finding all entities
-2024-09-04 02:48:21 INFO  com.tinkoff_lab.dao.CityDAO - Finding ended successfully
+2024-09-04 02:48:21 INFO  com.tinkoff_lab.dao.hibernate.CityDAO - Start finding all entities
+2024-09-04 02:48:21 INFO  com.tinkoff_lab.dao.hibernate.CityDAO - Finding ended successfully
 2024-09-04 02:48:21 INFO  c.t.service.CurrentWeatherService - Start getting current weather for city com.tinkoff_lab.entity.City@d778666d
 2024-09-04 02:48:21 INFO  c.t.service.CurrentWeatherService - Response from Weather API received
 2024-09-04 02:48:21 INFO  c.t.service.CurrentWeatherService - Start parsing Weather API response
@@ -856,14 +856,14 @@
 2024-09-04 23:48:24 INFO  c.tinkoff_lab.TinkoffLabApplication - No active profile set, falling back to 1 default profile: "default"
 2024-09-04 23:48:30 INFO  c.tinkoff_lab.TinkoffLabApplication - Started TinkoffLabApplication in 7.118 seconds (process running for 9.117)
 2024-09-04 23:48:30 INFO  c.t.service.NotificationService - Start notifying all subscribers
-2024-09-04 23:48:30 INFO  com.tinkoff_lab.dao.CityDAO - Start finding all entities
-2024-09-04 23:48:31 INFO  com.tinkoff_lab.dao.CityDAO - Finding ended successfully
+2024-09-04 23:48:30 INFO  com.tinkoff_lab.dao.hibernate.CityDAO - Start finding all entities
+2024-09-04 23:48:31 INFO  com.tinkoff_lab.dao.hibernate.CityDAO - Finding ended successfully
 2024-09-04 23:48:31 INFO  c.t.service.NotificationService - Handling city com.tinkoff_lab.entity.City@d778666d
 2024-09-04 23:48:31 INFO  c.t.service.CurrentWeatherService - Start getting current weather for city com.tinkoff_lab.entity.City@d778666d
-2024-09-04 23:48:31 INFO  com.tinkoff_lab.dao.UserDAO - Start finding entity with id {
+2024-09-04 23:48:31 INFO  com.tinkoff_lab.dao.hibernate.UserDAO - Start finding entity with id {
     "email": "ektogod@gmail.com"
 }
-2024-09-04 23:48:31 INFO  com.tinkoff_lab.dao.UserDAO - Finding of entity with id {
+2024-09-04 23:48:31 INFO  com.tinkoff_lab.dao.hibernate.UserDAO - Finding of entity with id {
     "email": "ektogod@gmail.com"
 } ended successfully
 2024-09-04 23:48:31 INFO  c.t.service.CurrentWeatherService - Response from Weather API received
@@ -889,10 +889,10 @@
 2024-09-04 23:48:34 INFO  c.t.service.CurrentWeatherService - Start parsing Weather API response
 2024-09-04 23:48:34 INFO  c.t.service.CurrentWeatherService - Parsing ended successfully
 2024-09-04 23:48:34 INFO  c.t.service.NotificationService - All users were notified
-2024-09-04 23:48:42 INFO  com.tinkoff_lab.dao.UserDAO - Start finding entity with id {
+2024-09-04 23:48:42 INFO  com.tinkoff_lab.dao.hibernate.UserDAO - Start finding entity with id {
     "email": "ektogod@gmail.com"
 }
-2024-09-04 23:48:43 INFO  com.tinkoff_lab.dao.UserDAO - Finding of entity with id {
+2024-09-04 23:48:43 INFO  com.tinkoff_lab.dao.hibernate.UserDAO - Finding of entity with id {
     "email": "ektogod@gmail.com"
 } ended successfully
 2024-09-04 23:49:37 INFO  c.tinkoff_lab.TinkoffLabApplication - Application has terminated working
@@ -902,8 +902,8 @@
 2024-09-04 23:49:48 INFO  c.tinkoff_lab.TinkoffLabApplication - No active profile set, falling back to 1 default profile: "default"
 2024-09-04 23:49:54 INFO  c.tinkoff_lab.TinkoffLabApplication - Started TinkoffLabApplication in 6.509 seconds (process running for 8.408)
 2024-09-04 23:49:54 INFO  c.t.service.NotificationService - Start notifying all subscribers
-2024-09-04 23:49:54 INFO  com.tinkoff_lab.dao.CityDAO - Start finding all entities
-2024-09-04 23:49:54 INFO  com.tinkoff_lab.dao.CityDAO - Finding ended successfully
+2024-09-04 23:49:54 INFO  com.tinkoff_lab.dao.hibernate.CityDAO - Start finding all entities
+2024-09-04 23:49:54 INFO  com.tinkoff_lab.dao.hibernate.CityDAO - Finding ended successfully
 2024-09-04 23:49:54 INFO  c.t.service.NotificationService - Handling city com.tinkoff_lab.entity.City@d778666d
 2024-09-04 23:49:54 INFO  c.t.service.CurrentWeatherService - Start getting current weather for city com.tinkoff_lab.entity.City@d778666d
 2024-09-04 23:49:55 INFO  c.t.service.CurrentWeatherService - Response from Weather API received
@@ -928,15 +928,15 @@
 2024-09-04 23:50:28 INFO  c.tinkoff_lab.TinkoffLabApplication - Starting TinkoffLabApplication using Java 21.0.1 with PID 19060 (C:\Users\Nikita\IdeaProjects\pet-project\target\classes started by Nikita in C:\Users\Nikita\IdeaProjects\pet-project)
 2024-09-04 23:50:28 INFO  c.tinkoff_lab.TinkoffLabApplication - No active profile set, falling back to 1 default profile: "default"
 2024-09-04 23:50:34 INFO  c.tinkoff_lab.TinkoffLabApplication - Started TinkoffLabApplication in 6.213 seconds (process running for 7.304)
-2024-09-04 23:50:39 INFO  com.tinkoff_lab.dao.UserDAO - Start finding entity with id {
+2024-09-04 23:50:39 INFO  com.tinkoff_lab.dao.hibernate.UserDAO - Start finding entity with id {
     "email": "ektogod@gmail.com"
 }
-2024-09-04 23:50:39 INFO  com.tinkoff_lab.dao.UserDAO - Finding of entity with id {
+2024-09-04 23:50:39 INFO  com.tinkoff_lab.dao.hibernate.UserDAO - Finding of entity with id {
     "email": "ektogod@gmail.com"
 } ended successfully
-2024-09-04 23:51:06 INFO  com.tinkoff_lab.dao.UserDAO - Start finding entity with id {
+2024-09-04 23:51:06 INFO  com.tinkoff_lab.dao.hibernate.UserDAO - Start finding entity with id {
     "email": "ektogod@gmail.com"
 }
-2024-09-04 23:51:06 INFO  com.tinkoff_lab.dao.UserDAO - Finding of entity with id {
+2024-09-04 23:51:06 INFO  com.tinkoff_lab.dao.hibernate.UserDAO - Finding of entity with id {
     "email": "ektogod@gmail.com"
 } ended successfully

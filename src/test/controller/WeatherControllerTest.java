@@ -3,9 +3,9 @@ package controller;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.tinkoff_lab.TinkoffLabApplication;
 import com.tinkoff_lab.dto.weather.CityDTO;
-import com.tinkoff_lab.dto.weather.request.EmailCitiesRequest;
-import com.tinkoff_lab.dto.weather.request.EmailRequest;
-import com.tinkoff_lab.dto.weather.request.WeatherRequest;
+import com.tinkoff_lab.dto.weather.request.email.EmailCitiesRequest;
+import com.tinkoff_lab.dto.weather.request.email.EmailRequest;
+import com.tinkoff_lab.dto.weather.request.email.WeatherEmailRequest;
 import com.tinkoff_lab.entity.City;
 import com.tinkoff_lab.entity.CityPK;
 import com.tinkoff_lab.entity.User;
@@ -123,7 +123,7 @@ public class WeatherControllerTest {
     @Test
     void testWithSubscribeChecking() throws Exception {
         List<CityDTO> cities = List.of(new CityDTO("Minsk", "Belarus"), new CityDTO("Grodno", "Belarus"));
-        WeatherRequest request = new WeatherRequest("ektogod@gmail.com", "ektogod", cities);
+        WeatherEmailRequest request = new WeatherEmailRequest("ektogod@gmail.com", "ektogod", cities);
         post(request, "", 201);
 
         User user = new User("ektogod@gmail.com", "ektogod");
@@ -224,15 +224,15 @@ public class WeatherControllerTest {
     @Test
     void testWithWrongWeatherRequestChecking() throws Exception {
         List<CityDTO> citiesWithWrongCountry = List.of(new CityDTO("Minsk", "Belraus"));
-        WeatherRequest request = new WeatherRequest("ektogod@mail.ru", "ektogod", citiesWithWrongCountry);
+        WeatherEmailRequest request = new WeatherEmailRequest("ektogod@mail.ru", "ektogod", citiesWithWrongCountry);
         post(request, "Something wrong with country: code not defined", 400);
 
         List<CityDTO> citiesWithWrongLocation = List.of(new CityDTO("Asjlas", "Belarus"));
-        WeatherRequest request2 = new WeatherRequest("ektodog@mail.ru", "ektogod", citiesWithWrongLocation);
+        WeatherEmailRequest request2 = new WeatherEmailRequest("ektodog@mail.ru", "ektogod", citiesWithWrongLocation);
         post(request2, "Something wrong with location. Coordinates not defined", 400);
     }
 
-    void post(WeatherRequest request, String response, int status) throws Exception {
+    void post(WeatherEmailRequest request, String response, int status) throws Exception {
         mockMvc.perform(MockMvcRequestBuilders.post("/ektogod/weather/subscribe")
                         .contentType("application/json")
                         .characterEncoding("UTF-8")
