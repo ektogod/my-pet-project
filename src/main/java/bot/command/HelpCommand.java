@@ -1,7 +1,7 @@
 package bot.command;
 
-import bot.CurrentState;
-import bot.States;
+import bot.states.CurrentState;
+import bot.states.States;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.telegram.telegrambots.meta.api.objects.Chat;
@@ -29,9 +29,11 @@ public class HelpCommand extends Command {
                 
                 /subscribe --> this command subscribes you to notification about current weather in cities.
                 
-                /unsubscribe --> this command unsubscribes you from notification.
+                /unsubscribe --> this command removes all cities from your tracked list.
                 
-                /get --> this command returns you the list of your cities.""";
+                /get --> this command returns you the list of your cities.
+                
+                /delete --> this command removes specified cities from your tracked list.""";
         sendMsg(absSender, chat.getId(), infoMsg);
     }
 }

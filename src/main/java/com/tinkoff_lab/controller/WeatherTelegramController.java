@@ -30,12 +30,6 @@ public class WeatherTelegramController {
         return new ResponseEntity<>("Unsubscribing ended successfully.", HttpStatusCode.valueOf(200));
     }
 
-    @PutMapping("/add")
-    public ResponseEntity<String> addCity(@RequestBody TelegramCitiesRequest request){
-        weatherService.addCity(request);
-        return new ResponseEntity<>("Adding cities ended successfully.", HttpStatusCode.valueOf(200));
-    }
-
     @GetMapping("/get")
     public ResponseEntity<List<CityPK>> getCities(@RequestBody TelegramRequest request){
         List<CityPK> cityPKS = weatherService.getCities(request);

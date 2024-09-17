@@ -12,8 +12,6 @@ public interface WeatherTelegramService {
 
     void deleteUser(TelegramRequest email);
 
-    void addCity(TelegramCitiesRequest request);
-
     List<CityPK> getCities(TelegramRequest email);
 
     void deleteCities(TelegramCitiesRequest request);

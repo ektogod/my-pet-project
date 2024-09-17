@@ -1,4 +1,4 @@
-package bot;
+package bot.states;
 
 import org.springframework.beans.factory.annotation.Autowired;
 

@@ -1,6 +1,6 @@
 package bot.config;
 
-import bot.Bot;
+import bot.bot.Bot;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.event.ContextRefreshedEvent;
 import org.springframework.context.event.EventListener;

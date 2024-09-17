@@ -1,5 +1,6 @@
-package bot;
+package bot.bot;
 
+import bot.UpdateProcessor;
 import bot.command.*;
 import bot.config.BotConfig;
 import jakarta.annotation.PostConstruct;

@@ -42,7 +42,7 @@ public class WeatherTelegramServiceImpl implements WeatherTelegramService {
     public void add(WeatherTelegramRequest request) {
         logger.info("Start adding user with username {} and cities {} to database", request.username(), request.cities());
         TelegramUser user = tgUserRep.findByID(request.chatId());
-        if (tgUserRep.findByID(user.getChatId()) == null) {
+        if (user == null) {
             user = new TelegramUser(
                     request.chatId(),
                     request.username(),
@@ -79,26 +79,6 @@ public class WeatherTelegramServiceImpl implements WeatherTelegramService {
         }
         tgUserRep.delete(user.getChatId());
         logger.info("Deleting user with username {} ended successfully", request.username());
-    }
-
-    @Override
-    public void addCity(TelegramCitiesRequest request) {
-        logger.info("Start adding cities {} to user with username {}", request.cities(), request.username());
-        TelegramUser user = tgUserRep.findByID(request.chatId());
-        if (user == null) {
-            logger.warn("Deleting user with username {} went wrong: user not found", request.username());
-            throw new EntityNotFoundException("User not found");
-        }
-
-        for (CityDTO cityDTO : request.cities()) {
-            Coordinates crd = definer.getCoordinates(cityDTO.city(), cityDTO.country()); // throws exception if something incorrect
-
-            CityPK pk = new CityPK(cityDTO.city(), cityDTO.country());
-            City city = new City(pk, crd.latitude(), crd.longitude());
-            cityDAO.update(city);
-            tgUserCityDAO.addTelegramUserCity(user, city);
-        }
-        logger.info("Adding cities {} to user with email {} ended successfully", request.cities(), request.username());
     }
 
     @Override

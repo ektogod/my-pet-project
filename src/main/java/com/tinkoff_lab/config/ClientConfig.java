@@ -1,9 +1,6 @@
 package com.tinkoff_lab.config;
 
-import com.tinkoff_lab.client.CoordinateClient;
-import com.tinkoff_lab.client.IPClient;
-import com.tinkoff_lab.client.TranslationClient;
-import com.tinkoff_lab.client.WeatherClient;
+import com.tinkoff_lab.client.*;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -15,7 +12,7 @@ import org.springframework.web.service.invoker.HttpServiceProxyFactory;
 @Configuration
 @PropertySource("classpath:application.properties")
 @RequiredArgsConstructor
-public class RestConfig {
+public class ClientConfig {
     private final AppConfig config;
 
     @Bean
@@ -68,5 +65,18 @@ public class RestConfig {
                 .build();
 
         return factory.createClient(IPClient.class);
+    }
+
+    @Bean
+    public TelegramClient telegramClient() {
+        RestClient restClient = RestClient.builder()
+                .baseUrl("http://localhost:8081/ektogod")
+                .build();
+
+        HttpServiceProxyFactory factory = HttpServiceProxyFactory
+                .builderFor(RestClientAdapter.create(restClient))
+                .build();
+
+        return factory.createClient(TelegramClient.class);
     }
 }

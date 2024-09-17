@@ -1,7 +1,7 @@
 package bot.command;
 
-import bot.CurrentState;
-import bot.States;
+import bot.states.CurrentState;
+import bot.states.States;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.telegram.telegrambots.meta.api.objects.Chat;

@@ -1,17 +1,13 @@
 package bot;
 
-import bot.client.TranslationClient;
-import bot.dto.TranslationResponse;
+import bot.bot.Bot;
 import bot.external.DeleteHandler;
 import bot.external.SubscribeHandler;
 import bot.external.TranslationHandler;
-import com.tinkoff_lab.dto.translation.requests.UserRequest;
-import lombok.AccessLevel;
+import bot.states.CurrentState;
+import bot.states.States;
 import lombok.RequiredArgsConstructor;
 import lombok.Setter;
-import lombok.experimental.FieldDefaults;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Component;
 import org.telegram.telegrambots.meta.api.objects.Update;
 
