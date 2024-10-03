@@ -184,36 +184,36 @@
 2024-09-04 01:12:08 INFO  c.t.service.CurrentWeatherService - Response from Weather API received
 2024-09-04 01:12:08 INFO  c.t.service.CurrentWeatherService - Start parsing Weather API response
 2024-09-04 01:12:08 INFO  c.t.service.CurrentWeatherService - Parsing ended successfully
-2024-09-04 01:12:18 INFO  c.t.s.weather.WeatherServiceImpl - Start deleting user with email ektogod@mail.ru
-2024-09-04 01:12:18 INFO  com.tinkoff_lab.dao.hibernate.UserDAO - Start finding entity with id ektogod@mail.ru
-2024-09-04 01:12:18 INFO  com.tinkoff_lab.dao.hibernate.UserDAO - Finding of entity with id ektogod@mail.ru ended successfully
-2024-09-04 01:12:18 INFO  com.tinkoff_lab.dao.hibernate.UserCityDAO - Start removing UserCity where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@ff21bcf0
-2024-09-04 01:12:18 INFO  com.tinkoff_lab.dao.hibernate.UserCityDAO - Removing UserCity where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@ff21bcf0 went wrong
-2024-09-04 01:12:32 INFO  c.t.s.weather.WeatherServiceImpl - Start deleting user with email ektogod@mail.ru
-2024-09-04 01:12:32 INFO  com.tinkoff_lab.dao.hibernate.UserDAO - Start finding entity with id ektogod@mail.ru
-2024-09-04 01:12:32 INFO  com.tinkoff_lab.dao.hibernate.UserDAO - Finding of entity with id ektogod@mail.ru ended successfully
-2024-09-04 01:12:32 INFO  com.tinkoff_lab.dao.hibernate.UserCityDAO - Start removing UserCity where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@ff21bcf0
-2024-09-04 01:12:32 INFO  com.tinkoff_lab.dao.hibernate.UserCityDAO - Removing UserCity where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@ff21bcf0 went wrong
-2024-09-04 01:12:33 INFO  c.t.s.weather.WeatherServiceImpl - Start deleting user with email ektogod@mail.ru
-2024-09-04 01:12:33 INFO  com.tinkoff_lab.dao.hibernate.UserDAO - Start finding entity with id ektogod@mail.ru
-2024-09-04 01:12:33 INFO  com.tinkoff_lab.dao.hibernate.UserDAO - Finding of entity with id ektogod@mail.ru ended successfully
-2024-09-04 01:12:33 INFO  com.tinkoff_lab.dao.hibernate.UserCityDAO - Start removing UserCity where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@ff21bcf0
-2024-09-04 01:12:33 INFO  com.tinkoff_lab.dao.hibernate.UserCityDAO - Removing UserCity where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@ff21bcf0 went wrong
-2024-09-04 01:12:34 INFO  c.t.s.weather.WeatherServiceImpl - Start deleting user with email ektogod@mail.ru
-2024-09-04 01:12:34 INFO  com.tinkoff_lab.dao.hibernate.UserDAO - Start finding entity with id ektogod@mail.ru
-2024-09-04 01:12:34 INFO  com.tinkoff_lab.dao.hibernate.UserDAO - Finding of entity with id ektogod@mail.ru ended successfully
-2024-09-04 01:12:34 INFO  com.tinkoff_lab.dao.hibernate.UserCityDAO - Start removing UserCity where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@ff21bcf0
-2024-09-04 01:12:34 INFO  com.tinkoff_lab.dao.hibernate.UserCityDAO - Removing UserCity where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@ff21bcf0 went wrong
-2024-09-04 01:12:35 INFO  c.t.s.weather.WeatherServiceImpl - Start deleting user with email ektogod@mail.ru
-2024-09-04 01:12:35 INFO  com.tinkoff_lab.dao.hibernate.UserDAO - Start finding entity with id ektogod@mail.ru
-2024-09-04 01:12:35 INFO  com.tinkoff_lab.dao.hibernate.UserDAO - Finding of entity with id ektogod@mail.ru ended successfully
-2024-09-04 01:12:35 INFO  com.tinkoff_lab.dao.hibernate.UserCityDAO - Start removing UserCity where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@ff21bcf0
-2024-09-04 01:12:35 INFO  com.tinkoff_lab.dao.hibernate.UserCityDAO - Removing UserCity where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@ff21bcf0 went wrong
-2024-09-04 01:12:36 INFO  c.t.s.weather.WeatherServiceImpl - Start deleting user with email ektogod@mail.ru
-2024-09-04 01:12:36 INFO  com.tinkoff_lab.dao.hibernate.UserDAO - Start finding entity with id ektogod@mail.ru
-2024-09-04 01:12:36 INFO  com.tinkoff_lab.dao.hibernate.UserDAO - Finding of entity with id ektogod@mail.ru ended successfully
-2024-09-04 01:12:36 INFO  com.tinkoff_lab.dao.hibernate.UserCityDAO - Start removing UserCity where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@ff21bcf0
-2024-09-04 01:12:36 INFO  com.tinkoff_lab.dao.hibernate.UserCityDAO - Removing UserCity where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@ff21bcf0 went wrong
+2024-09-04 01:12:18 INFO  c.t.s.weather.WeatherServiceImpl - Start deleting email with email ektogod@mail.ru
+2024-09-04 01:12:18 INFO  com.tinkoff_lab.dao.hibernate.EmailDAO - Start finding entity with id ektogod@mail.ru
+2024-09-04 01:12:18 INFO  com.tinkoff_lab.dao.hibernate.EmailDAO - Finding of entity with id ektogod@mail.ru ended successfully
+2024-09-04 01:12:18 INFO  com.tinkoff_lab.dao.hibernate.EmailCityDAO - Start removing UserCity where User: com.tinkoff_lab.entity.Email@ff6d48eb, City: com.tinkoff_lab.entity.City@ff21bcf0
+2024-09-04 01:12:18 INFO  com.tinkoff_lab.dao.hibernate.EmailCityDAO - Removing UserCity where User: com.tinkoff_lab.entity.Email@ff6d48eb, City: com.tinkoff_lab.entity.City@ff21bcf0 went wrong
+2024-09-04 01:12:32 INFO  c.t.s.weather.WeatherServiceImpl - Start deleting email with email ektogod@mail.ru
+2024-09-04 01:12:32 INFO  com.tinkoff_lab.dao.hibernate.EmailDAO - Start finding entity with id ektogod@mail.ru
+2024-09-04 01:12:32 INFO  com.tinkoff_lab.dao.hibernate.EmailDAO - Finding of entity with id ektogod@mail.ru ended successfully
+2024-09-04 01:12:32 INFO  com.tinkoff_lab.dao.hibernate.EmailCityDAO - Start removing UserCity where User: com.tinkoff_lab.entity.Email@ff6d48eb, City: com.tinkoff_lab.entity.City@ff21bcf0
+2024-09-04 01:12:32 INFO  com.tinkoff_lab.dao.hibernate.EmailCityDAO - Removing UserCity where User: com.tinkoff_lab.entity.Email@ff6d48eb, City: com.tinkoff_lab.entity.City@ff21bcf0 went wrong
+2024-09-04 01:12:33 INFO  c.t.s.weather.WeatherServiceImpl - Start deleting email with email ektogod@mail.ru
+2024-09-04 01:12:33 INFO  com.tinkoff_lab.dao.hibernate.EmailDAO - Start finding entity with id ektogod@mail.ru
+2024-09-04 01:12:33 INFO  com.tinkoff_lab.dao.hibernate.EmailDAO - Finding of entity with id ektogod@mail.ru ended successfully
+2024-09-04 01:12:33 INFO  com.tinkoff_lab.dao.hibernate.EmailCityDAO - Start removing UserCity where User: com.tinkoff_lab.entity.Email@ff6d48eb, City: com.tinkoff_lab.entity.City@ff21bcf0
+2024-09-04 01:12:33 INFO  com.tinkoff_lab.dao.hibernate.EmailCityDAO - Removing UserCity where User: com.tinkoff_lab.entity.Email@ff6d48eb, City: com.tinkoff_lab.entity.City@ff21bcf0 went wrong
+2024-09-04 01:12:34 INFO  c.t.s.weather.WeatherServiceImpl - Start deleting email with email ektogod@mail.ru
+2024-09-04 01:12:34 INFO  com.tinkoff_lab.dao.hibernate.EmailDAO - Start finding entity with id ektogod@mail.ru
+2024-09-04 01:12:34 INFO  com.tinkoff_lab.dao.hibernate.EmailDAO - Finding of entity with id ektogod@mail.ru ended successfully
+2024-09-04 01:12:34 INFO  com.tinkoff_lab.dao.hibernate.EmailCityDAO - Start removing UserCity where User: com.tinkoff_lab.entity.Email@ff6d48eb, City: com.tinkoff_lab.entity.City@ff21bcf0
+2024-09-04 01:12:34 INFO  com.tinkoff_lab.dao.hibernate.EmailCityDAO - Removing UserCity where User: com.tinkoff_lab.entity.Email@ff6d48eb, City: com.tinkoff_lab.entity.City@ff21bcf0 went wrong
+2024-09-04 01:12:35 INFO  c.t.s.weather.WeatherServiceImpl - Start deleting email with email ektogod@mail.ru
+2024-09-04 01:12:35 INFO  com.tinkoff_lab.dao.hibernate.EmailDAO - Start finding entity with id ektogod@mail.ru
+2024-09-04 01:12:35 INFO  com.tinkoff_lab.dao.hibernate.EmailDAO - Finding of entity with id ektogod@mail.ru ended successfully
+2024-09-04 01:12:35 INFO  com.tinkoff_lab.dao.hibernate.EmailCityDAO - Start removing UserCity where User: com.tinkoff_lab.entity.Email@ff6d48eb, City: com.tinkoff_lab.entity.City@ff21bcf0
+2024-09-04 01:12:35 INFO  com.tinkoff_lab.dao.hibernate.EmailCityDAO - Removing UserCity where User: com.tinkoff_lab.entity.Email@ff6d48eb, City: com.tinkoff_lab.entity.City@ff21bcf0 went wrong
+2024-09-04 01:12:36 INFO  c.t.s.weather.WeatherServiceImpl - Start deleting email with email ektogod@mail.ru
+2024-09-04 01:12:36 INFO  com.tinkoff_lab.dao.hibernate.EmailDAO - Start finding entity with id ektogod@mail.ru
+2024-09-04 01:12:36 INFO  com.tinkoff_lab.dao.hibernate.EmailDAO - Finding of entity with id ektogod@mail.ru ended successfully
+2024-09-04 01:12:36 INFO  com.tinkoff_lab.dao.hibernate.EmailCityDAO - Start removing UserCity where User: com.tinkoff_lab.entity.Email@ff6d48eb, City: com.tinkoff_lab.entity.City@ff21bcf0
+2024-09-04 01:12:36 INFO  com.tinkoff_lab.dao.hibernate.EmailCityDAO - Removing UserCity where User: com.tinkoff_lab.entity.Email@ff6d48eb, City: com.tinkoff_lab.entity.City@ff21bcf0 went wrong
 2024-09-04 01:12:38 INFO  c.t.service.NotificationService - Start notifying all subscribers
 2024-09-04 01:12:38 INFO  com.tinkoff_lab.dao.hibernate.CityDAO - Start finding all entities
 2024-09-04 01:12:38 INFO  com.tinkoff_lab.dao.hibernate.CityDAO - Finding ended successfully
@@ -258,24 +258,24 @@
 2024-09-04 01:13:38 INFO  c.t.service.CurrentWeatherService - Response from Weather API received
 2024-09-04 01:13:38 INFO  c.t.service.CurrentWeatherService - Start parsing Weather API response
 2024-09-04 01:13:38 INFO  c.t.service.CurrentWeatherService - Parsing ended successfully
-2024-09-04 01:13:39 INFO  c.t.s.weather.WeatherServiceImpl - Start deleting user with email ektogod@mail.ru
-2024-09-04 01:13:39 INFO  com.tinkoff_lab.dao.hibernate.UserDAO - Start finding entity with id ektogod@mail.ru
-2024-09-04 01:13:39 INFO  com.tinkoff_lab.dao.hibernate.UserDAO - Finding of entity with id ektogod@mail.ru ended successfully
-2024-09-04 01:13:39 INFO  com.tinkoff_lab.dao.hibernate.UserCityDAO - Start removing UserCity where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@ff21bcf0
-2024-09-04 01:13:39 INFO  com.tinkoff_lab.dao.hibernate.UserCityDAO - Removing UserCity where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@ff21bcf0 ended successfully
-2024-09-04 01:13:41 INFO  c.t.s.weather.WeatherServiceImpl - Start deleting user with email ektogod@mail.ru
-2024-09-04 01:13:41 INFO  com.tinkoff_lab.dao.hibernate.UserDAO - Start finding entity with id ektogod@mail.ru
-2024-09-04 01:13:41 INFO  com.tinkoff_lab.dao.hibernate.UserDAO - Finding of entity with id ektogod@mail.ru ended successfully
-2024-09-04 01:13:41 INFO  com.tinkoff_lab.dao.hibernate.UserCityDAO - Start removing UserCity where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@a50b17b9
-2024-09-04 01:13:41 INFO  com.tinkoff_lab.dao.hibernate.UserCityDAO - Removing UserCity where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@a50b17b9 ended successfully
-2024-09-04 01:13:42 INFO  c.t.s.weather.WeatherServiceImpl - Start deleting user with email ektogod@mail.ru
-2024-09-04 01:13:42 INFO  com.tinkoff_lab.dao.hibernate.UserDAO - Start finding entity with id ektogod@mail.ru
-2024-09-04 01:13:42 INFO  com.tinkoff_lab.dao.hibernate.UserDAO - Finding of entity with id ektogod@mail.ru ended successfully
-2024-09-04 01:13:42 INFO  com.tinkoff_lab.dao.hibernate.UserCityDAO - Start removing UserCity where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@d2f87f10
-2024-09-04 01:13:42 INFO  com.tinkoff_lab.dao.hibernate.UserCityDAO - Removing UserCity where User: com.tinkoff_lab.entity.User@ff6d48eb, City: com.tinkoff_lab.entity.City@d2f87f10 ended successfully
-2024-09-04 01:13:42 INFO  com.tinkoff_lab.dao.hibernate.UserDAO - Start removing entity with id ektogod@mail.ru
-2024-09-04 01:13:42 INFO  com.tinkoff_lab.dao.hibernate.UserDAO - Removing entity with id ektogod@mail.ru ended successfully
-2024-09-04 01:13:42 INFO  c.t.s.weather.WeatherServiceImpl - Deleting user with email ektogod@mail.ru ended successfully
+2024-09-04 01:13:39 INFO  c.t.s.weather.WeatherServiceImpl - Start deleting email with email ektogod@mail.ru
+2024-09-04 01:13:39 INFO  com.tinkoff_lab.dao.hibernate.EmailDAO - Start finding entity with id ektogod@mail.ru
+2024-09-04 01:13:39 INFO  com.tinkoff_lab.dao.hibernate.EmailDAO - Finding of entity with id ektogod@mail.ru ended successfully
+2024-09-04 01:13:39 INFO  com.tinkoff_lab.dao.hibernate.EmailCityDAO - Start removing UserCity where User: com.tinkoff_lab.entity.Email@ff6d48eb, City: com.tinkoff_lab.entity.City@ff21bcf0
+2024-09-04 01:13:39 INFO  com.tinkoff_lab.dao.hibernate.EmailCityDAO - Removing UserCity where User: com.tinkoff_lab.entity.Email@ff6d48eb, City: com.tinkoff_lab.entity.City@ff21bcf0 ended successfully
+2024-09-04 01:13:41 INFO  c.t.s.weather.WeatherServiceImpl - Start deleting email with email ektogod@mail.ru
+2024-09-04 01:13:41 INFO  com.tinkoff_lab.dao.hibernate.EmailDAO - Start finding entity with id ektogod@mail.ru
+2024-09-04 01:13:41 INFO  com.tinkoff_lab.dao.hibernate.EmailDAO - Finding of entity with id ektogod@mail.ru ended successfully
+2024-09-04 01:13:41 INFO  com.tinkoff_lab.dao.hibernate.EmailCityDAO - Start removing UserCity where User: com.tinkoff_lab.entity.Email@ff6d48eb, City: com.tinkoff_lab.entity.City@a50b17b9
+2024-09-04 01:13:41 INFO  com.tinkoff_lab.dao.hibernate.EmailCityDAO - Removing UserCity where User: com.tinkoff_lab.entity.Email@ff6d48eb, City: com.tinkoff_lab.entity.City@a50b17b9 ended successfully
+2024-09-04 01:13:42 INFO  c.t.s.weather.WeatherServiceImpl - Start deleting email with email ektogod@mail.ru
+2024-09-04 01:13:42 INFO  com.tinkoff_lab.dao.hibernate.EmailDAO - Start finding entity with id ektogod@mail.ru
+2024-09-04 01:13:42 INFO  com.tinkoff_lab.dao.hibernate.EmailDAO - Finding of entity with id ektogod@mail.ru ended successfully
+2024-09-04 01:13:42 INFO  com.tinkoff_lab.dao.hibernate.EmailCityDAO - Start removing UserCity where User: com.tinkoff_lab.entity.Email@ff6d48eb, City: com.tinkoff_lab.entity.City@d2f87f10
+2024-09-04 01:13:42 INFO  com.tinkoff_lab.dao.hibernate.EmailCityDAO - Removing UserCity where User: com.tinkoff_lab.entity.Email@ff6d48eb, City: com.tinkoff_lab.entity.City@d2f87f10 ended successfully
+2024-09-04 01:13:42 INFO  com.tinkoff_lab.dao.hibernate.EmailDAO - Start removing entity with id ektogod@mail.ru
+2024-09-04 01:13:42 INFO  com.tinkoff_lab.dao.hibernate.EmailDAO - Removing entity with id ektogod@mail.ru ended successfully
+2024-09-04 01:13:42 INFO  c.t.s.weather.WeatherServiceImpl - Deleting email with email ektogod@mail.ru ended successfully
 2024-09-04 01:14:08 INFO  c.t.service.NotificationService - Start notifying all subscribers
 2024-09-04 01:14:08 INFO  com.tinkoff_lab.dao.hibernate.CityDAO - Start finding all entities
 2024-09-04 01:14:08 INFO  com.tinkoff_lab.dao.hibernate.CityDAO - Finding ended successfully
@@ -295,28 +295,28 @@
 2024-09-04 01:14:08 INFO  c.t.service.CurrentWeatherService - Response from Weather API received
 2024-09-04 01:14:08 INFO  c.t.service.CurrentWeatherService - Start parsing Weather API response
 2024-09-04 01:14:08 INFO  c.t.service.CurrentWeatherService - Parsing ended successfully
-2024-09-04 01:14:35 INFO  c.t.s.weather.WeatherServiceImpl - Start adding user with email ektogod@gmail.com and cities [CityDTO[city=Minsk, country=Belarus], CityDTO[city=Grodno, country=Belarus]] to database
-2024-09-04 01:14:35 INFO  com.tinkoff_lab.dao.hibernate.UserDAO - Start finding entity with id ektogod@gmail.com
-2024-09-04 01:14:35 INFO  com.tinkoff_lab.dao.hibernate.UserDAO - Finding of entity with id ektogod@gmail.com ended successfully
-2024-09-04 01:14:35 INFO  com.tinkoff_lab.dao.hibernate.UserDAO - Start inserting entity: com.tinkoff_lab.entity.User@1f1beab8
-2024-09-04 01:14:35 INFO  com.tinkoff_lab.dao.hibernate.UserDAO - Inserting of entity com.tinkoff_lab.entity.User@1f1beab8 ended successfully
+2024-09-04 01:14:35 INFO  c.t.s.weather.WeatherServiceImpl - Start adding email with email ektogod@gmail.com and cities [CityDTO[city=Minsk, country=Belarus], CityDTO[city=Grodno, country=Belarus]] to database
+2024-09-04 01:14:35 INFO  com.tinkoff_lab.dao.hibernate.EmailDAO - Start finding entity with id ektogod@gmail.com
+2024-09-04 01:14:35 INFO  com.tinkoff_lab.dao.hibernate.EmailDAO - Finding of entity with id ektogod@gmail.com ended successfully
+2024-09-04 01:14:35 INFO  com.tinkoff_lab.dao.hibernate.EmailDAO - Start inserting entity: com.tinkoff_lab.entity.Email@1f1beab8
+2024-09-04 01:14:35 INFO  com.tinkoff_lab.dao.hibernate.EmailDAO - Inserting of entity com.tinkoff_lab.entity.Email@1f1beab8 ended successfully
 2024-09-04 01:14:35 INFO  c.t.s.weather.CoordinateService - Start coordinate definition for city Minsk, country Belarus
 2024-09-04 01:14:35 INFO  c.t.s.weather.CountryCodeService - Start country code definition for country: Belarus
 2024-09-04 01:14:35 INFO  c.t.s.weather.CountryCodeService - Country code definition for country Belarus ended successfully
 2024-09-04 01:14:36 INFO  c.t.s.weather.CoordinateService - Coordinate definition for city Minsk, country Belarus ended successfully
 2024-09-04 01:14:36 INFO  com.tinkoff_lab.dao.hibernate.CityDAO - Start updating entity: com.tinkoff_lab.entity.City@ff21bcf0
 2024-09-04 01:14:36 INFO  com.tinkoff_lab.dao.hibernate.CityDAO - Updating entity com.tinkoff_lab.entity.City@ff21bcf0 ended successfully
-2024-09-04 01:14:36 INFO  com.tinkoff_lab.dao.hibernate.UserCityDAO - Start adding UserCity where User: com.tinkoff_lab.entity.User@1f1beab8, City: com.tinkoff_lab.entity.City@ff21bcf0
-2024-09-04 01:14:36 INFO  com.tinkoff_lab.dao.hibernate.UserCityDAO - Adding UserCit y where User: com.tinkoff_lab.entity.User@1f1beab8, City: com.tinkoff_lab.entity.City@ff21bcf0 ended successfully
+2024-09-04 01:14:36 INFO  com.tinkoff_lab.dao.hibernate.EmailCityDAO - Start adding UserCity where User: com.tinkoff_lab.entity.Email@1f1beab8, City: com.tinkoff_lab.entity.City@ff21bcf0
+2024-09-04 01:14:36 INFO  com.tinkoff_lab.dao.hibernate.EmailCityDAO - Adding UserCit y where User: com.tinkoff_lab.entity.Email@1f1beab8, City: com.tinkoff_lab.entity.City@ff21bcf0 ended successfully
 2024-09-04 01:14:36 INFO  c.t.s.weather.CoordinateService - Start coordinate definition for city Grodno, country Belarus
 2024-09-04 01:14:36 INFO  c.t.s.weather.CountryCodeService - Start country code definition for country: Belarus
 2024-09-04 01:14:36 INFO  c.t.s.weather.CountryCodeService - Country code definition for country Belarus ended successfully
 2024-09-04 01:14:36 INFO  c.t.s.weather.CoordinateService - Coordinate definition for city Grodno, country Belarus ended successfully
 2024-09-04 01:14:36 INFO  com.tinkoff_lab.dao.hibernate.CityDAO - Start updating entity: com.tinkoff_lab.entity.City@d2f87f10
 2024-09-04 01:14:36 INFO  com.tinkoff_lab.dao.hibernate.CityDAO - Updating entity com.tinkoff_lab.entity.City@d2f87f10 ended successfully
-2024-09-04 01:14:36 INFO  com.tinkoff_lab.dao.hibernate.UserCityDAO - Start adding UserCity where User: com.tinkoff_lab.entity.User@1f1beab8, City: com.tinkoff_lab.entity.City@d2f87f10
-2024-09-04 01:14:36 INFO  com.tinkoff_lab.dao.hibernate.UserCityDAO - Adding UserCit y where User: com.tinkoff_lab.entity.User@1f1beab8, City: com.tinkoff_lab.entity.City@d2f87f10 ended successfully
-2024-09-04 01:14:36 INFO  c.t.s.weather.WeatherServiceImpl - Adding user with email ektogod@gmail.com and cities [] to database ended successfully
+2024-09-04 01:14:36 INFO  com.tinkoff_lab.dao.hibernate.EmailCityDAO - Start adding UserCity where User: com.tinkoff_lab.entity.Email@1f1beab8, City: com.tinkoff_lab.entity.City@d2f87f10
+2024-09-04 01:14:36 INFO  com.tinkoff_lab.dao.hibernate.EmailCityDAO - Adding UserCit y where User: com.tinkoff_lab.entity.Email@1f1beab8, City: com.tinkoff_lab.entity.City@d2f87f10 ended successfully
+2024-09-04 01:14:36 INFO  c.t.s.weather.WeatherServiceImpl - Adding email with email ektogod@gmail.com and cities [] to database ended successfully
 2024-09-04 01:14:38 INFO  c.t.service.NotificationService - Start notifying all subscribers
 2024-09-04 01:14:38 INFO  com.tinkoff_lab.dao.hibernate.CityDAO - Start finding all entities
 2024-09-04 01:14:38 INFO  com.tinkoff_lab.dao.hibernate.CityDAO - Finding ended successfully
@@ -860,10 +860,10 @@
 2024-09-04 23:48:31 INFO  com.tinkoff_lab.dao.hibernate.CityDAO - Finding ended successfully
 2024-09-04 23:48:31 INFO  c.t.service.NotificationService - Handling city com.tinkoff_lab.entity.City@d778666d
 2024-09-04 23:48:31 INFO  c.t.service.CurrentWeatherService - Start getting current weather for city com.tinkoff_lab.entity.City@d778666d
-2024-09-04 23:48:31 INFO  com.tinkoff_lab.dao.hibernate.UserDAO - Start finding entity with id {
+2024-09-04 23:48:31 INFO  com.tinkoff_lab.dao.hibernate.EmailDAO - Start finding entity with id {
     "email": "ektogod@gmail.com"
 }
-2024-09-04 23:48:31 INFO  com.tinkoff_lab.dao.hibernate.UserDAO - Finding of entity with id {
+2024-09-04 23:48:31 INFO  com.tinkoff_lab.dao.hibernate.EmailDAO - Finding of entity with id {
     "email": "ektogod@gmail.com"
 } ended successfully
 2024-09-04 23:48:31 INFO  c.t.service.CurrentWeatherService - Response from Weather API received
@@ -888,11 +888,11 @@
 2024-09-04 23:48:34 INFO  c.t.service.CurrentWeatherService - Response from Weather API received
 2024-09-04 23:48:34 INFO  c.t.service.CurrentWeatherService - Start parsing Weather API response
 2024-09-04 23:48:34 INFO  c.t.service.CurrentWeatherService - Parsing ended successfully
-2024-09-04 23:48:34 INFO  c.t.service.NotificationService - All users were notified
-2024-09-04 23:48:42 INFO  com.tinkoff_lab.dao.hibernate.UserDAO - Start finding entity with id {
+2024-09-04 23:48:34 INFO  c.t.service.NotificationService - All emails were notified
+2024-09-04 23:48:42 INFO  com.tinkoff_lab.dao.hibernate.EmailDAO - Start finding entity with id {
     "email": "ektogod@gmail.com"
 }
-2024-09-04 23:48:43 INFO  com.tinkoff_lab.dao.hibernate.UserDAO - Finding of entity with id {
+2024-09-04 23:48:43 INFO  com.tinkoff_lab.dao.hibernate.EmailDAO - Finding of entity with id {
     "email": "ektogod@gmail.com"
 } ended successfully
 2024-09-04 23:49:37 INFO  c.tinkoff_lab.TinkoffLabApplication - Application has terminated working
@@ -928,15 +928,15 @@
 2024-09-04 23:50:28 INFO  c.tinkoff_lab.TinkoffLabApplication - Starting TinkoffLabApplication using Java 21.0.1 with PID 19060 (C:\Users\Nikita\IdeaProjects\pet-project\target\classes started by Nikita in C:\Users\Nikita\IdeaProjects\pet-project)
 2024-09-04 23:50:28 INFO  c.tinkoff_lab.TinkoffLabApplication - No active profile set, falling back to 1 default profile: "default"
 2024-09-04 23:50:34 INFO  c.tinkoff_lab.TinkoffLabApplication - Started TinkoffLabApplication in 6.213 seconds (process running for 7.304)
-2024-09-04 23:50:39 INFO  com.tinkoff_lab.dao.hibernate.UserDAO - Start finding entity with id {
+2024-09-04 23:50:39 INFO  com.tinkoff_lab.dao.hibernate.EmailDAO - Start finding entity with id {
     "email": "ektogod@gmail.com"
 }
-2024-09-04 23:50:39 INFO  com.tinkoff_lab.dao.hibernate.UserDAO - Finding of entity with id {
+2024-09-04 23:50:39 INFO  com.tinkoff_lab.dao.hibernate.EmailDAO - Finding of entity with id {
     "email": "ektogod@gmail.com"
 } ended successfully
-2024-09-04 23:51:06 INFO  com.tinkoff_lab.dao.hibernate.UserDAO - Start finding entity with id {
+2024-09-04 23:51:06 INFO  com.tinkoff_lab.dao.hibernate.EmailDAO - Start finding entity with id {
     "email": "ektogod@gmail.com"
 }
-2024-09-04 23:51:06 INFO  com.tinkoff_lab.dao.hibernate.UserDAO - Finding of entity with id {
+2024-09-04 23:51:06 INFO  com.tinkoff_lab.dao.hibernate.EmailDAO - Finding of entity with id {
     "email": "ektogod@gmail.com"
 } ended successfully

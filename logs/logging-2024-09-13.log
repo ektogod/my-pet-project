@@ -23,69 +23,69 @@
 2024-09-13 14:51:11 INFO  c.tinkoff_lab.TinkoffLabApplication - Starting TinkoffLabApplication using Java 21.0.1 with PID 14768 (C:\Users\Nikita\IdeaProjects\pet-project\target\classes started by Nikita in C:\Users\Nikita\IdeaProjects\pet-project)
 2024-09-13 14:51:11 INFO  c.tinkoff_lab.TinkoffLabApplication - No active profile set, falling back to 1 default profile: "default"
 2024-09-13 14:51:17 INFO  c.tinkoff_lab.TinkoffLabApplication - Started TinkoffLabApplication in 6.277 seconds (process running for 7.335)
-2024-09-13 15:05:29 INFO  c.t.controller.TranslationController - Request from user has received: UserRequest[text=я люблю тебя, originalLanguage=ru, finalLanguage=be]
+2024-09-13 15:05:29 INFO  c.t.controller.TranslationController - Request from email has received: UserRequest[text=я люблю тебя, originalLanguage=ru, finalLanguage=be]
 2024-09-13 15:05:29 INFO  c.t.s.t.TranslationServiceImpl - Sending translation request: text = я люблю тебя 
 2024-09-13 15:05:29 INFO  c.t.external.TranslationDefiner - Request has received: text = я люблю тебя 
 2024-09-13 15:05:29 INFO  c.t.external.TranslationDefiner - Translation successfully completed
 2024-09-13 15:05:30 INFO  com.tinkoff_lab.dao.jdbc.TranslationDAO - Start writing to database of query: Translation[id=null, ip=37.214.71.177, originalText=я люблю тебя, originalLang=ru, translatedText=я цябе люблю, targetLang=be, time=2024/09/13 15:05:30, status=200, message=Ok]
 2024-09-13 15:05:30 INFO  com.tinkoff_lab.dao.jdbc.TranslationDAO - Connection with database established
 2024-09-13 15:05:30 INFO  com.tinkoff_lab.dao.jdbc.TranslationDAO - Query has been successfully recorded
-2024-09-13 15:05:30 INFO  c.t.controller.TranslationController - Response is sending to user
-2024-09-13 15:07:50 INFO  c.t.controller.TranslationController - Request from user has received: UserRequest[text=я люблю тебя, originalLanguage=ru, finalLanguage=be]
+2024-09-13 15:05:30 INFO  c.t.controller.TranslationController - Response is sending to email
+2024-09-13 15:07:50 INFO  c.t.controller.TranslationController - Request from email has received: UserRequest[text=я люблю тебя, originalLanguage=ru, finalLanguage=be]
 2024-09-13 15:07:50 INFO  c.t.s.t.TranslationServiceImpl - Sending translation request: text = я люблю тебя 
 2024-09-13 15:07:50 INFO  c.t.external.TranslationDefiner - Request has received: text = я люблю тебя 
 2024-09-13 15:07:50 INFO  c.t.external.TranslationDefiner - Translation successfully completed
 2024-09-13 15:07:51 INFO  com.tinkoff_lab.dao.jdbc.TranslationDAO - Start writing to database of query: Translation[id=null, ip=37.214.71.177, originalText=я люблю тебя, originalLang=ru, translatedText=я цябе люблю, targetLang=be, time=2024/09/13 15:07:51, status=200, message=Ok]
 2024-09-13 15:07:51 INFO  com.tinkoff_lab.dao.jdbc.TranslationDAO - Connection with database established
 2024-09-13 15:07:51 INFO  com.tinkoff_lab.dao.jdbc.TranslationDAO - Query has been successfully recorded
-2024-09-13 15:07:51 INFO  c.t.controller.TranslationController - Response is sending to user
-2024-09-13 16:01:16 INFO  c.t.controller.TranslationController - Request from user has received: UserRequest[text=я люблю тебя, originalLanguage=ru, finalLanguage=be]
+2024-09-13 15:07:51 INFO  c.t.controller.TranslationController - Response is sending to email
+2024-09-13 16:01:16 INFO  c.t.controller.TranslationController - Request from email has received: UserRequest[text=я люблю тебя, originalLanguage=ru, finalLanguage=be]
 2024-09-13 16:01:16 INFO  c.t.s.t.TranslationServiceImpl - Sending translation request: text = я люблю тебя 
 2024-09-13 16:01:16 INFO  c.t.external.TranslationDefiner - Request has received: text = я люблю тебя 
 2024-09-13 16:01:16 INFO  c.t.external.TranslationDefiner - Translation successfully completed
 2024-09-13 16:01:16 INFO  com.tinkoff_lab.dao.jdbc.TranslationDAO - Start writing to database of query: Translation[id=null, ip=37.214.71.177, originalText=я люблю тебя, originalLang=ru, translatedText=я цябе люблю, targetLang=be, time=2024/09/13 16:01:16, status=200, message=Ok]
 2024-09-13 16:01:16 INFO  com.tinkoff_lab.dao.jdbc.TranslationDAO - Connection with database established
 2024-09-13 16:01:16 INFO  com.tinkoff_lab.dao.jdbc.TranslationDAO - Query has been successfully recorded
-2024-09-13 16:01:17 INFO  c.t.controller.TranslationController - Response is sending to user
-2024-09-13 16:05:21 INFO  c.t.controller.TranslationController - Request from user has received: UserRequest[text=илья, originalLanguage=ru, finalLanguage=be]
+2024-09-13 16:01:17 INFO  c.t.controller.TranslationController - Response is sending to email
+2024-09-13 16:05:21 INFO  c.t.controller.TranslationController - Request from email has received: UserRequest[text=илья, originalLanguage=ru, finalLanguage=be]
 2024-09-13 16:05:21 INFO  c.t.s.t.TranslationServiceImpl - Sending translation request: text = илья 
 2024-09-13 16:05:22 INFO  c.t.external.TranslationDefiner - Request has received: text = илья 
 2024-09-13 16:05:22 INFO  c.t.external.TranslationDefiner - Translation successfully completed
 2024-09-13 16:05:22 INFO  com.tinkoff_lab.dao.jdbc.TranslationDAO - Start writing to database of query: Translation[id=null, ip=37.214.71.177, originalText=илья, originalLang=ru, translatedText=ilia, targetLang=be, time=2024/09/13 16:05:22, status=200, message=Ok]
 2024-09-13 16:05:22 INFO  com.tinkoff_lab.dao.jdbc.TranslationDAO - Connection with database established
 2024-09-13 16:05:22 INFO  com.tinkoff_lab.dao.jdbc.TranslationDAO - Query has been successfully recorded
-2024-09-13 16:05:22 INFO  c.t.controller.TranslationController - Response is sending to user
-2024-09-13 18:45:48 INFO  c.t.controller.TranslationController - Request from user has received: UserRequest[text=ru,, originalLanguage=be, finalLanguage=я люблю тебя, дорогая]
+2024-09-13 16:05:22 INFO  c.t.controller.TranslationController - Response is sending to email
+2024-09-13 18:45:48 INFO  c.t.controller.TranslationController - Request from email has received: UserRequest[text=ru,, originalLanguage=be, finalLanguage=я люблю тебя, дорогая]
 2024-09-13 18:45:48 INFO  c.t.s.t.TranslationServiceImpl - Sending translation request: text = ru, 
 2024-09-13 18:45:48 INFO  c.t.external.TranslationDefiner - Request has received: text = ru, 
 2024-09-13 18:45:48 ERROR c.t.external.TranslationDefiner - Something goes wrong with translation for text <ru,>, status is 403
 2024-09-13 18:45:48 INFO  com.tinkoff_lab.dao.jdbc.TranslationDAO - Start writing to database of query: Translation[id=null, ip=37.214.71.177, originalText=ru,, originalLang=be, translatedText=, targetLang=я люблю тебя, дорогая, time=2024/09/13 18:45:48, status=403, message='я люблю тебя, дорогая' IS AN INVALID TARGET LANGUAGE . EXAMPLE: LANGPAIR=EN|IT USING 2 LETTER ISO OR RFC3066 LIKE ZH-CN. ALMOST ALL LANGUAGES SUPPORTED BUT SOME MAY HAVE NO CONTENT]
 2024-09-13 18:45:48 INFO  com.tinkoff_lab.dao.jdbc.TranslationDAO - Connection with database established
 2024-09-13 18:45:49 ERROR com.tinkoff_lab.dao.jdbc.TranslationDAO - Insertion of query in database goes wrong!
-2024-09-13 18:47:32 INFO  c.t.controller.TranslationController - Request from user has received: UserRequest[text=я люблю тебя, originalLanguage=ru, finalLanguage=be]
+2024-09-13 18:47:32 INFO  c.t.controller.TranslationController - Request from email has received: UserRequest[text=я люблю тебя, originalLanguage=ru, finalLanguage=be]
 2024-09-13 18:47:32 INFO  c.t.s.t.TranslationServiceImpl - Sending translation request: text = я люблю тебя 
 2024-09-13 18:47:32 INFO  c.t.external.TranslationDefiner - Request has received: text = я люблю тебя 
 2024-09-13 18:47:32 INFO  c.t.external.TranslationDefiner - Translation successfully completed
 2024-09-13 18:47:33 INFO  com.tinkoff_lab.dao.jdbc.TranslationDAO - Start writing to database of query: Translation[id=null, ip=37.214.71.177, originalText=я люблю тебя, originalLang=ru, translatedText=я цябе люблю, targetLang=be, time=2024/09/13 18:47:33, status=200, message=Ok]
 2024-09-13 18:47:33 INFO  com.tinkoff_lab.dao.jdbc.TranslationDAO - Connection with database established
 2024-09-13 18:47:33 INFO  com.tinkoff_lab.dao.jdbc.TranslationDAO - Query has been successfully recorded
-2024-09-13 18:47:33 INFO  c.t.controller.TranslationController - Response is sending to user
-2024-09-13 18:48:31 INFO  c.t.controller.TranslationController - Request from user has received: UserRequest[text=я люблю тебя, originalLanguage=ru,, finalLanguage=be]
+2024-09-13 18:47:33 INFO  c.t.controller.TranslationController - Response is sending to email
+2024-09-13 18:48:31 INFO  c.t.controller.TranslationController - Request from email has received: UserRequest[text=я люблю тебя, originalLanguage=ru,, finalLanguage=be]
 2024-09-13 18:48:31 INFO  c.t.s.t.TranslationServiceImpl - Sending translation request: text = я люблю тебя 
 2024-09-13 18:48:31 INFO  c.t.external.TranslationDefiner - Request has received: text = я люблю тебя 
 2024-09-13 18:48:31 ERROR c.t.external.TranslationDefiner - Something goes wrong with translation for text <я люблю тебя>, status is 403
 2024-09-13 18:48:31 INFO  com.tinkoff_lab.dao.jdbc.TranslationDAO - Start writing to database of query: Translation[id=null, ip=37.214.71.177, originalText=я люблю тебя, originalLang=ru,, translatedText=, targetLang=be, time=2024/09/13 18:48:31, status=403, message='RU,' IS AN INVALID SOURCE LANGUAGE . EXAMPLE: LANGPAIR=EN|IT USING 2 LETTER ISO OR RFC3066 LIKE ZH-CN. ALMOST ALL LANGUAGES SUPPORTED BUT SOME MAY HAVE NO CONTENT]
 2024-09-13 18:48:31 INFO  com.tinkoff_lab.dao.jdbc.TranslationDAO - Connection with database established
 2024-09-13 18:48:31 INFO  com.tinkoff_lab.dao.jdbc.TranslationDAO - Query has been successfully recorded
-2024-09-13 18:48:46 INFO  c.t.controller.TranslationController - Request from user has received: UserRequest[text=я люблю тебя, дорогая, originalLanguage=ru, finalLanguage=be]
+2024-09-13 18:48:46 INFO  c.t.controller.TranslationController - Request from email has received: UserRequest[text=я люблю тебя, дорогая, originalLanguage=ru, finalLanguage=be]
 2024-09-13 18:48:46 INFO  c.t.s.t.TranslationServiceImpl - Sending translation request: text = я люблю тебя, дорогая 
 2024-09-13 18:48:47 INFO  c.t.external.TranslationDefiner - Request has received: text = я люблю тебя, дорогая 
 2024-09-13 18:48:47 INFO  c.t.external.TranslationDefiner - Translation successfully completed
 2024-09-13 18:48:47 INFO  com.tinkoff_lab.dao.jdbc.TranslationDAO - Start writing to database of query: Translation[id=null, ip=37.214.71.177, originalText=я люблю тебя, дорогая, originalLang=ru, translatedText=я люблю цябе, дарагая, targetLang=be, time=2024/09/13 18:48:47, status=200, message=Ok]
 2024-09-13 18:48:47 INFO  com.tinkoff_lab.dao.jdbc.TranslationDAO - Connection with database established
 2024-09-13 18:48:47 INFO  com.tinkoff_lab.dao.jdbc.TranslationDAO - Query has been successfully recorded
-2024-09-13 18:48:47 INFO  c.t.controller.TranslationController - Response is sending to user
-2024-09-13 18:49:01 INFO  c.t.controller.TranslationController - Request from user has received: UserRequest[text=ru,, originalLanguage=be, finalLanguage=хай]
+2024-09-13 18:48:47 INFO  c.t.controller.TranslationController - Response is sending to email
+2024-09-13 18:49:01 INFO  c.t.controller.TranslationController - Request from email has received: UserRequest[text=ru,, originalLanguage=be, finalLanguage=хай]
 2024-09-13 18:49:01 INFO  c.t.s.t.TranslationServiceImpl - Sending translation request: text = ru, 
 2024-09-13 18:49:01 INFO  c.t.external.TranslationDefiner - Request has received: text = ru, 
 2024-09-13 18:49:01 ERROR c.t.external.TranslationDefiner - Something goes wrong with translation for text <ru,>, status is 403
@@ -98,10 +98,10 @@
 2024-09-13 18:49:52 INFO  c.tinkoff_lab.TinkoffLabApplication - Starting TinkoffLabApplication using Java 21.0.1 with PID 11524 (C:\Users\Nikita\IdeaProjects\pet-project\target\classes started by Nikita in C:\Users\Nikita\IdeaProjects\pet-project)
 2024-09-13 18:49:52 INFO  c.tinkoff_lab.TinkoffLabApplication - No active profile set, falling back to 1 default profile: "default"
 2024-09-13 18:49:58 INFO  c.tinkoff_lab.TinkoffLabApplication - Started TinkoffLabApplication in 6.506 seconds (process running for 8.219)
-2024-09-13 18:53:12 INFO  c.t.controller.TranslationController - Request from user has received: UserRequest[text=ru,, originalLanguage=be, finalLanguage=я люблю тебя, малышка]
+2024-09-13 18:53:12 INFO  c.t.controller.TranslationController - Request from email has received: UserRequest[text=ru,, originalLanguage=be, finalLanguage=я люблю тебя, малышка]
 2024-09-13 18:53:16 INFO  c.t.s.t.TranslationServiceImpl - Sending translation request: text = ru, 
 2024-09-13 18:56:46 INFO  c.t.external.TranslationDefiner - Request has received: text = ru, 
-2024-09-13 18:58:56 INFO  c.t.controller.TranslationController - Request from user has received: UserRequest[text=я люблю тебя, малышка, originalLanguage=ru,, finalLanguage=be]
+2024-09-13 18:58:56 INFO  c.t.controller.TranslationController - Request from email has received: UserRequest[text=я люблю тебя, малышка, originalLanguage=ru,, finalLanguage=be]
 2024-09-13 18:58:56 INFO  c.t.s.t.TranslationServiceImpl - Sending translation request: text = я люблю тебя, малышка 
 2024-09-13 18:58:57 INFO  c.t.external.TranslationDefiner - Request has received: text = я люблю тебя, малышка 
 2024-09-13 18:58:57 ERROR c.t.external.TranslationDefiner - Something goes wrong with translation for text <ru,>, status is 403
@@ -112,74 +112,74 @@
 2024-09-13 18:59:11 INFO  com.tinkoff_lab.dao.jdbc.TranslationDAO - Query has been successfully recorded
 2024-09-13 18:59:11 INFO  com.tinkoff_lab.dao.jdbc.TranslationDAO - Connection with database established
 2024-09-13 18:59:11 ERROR com.tinkoff_lab.dao.jdbc.TranslationDAO - Insertion of query in database goes wrong!
-2024-09-13 18:59:40 INFO  c.t.controller.TranslationController - Request from user has received: UserRequest[text=s, originalLanguage=ru,, finalLanguage=be]
+2024-09-13 18:59:40 INFO  c.t.controller.TranslationController - Request from email has received: UserRequest[text=s, originalLanguage=ru,, finalLanguage=be]
 2024-09-13 18:59:40 INFO  c.t.s.t.TranslationServiceImpl - Sending translation request: text = s 
 2024-09-13 18:59:40 INFO  c.t.external.TranslationDefiner - Request has received: text = s 
 2024-09-13 18:59:40 ERROR c.t.external.TranslationDefiner - Something goes wrong with translation for text <s>, status is 403
 2024-09-13 18:59:40 INFO  com.tinkoff_lab.dao.jdbc.TranslationDAO - Start writing to database of query: Translation[id=null, ip=37.214.71.177, originalText=s, originalLang=ru,, translatedText=, targetLang=be, time=2024/09/13 18:59:40, status=403, message='RU,' IS AN INVALID SOURCE LANGUAGE . EXAMPLE: LANGPAIR=EN|IT USING 2 LETTER ISO OR RFC3066 LIKE ZH-CN. ALMOST ALL LANGUAGES SUPPORTED BUT SOME MAY HAVE NO CONTENT]
 2024-09-13 18:59:40 INFO  com.tinkoff_lab.dao.jdbc.TranslationDAO - Connection with database established
 2024-09-13 18:59:40 INFO  com.tinkoff_lab.dao.jdbc.TranslationDAO - Query has been successfully recorded
-2024-09-13 18:59:57 INFO  c.t.controller.TranslationController - Request from user has received: UserRequest[text=я люблю тебя, малышка, originalLanguage=ru, finalLanguage=be]
+2024-09-13 18:59:57 INFO  c.t.controller.TranslationController - Request from email has received: UserRequest[text=я люблю тебя, малышка, originalLanguage=ru, finalLanguage=be]
 2024-09-13 18:59:57 INFO  c.t.s.t.TranslationServiceImpl - Sending translation request: text = я люблю тебя, малышка 
 2024-09-13 18:59:57 INFO  c.t.external.TranslationDefiner - Request has received: text = я люблю тебя, малышка 
 2024-09-13 18:59:57 INFO  c.t.external.TranslationDefiner - Translation successfully completed
 2024-09-13 18:59:58 INFO  com.tinkoff_lab.dao.jdbc.TranslationDAO - Start writing to database of query: Translation[id=null, ip=37.214.71.177, originalText=я люблю тебя, малышка, originalLang=ru, translatedText=я люблю цябе, дзіцятка, targetLang=be, time=2024/09/13 18:59:58, status=200, message=Ok]
 2024-09-13 18:59:58 INFO  com.tinkoff_lab.dao.jdbc.TranslationDAO - Connection with database established
 2024-09-13 18:59:58 INFO  com.tinkoff_lab.dao.jdbc.TranslationDAO - Query has been successfully recorded
-2024-09-13 18:59:58 INFO  c.t.controller.TranslationController - Response is sending to user
+2024-09-13 18:59:58 INFO  c.t.controller.TranslationController - Response is sending to email
 2024-09-13 19:17:16 INFO  c.tinkoff_lab.TinkoffLabApplication - Application has terminated working
 
 2024-09-13 19:17:28 INFO  c.tinkoff_lab.TinkoffLabApplication - Application has started working
 2024-09-13 19:17:29 INFO  c.tinkoff_lab.TinkoffLabApplication - Starting TinkoffLabApplication using Java 21.0.1 with PID 17724 (C:\Users\Nikita\IdeaProjects\pet-project\target\classes started by Nikita in C:\Users\Nikita\IdeaProjects\pet-project)
 2024-09-13 19:17:29 INFO  c.tinkoff_lab.TinkoffLabApplication - No active profile set, falling back to 1 default profile: "default"
 2024-09-13 19:17:34 INFO  c.tinkoff_lab.TinkoffLabApplication - Started TinkoffLabApplication in 5.467 seconds (process running for 6.236)
-2024-09-13 19:19:37 INFO  c.t.controller.TranslationController - Request from user has received: UserRequest[text=I love you babe, originalLanguage=en, finalLanguage=ru]
+2024-09-13 19:19:37 INFO  c.t.controller.TranslationController - Request from email has received: UserRequest[text=I love you babe, originalLanguage=en, finalLanguage=ru]
 2024-09-13 19:19:37 INFO  c.t.s.t.TranslationServiceImpl - Sending translation request: text = I love you babe 
 2024-09-13 19:19:38 INFO  c.t.external.TranslationDefiner - Request has received: text = I love you babe 
 2024-09-13 19:19:38 INFO  c.t.external.TranslationDefiner - Translation successfully completed
 2024-09-13 19:19:38 INFO  com.tinkoff_lab.dao.jdbc.TranslationDAO - Start writing to database of query: Translation[id=null, ip=37.214.71.177, originalText=I love you babe, originalLang=en, translatedText=Я люблю тебя, targetLang=ru, time=2024/09/13 19:19:38, status=200, message=Ok]
 2024-09-13 19:19:38 INFO  com.tinkoff_lab.dao.jdbc.TranslationDAO - Connection with database established
 2024-09-13 19:19:38 INFO  com.tinkoff_lab.dao.jdbc.TranslationDAO - Query has been successfully recorded
-2024-09-13 19:19:38 INFO  c.t.controller.TranslationController - Response is sending to user
-2024-09-13 19:21:23 INFO  c.t.controller.TranslationController - Request from user has received: UserRequest[text=If you knew how strong I love you, originalLanguage=en, finalLanguage=ru]
+2024-09-13 19:19:38 INFO  c.t.controller.TranslationController - Response is sending to email
+2024-09-13 19:21:23 INFO  c.t.controller.TranslationController - Request from email has received: UserRequest[text=If you knew how strong I love you, originalLanguage=en, finalLanguage=ru]
 2024-09-13 19:21:23 INFO  c.t.s.t.TranslationServiceImpl - Sending translation request: text = If you knew how strong I love you 
 2024-09-13 19:21:24 INFO  c.t.external.TranslationDefiner - Request has received: text = If you knew how strong I love you 
 2024-09-13 19:21:24 INFO  c.t.external.TranslationDefiner - Translation successfully completed
 2024-09-13 19:21:24 INFO  com.tinkoff_lab.dao.jdbc.TranslationDAO - Start writing to database of query: Translation[id=null, ip=37.214.71.177, originalText=If you knew how strong I love you, originalLang=en, translatedText=Если бы ты знала, как сильно я тебя люблю, targetLang=ru, time=2024/09/13 19:21:24, status=200, message=Ok]
 2024-09-13 19:21:24 INFO  com.tinkoff_lab.dao.jdbc.TranslationDAO - Connection with database established
 2024-09-13 19:21:24 INFO  com.tinkoff_lab.dao.jdbc.TranslationDAO - Query has been successfully recorded
-2024-09-13 19:21:24 INFO  c.t.controller.TranslationController - Response is sending to user
-2024-09-13 19:21:57 INFO  c.t.controller.TranslationController - Request from user has received: UserRequest[text=how are you, girly?, originalLanguage=en, finalLanguage=ru]
+2024-09-13 19:21:24 INFO  c.t.controller.TranslationController - Response is sending to email
+2024-09-13 19:21:57 INFO  c.t.controller.TranslationController - Request from email has received: UserRequest[text=how are you, girly?, originalLanguage=en, finalLanguage=ru]
 2024-09-13 19:21:57 INFO  c.t.s.t.TranslationServiceImpl - Sending translation request: text = how are you, girly? 
 2024-09-13 19:21:57 INFO  c.t.external.TranslationDefiner - Request has received: text = how are you, girly? 
 2024-09-13 19:21:57 INFO  c.t.external.TranslationDefiner - Translation successfully completed
 2024-09-13 19:21:57 INFO  com.tinkoff_lab.dao.jdbc.TranslationDAO - Start writing to database of query: Translation[id=null, ip=37.214.71.177, originalText=how are you, girly?, originalLang=en, translatedText=как ты, девчонка?, targetLang=ru, time=2024/09/13 19:21:57, status=200, message=Ok]
 2024-09-13 19:21:57 INFO  com.tinkoff_lab.dao.jdbc.TranslationDAO - Connection with database established
 2024-09-13 19:21:57 INFO  com.tinkoff_lab.dao.jdbc.TranslationDAO - Query has been successfully recorded
-2024-09-13 19:21:57 INFO  c.t.controller.TranslationController - Response is sending to user
-2024-09-13 19:44:26 INFO  c.t.controller.TranslationController - Request from user has received: UserRequest[text=What are going to do this night, girly?), originalLanguage=en, finalLanguage=ru]
+2024-09-13 19:21:57 INFO  c.t.controller.TranslationController - Response is sending to email
+2024-09-13 19:44:26 INFO  c.t.controller.TranslationController - Request from email has received: UserRequest[text=What are going to do this night, girly?), originalLanguage=en, finalLanguage=ru]
 2024-09-13 19:44:26 INFO  c.t.s.t.TranslationServiceImpl - Sending translation request: text = What are going to do this night, girly?) 
 2024-09-13 19:44:27 INFO  c.t.external.TranslationDefiner - Request has received: text = What are going to do this night, girly?) 
 2024-09-13 19:44:27 INFO  c.t.external.TranslationDefiner - Translation successfully completed
 2024-09-13 19:44:27 INFO  com.tinkoff_lab.dao.jdbc.TranslationDAO - Start writing to database of query: Translation[id=null, ip=37.214.71.177, originalText=What are going to do this night, girly?), originalLang=en, translatedText=Что будем делать этой ночью, девчонка?), targetLang=ru, time=2024/09/13 19:44:27, status=200, message=Ok]
 2024-09-13 19:44:27 INFO  com.tinkoff_lab.dao.jdbc.TranslationDAO - Connection with database established
 2024-09-13 19:44:27 INFO  com.tinkoff_lab.dao.jdbc.TranslationDAO - Query has been successfully recorded
-2024-09-13 19:44:27 INFO  c.t.controller.TranslationController - Response is sending to user
-2024-09-13 20:28:34 INFO  c.t.controller.TranslationController - Request from user has received: UserRequest[text=sorry, girly, it was fun while it lasted, originalLanguage=en, finalLanguage=ru]
+2024-09-13 19:44:27 INFO  c.t.controller.TranslationController - Response is sending to email
+2024-09-13 20:28:34 INFO  c.t.controller.TranslationController - Request from email has received: UserRequest[text=sorry, girly, it was fun while it lasted, originalLanguage=en, finalLanguage=ru]
 2024-09-13 20:28:34 INFO  c.t.s.t.TranslationServiceImpl - Sending translation request: text = sorry, girly, it was fun while it lasted 
 2024-09-13 20:28:35 INFO  c.t.external.TranslationDefiner - Request has received: text = sorry, girly, it was fun while it lasted 
 2024-09-13 20:28:35 INFO  c.t.external.TranslationDefiner - Translation successfully completed
 2024-09-13 20:28:35 INFO  com.tinkoff_lab.dao.jdbc.TranslationDAO - Start writing to database of query: Translation[id=null, ip=37.214.71.177, originalText=sorry, girly, it was fun while it lasted, originalLang=en, translatedText=извини, девчонка, было весело, пока это продолжалось, targetLang=ru, time=2024/09/13 20:28:35, status=200, message=Ok]
 2024-09-13 20:28:35 INFO  com.tinkoff_lab.dao.jdbc.TranslationDAO - Connection with database established
 2024-09-13 20:28:35 INFO  com.tinkoff_lab.dao.jdbc.TranslationDAO - Query has been successfully recorded
-2024-09-13 20:28:35 INFO  c.t.controller.TranslationController - Response is sending to user
-2024-09-13 20:57:49 INFO  c.t.controller.TranslationController - Request from user has received: UserRequest[text=we will be together forever, originalLanguage=en, finalLanguage=ru]
+2024-09-13 20:28:35 INFO  c.t.controller.TranslationController - Response is sending to email
+2024-09-13 20:57:49 INFO  c.t.controller.TranslationController - Request from email has received: UserRequest[text=we will be together forever, originalLanguage=en, finalLanguage=ru]
 2024-09-13 20:57:49 INFO  c.t.s.t.TranslationServiceImpl - Sending translation request: text = we will be together forever 
 2024-09-13 20:57:50 INFO  c.t.external.TranslationDefiner - Request has received: text = we will be together forever 
 2024-09-13 20:57:50 INFO  c.t.external.TranslationDefiner - Translation successfully completed
 2024-09-13 20:57:50 INFO  com.tinkoff_lab.dao.jdbc.TranslationDAO - Start writing to database of query: Translation[id=null, ip=37.214.71.177, originalText=we will be together forever, originalLang=en, translatedText=Мы вечно будем вместе, targetLang=ru, time=2024/09/13 20:57:50, status=200, message=Ok]
 2024-09-13 20:57:50 INFO  com.tinkoff_lab.dao.jdbc.TranslationDAO - Connection with database established
 2024-09-13 20:57:50 INFO  com.tinkoff_lab.dao.jdbc.TranslationDAO - Query has been successfully recorded
-2024-09-13 20:57:50 INFO  c.t.controller.TranslationController - Response is sending to user
+2024-09-13 20:57:50 INFO  c.t.controller.TranslationController - Response is sending to email
 2024-09-13 22:29:46 INFO  c.tinkoff_lab.TinkoffLabApplication - Application has terminated working
 
