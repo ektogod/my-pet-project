@@ -1,6 +1,6 @@
 package bot.external.email_weather;
 
-import bot.client.email_weather.EmailGetClient;
+import bot.client.email_weather.EmailGetCitiesClient;
 import com.tinkoff_lab.dto.weather.request.email.EmailRequest;
 import com.tinkoff_lab.entity.CityPK;
 import lombok.RequiredArgsConstructor;
@@ -13,7 +13,7 @@ import java.util.stream.Collectors;
 @Component
 @RequiredArgsConstructor
 public class EmailGetHandler {
-    private final EmailGetClient client;
+    private final EmailGetCitiesClient client;
 
     public String get(String email) {
         String response;
