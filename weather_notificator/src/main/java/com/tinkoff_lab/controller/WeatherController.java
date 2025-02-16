@@ -38,9 +38,9 @@ public class WeatherController {
     }
 
     @DeleteMapping("/unsubscribe")
-    public ResponseEntity<Void> unsubscribe(@RequestBody EmailRequest request){
+    public ResponseEntity<String> unsubscribe(@RequestBody EmailRequest request){
         weatherService.deleteUser(request);
-        return new ResponseEntity<>(HttpStatusCode.valueOf(200));
+        return new ResponseEntity<>("Unsubscribing ended successfully.", HttpStatusCode.valueOf(200));
     }
 
     @PutMapping("/add")
@@ -53,6 +53,12 @@ public class WeatherController {
     public ResponseEntity<List<CityPK>> getCities(@RequestBody EmailRequest request){
         List<CityPK> cityPKS = weatherService.getCities(request);
         return new ResponseEntity<>(cityPKS, HttpStatusCode.valueOf(200));
+    }
+
+    @GetMapping("/get/{chatId}")
+    public ResponseEntity<List<String>> getEmails(@PathVariable long chatId){
+        List<String> emails = weatherService.getEmails(chatId);
+        return new ResponseEntity<>(emails, HttpStatusCode.valueOf(200));
     }
 
     @DeleteMapping("/delete")

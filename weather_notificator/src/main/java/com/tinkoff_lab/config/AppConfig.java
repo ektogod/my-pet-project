@@ -16,16 +16,16 @@ public class AppConfig {                  // I use this class to have access to 
     @Value("${translation.url}")
     private String translationURL;
 
-    @Value("${database.url}")
+    @Value("${spring.datasource.url}")
     private String databaseURL;
 
-    @Value("${database.username}")
+    @Value("${spring.datasource.username}")
     private String databaseUsername;
 
-    @Value("${database.password}")
+    @Value("${spring.datasource.password}")
     private String databasePassword;
 
-    @Value("${IP.url}")
+    @Value("${ip.url}")
     private String ipUrl;
 
     @Value("${openWeather.url}")

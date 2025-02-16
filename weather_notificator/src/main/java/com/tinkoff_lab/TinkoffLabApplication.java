@@ -8,11 +8,13 @@ import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration;
 import org.springframework.context.ApplicationListener;
 import org.springframework.context.event.ContextClosedEvent;
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 @SpringBootApplication(exclude = HibernateJpaAutoConfiguration.class)
 @EntityScan(basePackages = "com.tinkoff_lab")
 @EnableTransactionManagement
+@EnableJpaRepositories(basePackages = "com.tinkoff_lab")
 
 public class TinkoffLabApplication {
     public static void main(String[] args) {

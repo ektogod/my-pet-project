@@ -3,9 +3,10 @@ package com.tinkoff_lab.service.weather;
 import com.tinkoff_lab.dao.hibernate.*;
 import com.tinkoff_lab.dto.EmailUserRequest;
 import com.tinkoff_lab.entity.Email;
+import com.tinkoff_lab.entity.User;
 import com.tinkoff_lab.exception.EntityNotFoundException;
 import com.tinkoff_lab.exception.WrongWeatherRequestException;
-import com.tinkoff_lab.dto.weather.CityDTO;
+import com.tinkoff_lab.dto.weather.CityDTOOO;
 import com.tinkoff_lab.dto.weather.Coordinates;
 import com.tinkoff_lab.dto.weather.request.email.EmailCitiesRequest;
 import com.tinkoff_lab.dto.weather.request.email.EmailRequest;
@@ -41,15 +42,15 @@ public class WeatherServiceImpl implements WeatherService {
 
     @Override
     public void register(EmailUserRequest request) {
-        logger.info("Start adding user with email {} and chatId {} to database", request.email(), request.chatId());
-        Email email = new Email(request.email(), request.name());
-        if (emailDAO.findByID(email.getEmail()) != null) {
-            logger.warn("User with email {} already exists!", email.getEmail());
-            throw new WrongWeatherRequestException(String.format("User with email %s already exists!", email));
-        }
-
-        emailDAO.insert(email);
-        userEmailDAO.addUserEmail(userDAO.findByID(request.chatId()), email);
+//        logger.info("Start adding user with email {} and chatId {} to database", request.email(), request.chatId());
+//        Email email = new Email(request.email(), request.name());
+//        if (emailDAO.findByID(email.getEmail()) != null) {
+//            logger.warn("User with email {} already exists!", email.getEmail());
+//            throw new WrongWeatherRequestException(String.format("User with email %s already exists!", email));
+//        }
+//
+//        emailDAO.insert(email);
+//        userEmailDAO.addUserEmail(userDAO.findByID(request.chatId()), email);
     }
 
     @Override
@@ -61,10 +62,10 @@ public class WeatherServiceImpl implements WeatherService {
             throw new WrongWeatherRequestException(String.format("User with email %s doesn't exist!", request.email()));
         }
 
-        for (CityDTO cityDTO : request.cities()) {
-            Coordinates crd = definer.getCoordinates(cityDTO.city(), cityDTO.country()); // throws exception if something incorrect
+        for (CityDTOOO cityDTOOO : request.cities()) {
+            Coordinates crd = definer.getCoordinates(cityDTOOO.city(), cityDTOOO.country()); // throws exception if something incorrect
 
-            CityPK pk = new CityPK(cityDTO.city(), cityDTO.country());
+            CityPK pk = new CityPK(cityDTOOO.city(), cityDTOOO.country());
             City city = new City(pk, crd.latitude(), crd.longitude());
             cityDAO.update(city);
             emailCityDAO.addEmailCity(email, city);
@@ -98,10 +99,10 @@ public class WeatherServiceImpl implements WeatherService {
             logger.warn("Deleting user with email {} went wrong: user not found", request.email());
             throw new EntityNotFoundException("User not found");
         }
-        for (CityDTO cityDTO : request.cities()) {
-            Coordinates crd = definer.getCoordinates(cityDTO.city(), cityDTO.country()); // throws exception if something incorrect
+        for (CityDTOOO cityDTOOO : request.cities()) {
+            Coordinates crd = definer.getCoordinates(cityDTOOO.city(), cityDTOOO.country()); // throws exception if something incorrect
 
-            CityPK pk = new CityPK(cityDTO.city(), cityDTO.country());
+            CityPK pk = new CityPK(cityDTOOO.city(), cityDTOOO.country());
             City city = new City(pk, crd.latitude(), crd.longitude());
             cityDAO.update(city);
             emailCityDAO.addEmailCity(email, city);
@@ -124,6 +125,20 @@ public class WeatherServiceImpl implements WeatherService {
     }
 
     @Override
+    public List<String> getEmails(long chatId) {
+        logger.info("Start getting all emails for user with chatId {}", chatId);
+        User user = userDAO.findByID(chatId);
+        if (user == null) {
+            logger.warn("Getting all emails for user with chat id {} went wrong: user not found", chatId);
+            throw new EntityNotFoundException("User not found");
+        }
+
+        Set<Email> emails = user.getEmails();
+        logger.warn("Getting all emails for user with chat id {} ended successfully", chatId);
+        return emails.stream().map(Email::getEmail).toList();
+    }
+
+    @Override
     public void deleteCities(EmailCitiesRequest request) {
         logger.info("Start removing cities {} from user with email {}", request.cities(), request.email());
         Email email = emailDAO.findByID(request.email());
@@ -131,10 +146,10 @@ public class WeatherServiceImpl implements WeatherService {
             logger.warn("Removing user with email {} went wrong: user not found", request.email());
             throw new EntityNotFoundException("User not found");
         }
-        for (CityDTO cityDTO : request.cities()) {
-            City city = cityDAO.findByID(new CityPK(cityDTO.city(), cityDTO.country()));
+        for (CityDTOOO cityDTOOO : request.cities()) {
+            City city = cityDAO.findByID(new CityPK(cityDTOOO.city(), cityDTOOO.country()));
             if (city == null) {
-                logger.error("Removing went wrong because {} not in database", cityDTO);
+                logger.error("Removing went wrong because {} not in database", cityDTOOO);
                 throw new EntityNotFoundException("City not found");
             }
             emailCityDAO.removeEmailCity(email, city);

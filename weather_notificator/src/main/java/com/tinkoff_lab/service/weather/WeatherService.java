@@ -19,5 +19,7 @@ public interface WeatherService {
 
     List<CityPK> getCities(EmailRequest email);
 
+    List<String> getEmails(long chatId);
+
     void deleteCities(EmailCitiesRequest request);
 }

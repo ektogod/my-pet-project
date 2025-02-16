@@ -2,7 +2,7 @@ package com.tinkoff_lab.service.weather;
 
 import com.tinkoff_lab.client.EmailClient;
 import com.tinkoff_lab.client.TelegramClient;
-import com.tinkoff_lab.dto.EmailDTO;
+import com.tinkoff_lab.dto.SendEmailDTO;
 import com.tinkoff_lab.dto.weather.TelegramUserMessages;
 import com.tinkoff_lab.entity.City;
 import com.tinkoff_lab.entity.Email;
@@ -15,7 +15,6 @@ import lombok.experimental.FieldDefaults;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.scheduling.annotation.EnableScheduling;
-import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -44,9 +43,9 @@ public class NotificationService {
             logger.info("Handling city {}", city);
             String curWeather = curWeatherService.getCurrentWeatherAsString(city);
             for (Email email : city.getEmails()) {
-                emailClient.sendEmail(new EmailDTO(email.getEmail(), curWeather, "Your current weather!"));
+                emailClient.sendEmail(new SendEmailDTO(email.getEmail(), curWeather, "Your current weather!"));
             }
-            for(User user: city.getTgUsers()){
+            for(User user: city.getUsers()){
                 userMessages.getChatIds().add(user.getChatId());
                 String msg = String.format("Hey, %s, here is your current weather!\n\n%s", user.getFirstname(), curWeather);
                 userMessages.getMessages().add(msg);

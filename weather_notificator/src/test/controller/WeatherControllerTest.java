@@ -2,7 +2,7 @@ package controller;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.email_sender.EmailSenderApplication;
-import com.tinkoff_lab.dto.weather.CityDTO;
+import com.tinkoff_lab.dto.weather.CityDTOOO;
 import com.tinkoff_lab.dto.weather.request.email.EmailCitiesRequest;
 import com.tinkoff_lab.dto.weather.request.email.EmailRequest;
 import com.tinkoff_lab.dto.weather.request.email.WeatherEmailRequest;
@@ -122,7 +122,7 @@ public class WeatherControllerTest {
 
     @Test
     void testWithSubscribeChecking() throws Exception {
-        List<CityDTO> cities = List.of(new CityDTO("Minsk", "Belarus"), new CityDTO("Grodno", "Belarus"));
+        List<CityDTOOO> cities = List.of(new CityDTOOO("Minsk", "Belarus"), new CityDTOOO("Grodno", "Belarus"));
         WeatherEmailRequest request = new WeatherEmailRequest("ektogod@gmail.com", "ektogod", cities);
         post(request, "", 201);
 
@@ -178,9 +178,9 @@ public class WeatherControllerTest {
 
         userCityDatabaseService.addUserCity(email, city);
 
-        List<CityDTO> cities = List.of(
-                new CityDTO("Grodno", "Belarus"),
-                new CityDTO("Minsk", "Belarus"));
+        List<CityDTOOO> cities = List.of(
+                new CityDTOOO("Grodno", "Belarus"),
+                new CityDTOOO("Minsk", "Belarus"));
         EmailCitiesRequest request = new EmailCitiesRequest("ektogod@mail.ru", cities);
         put(request, "", 200);
 
@@ -200,8 +200,8 @@ public class WeatherControllerTest {
             userCityDatabaseService.addUserCity(email, cities.get(i));
         }
 
-        List<CityDTO> cityDTOS = List.of(new CityDTO("Minsk", "Belarus"));
-        EmailCitiesRequest request = new EmailCitiesRequest(email.getEmail(), cityDTOS);
+        List<CityDTOOO> cityDTOOOS = List.of(new CityDTOOO("Minsk", "Belarus"));
+        EmailCitiesRequest request = new EmailCitiesRequest(email.getEmail(), cityDTOOOS);
         deleteCities(request, "", 200);
 
         Assertions.assertEquals(userDatabaseService.findByID("ektogod@mail.ru").getCities().size(), 1);
@@ -210,7 +210,7 @@ public class WeatherControllerTest {
     @Test
     void testWithEntityNotFoundChecking() throws Exception {
         EmailRequest emailRequest = new EmailRequest("ektogod@mail.ru");
-        EmailCitiesRequest emailCitiesRequest = new EmailCitiesRequest("ektogod@mail.ru", List.of(new CityDTO("city", "country")));
+        EmailCitiesRequest emailCitiesRequest = new EmailCitiesRequest("ektogod@mail.ru", List.of(new CityDTOOO("city", "country")));
 
         get(emailRequest, "User not found", 400);
         delete(emailRequest, "User not found", 400);
@@ -223,11 +223,11 @@ public class WeatherControllerTest {
 
     @Test
     void testWithWrongWeatherRequestChecking() throws Exception {
-        List<CityDTO> citiesWithWrongCountry = List.of(new CityDTO("Minsk", "Belraus"));
+        List<CityDTOOO> citiesWithWrongCountry = List.of(new CityDTOOO("Minsk", "Belraus"));
         WeatherEmailRequest request = new WeatherEmailRequest("ektogod@mail.ru", "ektogod", citiesWithWrongCountry);
         post(request, "Something wrong with country: code not defined", 400);
 
-        List<CityDTO> citiesWithWrongLocation = List.of(new CityDTO("Asjlas", "Belarus"));
+        List<CityDTOOO> citiesWithWrongLocation = List.of(new CityDTOOO("Asjlas", "Belarus"));
         WeatherEmailRequest request2 = new WeatherEmailRequest("ektodog@mail.ru", "ektogod", citiesWithWrongLocation);
         post(request2, "Something wrong with location. Coordinates not defined", 400);
     }
