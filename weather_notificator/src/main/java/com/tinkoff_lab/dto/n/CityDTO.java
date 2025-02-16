@@ -1,4 +1,2 @@
-package com.tinkoff_lab.dto.n;
-
-public record CityDTO() {
+package com.tinkoff_lab.dto.n;public record CityDTO() {
 }
