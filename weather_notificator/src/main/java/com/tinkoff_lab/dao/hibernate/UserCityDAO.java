@@ -38,10 +38,10 @@ public class UserCityDAO {
             }
 
             Hibernate.initialize(user.getCities());
-            Hibernate.initialize(city.getTgUsers());
+            Hibernate.initialize(city.getUsers());
 
             existingUser.getCities().add(city);
-            existingCity.getTgUsers().add(user);
+            existingCity.getUsers().add(user);
             session.merge(existingUser);
         } catch (EntityNotFoundException ex) {
             logger.error("Entity not found: " + ex.getMessage());
@@ -70,10 +70,10 @@ public class UserCityDAO {
             }
 
             Hibernate.initialize(user.getCities());
-            Hibernate.initialize(city.getTgUsers());
+            Hibernate.initialize(city.getUsers());
 
             existingUser.getCities().remove(city);
-            existingCity.getTgUsers().remove(user);
+            existingCity.getUsers().remove(user);
             session.merge(user);
         } catch (EntityNotFoundException ex) {
             logger.error("Entity not found: " + ex.getMessage());

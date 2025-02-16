@@ -32,7 +32,7 @@ public class City {
     private Set<Email> emails = new HashSet<>();
 
     @ManyToMany(mappedBy = "cities", fetch = FetchType.EAGER)
-    private Set<User> tgUsers = new HashSet<>();
+    private Set<User> users = new HashSet<>();
 
     public City(CityPK pk, double latitude, double longitude) {
         this.pk = pk;

@@ -18,13 +18,13 @@ public class EmailSender {
     JavaMailSender mailSender;
     Logger logger = LoggerFactory.getLogger(EmailSender.class);
 
-    public void sendEmail(String email, String text) {
+    public void sendEmail(String email, String text, String subject) {
         try {
             logger.info("Start sending message on email {}", email);
             SimpleMailMessage message = new SimpleMailMessage();
             message.setFrom("ektogod@mail.ru");
             message.setTo(email);
-            message.setSubject("Your current weather!");
+            message.setSubject(subject);
             message.setText(text);
             mailSender.send(message);
         } catch (Exception ex) {

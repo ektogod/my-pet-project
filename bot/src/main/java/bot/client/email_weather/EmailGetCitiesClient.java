@@ -8,7 +8,7 @@ import org.springframework.web.service.annotation.GetExchange;
 
 import java.util.List;
 
-public interface EmailGetClient {
+public interface EmailGetCitiesClient {
     @GetExchange("/weather/get")
     ResponseEntity<List<CityPK>> getCities(@RequestBody EmailRequest request);
 }

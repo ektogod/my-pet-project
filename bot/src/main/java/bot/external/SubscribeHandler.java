@@ -1,7 +1,7 @@
 package bot.external;
 
 import bot.client.weather.SubscribeClient;
-import com.tinkoff_lab.dto.weather.CityDTO;
+import com.tinkoff_lab.dto.weather.CityDTOOO;
 import com.tinkoff_lab.dto.weather.request.telegram.WeatherTelegramRequest;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
@@ -17,7 +17,7 @@ public class SubscribeHandler {
     private final SubscribeClient client;
 
     public String subscribe(Update update) {
-        List<CityDTO> cities;
+        List<CityDTOOO> cities;
         try {
             cities = parseCities(update.getMessage().getText());
         }
@@ -41,8 +41,8 @@ public class SubscribeHandler {
         return response;
     }
 
-    private List<CityDTO> parseCities(String msg) {
-        List<CityDTO> cities = new ArrayList<>();
+    private List<CityDTOOO> parseCities(String msg) {
+        List<CityDTOOO> cities = new ArrayList<>();
 
         String[] lines = msg.split("\n");
         for (String line : lines) {
@@ -50,7 +50,7 @@ public class SubscribeHandler {
             if(cityData.length != 2){
                 throw new RuntimeException();
             }
-            cities.add(new CityDTO(cityData[0], cityData[1]));
+            cities.add(new CityDTOOO(cityData[0], cityData[1]));
         }
 
         return cities;

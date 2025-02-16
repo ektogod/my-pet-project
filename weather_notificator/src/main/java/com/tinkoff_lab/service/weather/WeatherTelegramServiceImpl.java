@@ -8,7 +8,7 @@ import com.tinkoff_lab.dto.weather.request.telegram.TelegramRequest;
 import com.tinkoff_lab.dto.weather.request.telegram.WeatherTelegramRequest;
 import com.tinkoff_lab.entity.User;
 import com.tinkoff_lab.exception.EntityNotFoundException;
-import com.tinkoff_lab.dto.weather.CityDTO;
+import com.tinkoff_lab.dto.weather.CityDTOOO;
 import com.tinkoff_lab.dto.weather.Coordinates;
 import com.tinkoff_lab.entity.City;
 import com.tinkoff_lab.entity.CityPK;
@@ -50,10 +50,10 @@ public class WeatherTelegramServiceImpl implements WeatherTelegramService {
             tgUserRep.insert(user);
         }
 
-        for (CityDTO cityDTO : request.cities()) {
-            Coordinates crd = definer.getCoordinates(cityDTO.city(), cityDTO.country()); // throws exception if something incorrect
+        for (CityDTOOO cityDTOOO : request.cities()) {
+            Coordinates crd = definer.getCoordinates(cityDTOOO.city(), cityDTOOO.country()); // throws exception if something incorrect
 
-            CityPK pk = new CityPK(cityDTO.city(), cityDTO.country());
+            CityPK pk = new CityPK(cityDTOOO.city(), cityDTOOO.country());
             City city = new City(pk, crd.latitude(), crd.longitude());
             cityDAO.update(city);
             tgUserCityDAO.addTelegramUserCity(user, city);
@@ -103,10 +103,10 @@ public class WeatherTelegramServiceImpl implements WeatherTelegramService {
             throw new EntityNotFoundException("User not found");
         }
 
-        for (CityDTO cityDTO : request.cities()) {
-            City city = cityDAO.findByID(new CityPK(cityDTO.city(), cityDTO.country()));
+        for (CityDTOOO cityDTOOO : request.cities()) {
+            City city = cityDAO.findByID(new CityPK(cityDTOOO.city(), cityDTOOO.country()));
             if (city == null) {
-                logger.error("Removing went wrong because {} not in database", cityDTO);
+                logger.error("Removing went wrong because {} not in database", cityDTOOO);
                 throw new EntityNotFoundException("City not found");
             }
             tgUserCityDAO.removeUserCity(user, city);

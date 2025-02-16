@@ -1,9 +1,7 @@
 package bot.bot;
 
 import bot.UpdateProcessor;
-import bot.command.email_weather.EmailGetCommand;
-import bot.command.email_weather.EmailRegisterCommand;
-import bot.command.email_weather.EmailSubscribeCommand;
+import bot.command.email_weather.*;
 import bot.command.service.HelpCommand;
 import bot.command.service.StartCommand;
 import bot.command.translation.TranslateCommand;
@@ -32,7 +30,9 @@ public class Bot extends TelegramLongPollingCommandBot {
     private final DeleteCommand deleteCommand;
     private final EmailRegisterCommand emailRegisterCommand;
     private final EmailSubscribeCommand emailSubscribeCommand;
-    private final EmailGetCommand emailGetCommand;
+    private final EmailGetCitiesCommand emailGetCitiesCommand;
+    private final EmailUnsubscribeCommand emailUnsubscribeCommand;
+    private final EmailGetEmailsCommand emailGetEmailsCommand;
 
     private final UpdateProcessor processor;
     private final BotConfig config;
@@ -50,7 +50,9 @@ public class Bot extends TelegramLongPollingCommandBot {
         register(deleteCommand);
         register(emailRegisterCommand);
         register(emailSubscribeCommand);
-        register(emailGetCommand);
+        register(emailGetCitiesCommand);
+        register(emailUnsubscribeCommand);
+        register(emailGetEmailsCommand);
 
         this.name = config.getBotName();
         this.token = config.getBotToken();

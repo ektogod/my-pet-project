@@ -1,2 +1,11 @@
-package bot.client.email_weather;public interface EmailUnsubscribeClient {
+package bot.client.email_weather;
+
+import com.tinkoff_lab.dto.weather.request.email.EmailRequest;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.service.annotation.DeleteExchange;
+
+public interface EmailUnsubscribeClient {
+    @DeleteExchange("/email/{id}")
+    String unsubscribe(@PathVariable String id);
 }
