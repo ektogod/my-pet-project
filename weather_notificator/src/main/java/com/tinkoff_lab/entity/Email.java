@@ -26,6 +26,14 @@ public class Email {
     @EqualsAndHashCode.Include
     private String name;
 
+    @Column(name = "code")
+    @EqualsAndHashCode.Include
+    private String code;
+
+    @Column(name = "is_verified", columnDefinition = "BIT(1)")
+    @EqualsAndHashCode.Include
+    boolean isVerified;
+
     @ManyToMany(fetch = FetchType.EAGER)
     private Set<City> cities = new HashSet<>();
 
@@ -35,5 +43,6 @@ public class Email {
     public Email(String email, String name) {
         this.email = email;
         this.name = name;
+        this.isVerified = false;
     }
 }

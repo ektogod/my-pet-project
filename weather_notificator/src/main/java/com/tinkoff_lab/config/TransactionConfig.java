@@ -17,10 +17,10 @@ import javax.sql.DataSource;
 public class TransactionConfig {
     @Autowired
     private SessionFactory sessionFactory;
-    @Bean
-    public HibernateTransactionManager transactionManager() {
-        HibernateTransactionManager transactionManager = new HibernateTransactionManager();
-        transactionManager.setSessionFactory(sessionFactory);
-        return transactionManager;
-    }
+//    @Bean
+//    public HibernateTransactionManager transactionManager() {
+//        HibernateTransactionManager transactionManager = new HibernateTransactionManager();
+//        transactionManager.setSessionFactory(sessionFactory);
+//        return transactionManager;
+//    }
 }

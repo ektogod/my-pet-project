@@ -15,7 +15,7 @@ import java.util.Set;
 @Setter
 public class User {
     @Id
-    @Column(name = "chat-ID")
+    @Column(name = "chat_id")
     private long chatId;
 
     @Column(name = "username")

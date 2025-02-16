@@ -20,7 +20,7 @@ public class EmailUnsubscribeCommand extends Command {
 
     @Override
     public void execute(AbsSender absSender, User user, Chat chat, String[] strings) {
-        String msg = "Write your email.";
+        String msg = "Write email which you want to unsubscribe from notification.";
         state.setState(States.EMAIL_UNSUBSCRIBE);
         sendMsg(absSender, chat.getId(), msg);
     }

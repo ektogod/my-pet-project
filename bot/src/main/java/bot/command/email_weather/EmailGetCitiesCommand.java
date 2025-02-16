@@ -10,10 +10,10 @@ import org.telegram.telegrambots.meta.api.objects.User;
 import org.telegram.telegrambots.meta.bots.AbsSender;
 
 @Component
-public class EmailGetCommand extends Command {
+public class EmailGetCitiesCommand extends Command {
     @Autowired
     private CurrentState state;
-    public EmailGetCommand() {
+    public EmailGetCitiesCommand() {
         super("/email_get", "returns current email cities");
     }
 

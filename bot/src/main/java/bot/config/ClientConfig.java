@@ -1,9 +1,7 @@
 package bot.config;
 
 import bot.client.EmailClient;
-import bot.client.email_weather.EmailGetClient;
-import bot.client.email_weather.EmailRegisterClient;
-import bot.client.email_weather.EmailSubscribeClient;
+import bot.client.email_weather.*;
 import bot.client.translation.TranslationClient;
 import bot.client.weather.DeleteClient;
 import bot.client.weather.GetClient;
@@ -107,7 +105,7 @@ public class ClientConfig {
     }
 
     @Bean
-    public EmailGetClient emailGetClient() {
+    public EmailGetCitiesClient emailGetClient() {
         RestClient client = RestClient
                 .builder()
                 .baseUrl(appConfig.getBotBaseUrl())
@@ -117,7 +115,7 @@ public class ClientConfig {
                 .builderFor(RestClientAdapter.create(client))
                 .build();
 
-        return factory.createClient(EmailGetClient.class);
+        return factory.createClient(EmailGetCitiesClient.class);
     }
 
     @Bean
@@ -146,5 +144,33 @@ public class ClientConfig {
                 .build();
 
         return factory.createClient(EmailRegisterClient.class);
+    }
+
+    @Bean
+    public EmailUnsubscribeClient emailUnsubscribeClientClient() {
+        RestClient client = RestClient
+                .builder()
+                .baseUrl(appConfig.getBotBaseUrl())
+                .build();
+
+        HttpServiceProxyFactory factory = HttpServiceProxyFactory
+                .builderFor(RestClientAdapter.create(client))
+                .build();
+
+        return factory.createClient(EmailUnsubscribeClient.class);
+    }
+
+    @Bean
+    public EmailGetEmailsClient emailGetEmailsClient() {
+        RestClient client = RestClient
+                .builder()
+                .baseUrl(appConfig.getBotBaseUrl())
+                .build();
+
+        HttpServiceProxyFactory factory = HttpServiceProxyFactory
+                .builderFor(RestClientAdapter.create(client))
+                .build();
+
+        return factory.createClient(EmailGetEmailsClient.class);
     }
 }

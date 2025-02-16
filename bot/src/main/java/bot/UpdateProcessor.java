@@ -4,9 +4,10 @@ import bot.bot.Bot;
 import bot.external.DeleteHandler;
 import bot.external.SubscribeHandler;
 import bot.external.TranslationHandler;
-import bot.external.email_weather.EmailGetHandler;
+import bot.external.email_weather.EmailGetCitiesHandler;
 import bot.external.email_weather.EmailRegisterHandler;
 import bot.external.email_weather.EmailSubscribeHandler;
+import bot.external.email_weather.EmailUnsubscribeHandler;
 import bot.states.CurrentState;
 import bot.states.States;
 import bot.utils.EmailUtils;
@@ -28,9 +29,10 @@ public class UpdateProcessor {
     private final TranslationHandler translationHandler;
     private final SubscribeHandler subscribeHandler;
     private final DeleteHandler deleteHandler;
-    private final EmailGetHandler emailGetHandler;
+    private final EmailGetCitiesHandler emailGetCitiesHandler;
     private final EmailRegisterHandler emailRegisterHandler;
     private final EmailSubscribeHandler emailSubscribeHandler;
+    private final EmailUnsubscribeHandler emailUnsubscribeHandler;
     private final JedisPool jedisPool = new JedisPool(new JedisPoolConfig(), "localhost", 6379);
 
 
@@ -62,7 +64,7 @@ public class UpdateProcessor {
                     bot.sendMessage(response, chatId);
                 }
                 case EMAIL_GET -> {
-                    String response = emailGetHandler.get(msg);
+                    String response = emailGetCitiesHandler.get(msg);
                     curState.setState(States.NONE);
                     bot.sendMessage(response, chatId);
                 }
@@ -72,34 +74,29 @@ public class UpdateProcessor {
                     bot.sendMessage("Now write cities you want to add.", chatId);
                 }
                 case SUBSCRIBE_CITIES -> {
-                    emailSubscribeHandler.subscribe(jedis.get("temp/email"), msg);
+                    String response = emailSubscribeHandler.subscribe(jedis.get("temp/email"), msg);
                     curState.setState(States.NONE);
-                    bot.sendMessage("Cities were added successfully", chatId);
+                    bot.sendMessage(response, chatId);
                 }
                 case EMAIL_REGISTER -> {
                     String validCode = EmailUtils.generateValidCode();
-                    jedis.set("temp/validCode", validCode);
 
                     String[] data = msg.split("\n");
                     jedis.set("temp/email", data[0]);
                     jedis.set("temp/emailName", data[1]);
 
-                    emailRegisterHandler.sendValidCode(data[0], "Validation", validCode);
-                    curState.setState(States.EMAIL_REGISTER_VALIDATION);
-                    bot.sendMessage("Check your email for validation code. Write this code.", chatId);
-                }
-                case EMAIL_REGISTER_VALIDATION -> {
-                    if (jedis.get("temp/validCode").equals(update.getMessage().getText())) {
-                        bot.sendMessage("Validation approved!", chatId);
-                        emailRegisterHandler.registerEmail(jedis.get("temp/email"), jedis.get("temp/emailName"), chatId);
-                    } else {
-                        bot.sendMessage("You've sent incorrect validation code", chatId);
-                    }
+                    emailRegisterHandler.sendMessage(data[0], "Validation", validCode);
+                    emailRegisterHandler.registerEmail(data[0], data[1], chatId, validCode);
+
                     curState.setState(States.NONE);
+                    bot.sendMessage("Check your email for validation link.", chatId);
                 }
-                case NONE -> {
-                    bot.sendMessage("Bot doesn't understand you", chatId);
+                case EMAIL_UNSUBSCRIBE -> {
+                    String response = emailUnsubscribeHandler.unsubscribe(msg);
+                    curState.setState(States.NONE);
+                    bot.sendMessage(response, chatId);
                 }
+                case NONE -> bot.sendMessage("Bot doesn't understand you", chatId);
             }
         }
     }

@@ -12,7 +12,7 @@ import java.util.stream.Collectors;
 
 @Component
 @RequiredArgsConstructor
-public class EmailGetHandler {
+public class EmailGetCitiesHandler {
     private final EmailGetCitiesClient client;
 
     public String get(String email) {

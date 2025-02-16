@@ -3,6 +3,7 @@ package com.tinkoff_lab.service.weather;
 import com.tinkoff_lab.dao.hibernate.*;
 import com.tinkoff_lab.dto.EmailUserRequest;
 import com.tinkoff_lab.entity.Email;
+import com.tinkoff_lab.entity.User;
 import com.tinkoff_lab.exception.EntityNotFoundException;
 import com.tinkoff_lab.exception.WrongWeatherRequestException;
 import com.tinkoff_lab.dto.weather.CityDTO;
@@ -41,15 +42,15 @@ public class WeatherServiceImpl implements WeatherService {
 
     @Override
     public void register(EmailUserRequest request) {
-        logger.info("Start adding user with email {} and chatId {} to database", request.email(), request.chatId());
-        Email email = new Email(request.email(), request.name());
-        if (emailDAO.findByID(email.getEmail()) != null) {
-            logger.warn("User with email {} already exists!", email.getEmail());
-            throw new WrongWeatherRequestException(String.format("User with email %s already exists!", email));
-        }
-
-        emailDAO.insert(email);
-        userEmailDAO.addUserEmail(userDAO.findByID(request.chatId()), email);
+//        logger.info("Start adding user with email {} and chatId {} to database", request.email(), request.chatId());
+//        Email email = new Email(request.email(), request.name());
+//        if (emailDAO.findByID(email.getEmail()) != null) {
+//            logger.warn("User with email {} already exists!", email.getEmail());
+//            throw new WrongWeatherRequestException(String.format("User with email %s already exists!", email));
+//        }
+//
+//        emailDAO.insert(email);
+//        userEmailDAO.addUserEmail(userDAO.findByID(request.chatId()), email);
     }
 
     @Override
@@ -121,6 +122,20 @@ public class WeatherServiceImpl implements WeatherService {
         Set<City> cities = email.getCities();
         logger.warn("Getting all cities for user with email {} ended successfully", request.email());
         return cities.stream().map(City::getPk).toList();
+    }
+
+    @Override
+    public List<String> getEmails(long chatId) {
+        logger.info("Start getting all emails for user with chatId {}", chatId);
+        User user = userDAO.findByID(chatId);
+        if (user == null) {
+            logger.warn("Getting all emails for user with chat id {} went wrong: user not found", chatId);
+            throw new EntityNotFoundException("User not found");
+        }
+
+        Set<Email> emails = user.getEmails();
+        logger.warn("Getting all emails for user with chat id {} ended successfully", chatId);
+        return emails.stream().map(Email::getEmail).toList();
     }
 
     @Override
