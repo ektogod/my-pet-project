@@ -3,7 +3,7 @@ package com.tinkoff_lab.external;
 import com.tinkoff_lab.client.IPClient;
 import com.tinkoff_lab.client.TranslationClient;
 import com.tinkoff_lab.dto.translation.Translation;
-import com.tinkoff_lab.dto.translation.requests.UserRequest;
+import com.tinkoff_lab.dto.translation.requests.TranslationDTO;
 import com.tinkoff_lab.dto.translation.responses.TranslateResponse;
 import com.tinkoff_lab.exception.TranslationException;
 import com.tinkoff_lab.utils.DayTimeUtils;
@@ -25,7 +25,7 @@ public class TranslationDefiner {
     IPClient ipClient;
     Logger logger = LoggerFactory.getLogger(TranslationDefiner.class);
 
-    public String getTranslation(UserRequest request){
+    public String getTranslation(TranslationDTO request){
         ResponseEntity<TranslateResponse> response = translationClient.getTranslation(
                 request.text(),
                 String.format("%s|%s", request.originalLanguage(), request.finalLanguage()));
@@ -40,9 +40,10 @@ public class TranslationDefiner {
         return response.getBody().getTranslatedText();
     }
 
-    private void throwException(ResponseEntity<TranslateResponse> response, UserRequest request) {
+    private void throwException(ResponseEntity<TranslateResponse> response, TranslationDTO request) {
         var resultBody = response.getBody();
         Translation translation = new Translation(  // needs for writing in db in ExceptionHandler class
+                request.username(),
                 ipClient.getIp().ip(),
                 request.text(),
                 request.originalLanguage(),

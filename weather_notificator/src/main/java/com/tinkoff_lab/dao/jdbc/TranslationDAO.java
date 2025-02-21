@@ -27,7 +27,7 @@ public class TranslationDAO implements DAO<Translation, Integer> {            //
     public Integer insert(Translation entity) {
         logger.info("Start writing to database of query: {}", entity);
 
-        String sql = "INSERT INTO query (IP, Original_Text, Original_Language, Translated_Text, Target_Language, Time, Status, Message) VALUES(?, ?, ?, ?, ?, ?, ?, ?)";
+        String sql = "INSERT INTO query (Username, IP, Original_Text, Original_Language, Translated_Text, Target_Language, Time, Status, Message) VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?)";
         try (Connection connection = connectionService.getConnection()) {    // getting connection with db
             logger.info("Connection with database established");
 
@@ -65,8 +65,9 @@ public class TranslationDAO implements DAO<Translation, Integer> {            //
                         resultSet.getString(5),
                         resultSet.getString(6),
                         resultSet.getString(7),
-                        resultSet.getInt(8),
-                        resultSet.getString(9)));
+                        resultSet.getString(8),
+                        resultSet.getInt(9),
+                        resultSet.getString(10)));
             }
 
             logger.info("Stop getting all entities from database");
@@ -82,7 +83,8 @@ public class TranslationDAO implements DAO<Translation, Integer> {            //
     public void update(Translation entity) {
         logger.info("Starting updating entity: {}", entity);
         String sql = "UPDATE query " +
-                "SET IP = ?, " +
+                "SET Username = ?," +
+                "IP = ?, " +
                 "Original_Text = ?, " +
                 "Original_Language = ?, " +
                 "Translated_Text = ?, " +
@@ -96,7 +98,7 @@ public class TranslationDAO implements DAO<Translation, Integer> {            //
             PreparedStatement statement = connection.prepareStatement(sql);
 
             prepareStatement(statement, entity);
-            statement.setInt(9, entity.id());
+            statement.setInt(10, entity.id());
 
             statement.executeUpdate();
             logger.info("Updating ended successfully for entity: {}", entity);
@@ -139,8 +141,9 @@ public class TranslationDAO implements DAO<Translation, Integer> {            //
                         resultSet.getString(5),
                         resultSet.getString(6),
                         resultSet.getString(7),
-                        resultSet.getInt(8),
-                        resultSet.getString(9));
+                        resultSet.getString(8),
+                        resultSet.getInt(9),
+                        resultSet.getString(10));
             }
 
             logger.info("Finding entity with ID {} ended successfully.", id);
@@ -153,14 +156,15 @@ public class TranslationDAO implements DAO<Translation, Integer> {            //
     }
 
     private void prepareStatement(PreparedStatement statement, Translation entity) throws SQLException {
-        statement.setString(1, entity.ip());  // preparing the statement
-        statement.setString(2, entity.originalText());
-        statement.setString(3, entity.originalLang());
-        statement.setString(4, entity.translatedText());
-        statement.setString(5, entity.targetLang());
-        statement.setString(6, entity.time());
-        statement.setInt(7, entity.status());
-        statement.setString(8, entity.message());
+        statement.setString(1, entity.username());
+        statement.setString(2, entity.ip());  // preparing the statement
+        statement.setString(3, entity.originalText());
+        statement.setString(4, entity.originalLang());
+        statement.setString(5, entity.translatedText());
+        statement.setString(6, entity.targetLang());
+        statement.setString(7, entity.time());
+        statement.setInt(8, entity.status());
+        statement.setString(9, entity.message());
     }
 
     private int getNewID(PreparedStatement statement, Translation entity) throws SQLException {

@@ -16,12 +16,12 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @EnableTransactionManagement
 @EnableJpaRepositories(basePackages = "com.tinkoff_lab")
 
-public class TinkoffLabApplication {
+public class WeatherApplication {
     public static void main(String[] args) {
-        Logger logger = LoggerFactory.getLogger(TinkoffLabApplication.class);
+        Logger logger = LoggerFactory.getLogger(WeatherApplication.class);
         logger.info("Application has started working");
 
-        SpringApplication app = new SpringApplication(TinkoffLabApplication.class);
+        SpringApplication app = new SpringApplication(WeatherApplication.class);
         app.addListeners((ApplicationListener<ContextClosedEvent>) event -> {
             logger.info("Application has terminated working\n");
         });

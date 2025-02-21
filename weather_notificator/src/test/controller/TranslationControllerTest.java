@@ -3,7 +3,7 @@ package controller;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.email_sender.EmailSenderApplication;
 import com.tinkoff_lab.dto.translation.Translation;
-import com.tinkoff_lab.dto.translation.requests.UserRequest;
+import com.tinkoff_lab.dto.translation.requests.TranslationDTO;
 import com.tinkoff_lab.dto.translation.responses.ErrorResponse;
 import com.tinkoff_lab.dto.translation.responses.UserResponse;
 import com.tinkoff_lab.service.database.ConnectionService;
@@ -81,7 +81,7 @@ public class TranslationControllerTest {
 
     @Test
     public void testWhenResponseIsCorrect() throws Exception {
-        UserRequest request = new UserRequest("Любовь", "ru", "en");
+        TranslationDTO request = new TranslationDTO("Любовь", "ru", "en");
         UserResponse response = new UserResponse("Love");
         compareResponses(request, mapper.writeValueAsString(response), 200);
 
@@ -102,7 +102,7 @@ public class TranslationControllerTest {
 
     @Test
     public void testWhereTextIsEmpty() throws Exception {
-        UserRequest request = new UserRequest("", "ru", "en");
+        TranslationDTO request = new TranslationDTO("", "ru", "en");
         ErrorResponse errorResponse = new ErrorResponse("NO QUERY SPECIFIED. EXAMPLE REQUEST: GET?Q=HELLO&LANGPAIR=EN|IT", 403);
         compareResponses(request, mapper.writeValueAsString(errorResponse), 403);
 
@@ -123,7 +123,7 @@ public class TranslationControllerTest {
 
     @Test
     public void testWhereOriginalLangIsEmpty() throws Exception {
-        UserRequest request = new UserRequest("a", "", "en");
+        TranslationDTO request = new TranslationDTO("a", "", "en");
         ErrorResponse errorResponse = new ErrorResponse("INVALID LANGUAGE PAIR SPECIFIED. EXAMPLE: LANGPAIR=EN|IT USING 2 LETTER ISO OR RFC3066 LIKE ZH-CN. ALMOST ALL LANGUAGES SUPPORTED BUT SOME MAY HAVE NO CONTENT", 403);
         compareResponses(request, mapper.writeValueAsString(errorResponse), 403);
 
@@ -144,7 +144,7 @@ public class TranslationControllerTest {
 
     @Test
     public void testWhereFinalLangIsEmpty() throws Exception {
-        UserRequest request = new UserRequest("a", "ru", "");
+        TranslationDTO request = new TranslationDTO("a", "ru", "");
         ErrorResponse errorResponse = new ErrorResponse("INVALID LANGUAGE PAIR SPECIFIED. EXAMPLE: LANGPAIR=EN|IT USING 2 LETTER ISO OR RFC3066 LIKE ZH-CN. ALMOST ALL LANGUAGES SUPPORTED BUT SOME MAY HAVE NO CONTENT", 403);
         compareResponses(request, mapper.writeValueAsString(errorResponse), 403);
 
@@ -165,7 +165,7 @@ public class TranslationControllerTest {
 
     @Test
     public void testWhereTextIsNull() throws Exception {
-        UserRequest request = new UserRequest(null, "ru", "en");
+        TranslationDTO request = new TranslationDTO(null, "ru", "en");
         ErrorResponse errorResponse = new ErrorResponse("Translation went wrong because something from parameters is null!", 500);
         compareResponses(request, mapper.writeValueAsString(errorResponse), 500);
 
@@ -187,7 +187,7 @@ public class TranslationControllerTest {
     @Test
     public void testWhereOriginalLangIsNull() throws Exception {
 
-        UserRequest request = new UserRequest("a", null, "en");
+        TranslationDTO request = new TranslationDTO("a", null, "en");
         ErrorResponse errorResponse = new ErrorResponse("Translation went wrong because something from parameters is null!", 500);
         compareResponses(request, mapper.writeValueAsString(errorResponse), 500);
 
@@ -208,7 +208,7 @@ public class TranslationControllerTest {
 
     @Test
     public void testWhereFinalLangIsNull() throws Exception {
-        UserRequest request = new UserRequest("a", "ru", null);
+        TranslationDTO request = new TranslationDTO("a", "ru", null);
         ErrorResponse errorResponse = new ErrorResponse("Translation went wrong because something from parameters is null!", 500);
         compareResponses(request, mapper.writeValueAsString(errorResponse), 500);
 
@@ -229,7 +229,7 @@ public class TranslationControllerTest {
 
     @Test
     public void testWhereLanguageIsIncorrect() throws Exception {
-        UserRequest request = new UserRequest("любовь", "ru", "by");
+        TranslationDTO request = new TranslationDTO("любовь", "ru", "by");
         ErrorResponse errorResponse = new ErrorResponse("'BY' IS AN INVALID TARGET LANGUAGE . EXAMPLE: LANGPAIR=EN|IT USING 2 LETTER ISO OR RFC3066 LIKE ZH-CN. ALMOST ALL LANGUAGES SUPPORTED BUT SOME MAY HAVE NO CONTENT", 403);
         compareResponses(request, mapper.writeValueAsString(errorResponse), 403);
 
@@ -250,12 +250,12 @@ public class TranslationControllerTest {
 
     @Test
     public void testWhereTextIsLargerThan1000() throws Exception {
-        UserRequest request = new UserRequest("a".repeat(1001), "ru", "en");
+        TranslationDTO request = new TranslationDTO("a".repeat(1001), "ru", "en");
         ErrorResponse errorResponse = new ErrorResponse("Insertion of query in database goes wrong!", 500);
         compareResponses(request, mapper.writeValueAsString(errorResponse), 500);
     }
 
-    private void compareResponses(UserRequest request, String response, int status) throws Exception {
+    private void compareResponses(TranslationDTO request, String response, int status) throws Exception {
         mockMvc.perform(MockMvcRequestBuilders.post("/ektogod/translateText")
                         .contentType("application/json")
                         .characterEncoding("UTF-8")

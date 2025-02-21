@@ -50,10 +50,8 @@ public class UpdateProcessor {
                 }
                 case TRANSLATE_LANGS -> {
                     String[] data = msg.split(" +");
-                    translationHandler.setCurOrigLang(data[0]);
-                    translationHandler.setCurTargetLang(data[1]);
                     curState.setState(States.NONE);
-                    bot.sendMessage(translationHandler.getTranslation(), chatId);
+                    bot.sendMessage(translationHandler.getTranslation(update.getMessage().getChat().getUserName(), data[0], data[1]), chatId);
                 }
                 case SUBSCRIBE -> {
                     String response = subscribeHandler.subscribe(update);
@@ -110,6 +108,9 @@ public class UpdateProcessor {
                 }
                 case NONE -> bot.sendMessage("Bot doesn't understand you", chatId);
             }
+        }
+        catch (ArrayIndexOutOfBoundsException ex){
+            bot.sendMessage("Something wrong with amount of parameters! Please check your request and try again!", chatId);
         }
     }
 }
