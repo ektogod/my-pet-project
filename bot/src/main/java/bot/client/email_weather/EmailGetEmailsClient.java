@@ -10,6 +10,6 @@ import org.springframework.web.service.annotation.GetExchange;
 import java.util.List;
 
 public interface EmailGetEmailsClient {
-    @GetExchange("/weather/get/{chatId}")
+    @GetExchange("/email/get/{chatId}")
     ResponseEntity<List<String>> getEmails(@PathVariable long chatId);
 }

@@ -20,7 +20,7 @@ public class EmailGetCitiesCommand extends Command {
     @Override
     public void execute(AbsSender absSender, User user, Chat chat, String[] strings) {
         String msg = "Write your email.";
-        state.setState(States.EMAIL_GET);
+        state.setState(States.EMAIL_GET_CITIES);
         sendMsg(absSender, chat.getId(), msg);
     }
 }

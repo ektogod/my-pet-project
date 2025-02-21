@@ -11,10 +11,10 @@ import org.springframework.web.client.RestClientResponseException;
 public class UnsubscribeHandler {
     private final UnsubscribeClient client;
 
-    public String unsubscribe(TelegramRequest request){
+    public String unsubscribe(long chatId){
         String response;
         try{
-            response = client.unsubscribe(request);
+            response = client.unsubscribe(chatId);
         }
         catch (RestClientResponseException ex){
             response = ex.getResponseBodyAs(String.class);

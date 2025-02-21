@@ -31,9 +31,6 @@ public class HibernateConfig {
     @Value("${spring.datasource.password}")
     private String databasePassword;
 
-    @Value("${spring.jpa.hibernate.properties.dialect}")
-    private String dialect;
-
     @Bean
     public DataSource dataSource(){
         DriverManagerDataSource dataSource = new DriverManagerDataSource();

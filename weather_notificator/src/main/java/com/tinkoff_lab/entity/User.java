@@ -39,4 +39,24 @@ public class User {
         this.firstname = firstname;
         this.lastname = lastname;
     }
+
+    public void addCity(City city){
+        this.cities.add(city);
+        city.getUsers().add(this);
+    }
+
+    public void removeCity(City city){
+        this.cities.remove(city);
+        city.getUsers().remove(this);
+    }
+
+    public void addEmail(Email email){
+        this.emails.add(email);
+        email.getUsers().add(this);
+    }
+
+    public void removeEmail(Email email){
+        this.emails.remove(email);
+        email.getUsers().remove(this);
+    }
 }

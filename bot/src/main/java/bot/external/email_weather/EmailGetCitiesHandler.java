@@ -1,6 +1,7 @@
 package bot.external.email_weather;
 
 import bot.client.email_weather.EmailGetCitiesClient;
+import com.tinkoff_lab.dto.n.CityDTO;
 import com.tinkoff_lab.dto.weather.request.email.EmailRequest;
 import com.tinkoff_lab.entity.CityPK;
 import lombok.RequiredArgsConstructor;
@@ -18,13 +19,13 @@ public class EmailGetCitiesHandler {
     public String get(String email) {
         String response;
         try {
-            List<CityPK> cities = client.getCities(new EmailRequest(email)).getBody();
+            List<CityDTO> cities = client.getCities(email).getBody();
             if (cities == null || cities.isEmpty()) {
                 response = "You have no any cities.";
             } else {
                 response = cities
                         .stream()
-                        .map(CityPK::toString)
+                        .map(cityDTO -> cityDTO.city() + " " + cityDTO.country())
                         .collect(Collectors.joining("\n"));
             }
         } catch (RestClientResponseException ex) {

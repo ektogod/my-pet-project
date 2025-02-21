@@ -1,6 +1,9 @@
 package bot.external;
 
 import bot.client.weather.SubscribeClient;
+import com.tinkoff_lab.dto.n.CityDTO;
+import com.tinkoff_lab.dto.n.UserCitiesDTO;
+import com.tinkoff_lab.dto.n.UserDTO;
 import com.tinkoff_lab.dto.weather.CityDTOOO;
 import com.tinkoff_lab.dto.weather.request.telegram.WeatherTelegramRequest;
 import lombok.RequiredArgsConstructor;
@@ -17,18 +20,18 @@ public class SubscribeHandler {
     private final SubscribeClient client;
 
     public String subscribe(Update update) {
-        List<CityDTOOO> cities;
+        List<CityDTO> cities;
         try {
             cities = parseCities(update.getMessage().getText());
         }
         catch (RuntimeException ex){
             return "City not found.";
         }
-        WeatherTelegramRequest request = new WeatherTelegramRequest(
+        UserCitiesDTO request = new UserCitiesDTO(new UserDTO(
                 update.getMessage().getChatId(),
                 update.getMessage().getChat().getUserName(),
                 update.getMessage().getChat().getFirstName(),
-                update.getMessage().getChat().getLastName(),
+                update.getMessage().getChat().getLastName()),
                 cities);
 
         String response;
@@ -41,8 +44,8 @@ public class SubscribeHandler {
         return response;
     }
 
-    private List<CityDTOOO> parseCities(String msg) {
-        List<CityDTOOO> cities = new ArrayList<>();
+    private List<CityDTO> parseCities(String msg) {
+        List<CityDTO> cities = new ArrayList<>();
 
         String[] lines = msg.split("\n");
         for (String line : lines) {
@@ -50,7 +53,7 @@ public class SubscribeHandler {
             if(cityData.length != 2){
                 throw new RuntimeException();
             }
-            cities.add(new CityDTOOO(cityData[0], cityData[1]));
+            cities.add(new CityDTO(cityData[0], cityData[1], 0, 0));
         }
 
         return cities;

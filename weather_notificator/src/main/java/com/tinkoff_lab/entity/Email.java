@@ -45,4 +45,14 @@ public class Email {
         this.name = name;
         this.isVerified = false;
     }
+
+    public void addCity(City city){
+        this.cities.add(city);
+        city.getEmails().add(this);
+    }
+
+    public void removeCity(City city){
+        this.cities.remove(city);
+        city.getEmails().remove(this);
+    }
 }

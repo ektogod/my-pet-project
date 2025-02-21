@@ -1,6 +1,9 @@
 package com.tinkoff_lab.controller;
 
+import com.tinkoff_lab.dto.n.CityDTO;
+import com.tinkoff_lab.dto.n.EmailCitiesDto;
 import com.tinkoff_lab.dto.n.EmailDTO;
+import com.tinkoff_lab.external.CoordinatesDefiner;
 import com.tinkoff_lab.service.n.EmailService;
 import lombok.AccessLevel;
 import lombok.RequiredArgsConstructor;
@@ -10,6 +13,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Slf4j
@@ -20,21 +24,30 @@ import java.util.List;
 
 public class EmailController {
     EmailService service;
+    CoordinatesDefiner definer;
 
-    @GetMapping
-    public ResponseEntity<List<EmailDTO>> getEmails() {
+    @GetMapping("/get/{chatId}")
+    public ResponseEntity<List<EmailDTO>> getEmails(@PathVariable String chatId) {
         log.debug("Received request to get all emails.");
         var emails = service.getEmails();
         log.info("Successfully retrieved emails.");
         return new ResponseEntity<>(emails, HttpStatus.OK);
     }
 
-    @PostMapping
+    @PostMapping("/add")
     public ResponseEntity<Void> addEmail(@RequestBody EmailDTO request) {
         log.debug("Received request to create a room with id {}.", request.email());
         service.addEmail(request);
         log.info("Successfully created room with id {}.", request.email());
         return new ResponseEntity<>(HttpStatus.OK);
+    }
+
+    @GetMapping("/{email}/getCities")
+    public ResponseEntity<List<CityDTO>> getEmailCities(@PathVariable String email){
+        log.debug("Received request to get cities from email {}.", email);
+        var cities = service.getEmailCities(email);
+        log.info("Successfully created room with id {}.", email);
+        return new ResponseEntity<>(cities, HttpStatus.OK);
     }
 
     @GetMapping("/{id}")
@@ -59,5 +72,23 @@ public class EmailController {
         service.updateEmail(emailDTO);
         log.info("Successfully updated room with id {}.", emailDTO.email());
         return new ResponseEntity<>(HttpStatus.OK);
+    }
+
+    @PostMapping("/addCities")
+    public ResponseEntity<String> addCityToEmail(@RequestBody EmailCitiesDto dto){
+        List<CityDTO> cities = new ArrayList<>();
+        for(CityDTO c: dto.cityDTOS()) {
+            var crd = definer.getCoordinates(c.city(), c.country());
+            cities.add(new CityDTO(c.city(), c.country(), crd.latitude(), crd.longitude()));
+        }
+
+        service.addCitiesToEmail(dto.email(), cities);
+        return new ResponseEntity<>("Cities was added successfully to email", HttpStatus.OK);
+    }
+
+    @DeleteMapping
+    public ResponseEntity<String> removeCityFromEmail(@RequestBody EmailCitiesDto dto){
+        service.removeCitiesFromEmail(dto.email(), dto.cityDTOS());
+        return new ResponseEntity<>("Cities was removed successfully to email", HttpStatus.OK);
     }
 }

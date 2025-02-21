@@ -1,9 +1,7 @@
 package bot;
 
 import bot.bot.Bot;
-import bot.external.DeleteHandler;
-import bot.external.SubscribeHandler;
-import bot.external.TranslationHandler;
+import bot.external.*;
 import bot.external.email_weather.EmailGetCitiesHandler;
 import bot.external.email_weather.EmailRegisterHandler;
 import bot.external.email_weather.EmailSubscribeHandler;
@@ -11,8 +9,10 @@ import bot.external.email_weather.EmailUnsubscribeHandler;
 import bot.states.CurrentState;
 import bot.states.States;
 import bot.utils.EmailUtils;
+import lombok.AccessLevel;
 import lombok.RequiredArgsConstructor;
 import lombok.Setter;
+import lombok.experimental.FieldDefaults;
 import org.springframework.stereotype.Component;
 import org.telegram.telegrambots.meta.api.objects.Update;
 import redis.clients.jedis.Jedis;
@@ -22,12 +22,14 @@ import redis.clients.jedis.JedisPoolConfig;
 @Component
 @Setter
 @RequiredArgsConstructor
-
+//@FieldDefaults(makeFinal = true, level = AccessLevel.PRIVATE)
 public class UpdateProcessor {
     private Bot bot;
     private final CurrentState curState;
     private final TranslationHandler translationHandler;
     private final SubscribeHandler subscribeHandler;
+    private final UnsubscribeHandler unsubscribeHandler;
+    private final GetHandler getHandler;
     private final DeleteHandler deleteHandler;
     private final EmailGetCitiesHandler emailGetCitiesHandler;
     private final EmailRegisterHandler emailRegisterHandler;
@@ -58,12 +60,22 @@ public class UpdateProcessor {
                     curState.setState(States.NONE);
                     bot.sendMessage(response, chatId);
                 }
+                case UNSUBSCRIBE -> {
+                    String response = unsubscribeHandler.unsubscribe(chatId);
+                    curState.setState(States.NONE);
+                    bot.sendMessage(response, chatId);
+                }
+                case GET_CITIES -> {
+                    String response = getHandler.get(chatId);
+                    curState.setState(States.NONE);
+                    bot.sendMessage(response, chatId);
+                }
                 case DELETE_CITY -> {
                     String response = deleteHandler.delete(update);
                     curState.setState(States.NONE);
                     bot.sendMessage(response, chatId);
                 }
-                case EMAIL_GET -> {
+                case EMAIL_GET_CITIES -> {
                     String response = emailGetCitiesHandler.get(msg);
                     curState.setState(States.NONE);
                     bot.sendMessage(response, chatId);
