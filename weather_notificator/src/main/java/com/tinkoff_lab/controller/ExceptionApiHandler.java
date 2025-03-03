@@ -3,6 +3,7 @@ package com.tinkoff_lab.controller;
 import com.tinkoff_lab.dto.translation.responses.ErrorResponse;
 import com.tinkoff_lab.exception.*;
 import com.tinkoff_lab.service.database.TranslationDatabaseService;
+import jakarta.persistence.EntityNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -36,8 +37,13 @@ public class ExceptionApiHandler {     // global exception handler
         return new ResponseEntity<>(ex.getMessage(), HttpStatus.BAD_REQUEST);
     }
 
-    @ExceptionHandler({EntityNotFoundException.class})
+    @ExceptionHandler({jakarta.persistence.EntityNotFoundException.class})
     public ResponseEntity<String> handleException(EntityNotFoundException ex) {
         return new ResponseEntity<>(ex.getMessage(), HttpStatus.BAD_REQUEST);
+    }
+
+    @ExceptionHandler({EmailVerificationException.class})
+    public ResponseEntity<String> handleException(EmailVerificationException ex) {
+        return new ResponseEntity<>(ex.getMessage(), HttpStatus.UNAUTHORIZED);
     }
 }

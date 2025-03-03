@@ -11,13 +11,15 @@ import org.springframework.context.event.ContextClosedEvent;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
+import java.io.IOException;
+
 @SpringBootApplication(exclude = HibernateJpaAutoConfiguration.class)
 @EntityScan(basePackages = "com.tinkoff_lab")
 @EnableTransactionManagement
 @EnableJpaRepositories(basePackages = "com.tinkoff_lab")
 
 public class WeatherApplication {
-    public static void main(String[] args) {
+    public static void main(String[] args){
         Logger logger = LoggerFactory.getLogger(WeatherApplication.class);
         logger.info("Application has started working");
 

@@ -1,7 +1,7 @@
 package controller;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
 import com.email_sender.EmailSenderApplication;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.tinkoff_lab.dto.translation.Translation;
 import com.tinkoff_lab.dto.translation.requests.TranslationDTO;
 import com.tinkoff_lab.dto.translation.responses.ErrorResponse;

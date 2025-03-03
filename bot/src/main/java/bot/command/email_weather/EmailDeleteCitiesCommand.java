@@ -10,17 +10,17 @@ import org.telegram.telegrambots.meta.api.objects.User;
 import org.telegram.telegrambots.meta.bots.AbsSender;
 
 @Component
-public class EmailDeleteWeather extends Command {
+public class EmailDeleteCitiesCommand extends Command {
     @Autowired
     private CurrentState state;
-    public EmailDeleteWeather() {
+    public EmailDeleteCitiesCommand() {
         super("/email_delete", "removes cities from email");
     }
 
     @Override
     public void execute(AbsSender absSender, User user, Chat chat, String[] strings) {
         String msg = "Write your email.";
-        state.setState(States.EMAIL_DELETE_CITY);
+        state.setState(States.EMAIL_DELETE_CITIES_EMAIL);
         sendMsg(absSender, chat.getId(), msg);
     }
 }

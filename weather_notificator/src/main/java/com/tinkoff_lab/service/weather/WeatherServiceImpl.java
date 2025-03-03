@@ -1,7 +1,7 @@
 package com.tinkoff_lab.service.weather;
 
 import com.tinkoff_lab.dao.hibernate.*;
-import com.tinkoff_lab.dto.EmailUserRequest;
+import com.tinkoff_lab.dto.EmailUserDTO;
 import com.tinkoff_lab.entity.Email;
 import com.tinkoff_lab.entity.User;
 import com.tinkoff_lab.exception.EntityNotFoundException;
@@ -35,12 +35,12 @@ public class WeatherServiceImpl implements WeatherService {
     CityDAO cityDAO;
     UserDAO userDAO;
     EmailCityDAO emailCityDAO;
-    UserEmailDAO userEmailDAO;
+    //UserEmailDAO userEmailDAO;
     Logger logger = LoggerFactory.getLogger(WeatherServiceImpl.class);
     CoordinatesDefiner definer;
 
     @Override
-    public void register(EmailUserRequest request) {
+    public void register(EmailUserDTO request) {
 //        logger.info("Start adding user with email {} and chatId {} to database", request.email(), request.chatId());
 //        Email email = new Email(request.email(), request.name());
 //        if (emailDAO.findByID(email.getEmail()) != null) {

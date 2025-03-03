@@ -30,7 +30,7 @@ public class User {
     @ManyToMany(fetch = FetchType.EAGER)
     Set<City> cities = new HashSet<>();
 
-    @ManyToMany(fetch = FetchType.EAGER)
+    @OneToMany(mappedBy = "user", fetch = FetchType.EAGER, orphanRemoval = true)
     private Set<Email> emails = new HashSet<>();
 
     public User(long chatId, String username, String firstname, String lastname) {
@@ -52,11 +52,11 @@ public class User {
 
     public void addEmail(Email email){
         this.emails.add(email);
-        email.getUsers().add(this);
+        email.setUser(this);
     }
 
     public void removeEmail(Email email){
         this.emails.remove(email);
-        email.getUsers().remove(this);
+        email.setUser(null);
     }
 }

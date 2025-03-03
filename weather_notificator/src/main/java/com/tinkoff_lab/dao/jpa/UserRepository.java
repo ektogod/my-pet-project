@@ -18,6 +18,6 @@ public interface UserRepository extends JpaRepository<User, Long> {
     @Query(value = "delete from user_email u where u.users_chat_id = :chatId", nativeQuery = true)
     void deleteEmailsFromUser(@Param("chatId") long chatId);
 
-    @Query(value = "select * from user_city u where u.users_chat_id = :chatId", nativeQuery = true)
+    @Query("select c from City c join c.users u where u.chatId = :chatId")  // JPQL
     List<City> getUserCities(@Param("chatId") long chatId);
 }

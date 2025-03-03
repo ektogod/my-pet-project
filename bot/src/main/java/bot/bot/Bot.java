@@ -33,6 +33,7 @@ public class Bot extends TelegramLongPollingCommandBot {
     private final EmailGetCitiesCommand emailGetCitiesCommand;
     private final EmailUnsubscribeCommand emailUnsubscribeCommand;
     private final EmailGetEmailsCommand emailGetEmailsCommand;
+    private final EmailDeleteCitiesCommand emailDeleteCitiesCommand;
 
     private final UpdateProcessor processor;
     private final BotConfig config;
@@ -53,6 +54,7 @@ public class Bot extends TelegramLongPollingCommandBot {
         register(emailGetCitiesCommand);
         register(emailUnsubscribeCommand);
         register(emailGetEmailsCommand);
+        register(emailDeleteCitiesCommand);
 
         this.name = config.getBotName();
         this.token = config.getBotToken();

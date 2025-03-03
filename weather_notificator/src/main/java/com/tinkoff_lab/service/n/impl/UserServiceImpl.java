@@ -164,6 +164,10 @@ public class UserServiceImpl implements UserService {
                         return new EntityNotFoundException("City not found.");
                     });
 
+            if(!user.getCities().contains(city)){
+                throw new EntityNotFoundException("You're trying to delete city that is not in your list of cities!");
+            }
+
             user.removeCity(city);
             //city.getEmails().remove(user);
             log.info("Successfully added user {} to city {}.", chatId, cityDTO.city());
@@ -216,6 +220,9 @@ public class UserServiceImpl implements UserService {
                         return new EntityNotFoundException("City not found.");
                     });
 
+            if(!user.getEmails().contains(email)){
+                throw new EntityNotFoundException("You're trying to delete email that is not in your list of emails!");
+            }
             user.removeEmail(email);
             //email.getEmails().remove(user);
             log.info("Successfully removed email {} from user {}.", emailDTO.email(), chatId);

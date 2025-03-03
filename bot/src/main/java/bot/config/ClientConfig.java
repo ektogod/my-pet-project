@@ -1,6 +1,7 @@
 package bot.config;
 
 import bot.client.EmailClient;
+import bot.client.IPClient;
 import bot.client.email_weather.*;
 import bot.client.translation.TranslationClient;
 import bot.client.weather.DeleteClient;
@@ -172,5 +173,46 @@ public class ClientConfig {
                 .build();
 
         return factory.createClient(EmailGetEmailsClient.class);
+    }
+
+    @Bean
+    public EmailDeleteCitiesClient emailDeleteCitiesClient() {
+        RestClient client = RestClient
+                .builder()
+                .baseUrl(appConfig.getBotBaseUrl())
+                .build();
+
+        HttpServiceProxyFactory factory = HttpServiceProxyFactory
+                .builderFor(RestClientAdapter.create(client))
+                .build();
+
+        return factory.createClient(EmailDeleteCitiesClient.class);
+    }
+
+    @Bean
+    public EmailGetEmailClient emailGetEmailClient() {
+        RestClient client = RestClient
+                .builder()
+                .baseUrl(appConfig.getBotBaseUrl())
+                .build();
+
+        HttpServiceProxyFactory factory = HttpServiceProxyFactory
+                .builderFor(RestClientAdapter.create(client))
+                .build();
+
+        return factory.createClient(EmailGetEmailClient.class);
+    }
+
+    @Bean
+    public IPClient IpClient() {
+        RestClient restClient = RestClient.builder()
+                .baseUrl(appConfig.getIpUrl())
+                .build();
+
+        HttpServiceProxyFactory factory = HttpServiceProxyFactory
+                .builderFor(RestClientAdapter.create(restClient))
+                .build();
+
+        return factory.createClient(IPClient.class);
     }
 }

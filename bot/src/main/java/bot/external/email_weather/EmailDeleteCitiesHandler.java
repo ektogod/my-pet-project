@@ -1,9 +1,8 @@
 package bot.external.email_weather;
 
-import bot.client.email_weather.EmailSubscribeClient;
+
+import bot.client.email_weather.EmailDeleteCitiesClient;
 import com.tinkoff_lab.dto.n.CityDTO;
-import com.tinkoff_lab.dto.n.EmailCitiesDto;
-import com.tinkoff_lab.dto.weather.request.email.EmailCitiesDTO;
 import lombok.AccessLevel;
 import lombok.RequiredArgsConstructor;
 import lombok.experimental.FieldDefaults;
@@ -16,10 +15,9 @@ import java.util.List;
 @Component
 @RequiredArgsConstructor
 @FieldDefaults(makeFinal = true, level = AccessLevel.PRIVATE)
-public class EmailSubscribeHandler {
-    EmailSubscribeClient emailSubscribeClient;
-
-    public String subscribe(String email, long chatId, String msg) {
+public class EmailDeleteCitiesHandler {
+    EmailDeleteCitiesClient client;
+    public String deleteCities(String email, long chatId, String msg) {
         String[] lines = msg.split("\n");
         List<CityDTO> cities;
         try {
@@ -28,11 +26,10 @@ public class EmailSubscribeHandler {
         catch (RuntimeException ex){
             return "City not found.";
         }
-        EmailCitiesDto request = new EmailCitiesDto(email, cities);
 
         String response;
         try {
-           response = emailSubscribeClient.response(email, cities, chatId);
+            response = client.response(email, cities, chatId);
         }
         catch (RestClientResponseException ex){
             response = ex.getResponseBodyAs(String.class);

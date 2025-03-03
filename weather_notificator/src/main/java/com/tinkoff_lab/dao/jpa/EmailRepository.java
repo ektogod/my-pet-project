@@ -16,9 +16,9 @@ public interface EmailRepository extends JpaRepository<Email, String> {
     Optional<Email> findByCode(String code);
 
     @Modifying
-    @Query(value = "delete from email_city e where e.email = :email", nativeQuery = true)
+    @Query(value = "delete from email_city e where e.emails_email = :email", nativeQuery = true)
     void deleteCitiesFromEmail(@Param("email") String email);
 
-    @Query(value = "select * from email_city u where u.emails_email = :email", nativeQuery = true)
+    @Query(value = "select c from City c join c.emails e where e.email = :email")  // JPQL
     List<City> getUserCities(@Param("email") String email);
 }

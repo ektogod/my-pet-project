@@ -2,22 +2,19 @@ package bot;
 
 import bot.bot.Bot;
 import bot.external.*;
-import bot.external.email_weather.EmailGetCitiesHandler;
-import bot.external.email_weather.EmailRegisterHandler;
-import bot.external.email_weather.EmailSubscribeHandler;
-import bot.external.email_weather.EmailUnsubscribeHandler;
+import bot.external.email_weather.*;
 import bot.states.CurrentState;
 import bot.states.States;
 import bot.utils.EmailUtils;
-import lombok.AccessLevel;
 import lombok.RequiredArgsConstructor;
 import lombok.Setter;
-import lombok.experimental.FieldDefaults;
 import org.springframework.stereotype.Component;
 import org.telegram.telegrambots.meta.api.objects.Update;
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPool;
 import redis.clients.jedis.JedisPoolConfig;
+
+import java.io.IOException;
 
 @Component
 @Setter
@@ -32,9 +29,13 @@ public class UpdateProcessor {
     private final GetHandler getHandler;
     private final DeleteHandler deleteHandler;
     private final EmailGetCitiesHandler emailGetCitiesHandler;
+    private final EmailDeleteCitiesHandler emailDeleteCitiesHandler;
+    private final EmailGetEmailHandler emailGetEmailHandler;
     private final EmailRegisterHandler emailRegisterHandler;
     private final EmailSubscribeHandler emailSubscribeHandler;
     private final EmailUnsubscribeHandler emailUnsubscribeHandler;
+    private final UrlGetter getter;
+    private boolean isLinkGot = false;
     private final JedisPool jedisPool = new JedisPool(new JedisPoolConfig(), "localhost", 6379);
 
 
@@ -74,17 +75,24 @@ public class UpdateProcessor {
                     bot.sendMessage(response, chatId);
                 }
                 case EMAIL_GET_CITIES -> {
-                    String response = emailGetCitiesHandler.get(msg);
+                    String response = emailGetCitiesHandler.get(msg, chatId);
                     curState.setState(States.NONE);
                     bot.sendMessage(response, chatId);
                 }
-                case SUBSCRIBE_EMAIL -> {
+                case EMAIL_SUBSCRIBE_CITIES_EMAIL -> {
                     jedis.set("temp/email", msg);
-                    curState.setState(States.SUBSCRIBE_CITIES);
-                    bot.sendMessage("Now write cities you want to add.", chatId);
+                    boolean response = emailGetEmailHandler.response(msg);
+                    if(response){
+                        curState.setState(States.EMAIL_SUBSCRIBE_CITIES);
+                        bot.sendMessage("Now write cities you want to add.", chatId);
+                    }
+                    else {
+                        curState.setState(States.NONE);
+                        bot.sendMessage("You have no such verified email!", chatId);
+                    }
                 }
-                case SUBSCRIBE_CITIES -> {
-                    String response = emailSubscribeHandler.subscribe(jedis.get("temp/email"), msg);
+                case EMAIL_SUBSCRIBE_CITIES -> {
+                    String response = emailSubscribeHandler.subscribe(jedis.get("temp/email"), chatId, msg);
                     curState.setState(States.NONE);
                     bot.sendMessage(response, chatId);
                 }
@@ -92,24 +100,49 @@ public class UpdateProcessor {
                     String validCode = EmailUtils.generateValidCode();
 
                     String[] data = msg.split("\n");
-                    jedis.set("temp/email", data[0]);
-                    jedis.set("temp/emailName", data[1]);
+                    try {
+                        if (!isLinkGot) {
+                            String url = getter.getUrl();
+                            jedis.set("temp/curUrl", url);
+                            isLinkGot = true;
+                        }
 
-                    emailRegisterHandler.sendMessage(data[0], "Validation", validCode);
-                    emailRegisterHandler.registerEmail(data[0], data[1], chatId, validCode);
+                        String response = emailRegisterHandler.registerEmail(data[0], data[1], chatId, validCode);
+                        emailRegisterHandler.sendMessage(jedis.get("temp/curUrl"), data[0], chatId,"Validation", validCode);
 
-                    curState.setState(States.NONE);
-                    bot.sendMessage("Check your email for validation link.", chatId);
+                        curState.setState(States.NONE);
+                        if(response.isBlank()) bot.sendMessage("Check your email for validation link.", chatId);
+                        else bot.sendMessage(response, chatId);
+                    } catch (IOException e) {
+                        bot.sendMessage("Something went wrong with creating confirming link", chatId);
+                    }
                 }
                 case EMAIL_UNSUBSCRIBE -> {
-                    String response = emailUnsubscribeHandler.unsubscribe(msg);
+                    String response = emailUnsubscribeHandler.unsubscribe(msg, chatId);
                     curState.setState(States.NONE);
                     bot.sendMessage(response, chatId);
                 }
+                case EMAIL_DELETE_CITIES_EMAIL -> {
+                    jedis.set("temp/email", msg);
+                    boolean response = emailGetEmailHandler.response(msg);
+                    if(response){
+                        curState.setState(States.EMAIL_DELETE_CITIES);
+                        bot.sendMessage("Now write cities you want to delete.", chatId);
+                    }
+                    else {
+                        curState.setState(States.NONE);
+                        bot.sendMessage("You have no such verified email!", chatId);
+                    }
+                }
+                case EMAIL_DELETE_CITIES -> {
+                    String response = emailDeleteCitiesHandler.deleteCities(jedis.get("temp/email"), chatId, msg);
+                    curState.setState(States.NONE);
+                    bot.sendMessage(response, chatId);
+                }
+
                 case NONE -> bot.sendMessage("Bot doesn't understand you", chatId);
             }
-        }
-        catch (ArrayIndexOutOfBoundsException ex){
+        } catch (ArrayIndexOutOfBoundsException ex) {
             bot.sendMessage("Something wrong with amount of parameters! Please check your request and try again!", chatId);
         }
     }

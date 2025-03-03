@@ -84,14 +84,12 @@ public class UserController {
         }
 
         service.addCitiesToUser(dto.userDTO().chatId(), cities);
-        return new ResponseEntity<>("Cities was added successfully to user", HttpStatus.OK);
+        return new ResponseEntity<>("Cities were added successfully to user", HttpStatus.OK);
     }
 
     @DeleteMapping("/deleteCities")
     public ResponseEntity<String> removeCityFromUser(@RequestBody UserCitiesDTO dto){
         service.removeCitiesFromUser(dto.userDTO().chatId(), dto.cityDTOS());
-        return new ResponseEntity<>("Cities was removed successfully from user", HttpStatus.OK);
+        return new ResponseEntity<>("Cities were removed successfully from user", HttpStatus.OK);
     }
-
-
 }

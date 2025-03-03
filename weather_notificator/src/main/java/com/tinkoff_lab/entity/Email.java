@@ -32,13 +32,14 @@ public class Email {
 
     @Column(name = "is_verified", columnDefinition = "BIT(1)")
     @EqualsAndHashCode.Include
-    boolean isVerified;
+    Boolean isVerified;
+
+    @ManyToOne
+    @JoinColumn(name = "chat_id")
+    private User user;
 
     @ManyToMany(fetch = FetchType.EAGER)
     private Set<City> cities = new HashSet<>();
-
-    @ManyToMany(mappedBy = "emails", fetch = FetchType.EAGER)
-    private Set<User> users = new HashSet<>();
 
     public Email(String email, String name) {
         this.email = email;

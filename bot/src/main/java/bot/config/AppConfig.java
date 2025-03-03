@@ -10,6 +10,9 @@ import org.springframework.context.annotation.PropertySource;
 @Getter
 
 public class AppConfig {
+    @Value("${ip.url}")
+    private String ipUrl;
+
     @Value("${bot.baseUrl}")
     private String botBaseUrl;
 

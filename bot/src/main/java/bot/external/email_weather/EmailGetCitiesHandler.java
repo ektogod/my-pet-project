@@ -16,10 +16,10 @@ import java.util.stream.Collectors;
 public class EmailGetCitiesHandler {
     private final EmailGetCitiesClient client;
 
-    public String get(String email) {
+    public String get(String email, long chatId) {
         String response;
         try {
-            List<CityDTO> cities = client.getCities(email).getBody();
+            List<CityDTO> cities = client.getCities(email, chatId).getBody();
             if (cities == null || cities.isEmpty()) {
                 response = "You have no any cities.";
             } else {
@@ -29,7 +29,7 @@ public class EmailGetCitiesHandler {
                         .collect(Collectors.joining("\n"));
             }
         } catch (RestClientResponseException ex) {
-            response = ex.getMessage();
+            response = ex.getResponseBodyAs(String.class);
         }
 
         return response;
