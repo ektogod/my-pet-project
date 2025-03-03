@@ -17,8 +17,8 @@ import org.springframework.web.bind.annotation.*;
 public class EmailVerificationController {
     EmailService service;
     @GetMapping("/verify")
-    public ResponseEntity<String> verifyEmail(@RequestParam String code){
-        service.verifyEmail(code);
+    public ResponseEntity<String> verifyEmail(@RequestParam String code, @RequestParam long chatId){
+        service.verifyEmail(code, chatId);
         return new ResponseEntity<>("Email was successfully verified", HttpStatusCode.valueOf(200));
     }
 }

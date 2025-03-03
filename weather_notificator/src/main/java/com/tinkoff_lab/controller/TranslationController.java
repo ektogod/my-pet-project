@@ -1,7 +1,7 @@
 package com.tinkoff_lab.controller;
 
 
-import com.tinkoff_lab.dto.translation.requests.UserRequest;
+import com.tinkoff_lab.dto.translation.requests.TranslationDTO;
 import com.tinkoff_lab.dto.translation.responses.UserResponse;
 import com.tinkoff_lab.service.translation.TranslationServiceImpl;
 import org.slf4j.Logger;
@@ -10,7 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/ektogod/translateText")
+@RequestMapping("/translate")
 
 public class TranslationController {                 // class for receiving requests from users
     private final TranslationServiceImpl translationService;
@@ -24,7 +24,7 @@ public class TranslationController {                 // class for receiving requ
     @PostMapping(consumes = "application/json",
             produces = "application/json")
 
-    public UserResponse translate(@RequestBody UserRequest request) {
+    public UserResponse translate(@RequestBody TranslationDTO request) {
         logger.info("Request from user has received: {}", request);
         UserResponse response =  translationService.translate(request);
 

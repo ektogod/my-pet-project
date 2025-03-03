@@ -1,16 +1,15 @@
 package com.tinkoff_lab.service.weather;
 
 import com.tinkoff_lab.dao.hibernate.*;
-import com.tinkoff_lab.dto.EmailUserRequest;
+import com.tinkoff_lab.dto.EmailUserDTO;
 import com.tinkoff_lab.entity.Email;
 import com.tinkoff_lab.entity.User;
 import com.tinkoff_lab.exception.EntityNotFoundException;
-import com.tinkoff_lab.exception.WrongWeatherRequestException;
 import com.tinkoff_lab.dto.weather.CityDTOOO;
 import com.tinkoff_lab.dto.weather.Coordinates;
 import com.tinkoff_lab.dto.weather.request.email.EmailCitiesRequest;
 import com.tinkoff_lab.dto.weather.request.email.EmailRequest;
-import com.tinkoff_lab.dto.weather.request.email.WeatherEmailRequest;
+import com.tinkoff_lab.dto.weather.request.email.EmailCitiesDTO;
 import com.tinkoff_lab.entity.City;
 import com.tinkoff_lab.entity.CityPK;
 import com.tinkoff_lab.external.CoordinatesDefiner;
@@ -36,12 +35,12 @@ public class WeatherServiceImpl implements WeatherService {
     CityDAO cityDAO;
     UserDAO userDAO;
     EmailCityDAO emailCityDAO;
-    UserEmailDAO userEmailDAO;
+    //UserEmailDAO userEmailDAO;
     Logger logger = LoggerFactory.getLogger(WeatherServiceImpl.class);
     CoordinatesDefiner definer;
 
     @Override
-    public void register(EmailUserRequest request) {
+    public void register(EmailUserDTO request) {
 //        logger.info("Start adding user with email {} and chatId {} to database", request.email(), request.chatId());
 //        Email email = new Email(request.email(), request.name());
 //        if (emailDAO.findByID(email.getEmail()) != null) {
@@ -54,25 +53,25 @@ public class WeatherServiceImpl implements WeatherService {
     }
 
     @Override
-    public void add(WeatherEmailRequest request) {
-        logger.info("Start adding user with email {} and cities {} to database", request.email(), request.cities());
-        Email email = emailDAO.findByID(request.email());
-        if (email == null) {
-            logger.warn("User with email {} doesn't exist!", request.email());
-            throw new WrongWeatherRequestException(String.format("User with email %s doesn't exist!", request.email()));
-        }
+    public void add(EmailCitiesDTO request) {
+//        logger.info("Start adding user with email {} and cities {} to database", request.email(), request.cities());
+//        Email email = emailDAO.findByID(request.email());
+//        if (email == null) {
+//            logger.warn("User with email {} doesn't exist!", request.email());
+//            throw new WrongWeatherRequestException(String.format("User with email %s doesn't exist!", request.email()));
+//        }
+//
+//        for (CityDTOOO cityDTOOO : request.cities()) {
+//            Coordinates crd = definer.getCoordinates(cityDTOOO.city(), cityDTOOO.country()); // throws exception if something incorrect
+//
+//            CityPK pk = new CityPK(cityDTOOO.city(), cityDTOOO.country());
+//            City city = new City(pk, crd.latitude(), crd.longitude());
+//            cityDAO.update(city);
+//            emailCityDAO.addEmailCity(email, city);
+//            //user.getCities().add(city);
+//        }
 
-        for (CityDTOOO cityDTOOO : request.cities()) {
-            Coordinates crd = definer.getCoordinates(cityDTOOO.city(), cityDTOOO.country()); // throws exception if something incorrect
-
-            CityPK pk = new CityPK(cityDTOOO.city(), cityDTOOO.country());
-            City city = new City(pk, crd.latitude(), crd.longitude());
-            cityDAO.update(city);
-            emailCityDAO.addEmailCity(email, city);
-            //user.getCities().add(city);
-        }
-
-        logger.info("Adding user with email {} and cities {} to database ended successfully", email.getEmail(), email.getCities());
+        //logger.info("Adding user with email {} and cities {} to database ended successfully", email.getEmail(), email.getCities());
     }
 
     @Override

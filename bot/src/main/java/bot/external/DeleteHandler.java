@@ -1,6 +1,9 @@
 package bot.external;
 
 import bot.client.weather.DeleteClient;
+import com.tinkoff_lab.dto.n.CityDTO;
+import com.tinkoff_lab.dto.n.UserCitiesDTO;
+import com.tinkoff_lab.dto.n.UserDTO;
 import com.tinkoff_lab.dto.weather.CityDTOOO;
 import com.tinkoff_lab.dto.weather.request.telegram.TelegramCitiesRequest;
 import lombok.RequiredArgsConstructor;
@@ -19,7 +22,7 @@ public class DeleteHandler {
     private DeleteClient client;
 
     public String delete(Update update) {
-        List<CityDTOOO> cities;
+        List<CityDTO> cities;
         try {
             cities = parseCities(update.getMessage().getText());
         }
@@ -27,9 +30,11 @@ public class DeleteHandler {
             return "City not found.";
         }
 
-        TelegramCitiesRequest request = new TelegramCitiesRequest(
+        UserCitiesDTO request = new UserCitiesDTO(new UserDTO(
                 update.getMessage().getChatId(),
                 update.getMessage().getChat().getUserName(),
+                update.getMessage().getChat().getFirstName(),
+                update.getMessage().getChat().getLastName()),
                 cities);
 
         String response;
@@ -41,8 +46,8 @@ public class DeleteHandler {
         return response;
     }
 
-    private List<CityDTOOO> parseCities(String msg) {
-        List<CityDTOOO> cities = new ArrayList<>();
+    private List<CityDTO> parseCities(String msg) {
+        List<CityDTO> cities = new ArrayList<>();
 
         String[] lines = msg.split("\n");
         for (String line : lines) {
@@ -50,7 +55,7 @@ public class DeleteHandler {
             if(cityData.length != 2){
                 throw new RuntimeException();
             }
-            cities.add(new CityDTOOO(cityData[0], cityData[1]));
+            cities.add(new CityDTO(cityData[0], cityData[1], 0, 0));
         }
 
         return cities;

@@ -1,0 +1,210 @@
+2025-03-02 01:21:10 INFO  com.tinkoff_lab.WeatherApplication - Application has started working
+2025-03-02 01:21:10 INFO  com.tinkoff_lab.WeatherApplication - Starting WeatherApplication using Java 21.0.1 with PID 14192 (C:\Users\Nikita\IdeaProjects\pet-project\target\classes started by Nikita in C:\Users\Nikita\IdeaProjects\pet-project)
+2025-03-02 01:21:10 INFO  com.tinkoff_lab.WeatherApplication - No active profile set, falling back to 1 default profile: "default"
+2025-03-02 01:21:19 INFO  com.tinkoff_lab.WeatherApplication - Started WeatherApplication in 9.51 seconds (process running for 11.593)
+2025-03-02 01:43:17 INFO  c.t.service.n.impl.EmailServiceImpl - Successfully retrieved cities.
+2025-03-02 01:43:17 INFO  c.t.controller.EmailController - Successfully created room with id ektogod@gmail.com.
+2025-03-02 02:38:54 INFO  com.tinkoff_lab.WeatherApplication - Application has terminated working
+
+2025-03-02 02:38:57 INFO  com.tinkoff_lab.WeatherApplication - Application has started working
+2025-03-02 02:38:57 INFO  com.tinkoff_lab.WeatherApplication - Starting WeatherApplication using Java 21.0.1 with PID 3512 (C:\Users\Nikita\IdeaProjects\pet-project\target\classes started by Nikita in C:\Users\Nikita\IdeaProjects\pet-project)
+2025-03-02 02:38:57 INFO  com.tinkoff_lab.WeatherApplication - No active profile set, falling back to 1 default profile: "default"
+2025-03-02 02:39:04 INFO  com.tinkoff_lab.WeatherApplication - Started WeatherApplication in 7.533 seconds (process running for 8.622)
+2025-03-02 02:41:27 INFO  c.t.external.CoordinatesDefiner - Start coordinate definition for city dsds, country dsds
+2025-03-02 02:41:27 INFO  c.tinkoff_lab.utils.CountryCodeUtils - Start country code definition for country: dsds
+2025-03-02 02:41:27 WARN  c.tinkoff_lab.utils.CountryCodeUtils - Something wrong with country dsds: code not defined.
+2025-03-02 02:42:07 INFO  c.t.external.CoordinatesDefiner - Start coordinate definition for city Minsk, country Belarus
+2025-03-02 02:42:07 INFO  c.tinkoff_lab.utils.CountryCodeUtils - Start country code definition for country: Belarus
+2025-03-02 02:42:07 INFO  c.tinkoff_lab.utils.CountryCodeUtils - Country code definition for country Belarus ended successfully
+2025-03-02 02:42:08 INFO  c.t.external.CoordinatesDefiner - Coordinate definition for city Minsk, country Belarus ended successfully
+2025-03-02 02:42:09 ERROR c.t.service.n.impl.EmailServiceImpl - Attempt to update emailName with non-existent id ektodsds@.
+2025-03-02 03:00:28 INFO  com.tinkoff_lab.WeatherApplication - Application has terminated working
+
+2025-03-02 03:00:30 INFO  com.tinkoff_lab.WeatherApplication - Application has started working
+2025-03-02 03:00:31 INFO  com.tinkoff_lab.WeatherApplication - Starting WeatherApplication using Java 21.0.1 with PID 14168 (C:\Users\Nikita\IdeaProjects\pet-project\target\classes started by Nikita in C:\Users\Nikita\IdeaProjects\pet-project)
+2025-03-02 03:00:31 INFO  com.tinkoff_lab.WeatherApplication - No active profile set, falling back to 1 default profile: "default"
+2025-03-02 03:00:38 INFO  com.tinkoff_lab.WeatherApplication - Started WeatherApplication in 7.955 seconds (process running for 9.082)
+2025-03-02 03:02:56 ERROR c.t.service.n.impl.EmailServiceImpl - Email with id kmhbsds@ not found!
+2025-03-02 03:04:41 ERROR c.t.service.n.impl.EmailServiceImpl - Email with id sasasa not found!
+2025-03-02 03:05:17 ERROR c.t.service.n.impl.EmailServiceImpl - Email with id l,kjbhgvcfxz not found!
+2025-03-02 03:08:45 ERROR c.t.service.n.impl.EmailServiceImpl - Email with id lk;dfsza not found!
+2025-03-02 03:15:10 ERROR c.t.service.n.impl.EmailServiceImpl - Email with id эжюлдоячясэзд not found!
+2025-03-02 03:20:16 ERROR c.t.service.n.impl.EmailServiceImpl - Email with id лдос not found!
+2025-03-02 03:20:57 ERROR c.t.service.n.impl.EmailServiceImpl - Email with id эздФ not found!
+2025-03-02 03:21:13 ERROR c.t.service.n.impl.EmailServiceImpl - Email with id лорпм not found!
+2025-03-02 03:23:04 ERROR c.t.service.n.impl.EmailServiceImpl - Email with id длотрипмс not found!
+2025-03-02 03:23:20 ERROR c.t.service.n.impl.EmailServiceImpl - Email with id длорип not found!
+2025-03-02 03:25:49 INFO  com.tinkoff_lab.WeatherApplication - Application has terminated working
+
+2025-03-02 03:26:14 INFO  com.tinkoff_lab.WeatherApplication - Application has started working
+2025-03-02 03:26:15 INFO  com.tinkoff_lab.WeatherApplication - Starting WeatherApplication using Java 21.0.1 with PID 16240 (C:\Users\Nikita\IdeaProjects\pet-project\target\classes started by Nikita in C:\Users\Nikita\IdeaProjects\pet-project)
+2025-03-02 03:26:15 INFO  com.tinkoff_lab.WeatherApplication - No active profile set, falling back to 1 default profile: "default"
+2025-03-02 03:26:22 INFO  com.tinkoff_lab.WeatherApplication - Started WeatherApplication in 8.366 seconds (process running for 9.36)
+2025-03-02 03:27:44 INFO  com.tinkoff_lab.WeatherApplication - Application has terminated working
+
+2025-03-02 03:27:50 INFO  com.tinkoff_lab.WeatherApplication - Application has started working
+2025-03-02 03:27:51 INFO  com.tinkoff_lab.WeatherApplication - Starting WeatherApplication using Java 21.0.1 with PID 18460 (C:\Users\Nikita\IdeaProjects\pet-project\target\classes started by Nikita in C:\Users\Nikita\IdeaProjects\pet-project)
+2025-03-02 03:27:51 INFO  com.tinkoff_lab.WeatherApplication - No active profile set, falling back to 1 default profile: "default"
+2025-03-02 03:27:57 INFO  com.tinkoff_lab.WeatherApplication - Started WeatherApplication in 7.234 seconds (process running for 8.161)
+2025-03-02 03:31:02 INFO  com.tinkoff_lab.WeatherApplication - Application has terminated working
+
+2025-03-02 03:31:08 INFO  com.tinkoff_lab.WeatherApplication - Application has started working
+2025-03-02 03:31:08 INFO  com.tinkoff_lab.WeatherApplication - Starting WeatherApplication using Java 21.0.1 with PID 17232 (C:\Users\Nikita\IdeaProjects\pet-project\target\classes started by Nikita in C:\Users\Nikita\IdeaProjects\pet-project)
+2025-03-02 03:31:08 INFO  com.tinkoff_lab.WeatherApplication - No active profile set, falling back to 1 default profile: "default"
+2025-03-02 03:31:15 INFO  com.tinkoff_lab.WeatherApplication - Started WeatherApplication in 7.352 seconds (process running for 8.141)
+2025-03-02 03:33:43 INFO  com.tinkoff_lab.WeatherApplication - Application has terminated working
+
+2025-03-02 03:33:49 INFO  com.tinkoff_lab.WeatherApplication - Application has started working
+2025-03-02 03:33:49 INFO  com.tinkoff_lab.WeatherApplication - Starting WeatherApplication using Java 21.0.1 with PID 19496 (C:\Users\Nikita\IdeaProjects\pet-project\target\classes started by Nikita in C:\Users\Nikita\IdeaProjects\pet-project)
+2025-03-02 03:33:49 INFO  com.tinkoff_lab.WeatherApplication - No active profile set, falling back to 1 default profile: "default"
+2025-03-02 03:33:57 INFO  com.tinkoff_lab.WeatherApplication - Started WeatherApplication in 7.674 seconds (process running for 8.532)
+2025-03-02 03:34:13 INFO  c.t.service.n.impl.EmailServiceImpl - Successfully retrieved email with id ektogod@gmail.com.
+2025-03-02 03:34:13 INFO  c.t.controller.EmailController - Successfully retrieved email with id ektogod@gmail.com.
+2025-03-02 03:34:34 INFO  c.t.external.CoordinatesDefiner - Start coordinate definition for city Minsk, country Belarus
+2025-03-02 03:34:34 INFO  c.tinkoff_lab.utils.CountryCodeUtils - Start country code definition for country: Belarus
+2025-03-02 03:34:34 INFO  c.tinkoff_lab.utils.CountryCodeUtils - Country code definition for country Belarus ended successfully
+2025-03-02 03:34:34 INFO  c.t.external.CoordinatesDefiner - Coordinate definition for city Minsk, country Belarus ended successfully
+2025-03-02 03:34:35 INFO  c.t.external.CoordinatesDefiner - Start coordinate definition for city Grodno, country Belarus
+2025-03-02 03:34:35 INFO  c.tinkoff_lab.utils.CountryCodeUtils - Start country code definition for country: Belarus
+2025-03-02 03:34:35 INFO  c.tinkoff_lab.utils.CountryCodeUtils - Country code definition for country Belarus ended successfully
+2025-03-02 03:34:35 INFO  c.t.external.CoordinatesDefiner - Coordinate definition for city Grodno, country Belarus ended successfully
+2025-03-02 03:34:35 INFO  c.t.service.n.impl.EmailServiceImpl - Successfully added emailName ektogod@gmail.com to city Minsk.
+2025-03-02 03:34:35 INFO  c.t.service.n.impl.EmailServiceImpl - Successfully added emailName ektogod@gmail.com to city Grodno.
+2025-03-02 03:39:15 INFO  c.t.service.n.impl.EmailServiceImpl - Successfully retrieved email with id ektogod@gmail.com.
+2025-03-02 03:39:15 INFO  c.t.controller.EmailController - Successfully retrieved email with id ektogod@gmail.com.
+2025-03-02 03:39:50 INFO  c.t.external.CoordinatesDefiner - Start coordinate definition for city Brest, country Belarus
+2025-03-02 03:39:50 INFO  c.tinkoff_lab.utils.CountryCodeUtils - Start country code definition for country: Belarus
+2025-03-02 03:39:50 INFO  c.tinkoff_lab.utils.CountryCodeUtils - Country code definition for country Belarus ended successfully
+2025-03-02 03:39:50 INFO  c.t.external.CoordinatesDefiner - Coordinate definition for city Brest, country Belarus ended successfully
+2025-03-02 04:16:58 INFO  c.t.service.n.impl.EmailServiceImpl - Successfully retrieved email with id ektogod@gmail.com.
+2025-03-02 04:16:58 INFO  c.t.controller.EmailController - Successfully retrieved email with id ektogod@gmail.com.
+2025-03-02 04:17:17 INFO  c.t.service.n.impl.EmailServiceImpl - Successfully retrieved email with id ektogod@gmail.com.
+2025-03-02 04:17:17 INFO  c.t.controller.EmailController - Successfully retrieved email with id ektogod@gmail.com.
+2025-03-02 04:17:35 INFO  c.t.service.n.impl.EmailServiceImpl - Successfully retrieved email with id ektogod@gmail.com.
+2025-03-02 04:17:35 INFO  c.t.controller.EmailController - Successfully retrieved email with id ektogod@gmail.com.
+2025-03-02 04:18:15 INFO  c.t.service.n.impl.EmailServiceImpl - Successfully retrieved email with id ektogod@gmail.com.
+2025-03-02 04:18:15 INFO  c.t.controller.EmailController - Successfully retrieved email with id ektogod@gmail.com.
+2025-03-02 04:19:46 INFO  c.t.service.n.impl.EmailServiceImpl - Successfully retrieved email with id ektogod@gmail.com.
+2025-03-02 04:19:51 INFO  c.t.controller.EmailController - Successfully retrieved email with id ektogod@gmail.com.
+2025-03-02 04:20:34 INFO  c.t.service.n.impl.EmailServiceImpl - Successfully retrieved email with id ektogod@gmail.com.
+2025-03-02 04:20:40 INFO  c.t.controller.EmailController - Successfully retrieved email with id ektogod@gmail.com.
+2025-03-02 04:22:56 INFO  c.t.service.n.impl.EmailServiceImpl - Successfully retrieved email with id ektogod@gmail.com.
+2025-03-02 04:22:56 INFO  c.t.controller.EmailController - Successfully retrieved email with id ektogod@gmail.com.
+2025-03-02 04:23:11 INFO  c.t.service.n.impl.EmailServiceImpl - Successfully retrieved email with id ektogod@gmail.com.
+2025-03-02 04:28:54 INFO  c.t.controller.EmailController - Successfully retrieved email with id ektogod@gmail.com.
+2025-03-02 04:28:54 INFO  com.tinkoff_lab.WeatherApplication - Application has terminated working
+
+2025-03-02 04:34:12 INFO  com.tinkoff_lab.WeatherApplication - Application has started working
+2025-03-02 04:34:13 INFO  com.tinkoff_lab.WeatherApplication - Starting WeatherApplication using Java 21.0.1 with PID 12280 (C:\Users\Nikita\IdeaProjects\pet-project\target\classes started by Nikita in C:\Users\Nikita\IdeaProjects\pet-project)
+2025-03-02 04:34:13 INFO  com.tinkoff_lab.WeatherApplication - No active profile set, falling back to 1 default profile: "default"
+2025-03-02 04:34:22 INFO  com.tinkoff_lab.WeatherApplication - Started WeatherApplication in 9.226 seconds (process running for 10.439)
+2025-03-02 04:34:35 INFO  c.t.service.n.impl.EmailServiceImpl - Successfully retrieved email with id ektogod@gmail.com.
+2025-03-02 04:34:38 INFO  c.t.controller.EmailController - Successfully retrieved email with id ektogod@gmail.com.
+2025-03-02 04:34:56 INFO  c.t.external.CoordinatesDefiner - Start coordinate definition for city Vitebsk, country Belarus
+2025-03-02 04:34:56 INFO  c.tinkoff_lab.utils.CountryCodeUtils - Start country code definition for country: Belarus
+2025-03-02 04:34:56 INFO  c.tinkoff_lab.utils.CountryCodeUtils - Country code definition for country Belarus ended successfully
+2025-03-02 04:34:57 INFO  c.t.external.CoordinatesDefiner - Coordinate definition for city Vitebsk, country Belarus ended successfully
+2025-03-02 04:34:57 INFO  c.t.service.n.impl.EmailServiceImpl - Successfully added emailName ektogod@gmail.com to city Vitebsk.
+2025-03-02 04:35:17 INFO  c.t.service.n.impl.EmailServiceImpl - Successfully retrieved email with id ektogod@gmail.com.
+2025-03-02 04:35:17 INFO  c.t.controller.EmailController - Successfully retrieved email with id ektogod@gmail.com.
+2025-03-02 04:38:24 INFO  c.t.service.n.impl.EmailServiceImpl - Successfully retrieved email with id ektogod@gmail.com.
+2025-03-02 04:38:25 INFO  c.t.controller.EmailController - Successfully retrieved email with id ektogod@gmail.com.
+2025-03-02 04:38:37 INFO  c.t.service.n.impl.EmailServiceImpl - Successfully added email ektogod@gmail.com to city Vitebsk.
+2025-03-02 04:38:56 ERROR c.t.service.n.impl.EmailServiceImpl - Email with id dsds not found!
+2025-03-02 13:46:32 INFO  com.tinkoff_lab.WeatherApplication - Application has terminated working
+
+2025-03-02 13:46:42 INFO  com.tinkoff_lab.WeatherApplication - Application has started working
+2025-03-02 13:46:43 INFO  com.tinkoff_lab.WeatherApplication - Starting WeatherApplication using Java 21.0.1 with PID 80660 (C:\Users\Nikita\IdeaProjects\pet-project\target\classes started by Nikita in C:\Users\Nikita\IdeaProjects\pet-project)
+2025-03-02 13:46:43 INFO  com.tinkoff_lab.WeatherApplication - No active profile set, falling back to 1 default profile: "default"
+2025-03-02 13:53:47 INFO  com.tinkoff_lab.WeatherApplication - Application has started working
+2025-03-02 13:53:48 INFO  com.tinkoff_lab.WeatherApplication - Starting WeatherApplication using Java 21.0.1 with PID 28860 (C:\Users\Nikita\IdeaProjects\pet-project\target\classes started by Nikita in C:\Users\Nikita\IdeaProjects\pet-project)
+2025-03-02 13:53:48 INFO  com.tinkoff_lab.WeatherApplication - No active profile set, falling back to 1 default profile: "default"
+2025-03-02 13:53:59 INFO  com.tinkoff_lab.WeatherApplication - Started WeatherApplication in 11.558 seconds (process running for 16.826)
+2025-03-02 14:07:50 INFO  com.tinkoff_lab.WeatherApplication - Application has terminated working
+
+2025-03-02 14:07:58 INFO  com.tinkoff_lab.WeatherApplication - Application has started working
+2025-03-02 14:07:59 INFO  com.tinkoff_lab.WeatherApplication - Starting WeatherApplication using Java 21.0.1 with PID 60748 (C:\Users\Nikita\IdeaProjects\pet-project\target\classes started by Nikita in C:\Users\Nikita\IdeaProjects\pet-project)
+2025-03-02 14:07:59 INFO  com.tinkoff_lab.WeatherApplication - No active profile set, falling back to 1 default profile: "default"
+2025-03-02 14:09:18 INFO  com.tinkoff_lab.WeatherApplication - Application has started working
+2025-03-02 14:09:19 INFO  com.tinkoff_lab.WeatherApplication - Starting WeatherApplication using Java 21.0.1 with PID 54120 (C:\Users\Nikita\IdeaProjects\pet-project\target\classes started by Nikita in C:\Users\Nikita\IdeaProjects\pet-project)
+2025-03-02 14:09:19 INFO  com.tinkoff_lab.WeatherApplication - No active profile set, falling back to 1 default profile: "default"
+2025-03-02 14:11:28 INFO  com.tinkoff_lab.WeatherApplication - Application has started working
+2025-03-02 14:11:29 INFO  com.tinkoff_lab.WeatherApplication - Starting WeatherApplication using Java 21.0.1 with PID 69284 (C:\Users\Nikita\IdeaProjects\pet-project\target\classes started by Nikita in C:\Users\Nikita\IdeaProjects\pet-project)
+2025-03-02 14:11:29 INFO  com.tinkoff_lab.WeatherApplication - No active profile set, falling back to 1 default profile: "default"
+2025-03-02 14:17:10 INFO  com.tinkoff_lab.WeatherApplication - Application has started working
+2025-03-02 14:17:10 INFO  com.tinkoff_lab.WeatherApplication - Starting WeatherApplication using Java 21.0.1 with PID 81080 (C:\Users\Nikita\IdeaProjects\pet-project\target\classes started by Nikita in C:\Users\Nikita\IdeaProjects\pet-project)
+2025-03-02 14:17:10 INFO  com.tinkoff_lab.WeatherApplication - No active profile set, falling back to 1 default profile: "default"
+2025-03-02 14:17:56 INFO  com.tinkoff_lab.WeatherApplication - Application has started working
+2025-03-02 14:17:56 INFO  com.tinkoff_lab.WeatherApplication - Starting WeatherApplication using Java 21.0.1 with PID 77568 (C:\Users\Nikita\IdeaProjects\pet-project\target\classes started by Nikita in C:\Users\Nikita\IdeaProjects\pet-project)
+2025-03-02 14:17:56 INFO  com.tinkoff_lab.WeatherApplication - No active profile set, falling back to 1 default profile: "default"
+2025-03-02 14:18:03 INFO  com.tinkoff_lab.WeatherApplication - Started WeatherApplication in 7.706 seconds (process running for 8.541)
+2025-03-02 14:19:58 INFO  c.t.service.n.impl.EmailServiceImpl - Successfully retrieved cities.
+2025-03-02 14:19:58 INFO  c.t.controller.EmailController - Successfully created room with id ektogod@gmail.com.
+2025-03-02 14:27:10 INFO  c.t.service.n.impl.UserServiceImpl - Successfully created user with id 804296491.
+2025-03-02 14:27:11 INFO  c.t.external.CoordinatesDefiner - Start coordinate definition for city Minsk, country Belarus
+2025-03-02 14:27:11 INFO  c.tinkoff_lab.utils.CountryCodeUtils - Start country code definition for country: Belarus
+2025-03-02 14:27:11 INFO  c.tinkoff_lab.utils.CountryCodeUtils - Country code definition for country Belarus ended successfully
+2025-03-02 14:27:11 INFO  c.t.external.CoordinatesDefiner - Coordinate definition for city Minsk, country Belarus ended successfully
+2025-03-02 14:27:11 INFO  c.t.service.n.impl.UserServiceImpl - Successfully added emailName 804296491 to city Minsk.
+2025-03-02 14:28:54 INFO  c.t.service.n.impl.UserServiceImpl - Successfully created user with id 804296491.
+2025-03-02 14:28:56 INFO  c.t.external.CoordinatesDefiner - Start coordinate definition for city Grodno, country Belarus
+2025-03-02 14:28:56 INFO  c.tinkoff_lab.utils.CountryCodeUtils - Start country code definition for country: Belarus
+2025-03-02 14:28:56 INFO  c.tinkoff_lab.utils.CountryCodeUtils - Country code definition for country Belarus ended successfully
+2025-03-02 14:28:56 INFO  c.t.external.CoordinatesDefiner - Coordinate definition for city Grodno, country Belarus ended successfully
+2025-03-02 14:28:56 INFO  c.t.service.n.impl.UserServiceImpl - Successfully added emailName 804296491 to city Grodno.
+2025-03-02 14:29:18 INFO  c.t.service.n.impl.UserServiceImpl - Successfully added user 804296491 to city Minsk.
+2025-03-02 14:31:30 INFO  c.t.service.n.impl.UserServiceImpl - Successfully added user 804296491 to city Minsk.
+2025-03-02 14:39:04 INFO  com.tinkoff_lab.WeatherApplication - Application has terminated working
+
+2025-03-02 14:39:12 INFO  com.tinkoff_lab.WeatherApplication - Application has started working
+2025-03-02 14:39:13 INFO  com.tinkoff_lab.WeatherApplication - Starting WeatherApplication using Java 21.0.1 with PID 53684 (C:\Users\Nikita\IdeaProjects\pet-project\target\classes started by Nikita in C:\Users\Nikita\IdeaProjects\pet-project)
+2025-03-02 14:39:13 INFO  com.tinkoff_lab.WeatherApplication - No active profile set, falling back to 1 default profile: "default"
+2025-03-02 14:39:22 INFO  com.tinkoff_lab.WeatherApplication - Started WeatherApplication in 9.387 seconds (process running for 10.444)
+2025-03-02 14:40:26 INFO  c.t.service.n.impl.UserServiceImpl - Successfully retrieved cities with id 804296491.
+2025-03-02 14:40:26 INFO  c.t.controller.UserController - Successfully retrieved user with id 804296491.
+2025-03-02 14:41:11 ERROR c.t.service.n.impl.EmailServiceImpl - Email with id ektogod@gmail.co not found!
+2025-03-02 14:41:21 INFO  c.t.service.n.impl.EmailServiceImpl - Successfully retrieved cities.
+2025-03-02 14:41:21 INFO  c.t.controller.EmailController - Successfully created room with id ektogod@gmail.com.
+2025-03-02 14:41:54 INFO  c.t.controller.TranslationController - Request from user has received: TranslationDTO[username=ektogod, text=привет, малышка, originalLanguage=ru, finalLanguage=be]
+2025-03-02 14:41:54 INFO  c.t.s.t.TranslationServiceImpl - Sending translation request: text = привет, малышка 
+2025-03-02 14:41:55 INFO  c.t.external.TranslationDefiner - Request has received: text = привет, малышка 
+2025-03-02 14:41:55 INFO  c.t.external.TranslationDefiner - Translation successfully completed
+2025-03-02 14:41:55 INFO  c.t.dao.jdbc.TranslationDAO - Start writing to database of query: Translation[id=null, username=ektogod, ip=37.214.24.85, originalText=привет, малышка, originalLang=ru, translatedText=прывітанне, дзетка, targetLang=be, time=2025/03/02 14:41:55, status=200, message=Ok]
+2025-03-02 14:41:58 INFO  c.t.dao.jdbc.TranslationDAO - Connection with database established
+2025-03-02 14:41:58 INFO  c.t.dao.jdbc.TranslationDAO - Query has been successfully recorded
+2025-03-02 14:41:58 INFO  c.t.controller.TranslationController - Response is sending to user
+2025-03-02 15:09:41 INFO  c.t.controller.TranslationController - Request from user has received: TranslationDTO[username=ektogod, text=hi, girly, originalLanguage=en, finalLanguage=ru]
+2025-03-02 15:09:41 INFO  c.t.s.t.TranslationServiceImpl - Sending translation request: text = hi, girly 
+2025-03-02 15:09:43 INFO  c.t.external.TranslationDefiner - Request has received: text = hi, girly 
+2025-03-02 15:09:43 INFO  c.t.external.TranslationDefiner - Translation successfully completed
+2025-03-02 15:09:43 INFO  c.t.dao.jdbc.TranslationDAO - Start writing to database of query: Translation[id=null, username=ektogod, ip=37.214.24.85, originalText=hi, girly, originalLang=en, translatedText=привет, девчонка, targetLang=ru, time=2025/03/02 15:09:43, status=200, message=Ok]
+2025-03-02 15:09:46 INFO  c.t.dao.jdbc.TranslationDAO - Connection with database established
+2025-03-02 15:09:46 INFO  c.t.dao.jdbc.TranslationDAO - Query has been successfully recorded
+2025-03-02 15:09:46 INFO  c.t.controller.TranslationController - Response is sending to user
+2025-03-02 15:12:41 ERROR c.t.service.n.impl.EmailServiceImpl - Attempt to delete email with non-existent id sdsd.
+2025-03-02 15:14:04 INFO  c.t.service.n.impl.EmailServiceImpl - Successfully removed email with id ektogod@gmail.com.
+2025-03-02 15:14:04 INFO  c.t.controller.EmailController - Successfully deleted room with id ektogod@gmail.com.
+2025-03-02 15:14:31 INFO  c.t.service.n.impl.EmailServiceImpl - Successfully created email with id ektogod@gmail.com.
+2025-03-02 15:14:31 INFO  c.t.controller.EmailController - Successfully created room with id ektogod@gmail.com.
+2025-03-02 15:16:46 INFO  c.t.service.n.impl.EmailServiceImpl - Successfully created email with id ektogod@gmail.com.
+2025-03-02 15:18:32 INFO  c.t.controller.EmailController - Successfully created room with id ektogod@gmail.com.
+2025-03-02 15:20:08 INFO  c.t.service.n.impl.EmailServiceImpl - Successfully created email with id ektogod@gmail.com.
+2025-03-02 15:20:09 INFO  c.t.controller.EmailController - Successfully created room with id ektogod@gmail.com.
+2025-03-02 15:22:20 INFO  c.t.service.n.impl.EmailServiceImpl - Successfully created email with id ektogod@gmail.com.
+2025-03-02 15:22:22 INFO  c.t.controller.EmailController - Successfully created email with id ektogod@gmail.com.
+2025-03-02 15:23:19 INFO  c.t.service.n.impl.EmailServiceImpl - Successfully created email with id ektogod@gmail.com.
+2025-03-02 15:23:22 INFO  c.t.controller.EmailController - Successfully created email with id ektogod@gmail.com.
+2025-03-02 15:24:23 INFO  c.t.service.n.impl.EmailServiceImpl - Successfully created email with id ektogod@gmail.com.
+2025-03-02 15:24:23 INFO  c.t.controller.EmailController - Successfully created email with id ektogod@gmail.com.
+2025-03-02 15:30:43 INFO  c.t.service.n.impl.EmailServiceImpl - Successfully removed email with id ektogod@gmail.com.
+2025-03-02 15:30:43 INFO  c.t.controller.EmailController - Successfully deleted room with id ektogod@gmail.com.
+2025-03-02 15:30:54 INFO  c.t.service.n.impl.EmailServiceImpl - Successfully created email with id ektogod@gmail.com.
+2025-03-02 15:30:54 INFO  c.t.controller.EmailController - Successfully created email with id ektogod@gmail.com.
+2025-03-02 15:32:06 INFO  c.t.service.n.impl.UserServiceImpl - Successfully created user with id 804296491.
+2025-03-02 15:32:07 INFO  c.t.external.CoordinatesDefiner - Start coordinate definition for city Koshice, country Slovakia
+2025-03-02 15:32:07 INFO  c.tinkoff_lab.utils.CountryCodeUtils - Start country code definition for country: Slovakia
+2025-03-02 15:32:07 INFO  c.tinkoff_lab.utils.CountryCodeUtils - Country code definition for country Slovakia ended successfully
+2025-03-02 15:32:08 INFO  c.t.external.CoordinatesDefiner - Coordinate definition for city Koshice, country Slovakia ended successfully
+2025-03-02 15:32:08 INFO  c.t.service.n.impl.UserServiceImpl - Successfully added emailName 804296491 to city Koshice.
+2025-03-02 17:45:16 INFO  com.tinkoff_lab.WeatherApplication - Application has terminated working
+

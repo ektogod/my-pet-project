@@ -21,7 +21,7 @@ public class EmailSubscribeCommand extends Command {
     @Override
     public void execute(AbsSender absSender, User user, Chat chat, String[] strings) {
         String msg = "Firstly write email to which you want to add new cities for tracking.";
-        state.setState(States.SUBSCRIBE_EMAIL);
+        state.setState(States.EMAIL_SUBSCRIBE_CITIES_EMAIL);
         sendMsg(absSender, chat.getId(), msg);
     }
 }

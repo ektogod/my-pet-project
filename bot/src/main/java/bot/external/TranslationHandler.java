@@ -3,7 +3,7 @@ package bot.external;
 import bot.client.translation.TranslationClient;
 import bot.dto.ErrorResponse;
 import bot.dto.TranslationResponse;
-import com.tinkoff_lab.dto.translation.requests.UserRequest;
+import com.tinkoff_lab.dto.translation.requests.TranslationDTO;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import lombok.Setter;
@@ -16,13 +16,11 @@ import org.springframework.web.client.RestClientResponseException;
 @Setter
 
 public class TranslationHandler {
-    private String curOrigLang;
-    private String curTargetLang;
     private String curText;
     private final TranslationClient client;
 
-    public String getTranslation() {
-        UserRequest request = new UserRequest(curText, curOrigLang, curTargetLang);
+    public String getTranslation(String username, String curOrigLang, String curTargetLang) {
+        TranslationDTO request = new TranslationDTO(username, curText, curOrigLang, curTargetLang);
         try {
             TranslationResponse response = client.getTranslation(request);
             return response.translatedText();

@@ -19,8 +19,8 @@ public class GetCommand extends Command {
 
     @Override
     public void execute(AbsSender absSender, User user, Chat chat, String[] strings) {
-        TelegramRequest request = new TelegramRequest(chat.getId(), user.getUserName());
-        String response = getHandler.get(request);
+        //TelegramRequest request = new TelegramRequest(chat.getId(), user.getUserName());
+        String response = getHandler.get(chat.getId());
 
         sendMsg(absSender, chat.getId(), response);
     }

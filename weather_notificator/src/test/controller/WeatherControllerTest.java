@@ -5,7 +5,7 @@ import com.email_sender.EmailSenderApplication;
 import com.tinkoff_lab.dto.weather.CityDTOOO;
 import com.tinkoff_lab.dto.weather.request.email.EmailCitiesRequest;
 import com.tinkoff_lab.dto.weather.request.email.EmailRequest;
-import com.tinkoff_lab.dto.weather.request.email.WeatherEmailRequest;
+import com.tinkoff_lab.dto.weather.request.email.EmailCitiesDTO;
 import com.tinkoff_lab.entity.City;
 import com.tinkoff_lab.entity.CityPK;
 import com.tinkoff_lab.entity.Email;
@@ -123,7 +123,7 @@ public class WeatherControllerTest {
     @Test
     void testWithSubscribeChecking() throws Exception {
         List<CityDTOOO> cities = List.of(new CityDTOOO("Minsk", "Belarus"), new CityDTOOO("Grodno", "Belarus"));
-        WeatherEmailRequest request = new WeatherEmailRequest("ektogod@gmail.com", "ektogod", cities);
+        EmailCitiesDTO request = new EmailCitiesDTO("ektogod@gmail.com", "ektogod", cities);
         post(request, "", 201);
 
         Email email = new Email("ektogod@gmail.com", "ektogod");
@@ -224,15 +224,15 @@ public class WeatherControllerTest {
     @Test
     void testWithWrongWeatherRequestChecking() throws Exception {
         List<CityDTOOO> citiesWithWrongCountry = List.of(new CityDTOOO("Minsk", "Belraus"));
-        WeatherEmailRequest request = new WeatherEmailRequest("ektogod@mail.ru", "ektogod", citiesWithWrongCountry);
+        EmailCitiesDTO request = new EmailCitiesDTO("ektogod@mail.ru", "ektogod", citiesWithWrongCountry);
         post(request, "Something wrong with country: code not defined", 400);
 
         List<CityDTOOO> citiesWithWrongLocation = List.of(new CityDTOOO("Asjlas", "Belarus"));
-        WeatherEmailRequest request2 = new WeatherEmailRequest("ektodog@mail.ru", "ektogod", citiesWithWrongLocation);
+        EmailCitiesDTO request2 = new EmailCitiesDTO("ektodog@mail.ru", "ektogod", citiesWithWrongLocation);
         post(request2, "Something wrong with location. Coordinates not defined", 400);
     }
 
-    void post(WeatherEmailRequest request, String response, int status) throws Exception {
+    void post(EmailCitiesDTO request, String response, int status) throws Exception {
         mockMvc.perform(MockMvcRequestBuilders.post("/ektogod/weather/subscribe")
                         .contentType("application/json")
                         .characterEncoding("UTF-8")
