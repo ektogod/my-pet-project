@@ -1,0 +1,55 @@
+2025-03-01 18:42:17 INFO  com.tinkoff_lab.WeatherApplication - Application has started working
+2025-03-01 18:42:18 INFO  com.tinkoff_lab.WeatherApplication - Starting WeatherApplication using Java 21.0.1 with PID 1552 (C:\Users\Nikita\IdeaProjects\pet-project\target\classes started by Nikita in C:\Users\Nikita\IdeaProjects\pet-project)
+2025-03-01 18:42:18 INFO  com.tinkoff_lab.WeatherApplication - No active profile set, falling back to 1 default profile: "default"
+2025-03-01 18:58:44 INFO  com.tinkoff_lab.WeatherApplication - Application has started working
+2025-03-01 18:58:45 INFO  com.tinkoff_lab.WeatherApplication - Starting WeatherApplication using Java 21.0.1 with PID 13040 (C:\Users\Nikita\IdeaProjects\pet-project\target\classes started by Nikita in C:\Users\Nikita\IdeaProjects\pet-project)
+2025-03-01 18:58:45 INFO  com.tinkoff_lab.WeatherApplication - No active profile set, falling back to 1 default profile: "default"
+2025-03-01 18:58:55 INFO  com.tinkoff_lab.WeatherApplication - Started WeatherApplication in 10.875 seconds (process running for 12.988)
+2025-03-01 19:03:19 INFO  c.t.service.n.impl.UserServiceImpl - Successfully created user with id 804296491.
+2025-03-01 19:07:49 INFO  com.tinkoff_lab.WeatherApplication - Application has terminated working
+
+2025-03-01 19:08:08 INFO  com.tinkoff_lab.WeatherApplication - Application has started working
+2025-03-01 19:08:08 INFO  com.tinkoff_lab.WeatherApplication - Starting WeatherApplication using Java 21.0.1 with PID 18016 (C:\Users\Nikita\IdeaProjects\pet-project\target\classes started by Nikita in C:\Users\Nikita\IdeaProjects\pet-project)
+2025-03-01 19:08:08 INFO  com.tinkoff_lab.WeatherApplication - No active profile set, falling back to 1 default profile: "default"
+2025-03-01 19:08:16 INFO  com.tinkoff_lab.WeatherApplication - Started WeatherApplication in 8.248 seconds (process running for 9.532)
+2025-03-01 19:26:19 INFO  com.tinkoff_lab.WeatherApplication - Application has terminated working
+
+2025-03-01 19:27:03 INFO  com.tinkoff_lab.WeatherApplication - Application has started working
+2025-03-01 19:27:04 INFO  com.tinkoff_lab.WeatherApplication - Starting WeatherApplication using Java 21.0.1 with PID 724 (C:\Users\Nikita\IdeaProjects\pet-project\target\classes started by Nikita in C:\Users\Nikita\IdeaProjects\pet-project)
+2025-03-01 19:27:04 INFO  com.tinkoff_lab.WeatherApplication - No active profile set, falling back to 1 default profile: "default"
+2025-03-01 19:27:12 INFO  com.tinkoff_lab.WeatherApplication - Started WeatherApplication in 8.619 seconds (process running for 9.756)
+2025-03-01 19:30:54 INFO  com.tinkoff_lab.WeatherApplication - Application has terminated working
+
+2025-03-01 19:31:10 INFO  com.tinkoff_lab.WeatherApplication - Application has started working
+2025-03-01 19:31:11 INFO  com.tinkoff_lab.WeatherApplication - Starting WeatherApplication using Java 21.0.1 with PID 8872 (C:\Users\Nikita\IdeaProjects\pet-project\target\classes started by Nikita in C:\Users\Nikita\IdeaProjects\pet-project)
+2025-03-01 19:31:11 INFO  com.tinkoff_lab.WeatherApplication - No active profile set, falling back to 1 default profile: "default"
+2025-03-01 19:31:18 INFO  com.tinkoff_lab.WeatherApplication - Started WeatherApplication in 7.654 seconds (process running for 8.642)
+2025-03-01 19:31:36 INFO  c.t.service.n.impl.EmailServiceImpl - Successfully created email with id ektogod@gmail.com.
+2025-03-01 19:31:36 INFO  c.t.controller.EmailController - Successfully created room with id ektogod@gmail.com.
+2025-03-01 19:32:56 INFO  com.tinkoff_lab.WeatherApplication - Application has terminated working
+
+2025-03-01 19:33:09 INFO  com.tinkoff_lab.WeatherApplication - Application has started working
+2025-03-01 19:33:09 INFO  com.tinkoff_lab.WeatherApplication - Starting WeatherApplication using Java 21.0.1 with PID 14924 (C:\Users\Nikita\IdeaProjects\pet-project\target\classes started by Nikita in C:\Users\Nikita\IdeaProjects\pet-project)
+2025-03-01 19:33:09 INFO  com.tinkoff_lab.WeatherApplication - No active profile set, falling back to 1 default profile: "default"
+2025-03-01 19:33:16 INFO  com.tinkoff_lab.WeatherApplication - Started WeatherApplication in 6.763 seconds (process running for 7.856)
+2025-03-01 19:33:33 INFO  c.t.service.n.impl.EmailServiceImpl - Successfully created email with id ektogod@gmail.com.
+2025-03-01 19:33:33 INFO  c.t.controller.EmailController - Successfully created room with id ektogod@gmail.com.
+2025-03-01 19:35:27 INFO  c.t.service.n.impl.EmailServiceImpl - Successfully created email with id ektogod@gmail.com.
+2025-03-01 19:35:27 INFO  c.t.controller.EmailController - Successfully created room with id ektogod@gmail.com.
+2025-03-01 19:46:26 INFO  c.t.service.n.impl.EmailServiceImpl - Successfully created email with id ektogod@gmail.com.
+2025-03-01 19:46:26 INFO  c.t.controller.EmailController - Successfully created room with id ektogod@gmail.com.
+2025-03-01 19:50:32 INFO  com.tinkoff_lab.WeatherApplication - Application has terminated working
+
+2025-03-01 19:51:02 INFO  com.tinkoff_lab.WeatherApplication - Application has started working
+2025-03-01 19:51:03 INFO  com.tinkoff_lab.WeatherApplication - Starting WeatherApplication using Java 21.0.1 with PID 19988 (C:\Users\Nikita\IdeaProjects\pet-project\target\classes started by Nikita in C:\Users\Nikita\IdeaProjects\pet-project)
+2025-03-01 19:51:03 INFO  com.tinkoff_lab.WeatherApplication - No active profile set, falling back to 1 default profile: "default"
+2025-03-01 19:51:12 INFO  com.tinkoff_lab.WeatherApplication - Started WeatherApplication in 10.079 seconds (process running for 11.684)
+2025-03-01 19:51:35 INFO  c.t.service.n.impl.EmailServiceImpl - Successfully created email with id ektogod@gmail.com.
+2025-03-01 19:51:36 INFO  c.t.controller.EmailController - Successfully created room with id ektogod@gmail.com.
+2025-03-01 19:53:21 INFO  c.t.service.n.impl.EmailServiceImpl - Successfully created email with id ektogod@gmail.com.
+2025-03-01 19:53:21 INFO  c.t.controller.EmailController - Successfully created room with id ektogod@gmail.com.
+2025-03-01 19:56:55 INFO  c.t.service.n.impl.EmailServiceImpl - Successfully created email with id ektogod@gmail.com.
+2025-03-01 19:56:55 INFO  c.t.controller.EmailController - Successfully created room with id ektogod@gmail.com.
+2025-03-01 19:58:20 INFO  c.t.service.n.impl.UserServiceImpl - Successfully created user with id 1912329403.
+2025-03-01 20:10:11 INFO  com.tinkoff_lab.WeatherApplication - Application has terminated working
+

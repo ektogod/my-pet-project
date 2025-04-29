@@ -41,7 +41,7 @@
 В качестве СУБД я использовал MySQL.
 БД имеет одно представление 'query' с атрибутами:
 
-![image](https://github.com/user-attachments/assets/7daeb907-c6ce-4b91-9281-de6955a0ca57)
+![image](https://github.com/email-attachments/assets/7daeb907-c6ce-4b91-9281-de6955a0ca57)
 
 (если нужно будет, то в тестах есть запрос для создания моей таблицы)
 
